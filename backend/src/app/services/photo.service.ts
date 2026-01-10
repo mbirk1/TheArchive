@@ -1,0 +1,16 @@
+import { Injectable } from '@nestjs/common';
+import { Repository } from 'typeorm';
+import { Card } from '../database/entities/card.entity';
+import { InjectRepository } from '@nestjs/typeorm';
+
+@Injectable()
+export class PhotoService {
+  constructor(
+    @InjectRepository(Card)
+    private photoRepository: Repository<Card>,
+  ) {}
+
+  async findAll(): Promise<Card[]> {
+    return this.photoRepository.find();
+  }
+}

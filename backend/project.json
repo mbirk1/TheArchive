@@ -5,17 +5,10 @@
   "projectType": "application",
   "tags": [],
   "targets": {
-    "build": {
+    "migration:generate": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "webpack-cli build",
-        "args": ["--node-env=production"],
-        "cwd": "backend"
-      },
-      "configurations": {
-        "development": {
-          "args": ["--node-env=development"]
-        }
+        "command": "typeorm-ts-node-commonjs migration:generate backend/src/app/database/migrations/InitSchema -d backend/src/app/database/datasource.ts"
       }
     },
     "prune-lockfile": {
@@ -43,22 +36,25 @@
       "dependsOn": ["prune-lockfile", "copy-workspace-modules"],
       "executor": "nx:noop"
     },
+    "build": {
+      "executor": "@nx/webpack:webpack",
+      "outputs": ["dist/backend"],
+      "options": {
+        "outputPath": "dist/backend",
+        "webpackConfig": "backend/webpack.config.js"
+      }
+    },
     "serve": {
-      "continuous": true,
       "executor": "@nx/js:node",
-      "defaultConfiguration": "development",
-      "dependsOn": ["build"],
       "options": {
         "buildTarget": "backend:build",
-        "runBuildTargetDependencies": false
-      },
-      "configurations": {
-        "development": {
-          "buildTarget": "backend:build:development"
-        },
-        "production": {
-          "buildTarget": "backend:build:production"
-        }
+        "watch": false
+      }
+    },
+    "start": {
+      "executor": "@nrwl/node:execute",
+      "options": {
+        "buildTarget": "backend:build:development"
       }
     },
     "test": {

@@ -363,39 +363,39 @@
       "@nx/eslint/plugin"
     ],
     "targets.lint": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.cache": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.inputs": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.outputs": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.executor": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options.cwd": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.options.command": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.technologies": [
@@ -407,11 +407,11 @@
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.description": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help": [
-      "backend-e2e/eslint.config.mjs",
+      "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
     "targets.lint.metadata.help.command": [
@@ -422,9 +422,153 @@
       "backend/eslint.config.mjs",
       "@nx/eslint/plugin"
     ],
-    "targets.lint.metadata.technologies.1": [
-      "backend-e2e/eslint.config.mjs",
-      "@nx/eslint/plugin"
+    "projectType": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.preview": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.continuous": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.executor": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.cwd": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.args": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.options.command": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.technologies.0": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.description": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.command": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.preview.metadata.help.example": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.continuous": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.dependsOn": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.executor": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.watch-deps.options.command": [
+      "backend/webpack.config.js",
+      "@nx/webpack/plugin"
+    ],
+    "targets.test": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.options": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.test.metadata": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
     ],
     "name": [
       "backend/project.json",
@@ -438,47 +582,23 @@
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "projectType": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
     "tags": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.build": [
+    "targets.migration:generate": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.build.executor": [
+    "targets.migration:generate.executor": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.build.options": [
+    "targets.migration:generate.options": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.build.configurations": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.options.command": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.options.args": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.options.cwd": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.configurations.development": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.build.configurations.development.args": [
+    "targets.migration:generate.options.command": [
       "backend/project.json",
       "nx/core/project-json"
     ],
@@ -550,11 +670,31 @@
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.serve": [
+    "targets.build": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.serve.continuous": [
+    "targets.build.executor": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.outputs": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.outputPath": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.build.options.webpackConfig": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve": [
       "backend/project.json",
       "nx/core/project-json"
     ],
@@ -562,19 +702,7 @@
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.serve.defaultConfiguration": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.dependsOn": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
     "targets.serve.options": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.serve.configurations": [
       "backend/project.json",
       "nx/core/project-json"
     ],
@@ -582,36 +710,146 @@
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.serve.options.runBuildTargetDependencies": [
+    "targets.serve.options.watch": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.serve.configurations.development": [
+    "targets.start": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.serve.configurations.development.buildTarget": [
+    "targets.start.executor": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.serve.configurations.production": [
+    "targets.start.options": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.serve.configurations.production.buildTarget": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.test": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.test.options": [
+    "targets.start.options.buildTarget": [
       "backend/project.json",
       "nx/core/project-json"
     ],
     "targets.test.options.passWithNoTests": [
       "backend/project.json",
+      "nx/core/project-json"
+    ]
+  },
+  "backend-e2e": {
+    "root": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "backend-e2e/eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "name": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "$schema": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "projectType": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "implicitDependencies.backend": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.executor": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.outputs": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.dependsOn": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.jestConfig": [
+      "backend-e2e/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.e2e.options.passWithNoTests": [
+      "backend-e2e/project.json",
       "nx/core/project-json"
     ]
   },
@@ -953,64 +1191,6 @@
     "targets.nx-release-publish.options": [
       "package.json",
       "nx/core/package-json"
-    ]
-  },
-  "backend-e2e": {
-    "root": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "name": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "$schema": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "projectType": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "implicitDependencies": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "implicitDependencies.backend": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.executor": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.outputs": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.dependsOn": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options.jestConfig": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.e2e.options.passWithNoTests": [
-      "backend-e2e/project.json",
-      "nx/core/project-json"
     ]
   }
 }

@@ -4650,21 +4650,6 @@
     "type": "static"
   },
   {
-    "source": "npm:@cspotcode/source-map-support",
-    "target": "npm:@jridgewell/trace-mapping@0.3.9",
-    "type": "static"
-  },
-  {
-    "source": "npm:@jridgewell/trace-mapping@0.3.9",
-    "target": "npm:@jridgewell/resolve-uri",
-    "type": "static"
-  },
-  {
-    "source": "npm:@jridgewell/trace-mapping@0.3.9",
-    "target": "npm:@jridgewell/sourcemap-codec",
-    "type": "static"
-  },
-  {
     "source": "npm:@emnapi/core",
     "target": "npm:@emnapi/wasi-threads",
     "type": "static"
@@ -7470,6 +7455,36 @@
     "type": "static"
   },
   {
+    "source": "npm:@nestjs/config",
+    "target": "npm:@nestjs/common",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/config",
+    "target": "npm:rxjs",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/config",
+    "target": "npm:dotenv",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/config",
+    "target": "npm:dotenv-expand@12.0.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/config",
+    "target": "npm:lodash",
+    "type": "static"
+  },
+  {
+    "source": "npm:dotenv-expand@12.0.1",
+    "target": "npm:dotenv",
+    "type": "static"
+  },
+  {
     "source": "npm:@nestjs/core",
     "target": "npm:@nestjs/common",
     "type": "static"
@@ -8062,6 +8077,31 @@
   {
     "source": "npm:@nestjs/testing",
     "target": "npm:tslib",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/typeorm",
+    "target": "npm:@nestjs/common",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/typeorm",
+    "target": "npm:@nestjs/core",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/typeorm",
+    "target": "npm:reflect-metadata",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/typeorm",
+    "target": "npm:rxjs",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/typeorm",
+    "target": "npm:typeorm",
     "type": "static"
   },
   {
@@ -10735,11 +10775,6 @@
     "type": "static"
   },
   {
-    "source": "npm:acorn-walk",
-    "target": "npm:acorn",
-    "type": "static"
-  },
-  {
     "source": "npm:adjust-sourcemap-loader",
     "target": "npm:loader-utils",
     "type": "static"
@@ -10972,6 +11007,11 @@
   {
     "source": "npm:autoprefixer",
     "target": "npm:postcss-value-parser",
+    "type": "static"
+  },
+  {
+    "source": "npm:available-typed-arrays",
+    "target": "npm:possible-typed-array-names",
     "type": "static"
   },
   {
@@ -11577,6 +11617,26 @@
   {
     "source": "npm:ssri@13.0.0",
     "target": "npm:minipass",
+    "type": "static"
+  },
+  {
+    "source": "npm:call-bind",
+    "target": "npm:call-bind-apply-helpers",
+    "type": "static"
+  },
+  {
+    "source": "npm:call-bind",
+    "target": "npm:es-define-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:call-bind",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:call-bind",
+    "target": "npm:set-function-length",
     "type": "static"
   },
   {
@@ -12257,6 +12317,21 @@
   {
     "source": "npm:defaults",
     "target": "npm:clone",
+    "type": "static"
+  },
+  {
+    "source": "npm:define-data-property",
+    "target": "npm:es-define-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:define-data-property",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:define-data-property",
+    "target": "npm:gopd",
     "type": "static"
   },
   {
@@ -13225,6 +13300,11 @@
     "type": "static"
   },
   {
+    "source": "npm:for-each",
+    "target": "npm:is-callable",
+    "type": "static"
+  },
+  {
     "source": "npm:foreground-child",
     "target": "npm:cross-spawn",
     "type": "static"
@@ -13680,6 +13760,11 @@
     "type": "static"
   },
   {
+    "source": "npm:has-property-descriptors",
+    "target": "npm:es-define-property",
+    "type": "static"
+  },
+  {
     "source": "npm:has-tostringtag",
     "target": "npm:has-symbols",
     "type": "static"
@@ -14080,6 +14165,11 @@
     "type": "static"
   },
   {
+    "source": "npm:is-typed-array",
+    "target": "npm:which-typed-array",
+    "type": "static"
+  },
+  {
     "source": "npm:is-wsl",
     "target": "npm:is-docker",
     "type": "static"
@@ -14387,11 +14477,6 @@
   {
     "source": "npm:jest-config",
     "target": "npm:@types/node",
-    "type": "static"
-  },
-  {
-    "source": "npm:jest-config",
-    "target": "npm:ts-node",
     "type": "static"
   },
   {
@@ -16920,6 +17005,71 @@
     "type": "static"
   },
   {
+    "source": "npm:pg",
+    "target": "npm:pg-connection-string",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg",
+    "target": "npm:pg-pool",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg",
+    "target": "npm:pg-protocol",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg",
+    "target": "npm:pg-types",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg",
+    "target": "npm:pgpass",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg",
+    "target": "npm:pg-cloudflare",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-pool",
+    "target": "npm:pg",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-types",
+    "target": "npm:pg-int8",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-types",
+    "target": "npm:postgres-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-types",
+    "target": "npm:postgres-bytea",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-types",
+    "target": "npm:postgres-date",
+    "type": "static"
+  },
+  {
+    "source": "npm:pg-types",
+    "target": "npm:postgres-interval",
+    "type": "static"
+  },
+  {
+    "source": "npm:pgpass",
+    "target": "npm:split2",
+    "type": "static"
+  },
+  {
     "source": "npm:piscina",
     "target": "npm:@napi-rs/nice",
     "type": "static"
@@ -17472,6 +17622,11 @@
   {
     "source": "npm:postcss-unique-selectors",
     "target": "npm:postcss-selector-parser",
+    "type": "static"
+  },
+  {
+    "source": "npm:postgres-interval",
+    "target": "npm:xtend",
     "type": "static"
   },
   {
@@ -18305,6 +18460,51 @@
     "type": "static"
   },
   {
+    "source": "npm:set-function-length",
+    "target": "npm:define-data-property",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:function-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:get-intrinsic",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:set-function-length",
+    "target": "npm:has-property-descriptors",
+    "type": "static"
+  },
+  {
+    "source": "npm:sha.js",
+    "target": "npm:inherits",
+    "type": "static"
+  },
+  {
+    "source": "npm:sha.js",
+    "target": "npm:safe-buffer",
+    "type": "static"
+  },
+  {
+    "source": "npm:sha.js",
+    "target": "npm:to-buffer",
+    "type": "static"
+  },
+  {
     "source": "npm:shallow-clone",
     "target": "npm:kind-of",
     "type": "static"
@@ -18975,6 +19175,21 @@
     "type": "static"
   },
   {
+    "source": "npm:to-buffer",
+    "target": "npm:isarray@2.0.5",
+    "type": "static"
+  },
+  {
+    "source": "npm:to-buffer",
+    "target": "npm:safe-buffer",
+    "type": "static"
+  },
+  {
+    "source": "npm:to-buffer",
+    "target": "npm:typed-array-buffer",
+    "type": "static"
+  },
+  {
     "source": "npm:to-regex-range",
     "target": "npm:is-number",
     "type": "static"
@@ -19245,86 +19460,6 @@
     "type": "static"
   },
   {
-    "source": "npm:ts-node",
-    "target": "npm:@swc/core",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:@types/node",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:typescript",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:@cspotcode/source-map-support",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:@tsconfig/node10",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:@tsconfig/node12",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:@tsconfig/node14",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:@tsconfig/node16",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:acorn",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:acorn-walk",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:arg",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:create-require",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:diff",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:make-error",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:v8-compile-cache-lib",
-    "type": "static"
-  },
-  {
-    "source": "npm:ts-node",
-    "target": "npm:yn",
-    "type": "static"
-  },
-  {
     "source": "npm:tsconfig-paths",
     "target": "npm:json5",
     "type": "static"
@@ -19387,6 +19522,111 @@
   {
     "source": "npm:type-is",
     "target": "npm:mime-types",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-buffer",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-buffer",
+    "target": "npm:es-errors",
+    "type": "static"
+  },
+  {
+    "source": "npm:typed-array-buffer",
+    "target": "npm:is-typed-array",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:pg",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:@sqltools/formatter",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:ansis",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:app-root-path",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:buffer@6.0.3",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:dayjs",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:debug",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:dedent",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:dotenv@16.6.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:glob",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:reflect-metadata@0.2.2",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:sha.js",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:sql-highlight",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:tslib",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:uuid@11.1.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:typeorm",
+    "target": "npm:yargs",
+    "type": "static"
+  },
+  {
+    "source": "npm:buffer@6.0.3",
+    "target": "npm:base64-js",
+    "type": "static"
+  },
+  {
+    "source": "npm:buffer@6.0.3",
+    "target": "npm:ieee754",
     "type": "static"
   },
   {
@@ -20392,6 +20632,41 @@
   {
     "source": "npm:which",
     "target": "npm:isexe",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:available-typed-arrays",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:call-bind",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:call-bound",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:for-each",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:get-proto",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:gopd",
+    "type": "static"
+  },
+  {
+    "source": "npm:which-typed-array",
+    "target": "npm:has-tostringtag",
     "type": "static"
   },
   {
