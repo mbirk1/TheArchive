@@ -3077,3 +3077,508 @@ Time for 'build typescript dependencies' 2.4611000000004424
 [NX v22.3.3 Daemon Server] - 2026-01-10T16:05:34.769Z - [NX-CONSOLE]: Using local implementation (NX_USE_LOCAL=true or inner call)
 DEBUG nx::native::ide::install: Detected editor: Unknown
 [NX v22.3.3 Daemon Server] - 2026-01-10T16:05:34.769Z - [NX-CONSOLE]: Console status check completed, shouldPrompt: false
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.329Z - [WATCHER]: Processing file changes in outputs
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.330Z - [WATCHER]: backend/.env was modified
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.330Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.545Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.545Z - [REQUEST]: backend/.env
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.545Z - [REQUEST]: 
+Time for 'daemon-message-serialization-HASH_GLOB' 0.010900000022957101
+Time for 'daemon-message-serialization-GLOB' 0.012299999973038211
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.552Z - Received raw message of length 72
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.552Z - Received json message of type HASH_GLOB
+Time for 'nx/core/project-json:createNodes' 0.7951999999932013
+Time for 'daemon-message-serialization-HASH_GLOB' 0.014800000004470348
+Time for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.012699999992037192
+Time for 'nx/core/package-json:createNodes' 1.6741000000038184
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.554Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.554Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.554Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.554Z - Received raw message of length 73
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.554Z - Received json message of type GLOB
+Time for '@nx/playwright/plugin:createNodes' 6.324099999997998
+Time for 'HASH_GLOB round trip' 4.30539999998291
+Time for 'deserialize daemon response - HASH_GLOB' 0.021099999983562157
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.555Z - Serializing response for GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.555Z - Responding to GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.555Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.555Z - Time taken for 'hash changed files from watcher' 0.5143000000098255ms
+Time for 'GLOB round trip' 4.0688999999838416
+Time for 'deserialize daemon response - GLOB' 0.016299999988405034
+Time for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.013899999990826473
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.556Z - Received raw message of length 67
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.556Z - Received json message of type HASH_GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.557Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.557Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.557Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.557Z - Received raw message of length 60
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.557Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.558Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.558Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.558Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.558Z - Done responding to the client handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.558Z - Handled json message HASH_GLOB. Handling time: 1. Response time: 5.
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.558Z - Done responding to the client handleGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.558Z - Handled json message GLOB. Handling time: 1. Response time: 3.
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.559Z - Received raw message of length 586
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.559Z - Received json message of type HASH_MULTI_GLOB
+Time for '@nx/webpack/plugin:createNodes' 8.408899999980349
+Time for 'HASH_GLOB round trip' 4.350700000009965
+Time for 'deserialize daemon response - HASH_GLOB' 0.013000000006286427
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.562Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.562Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.562Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.562Z - Done responding to the client handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.562Z - Handled json message HASH_GLOB. Handling time: 1. Response time: 5.
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.562Z - Done responding to the client handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.562Z - Handled json message HASH_GLOB. Handling time: 1. Response time: 4.
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.563Z - Done responding to the client handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.563Z - Handled json message HASH_GLOB. Handling time: 3. Response time: 1.
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 10.011999999987893
+Time for 'HASH_MULTI_GLOB round trip' 6.59419999999227
+Time for 'deserialize daemon response - HASH_MULTI_GLOB' 0.014999999984866008
+Time for '@nx/jest/plugin:createNodes' 17.987500000017462
+Time for 'HASH_MULTI_GLOB round trip' 5.046699999977136
+Time for 'deserialize daemon response - HASH_MULTI_GLOB' 0.012299999973038211
+Time for '@nx/eslint/plugin:createNodes' 44.89969999997993
+Unable to find local plugin [] Map(0) {}
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.606Z - Time taken for 'build-project-configs' 50.68510000000242ms
+Time for 'build typescript dependencies' 3.3422000000136904
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.631Z - [SYNC]: collect registered sync generators
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.632Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.632Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.3.3 Daemon Server] - 2026-01-10T16:09:01.632Z - Time taken for 'total execution time for createProjectGraph()' 28.955099999991944ms
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:10.931Z - [WATCHER]: Processing file changes in outputs
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:10.950Z - [WATCHER]: .idea/workspace.xml was modified
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:10.952Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.380Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.381Z - [REQUEST]: .idea/workspace.xml
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.381Z - [REQUEST]: 
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.395Z - Time taken for 'hash changed files from watcher' 1.787700000219047ms
+Time for 'nx/core/package-json:createNodes' 9.097000000067055
+Time for 'nx/core/project-json:createNodes' 4.99379999935627
+Time for 'daemon-message-serialization-HASH_GLOB' 0.06529999990016222
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 20.526300000026822
+Time for 'daemon-message-serialization-HASH_GLOB' 0.06639999989420176
+Time for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.022400000132620335
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.438Z - Received raw message of length 72
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.438Z - Received json message of type HASH_GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.439Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.439Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.439Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.440Z - Received raw message of length 67
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.440Z - Received json message of type HASH_GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.441Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.441Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.441Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.442Z - Received raw message of length 60
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.442Z - Received json message of type HASH_MULTI_GLOB
+Time for '@nx/playwright/plugin:createNodes' 29.59750000014901
+Time for 'HASH_GLOB round trip' 9.876299999654293
+Time for 'deserialize daemon response - HASH_GLOB' 0.022699999623000622
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.443Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.443Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.443Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.443Z - Done responding to the client handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.443Z - Handled json message HASH_GLOB. Handling time: 1. Response time: 4.
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.443Z - Done responding to the client handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.443Z - Handled json message HASH_GLOB. Handling time: 1. Response time: 2.
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.443Z - Done responding to the client handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.443Z - Handled json message HASH_GLOB. Handling time: 1. Response time: 0.
+Time for '@nx/webpack/plugin:createNodes' 25.993999999947846
+Time for 'HASH_GLOB round trip' 7.232400000095367
+Time for 'deserialize daemon response - HASH_GLOB' 0.23570000007748604
+Time for '@nx/jest/plugin:createNodes' 25.090099999681115
+Time for 'HASH_MULTI_GLOB round trip' 6.717800000682473
+Time for 'deserialize daemon response - HASH_MULTI_GLOB' 0.01860000006854534
+Time for 'daemon-message-serialization-GLOB' 0.1597999995574355
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.452Z - Received raw message of length 73
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.452Z - Received json message of type GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.453Z - Serializing response for GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.453Z - Responding to GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.453Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.453Z - Done responding to the client handleGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.453Z - Handled json message GLOB. Handling time: 1. Response time: 0.
+Time for 'GLOB round trip' 6.535799999721348
+Time for 'deserialize daemon response - GLOB' 0.03589999955147505
+Time for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.040300000458955765
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.457Z - Received raw message of length 586
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.457Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.459Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.459Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.459Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.460Z - Done responding to the client handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.460Z - Handled json message HASH_GLOB. Handling time: 2. Response time: 1.
+Time for 'HASH_MULTI_GLOB round trip' 3.9904999993741512
+Time for 'deserialize daemon response - HASH_MULTI_GLOB' 0.017799999564886093
+Time for '@nx/eslint/plugin:createNodes' 98.83650000020862
+Unable to find local plugin [] Map(0) {}
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.547Z - Time taken for 'build-project-configs' 146.16280000004917ms
+Time for 'build typescript dependencies' 5.284599999897182
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.580Z - [SYNC]: collect registered sync generators
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.581Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.581Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.3.3 Daemon Server] - 2026-01-10T18:18:11.581Z - Time taken for 'total execution time for createProjectGraph()' 40.92879999987781ms
+[NX v22.3.3 Daemon Server] - 2026-01-10T21:18:11.512Z - Closed a connection. Number of open connections: 4
+[NX v22.3.3 Daemon Server] - 2026-01-10T21:18:11.514Z - Closed a connection. Number of open connections: 3
+[NX v22.3.3 Daemon Server] - 2026-01-10T21:18:11.514Z - Closed a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-10T21:18:11.514Z - Closed a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-10T21:18:11.520Z - Closed a connection. Number of open connections: 0
+[NX v22.3.3 Daemon Server] - 2026-01-10T21:18:11.522Z - [WATCHER]: Stopping the watcher for C:\Users\mariu\WebstormProjects\Sideboard (sources)
+[NX v22.3.3 Daemon Server] - 2026-01-10T21:18:11.523Z - [WATCHER]: Stopping the watcher for C:\Users\mariu\WebstormProjects\Sideboard (outputs)
+[NX v22.3.3 Daemon Server] - 2026-01-10T21:18:11.536Z - [NX-CONSOLE]: Cleaning up latest Nx installation from C:\Users\mariu\AppData\Local\Temp\tmp-80768-XDzSyp3cYPlB
+[NX v22.3.3 Daemon Server] - 2026-01-10T21:18:11.544Z - Server stopped because: "10800000ms of inactivity"
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:31.235Z - Started listening on: \\.\pipe\nx\C:\Users\mariu\AppData\Local\Temp\7df1d69880d18ea963f1\d.sock
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:31.238Z - [WATCHER]: Subscribed to changes within: C:\Users\mariu\WebstormProjects\Sideboard (native)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:31.239Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+Time for 'plugin worker 41912 code loading' 5.679100000000002
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:31.532Z - Established a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:31.532Z - Established a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:31.534Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 40084 code loading' 5.223800000000001
+Time for 'plugin worker 13024 code loading' 10.102199999999996
+Time for 'plugin worker 32044 code loading' 6.118100000000002
+Time for 'plugin worker 41828 code loading' 8.483600000000003
+Time for 'plugin worker 40256 code loading' 6.0289
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:31.892Z - Time taken for 'Load Nx Plugin: C:\Users\mariu\WebstormProjects\Sideboard\node_modules\nx\src\plugins\js' 415.0254ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:31.893Z - Time taken for 'Load Nx Plugin: C:\Users\mariu\WebstormProjects\Sideboard\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 414.1209ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:31.896Z - Time taken for 'loadDefaultNxPlugins' 418.61580000000004ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.068Z - Received raw message of length 32
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.068Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.068Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.068Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.068Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.069Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.069Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 1.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.077Z - Time taken for 'Load Nx Plugin: @nx/jest/plugin' 593.8600000000001ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.103Z - Established a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.104Z - Closed a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.109Z - Closed a connection. Number of open connections: 0
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.160Z - Time taken for 'Load Nx Plugin: @nx/eslint/plugin' 679.4397999999999ms
+Time for 'plugin worker 32428 code loading' 6.7745
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.161Z - Time taken for 'Load Nx Plugin: @nx/playwright/plugin' 681.3388ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.179Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.179Z - [REQUEST]: 
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.179Z - [REQUEST]: 
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.192Z - Time taken for 'loadSpecifiedNxPlugins' 698.7850000000001ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.193Z - Established a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.193Z - Established a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.193Z - Closed a connection. Number of open connections: 1
+Time for 'nx/core/project-json:createNodes' 2.407199999999989
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.196Z - Established a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.196Z - Closed a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.196Z - Established a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.196Z - Established a connection. Number of open connections: 3
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.197Z - Established a connection. Number of open connections: 4
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.197Z - Closed a connection. Number of open connections: 3
+Time for 'nx/core/package-json:createNodes' 5.635999999999967
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.200Z - Established a connection. Number of open connections: 4
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.200Z - Closed a connection. Number of open connections: 3
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.201Z - Established a connection. Number of open connections: 4
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 13.057299999999941
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.434Z - [WATCHER]: Processing file changes in outputs
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.436Z - [WATCHER]: .idea/nx-angular-config.xml was deleted
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.437Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.542Z - Closed a connection. Number of open connections: 3
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.542Z - Closed a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.542Z - Closed a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.542Z - Closed a connection. Number of open connections: 0
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.542Z - [WATCHER]: Stopping the watcher for C:\Users\mariu\WebstormProjects\Sideboard (sources)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.542Z - [WATCHER]: Stopping the watcher for C:\Users\mariu\WebstormProjects\Sideboard (outputs)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.543Z - Server stopped because: "this process is no longer the current daemon (native)"
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.557Z - Started listening on: \\.\pipe\nx\C:\Users\mariu\AppData\Local\Temp\d2e0655e33a1bed0fab9\d.sock
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.560Z - [WATCHER]: Subscribed to changes within: C:\Users\mariu\WebstormProjects\Sideboard (native)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:32.561Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.135Z - Established a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.135Z - Established a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.136Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 39496 code loading' 5.494399999999999
+Time for 'plugin worker 39808 code loading' 5.069400000000002
+Time for 'plugin worker 41752 code loading' 5.6982
+Time for 'plugin worker 35608 code loading' 5.2288
+Time for 'plugin worker 16072 code loading' 4.8659
+Time for 'plugin worker 22036 code loading' 5.868600000000001
+Time for 'plugin worker 39132 code loading' 5.413
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.372Z - Received raw message of length 32
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.372Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.372Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.507Z - Time taken for 'Load Nx Plugin: C:\Users\mariu\WebstormProjects\Sideboard\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 419.6304ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.509Z - Time taken for 'Load Nx Plugin: C:\Users\mariu\WebstormProjects\Sideboard\node_modules\nx\src\plugins\package-json' 422.2608ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.534Z - Time taken for 'loadDefaultNxPlugins' 448.4742ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.655Z - Time taken for 'Load Nx Plugin: @nx/jest/plugin' 564.7441000000001ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.733Z - Time taken for 'Load Nx Plugin: @nx/playwright/plugin' 644.7165ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.734Z - Time taken for 'Load Nx Plugin: @nx/eslint/plugin' 645.3401ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.743Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.743Z - [REQUEST]: 
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.743Z - [REQUEST]: 
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.746Z - Reusing in-memory cached project graph because no files changed.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.753Z - Time taken for 'loadSpecifiedNxPlugins' 653.6586000000001ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.753Z - Established a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.753Z - Closed a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.753Z - Established a connection. Number of open connections: 2
+Time for 'nx/core/project-json:createNodes' 1.0060999999999467
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.755Z - Established a connection. Number of open connections: 3
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.755Z - Closed a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.755Z - Established a connection. Number of open connections: 3
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.756Z - Established a connection. Number of open connections: 4
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.756Z - Closed a connection. Number of open connections: 3
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.756Z - Established a connection. Number of open connections: 4
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.757Z - Established a connection. Number of open connections: 5
+Time for 'nx/core/package-json:createNodes' 5.060399999999959
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.758Z - Closed a connection. Number of open connections: 4
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:33.758Z - Established a connection. Number of open connections: 5
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 9.291200000000003
+Time for 'daemon-message-serialization-HASH_GLOB' 0.0969000000000051
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.169Z - Received raw message of length 72
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.169Z - Received json message of type HASH_GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.170Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.170Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.170Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.170Z - Done responding to the client handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.170Z - Handled json message HASH_GLOB. Handling time: 1. Response time: 0.
+Time for 'daemon-message-serialization-GLOB' 0.14410000000020773
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.174Z - Received raw message of length 73
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.174Z - Received json message of type GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.175Z - Serializing response for GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.176Z - Responding to GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.176Z - [REQUEST]: Responding to the client. handleGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.176Z - Done responding to the client handleGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.176Z - Handled json message GLOB. Handling time: 1. Response time: 1.
+Time for 'GLOB round trip' 3.9253000000001066
+Time for 'deserialize daemon response - GLOB' 0.06400000000007822
+Time for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.024499999999989086
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.179Z - Received raw message of length 586
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.179Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.183Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.183Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.183Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.183Z - Done responding to the client handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.183Z - Handled json message HASH_GLOB. Handling time: 4. Response time: 0.
+Time for 'daemon-message-serialization-HASH_MULTI_GLOB' 0.09040000000004511
+Time for 'daemon-message-serialization-HASH_GLOB' 0.09780000000000655
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.212Z - Received raw message of length 67
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.212Z - Received json message of type HASH_GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.213Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.213Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.213Z - [REQUEST]: Responding to the client. handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.214Z - Received raw message of length 60
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.214Z - Received json message of type HASH_MULTI_GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.214Z - Serializing response for HASH_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.214Z - Responding to HASH_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.214Z - [REQUEST]: Responding to the client. handleHashMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.214Z - Done responding to the client handleHashGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.214Z - Handled json message HASH_GLOB. Handling time: 1. Response time: 1.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.215Z - Done responding to the client handleHashMultiGlob
+Time for '@nx/webpack/plugin:createNodes' 462.9779000000001
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:34.215Z - Handled json message HASH_GLOB. Handling time: 0. Response time: 1.
+Time for 'HASH_GLOB round trip' 3.1014000000000124
+Time for 'deserialize daemon response - HASH_GLOB' 0.04619999999999891
+Time for '@nx/jest/plugin:createNodes' 463.83899999999994
+Time for 'HASH_MULTI_GLOB round trip' 4.711800000000039
+Time for 'deserialize daemon response - HASH_MULTI_GLOB' 0.05340000000001055
+Time for 'HASH_MULTI_GLOB round trip' 6.08829999999989
+Time for 'deserialize daemon response - HASH_MULTI_GLOB' 0.03160000000002583
+Time for 'HASH_GLOB round trip' 3.06880000000001
+Time for 'deserialize daemon response - HASH_GLOB' 0.059300000000121145
+Time for 'daemon-message-serialization-GET_FILES_IN_DIRECTORY' 0.017400000000179716
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.183Z - Received raw message of length 58
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.183Z - Received json message of type GET_FILES_IN_DIRECTORY
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.184Z - Serializing response for GET_FILES_IN_DIRECTORY message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.184Z - Responding to GET_FILES_IN_DIRECTORY message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.184Z - [REQUEST]: Responding to the client. handleNxWorkspaceFiles
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.184Z - Done responding to the client handleNxWorkspaceFiles
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.184Z - Handled json message GET_FILES_IN_DIRECTORY. Handling time: 0. Response time: 0.
+Time for '@nx/playwright/plugin:createNodes' 1438.6112
+Time for 'GET_FILES_IN_DIRECTORY round trip' 1.8933999999999287
+Time for 'deserialize daemon response - GET_FILES_IN_DIRECTORY' 0.015399999999772263
+Time for '@nx/eslint/plugin:createNodes' 1535.2662000000003
+Unable to find local plugin [] Map(0) {}
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.328Z - Time taken for 'build-project-configs' 1564.6068ms
+Time for 'build typescript dependencies' 17.492999999999938
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.367Z - [SYNC]: collect registered sync generators
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.375Z - Wrote project graph cache to C:\Users\mariu\WebstormProjects\Sideboard\.nx\workspace-data\project-graph.json
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.375Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.375Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.375Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.376Z - Time taken for 'total for creating and serializing project graph' 2002.8443999999997ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.377Z - Done responding to the client project-graph
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.377Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 2003. Response time: 2.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.384Z - Received raw message of length 32
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.384Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.385Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.385Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.385Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.385Z - Done responding to the client handleContextFileData
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.385Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 1. Response time: 0.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.387Z - Closed a connection. Number of open connections: 4
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:56:35.392Z - [NX-CONSOLE]: Failed to use latest Nx, falling back to local implementation. Error: Command failed: npm install -D nx@latest --ignore-scripts
+^C
+DEBUG nx::native::ide::install: Detected editor: Unknown
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:07.321Z - [WATCHER]: .gitignore was modified
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:07.321Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:07.322Z - [WATCHER]: Processing file changes in outputs
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:07.322Z - [WATCHER]: Stopping the watcher for C:\Users\mariu\WebstormProjects\Sideboard (sources)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:07.322Z - Closed a connection. Number of open connections: 3
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:07.322Z - Closed a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:07.322Z - Closed a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:07.322Z - Closed a connection. Number of open connections: 0
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:07.322Z - [WATCHER]: Stopping the watcher for C:\Users\mariu\WebstormProjects\Sideboard (outputs)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:07.323Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.466Z - Started listening on: \\.\pipe\nx\C:\Users\mariu\AppData\Local\Temp\c1d6d27c041191fee141\d.sock
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.467Z - [WATCHER]: Subscribed to changes within: C:\Users\mariu\WebstormProjects\Sideboard (native)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.468Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.731Z - Established a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.732Z - Established a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.733Z - Closed a connection. Number of open connections: 1
+Time for 'plugin worker 41244 code loading' 5.2059999999999995
+Time for 'plugin worker 33772 code loading' 4.935000000000002
+Time for 'plugin worker 37896 code loading' 4.667100000000001
+Time for 'plugin worker 21328 code loading' 4.685700000000001
+Time for 'plugin worker 38684 code loading' 4.985699999999998
+Time for 'plugin worker 24908 code loading' 4.449700000000002
+Time for 'plugin worker 3392 code loading' 5.944400000000002
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.793Z - Received raw message of length 32
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.793Z - Received json message of type GET_NX_CONSOLE_STATUS
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.793Z - Serializing response for GET_NX_CONSOLE_STATUS message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.793Z - Responding to GET_NX_CONSOLE_STATUS message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.793Z - [REQUEST]: Responding to the client. handleGetNxConsoleStatus
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.793Z - Done responding to the client handleGetNxConsoleStatus
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.793Z - Handled json message GET_NX_CONSOLE_STATUS. Handling time: 0. Response time: 0.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.826Z - Established a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.827Z - Closed a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.830Z - Closed a connection. Number of open connections: 0
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.853Z - Established a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.853Z - Closed a connection. Number of open connections: 0
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.853Z - Established a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.855Z - Received raw message of length 32
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.855Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:09.855Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.041Z - Time taken for 'Load Nx Plugin: C:\Users\mariu\WebstormProjects\Sideboard\node_modules\nx\src\plugins\js' 353.0729ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.045Z - Time taken for 'Load Nx Plugin: C:\Users\mariu\WebstormProjects\Sideboard\node_modules\nx\src\plugins\project-json\build-nodes\project-json' 356.12600000000003ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.051Z - Time taken for 'loadDefaultNxPlugins' 363.3553ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.165Z - Started listening on: \\.\pipe\nx\C:\Users\mariu\AppData\Local\Temp\6a21649f5916b5d0208b\d.sock
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.167Z - Closed a connection. Number of open connections: 0
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.167Z - [WATCHER]: Stopping the watcher for C:\Users\mariu\WebstormProjects\Sideboard (sources)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.167Z - [WATCHER]: Stopping the watcher for C:\Users\mariu\WebstormProjects\Sideboard (outputs)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.167Z - Server stopped because: "this process is no longer the current daemon (native)"
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.167Z - [WATCHER]: Subscribed to changes within: C:\Users\mariu\WebstormProjects\Sideboard (native)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.168Z - [NX-CONSOLE]: Pulling latest Nx (latest) to check console status...
+Fetching nx...
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.545Z - [WATCHER]: .idea/nx-angular-config.xml was modified
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.545Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:10.546Z - [WATCHER]: Processing file changes in outputs
+Time for 'plugin worker 39924 code loading' 5.817
+Time for 'plugin worker 40980 code loading' 6.829900000000002
+Time for 'plugin worker 39616 code loading' 6.8809000000000005
+Time for 'plugin worker 37884 code loading' 6.562999999999995
+Time for 'plugin worker 41784 code loading' 6.355700000000002
+Time for 'plugin worker 38376 code loading' 7.536200000000001
+Time for 'plugin worker 37972 code loading' 7.534399999999998
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.059Z - Established a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.060Z - Closed a connection. Number of open connections: 0
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.061Z - Established a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.062Z - Received raw message of length 575
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.063Z - Received json message of type MULTI_GLOB
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.065Z - Serializing response for MULTI_GLOB message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.065Z - Responding to MULTI_GLOB message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.066Z - [REQUEST]: Responding to the client. handleMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.066Z - Done responding to the client handleMultiGlob
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.066Z - Handled json message MULTI_GLOB. Handling time: 2. Response time: 1.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.066Z - Time taken for 'Load Nx Plugin: C:\Users\mariu\WebstormProjects\Sideboard\node_modules\nx\src\plugins\package-json' 579.5006000000001ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.079Z - Time taken for 'loadDefaultNxPlugins' 594.3027ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.247Z - Time taken for 'Load Nx Plugin: @nx/jest/plugin' 757.2713000000001ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.330Z - Time taken for 'Load Nx Plugin: @nx/playwright/plugin' 841.6809ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.332Z - Time taken for 'Load Nx Plugin: @nx/eslint/plugin' 843.2022000000001ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.338Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.338Z - [REQUEST]: .idea/nx-angular-config.xml
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.338Z - [REQUEST]: 
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.340Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.340Z - [REQUEST]: .idea/nx-angular-config.xml
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.340Z - [REQUEST]: 
+Time for 'nx/core/project-json:createNodes' 0.858600000000024
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.352Z - Time taken for 'loadSpecifiedNxPlugins' 849.7299ms
+Time for 'nx/core/project-json:createNodes' 0.4773000000000138
+Time for 'nx/core/package-json:createNodes' 4.434799999999996
+Time for 'nx/core/package-json:createNodes' 1.073699999999917
+Time for '@nx/playwright/plugin:createNodes' 13.059300000000007
+Time for 'workspace context init' 1.9969999999999573
+Time for '@nx/playwright/plugin:createNodes' 2.088700000000017
+Time for '@nx/webpack/plugin:createNodes' 12.968799999999987
+Time for 'workspace context init' 1.8539999999999281
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 9.917800000000057
+Time for '@nx/webpack/plugin:createNodes' 3.3974000000000615
+Time for '@nx/jest/plugin:createNodes' 17.37769999999989
+Time for 'workspace context init' 2.0228000000000748
+Time for '@nx/jest/plugin:createNodes' 2.176499999999919
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 9.045000000000073
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.407Z - Established a connection. Number of open connections: 2
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.407Z - Closed a connection. Number of open connections: 1
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.408Z - Received raw message of length 32
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.408Z - Received json message of type REQUEST_PROJECT_GRAPH
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.408Z - [REQUEST]: Client Request for Project Graph Received
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.409Z - Recomputing project graph because of 1 updated and 0 deleted files.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.409Z - [REQUEST]: Updated workspace context based on watched changes, recomputing project graph...
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.409Z - [REQUEST]: .idea/nx-angular-config.xml
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.409Z - [REQUEST]: 
+Time for '@nx/playwright/plugin:createNodes' 2.671100000000024
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:11.414Z - Time taken for 'hash changed files from watcher' 0.1613999999999578ms
+Time for 'nx/core/project-json:createNodes' 0.5842000000000098
+Time for 'nx/core/package-json:createNodes' 1.4294999999999618
+Time for '@nx/webpack/plugin:createNodes' 3.019800000000032
+Time for '@nx/jest/plugin:createNodes' 2.7603000000000293
+Time for 'nx/js/dependencies-and-lockfile:createNodes' 7.824200000000019
+Time for 'workspace context init' 2.0307000000000244
+Time for '@nx/eslint/plugin:createNodes' 961.0902000000001
+Unable to find local plugin [] Map(0) {}
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.572Z - Time taken for 'build-project-configs' 1139.9780000000003ms
+Unable to find local plugin [] Map(0) {}
+Time for '@nx/eslint/plugin:createNodes' 981.2358000000002
+Time for '@nx/eslint/plugin:createNodes' 1004.8895
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.583Z - Time taken for 'build-project-configs' 1165.3346ms
+Unable to find local plugin [] Map(0) {}
+Time for 'build typescript dependencies' 6.790899999999965
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.591Z - Time taken for 'build-project-configs' 1174.0771000000002ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.601Z - [SYNC]: collect registered sync generators
+Time for 'build typescript dependencies' 3.166899999999714
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.603Z - Time taken for 'total execution time for createProjectGraph()' 12.77539999999999ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.610Z - [SYNC]: collect registered sync generators
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.611Z - [SYNC]: project graph hash is the same, not collecting task sync generators
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.611Z - [SYNC]: nx.json hash is the same, not collecting global sync generators
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.611Z - Time taken for 'total execution time for createProjectGraph()' 22.006199999999808ms
+Time for 'build typescript dependencies' 1.733600000000024
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.630Z - Wrote project graph cache to C:\Users\mariu\WebstormProjects\Sideboard\.nx\workspace-data\project-graph.json
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.630Z - Serializing response for REQUEST_PROJECT_GRAPH message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.630Z - Responding to REQUEST_PROJECT_GRAPH message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.630Z - [REQUEST]: Responding to the client. project-graph
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.631Z - Time taken for 'total for creating and serializing project graph' 1221.5516ms
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.631Z - Done responding to the client project-graph
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.631Z - Handled json message REQUEST_PROJECT_GRAPH. Handling time: 1222. Response time: 1.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.638Z - Received raw message of length 168
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.638Z - Received json message of type GET_NX_WORKSPACE_FILES
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.638Z - Serializing response for GET_NX_WORKSPACE_FILES message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.639Z - Responding to GET_NX_WORKSPACE_FILES message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.639Z - [REQUEST]: Responding to the client. handleNxWorkspaceFiles
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.639Z - Done responding to the client handleNxWorkspaceFiles
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.639Z - Handled json message GET_NX_WORKSPACE_FILES. Handling time: 0. Response time: 1.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.648Z - Received raw message of length 32
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.648Z - Received json message of type GET_CONTEXT_FILE_DATA
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.649Z - Serializing response for GET_CONTEXT_FILE_DATA message in json mode
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.649Z - Responding to GET_CONTEXT_FILE_DATA message
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.649Z - [REQUEST]: Responding to the client. handleContextFileData
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.649Z - Done responding to the client handleContextFileData
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.649Z - Handled json message GET_CONTEXT_FILE_DATA. Handling time: 0. Response time: 0.
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:12.649Z - Closed a connection. Number of open connections: 0
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:18.707Z - [NX-CONSOLE]: Successfully pulled latest Nx to C:\Users\mariu\AppData\Local\Temp\tmp-35432-zMiNsrH0x7Z3
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:22.638Z - [NX-CONSOLE]: Using local implementation (NX_USE_LOCAL=true or inner call)
+DEBUG nx::native::ide::install: Detected editor: Unknown
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:22.638Z - [NX-CONSOLE]: Console status check completed, shouldPrompt: false
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:28.759Z - [WATCHER]: Processing file changes in outputs
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:28.760Z - [WATCHER]: .gitignore was modified
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:28.760Z - [SYNC]: clearing sync generators cache due to file changes
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:28.760Z - [WATCHER]: Stopping the watcher for C:\Users\mariu\WebstormProjects\Sideboard (sources)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:28.761Z - [WATCHER]: Stopping the watcher for C:\Users\mariu\WebstormProjects\Sideboard (outputs)
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:28.761Z - [NX-CONSOLE]: Cleaning up latest Nx installation from C:\Users\mariu\AppData\Local\Temp\tmp-35432-zMiNsrH0x7Z3
+[NX v22.3.3 Daemon Server] - 2026-01-18T13:57:28.761Z - Server stopped because: "Stopping the daemon the set of ignored files changed (native)"

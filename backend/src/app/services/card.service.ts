@@ -4,7 +4,7 @@ import { Card } from '../database/entities/card.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 
 @Injectable()
-export class PhotoService {
+export class CardService {
   constructor(
     @InjectRepository(Card)
     private photoRepository: Repository<Card>,

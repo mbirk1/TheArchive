@@ -1,6 +1,6 @@
 import { Module } from '@nestjs/common';
-import { PhotoService } from '../services/photo.service';
-import { PhotoController } from '../controller/photo.controller';
+import { CardService } from '../services/card.service';
+import { CardController } from '../controller/card.controller';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Card } from '../database/entities/card.entity';
 
@@ -9,8 +9,8 @@ import { Card } from '../database/entities/card.entity';
     TypeOrmModule.forFeature([Card])
   ],
   providers: [
-    PhotoService,
+    CardService,
   ],
-  controllers: [PhotoController],
+  controllers: [CardController],
 })
-export class PhotoModule {}
+export class CardModule {}

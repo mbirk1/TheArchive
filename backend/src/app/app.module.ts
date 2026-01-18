@@ -1,7 +1,7 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { PhotoModule } from './modules/photo.module';
+import { CardModule } from './modules/card.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { Card } from './database/entities/card.entity';
 import { ConfigModule, ConfigService } from '@nestjs/config';
@@ -28,7 +28,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
     }),
     ConfigModule.forRoot({}),
     ConfigModule,
-    PhotoModule,
+    CardModule,
   ],
   controllers: [AppController],
   providers: [
