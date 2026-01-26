@@ -35,6 +35,263 @@
   ],
   "fileMap": {
     "projectFileMap": {
+      "frontend": [
+        {
+          "file": "frontend/eslint.config.mjs",
+          "hash": "15052851186193004871",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "frontend/project.json",
+          "hash": "1235888714199826574"
+        },
+        {
+          "file": "frontend/public/favicon.ico",
+          "hash": "9303420814833116677"
+        },
+        {
+          "file": "frontend/src/app/app.config.ts",
+          "hash": "4436923392211261843",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "frontend/src/app/app.css",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/src/app/app.html",
+          "hash": "1093733321637801458"
+        },
+        {
+          "file": "frontend/src/app/app.routes.ts",
+          "hash": "6185150965714414910",
+          "deps": [
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "frontend/src/app/app.ts",
+          "hash": "16721965452287994084",
+          "deps": [
+            "npm:@angular/core",
+            "npm:@angular/router"
+          ]
+        },
+        {
+          "file": "frontend/src/app/components/header/header.component.html",
+          "hash": "15011642372798182961"
+        },
+        {
+          "file": "frontend/src/app/components/header/header.component.ts",
+          "hash": "3466415955764844721",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/src/index.html",
+          "hash": "11391083900669202"
+        },
+        {
+          "file": "frontend/src/main.ts",
+          "hash": "3314327030169821486",
+          "deps": [
+            "npm:@angular/platform-browser"
+          ]
+        },
+        {
+          "file": "frontend/src/styles.css",
+          "hash": "371196845675972280"
+        },
+        {
+          "file": "frontend/tailwind.config.js",
+          "hash": "11381046301969043713"
+        },
+        {
+          "file": "frontend/tsconfig.app.json",
+          "hash": "16703496410476911733"
+        },
+        {
+          "file": "frontend/tsconfig.json",
+          "hash": "11230960146127938886"
+        }
+      ],
+      "backend": [
+        {
+          "file": "backend/.env",
+          "hash": "5319115039408174772"
+        },
+        {
+          "file": "backend/eslint.config.mjs",
+          "hash": "9036454466467975933"
+        },
+        {
+          "file": "backend/jest.config.cts",
+          "hash": "7101609706908807572"
+        },
+        {
+          "file": "backend/project.json",
+          "hash": "16320599762021675623"
+        },
+        {
+          "file": "backend/src/app/app.controller.ts",
+          "hash": "15276891910009544695",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "backend/src/app/app.module.ts",
+          "hash": "12518805505356893299",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:@nestjs/config"
+          ]
+        },
+        {
+          "file": "backend/src/app/app.service.ts",
+          "hash": "9967902337593410053",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "backend/src/app/controller/card.controller.ts",
+          "hash": "16792209813767618472",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "backend/src/app/database/entities/card.entity.ts",
+          "hash": "15087453430957408490",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/src/app/modules/card.module.ts",
+          "hash": "3077707050936854709",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "backend/src/app/services/card.service.ts",
+          "hash": "13105844036729327554",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:typeorm",
+            "npm:@nestjs/typeorm"
+          ]
+        },
+        {
+          "file": "backend/src/assets/.gitkeep",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "backend/src/main.ts",
+          "hash": "8656868092527329626",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
+          ]
+        },
+        {
+          "file": "backend/tsconfig.app.json",
+          "hash": "16188622717299352851"
+        },
+        {
+          "file": "backend/tsconfig.json",
+          "hash": "9420862676426701392"
+        },
+        {
+          "file": "backend/tsconfig.spec.json",
+          "hash": "16514264766063949355"
+        },
+        {
+          "file": "backend/webpack.config.js",
+          "hash": "9720109979981046007",
+          "deps": [
+            "npm:@nx/webpack"
+          ]
+        }
+      ],
+      "sideboard": [
+        {
+          "file": ".gitignore",
+          "hash": "8820646439731319829"
+        },
+        {
+          "file": ".postcssrc.json",
+          "hash": "12098411909725170385"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "5407418692668764289"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "10066300031063478629"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "15087956415758002850"
+        },
+        {
+          "file": "docker-compose.yml",
+          "hash": "8164536306749250294"
+        },
+        {
+          "file": "eslint.config.mjs",
+          "hash": "12926286793420397906",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "jest.config.ts",
+          "hash": "6870352021923392442",
+          "deps": [
+            "npm:jest",
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "jest.preset.js",
+          "hash": "9430166341120122740",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "nx.json",
+          "hash": "9691923261939552420"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "14966343016792550644"
+        },
+        {
+          "file": "package.json",
+          "hash": "17975728281794021320"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "16936441711144470533"
+        }
+      ],
       "backend-e2e": [
         {
           "file": "backend-e2e/eslint.config.mjs",
@@ -85,85 +342,6 @@
           "hash": "14226830188665428950"
         }
       ],
-      "frontend": [
-        {
-          "file": "frontend/eslint.config.mjs",
-          "hash": "15052851186193004871",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "frontend/project.json",
-          "hash": "1235888714199826574"
-        },
-        {
-          "file": "frontend/public/favicon.ico",
-          "hash": "9303420814833116677"
-        },
-        {
-          "file": "frontend/src/app/app.config.ts",
-          "hash": "4436923392211261843",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "frontend/src/app/app.css",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "frontend/src/app/app.html",
-          "hash": "11987652264972370457"
-        },
-        {
-          "file": "frontend/src/app/app.routes.ts",
-          "hash": "6185150965714414910",
-          "deps": [
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "frontend/src/app/app.ts",
-          "hash": "10946911289474791614",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/router"
-          ]
-        },
-        {
-          "file": "frontend/src/app/nx-welcome.ts",
-          "hash": "4332402257643359747",
-          "deps": [
-            "npm:@angular/core",
-            "npm:@angular/common"
-          ]
-        },
-        {
-          "file": "frontend/src/index.html",
-          "hash": "11391083900669202"
-        },
-        {
-          "file": "frontend/src/main.ts",
-          "hash": "3314327030169821486",
-          "deps": [
-            "npm:@angular/platform-browser"
-          ]
-        },
-        {
-          "file": "frontend/src/styles.css",
-          "hash": "5195668842064076916"
-        },
-        {
-          "file": "frontend/tsconfig.app.json",
-          "hash": "16703496410476911733"
-        },
-        {
-          "file": "frontend/tsconfig.json",
-          "hash": "11230960146127938886"
-        }
-      ],
       "frontend-e2e": [
         {
           "file": "frontend-e2e/eslint.config.mjs",
@@ -196,232 +374,9 @@
           "file": "frontend-e2e/tsconfig.json",
           "hash": "2249461092017240593"
         }
-      ],
-      "backend": [
-        {
-          "file": "backend/.env",
-          "hash": "5319115039408174772"
-        },
-        {
-          "file": "backend/eslint.config.mjs",
-          "hash": "9036454466467975933"
-        },
-        {
-          "file": "backend/jest.config.cts",
-          "hash": "7101609706908807572"
-        },
-        {
-          "file": "backend/project.json",
-          "hash": "16320599762021675623"
-        },
-        {
-          "file": "backend/src/app/app.controller.ts",
-          "hash": "15276891910009544695",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/src/app/app.module.ts",
-          "hash": "17019537904737193971",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:@nestjs/config"
-          ]
-        },
-        {
-          "file": "backend/src/app/app.service.ts",
-          "hash": "9967902337593410053",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/src/app/controller/photo.controller.ts",
-          "hash": "8362388861154974022"
-        },
-        {
-          "file": "backend/src/app/database/entities/card.entity.ts",
-          "hash": "15087453430957408490",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/src/app/modules/photo.module.ts",
-          "hash": "13944036846530412153"
-        },
-        {
-          "file": "backend/src/app/services/photo.service.ts",
-          "hash": "18307491350419082994"
-        },
-        {
-          "file": "backend/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "backend/src/main.ts",
-          "hash": "8656868092527329626",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "backend/tsconfig.app.json",
-          "hash": "16188622717299352851"
-        },
-        {
-          "file": "backend/tsconfig.json",
-          "hash": "9420862676426701392"
-        },
-        {
-          "file": "backend/tsconfig.spec.json",
-          "hash": "16514264766063949355"
-        },
-        {
-          "file": "backend/webpack.config.js",
-          "hash": "9720109979981046007",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
-        }
-      ],
-      "sideboard": [
-        {
-          "file": ".gitignore",
-          "hash": "1221192231466275570"
-        },
-        {
-          "file": ".idea/codeStyles/Project.xml",
-          "hash": "12242436837059447835"
-        },
-        {
-          "file": ".idea/codeStyles/codeStyleConfig.xml",
-          "hash": "10911911431176787330"
-        },
-        {
-          "file": ".idea/dataSources.local.xml",
-          "hash": "17698403688503858028"
-        },
-        {
-          "file": ".idea/dataSources.xml",
-          "hash": "2789478862434575464"
-        },
-        {
-          "file": ".idea/dataSources/fc894f9a-d6b4-48c4-a8e0-6261b69bc26b.xml",
-          "hash": "6208526592662332979"
-        },
-        {
-          "file": ".idea/dataSources/fc894f9a-d6b4-48c4-a8e0-6261b69bc26b/storage_v2/_src_/database/postgres.edMnLQ.meta",
-          "hash": "4745293974413135402"
-        },
-        {
-          "file": ".idea/dataSources/fc894f9a-d6b4-48c4-a8e0-6261b69bc26b/storage_v2/_src_/database/postgres.edMnLQ/schema/information_schema.FNRwLQ.meta",
-          "hash": "5786921977108594933"
-        },
-        {
-          "file": ".idea/dataSources/fc894f9a-d6b4-48c4-a8e0-6261b69bc26b/storage_v2/_src_/database/postgres.edMnLQ/schema/pg_catalog.0S1ZNQ.meta",
-          "hash": "15403245258486110604"
-        },
-        {
-          "file": ".idea/dataSources/fc894f9a-d6b4-48c4-a8e0-6261b69bc26b/storage_v2/_src_/database/postgres.edMnLQ/schema/public.abK9xQ.meta",
-          "hash": "13357695023429396215"
-        },
-        {
-          "file": ".idea/dataSources/fc894f9a-d6b4-48c4-a8e0-6261b69bc26b/storage_v2/_src_/database/postgres.edMnLQ/schema/sideboard-db.HCtM0g.meta",
-          "hash": "12941623723353466075"
-        },
-        {
-          "file": ".idea/dataSources/fc894f9a-d6b4-48c4-a8e0-6261b69bc26b/storage_v2/_src_/database/postgres.edMnLQ/schema/sideboard.78_6kQ.meta",
-          "hash": "13145703297941007999"
-        },
-        {
-          "file": ".idea/inspectionProfiles/Project_Default.xml",
-          "hash": "8912173605315939135"
-        },
-        {
-          "file": ".idea/nx-angular-config.xml",
-          "hash": "15510846556043436403"
-        },
-        {
-          "file": ".idea/nx-console.xml",
-          "hash": "12346080569444114914"
-        },
-        {
-          "file": ".idea/prettier.xml",
-          "hash": "4097425206230035273"
-        },
-        {
-          "file": ".idea/vcs.xml",
-          "hash": "10702585895602644957"
-        },
-        {
-          "file": ".idea/workspace.xml",
-          "hash": "2363408520653245081"
-        },
-        {
-          "file": ".prettierignore",
-          "hash": "5407418692668764289"
-        },
-        {
-          "file": ".prettierrc",
-          "hash": "16267754514737964994"
-        },
-        {
-          "file": ".vscode/extensions.json",
-          "hash": "10066300031063478629"
-        },
-        {
-          "file": ".vscode/launch.json",
-          "hash": "15087956415758002850"
-        },
-        {
-          "file": "docker-compose.yml",
-          "hash": "8164536306749250294"
-        },
-        {
-          "file": "eslint.config.mjs",
-          "hash": "12926286793420397906",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "jest.config.ts",
-          "hash": "6870352021923392442",
-          "deps": [
-            "npm:jest",
-            "npm:@nx/jest"
-          ]
-        },
-        {
-          "file": "jest.preset.js",
-          "hash": "9430166341120122740",
-          "deps": [
-            "npm:@nx/jest"
-          ]
-        },
-        {
-          "file": "nx.json",
-          "hash": "9691923261939552420"
-        },
-        {
-          "file": "package-lock.json",
-          "hash": "7815365773277647451"
-        },
-        {
-          "file": "package.json",
-          "hash": "7807141123495436306"
-        },
-        {
-          "file": "tsconfig.base.json",
-          "hash": "16936441711144470533"
-        }
       ]
     },
     "nonProjectFiles": []
   },
-  "externalNodesHash": "12075935784554658686"
+  "externalNodesHash": "2271224661599624828"
 }

@@ -5,14 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="First Entity and setup">
+      <change afterPath="$PROJECT_DIR$/.postcssrc.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/tailwind.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/d/daemon.log" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/d/daemon.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/nx-welcome.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,17 +67,21 @@
     "Nx.backend:build.executor": "Run",
     "Nx.backend:serve.executor": "Run",
     "Nx.backend:serve:development.executor": "Run",
+    "Nx.frontend:build.executor": "Run",
     "Nx.frontend:serve.executor": "Run",
     "Nx.shop:serve.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/mariu/WebstormProjects/Sideboard/backend2",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.start.executor": "Run",
     "prettierjs.PrettierConfiguration.Package": "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\prettier",
     "settings.editor.selected.configurable": "nx-console",
     "ts.external.directory.path": "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\typescript\\lib",
@@ -97,12 +115,16 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\backend2" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\backend2" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\backend\src\app\database" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard" />
     </key>
   </component>
-  <component name="RunManager" selected="Docker.docker-compose.yml.sideboard-db: Compose Deployment">
+  <component name="RunManager" selected="Nx.frontend:serve">
     <configuration name="backend:build" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="build" />
@@ -123,6 +145,14 @@
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="serve" />
       <option name="nx-target-configuration" value="development" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="frontend:build" type="NxRunConfigurationType">
+      <option name="nx-projects" value="frontend" />
+      <option name="nx-targets" value="build" />
+      <option name="nx-target-configuration" value="" />
       <envs />
       <option name="arguments" value="" />
       <method v="2" />
@@ -149,14 +179,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="docker-compose.yml.sideboard-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
       <deployment type="docker-compose.yml">
         <settings>
@@ -170,12 +192,33 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/backend2/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/backend2/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
+        <item itemvalue="npm.start" />
         <item itemvalue="Docker.docker-compose.yml.sideboard-db: Compose Deployment" />
         <item itemvalue="Nx.backend:build" />
         <item itemvalue="Nx.backend:serve:development" />
-        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -198,6 +241,8 @@
       <workItem from="1767387078048" duration="6785000" />
       <workItem from="1767999988580" duration="342000" />
       <workItem from="1768048711429" duration="10318000" />
+      <workItem from="1769275668304" duration="2722000" />
+      <workItem from="1769445574582" duration="2225000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
