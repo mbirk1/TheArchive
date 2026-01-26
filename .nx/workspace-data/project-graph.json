@@ -1699,6 +1699,33 @@
         "hash": "sha512-rWINgxGREu+NFUPCpAVsBGG8B4hfXxyswM0N5GbjykvsfB5W6PUix2Gsoh++iEsZPT+c9lvgXL5GbpwfanjOow=="
       }
     },
+    "npm:@angular/cdk": {
+      "type": "npm",
+      "name": "npm:@angular/cdk",
+      "data": {
+        "version": "21.1.1",
+        "packageName": "@angular/cdk",
+        "hash": "sha512-lzscv+A6FCQdyWIr0t0QHXEgkLzS9wJwgeOOOhtxbixxxuk7xVXdcK/jnswE1Maugh1m696jUkOhZpffks3psA=="
+      }
+    },
+    "npm:parse5@8.0.0": {
+      "type": "npm",
+      "name": "npm:parse5@8.0.0",
+      "data": {
+        "version": "8.0.0",
+        "packageName": "parse5",
+        "hash": "sha512-9m4m5GSgXjL4AjumKzq1Fgfp3Z8rsvjRNbnkVwfu2ImRqE5D0LnY2QfDen18FSY9C573YU5XxSapdHZTZ2WolA=="
+      }
+    },
+    "npm:parse5": {
+      "type": "npm",
+      "name": "npm:parse5",
+      "data": {
+        "version": "4.0.0",
+        "packageName": "parse5",
+        "hash": "sha512-VrZ7eOd3T1Fk4XWNXMgiGBK/z0MG48BWG2uQNU4I72fkQuKUTZpl+u9k+CxEG0twMVzSmXEEz12z5Fnw1jIQFA=="
+      }
+    },
     "npm:@angular/cli": {
       "type": "npm",
       "name": "npm:@angular/cli",
@@ -1778,6 +1805,15 @@
         "version": "21.0.9",
         "packageName": "@angular/language-service",
         "hash": "sha512-wwAA0Dv5UmS0rAG/h0EMgSYDsyRP4ZKLIyLt73ZjTDOqxI9fnPqwqtgp6M9kZ8xIkwut6UP5hmuuhzwRXT4FhA=="
+      }
+    },
+    "npm:@angular/material": {
+      "type": "npm",
+      "name": "npm:@angular/material",
+      "data": {
+        "version": "21.1.1",
+        "packageName": "@angular/material",
+        "hash": "sha512-flRS8Mqf41n5lhrG/D0iPl2zyhhEZBaASFjCMSk5idUWMfwdYlKtCaJ3iRFClIixBUwGPrp8ivjBGKsRGfM/Zw=="
       }
     },
     "npm:@angular/platform-browser": {
@@ -13633,24 +13669,6 @@
         "hash": "sha512-1Y1A//QUXEZK7YKz+rD9WydcE1+EuPr6ZBgKecAB8tmoW6UFv0NREVJe1p+jRxtThkcbbKkfwIbWJe/IeE6m2Q=="
       }
     },
-    "npm:parse5": {
-      "type": "npm",
-      "name": "npm:parse5",
-      "data": {
-        "version": "4.0.0",
-        "packageName": "parse5",
-        "hash": "sha512-VrZ7eOd3T1Fk4XWNXMgiGBK/z0MG48BWG2uQNU4I72fkQuKUTZpl+u9k+CxEG0twMVzSmXEEz12z5Fnw1jIQFA=="
-      }
-    },
-    "npm:parse5@8.0.0": {
-      "type": "npm",
-      "name": "npm:parse5@8.0.0",
-      "data": {
-        "version": "8.0.0",
-        "packageName": "parse5",
-        "hash": "sha512-9m4m5GSgXjL4AjumKzq1Fgfp3Z8rsvjRNbnkVwfu2ImRqE5D0LnY2QfDen18FSY9C573YU5XxSapdHZTZ2WolA=="
-      }
-    },
     "npm:parse5-html-rewriting-stream": {
       "type": "npm",
       "name": "npm:parse5-html-rewriting-stream",
@@ -16307,6 +16325,11 @@
       },
       {
         "source": "frontend",
+        "target": "npm:@angular/material",
+        "type": "static"
+      },
+      {
+        "source": "frontend",
         "target": "npm:@angular/platform-browser",
         "type": "static"
       }
@@ -17820,6 +17843,45 @@
         "type": "static"
       }
     ],
+    "npm:@angular/cdk": [
+      {
+        "source": "npm:@angular/cdk",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/cdk",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/cdk",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/cdk",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/cdk",
+        "target": "npm:parse5@8.0.0",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/cdk",
+        "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
+    "npm:parse5@8.0.0": [
+      {
+        "source": "npm:parse5@8.0.0",
+        "target": "npm:entities",
+        "type": "static"
+      }
+    ],
     "npm:@angular/cli": [
       {
         "source": "npm:@angular/cli",
@@ -18038,6 +18100,43 @@
       },
       {
         "source": "npm:@angular/forms",
+        "target": "npm:tslib",
+        "type": "static"
+      }
+    ],
+    "npm:@angular/material": [
+      {
+        "source": "npm:@angular/material",
+        "target": "npm:@angular/cdk",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material",
+        "target": "npm:@angular/common",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material",
+        "target": "npm:@angular/core",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material",
+        "target": "npm:@angular/forms",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material",
+        "target": "npm:@angular/platform-browser",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material",
+        "target": "npm:rxjs",
+        "type": "static"
+      },
+      {
+        "source": "npm:@angular/material",
         "target": "npm:tslib",
         "type": "static"
       }
@@ -34853,13 +34952,6 @@
         "type": "static"
       }
     ],
-    "npm:parse5@8.0.0": [
-      {
-        "source": "npm:parse5@8.0.0",
-        "target": "npm:entities",
-        "type": "static"
-      }
-    ],
     "npm:parse5-sax-parser": [
       {
         "source": "npm:parse5-sax-parser",
@@ -38557,5 +38649,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1769447702801
+  "computedAt": 1769451054094
 }

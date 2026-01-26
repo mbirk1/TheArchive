@@ -1,2 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import "tailwindcss";
+
+@theme {
+    --color-primary: #2563EB;
+    --color-primary-hover: #1D4ED8;
+    --color-primary-soft: #DBEAFE;
+    --color-secondary: #F59E0B;
+    --color-secondary-hover: #D97706;
+    --color-secondary-soft: #FEF3C7;
+    --color-tertiary: #16A34A;
+    --color-tertiary-hover: #15803D;
+    --color-tertiary-soft: #DCFCE7;
+    --color-background: #0F172A;
+    --color-surface: #020617;
+    --color-surface-raised: #1E293B;
+    --color-border: #334155;
+    --color-text-primary: #E5E7EB;
+    --color-text-muted: #94A3B8;
+}

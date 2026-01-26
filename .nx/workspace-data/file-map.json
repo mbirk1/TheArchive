@@ -84,18 +84,27 @@
         },
         {
           "file": "frontend/src/app/components/header/header.component.html",
-          "hash": "15011642372798182961"
+          "hash": "14840233780306025030"
         },
         {
           "file": "frontend/src/app/components/header/header.component.ts",
-          "hash": "3466415955764844721",
+          "hash": "15629645061093514615",
           "deps": [
-            "npm:@angular/core"
+            "npm:@angular/core",
+            "npm:@angular/material"
           ]
         },
         {
+          "file": "frontend/src/assets/images/logo-blue-background.png",
+          "hash": "3255133497151389408"
+        },
+        {
+          "file": "frontend/src/assets/images/logo_white-background.png",
+          "hash": "4476197021001618438"
+        },
+        {
           "file": "frontend/src/index.html",
-          "hash": "11391083900669202"
+          "hash": "14680814688036151974"
         },
         {
           "file": "frontend/src/main.ts",
@@ -106,11 +115,11 @@
         },
         {
           "file": "frontend/src/styles.css",
-          "hash": "371196845675972280"
+          "hash": "5153951428303036597"
         },
         {
           "file": "frontend/tailwind.config.js",
-          "hash": "11381046301969043713"
+          "hash": "16579197350259683170"
         },
         {
           "file": "frontend/tsconfig.app.json",
@@ -119,6 +128,74 @@
         {
           "file": "frontend/tsconfig.json",
           "hash": "11230960146127938886"
+        }
+      ],
+      "sideboard": [
+        {
+          "file": ".gitignore",
+          "hash": "8820646439731319829"
+        },
+        {
+          "file": ".postcssrc.json",
+          "hash": "12098411909725170385"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "5407418692668764289"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "10066300031063478629"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "15087956415758002850"
+        },
+        {
+          "file": "docker-compose.yml",
+          "hash": "8164536306749250294"
+        },
+        {
+          "file": "eslint.config.mjs",
+          "hash": "12926286793420397906",
+          "deps": [
+            "npm:@nx/eslint-plugin"
+          ]
+        },
+        {
+          "file": "jest.config.ts",
+          "hash": "6870352021923392442",
+          "deps": [
+            "npm:jest",
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "jest.preset.js",
+          "hash": "9430166341120122740",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "nx.json",
+          "hash": "9691923261939552420"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "15050016768146402042"
+        },
+        {
+          "file": "package.json",
+          "hash": "17975728281794021320"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "16936441711144470533"
         }
       ],
       "backend": [
@@ -224,74 +301,6 @@
           ]
         }
       ],
-      "sideboard": [
-        {
-          "file": ".gitignore",
-          "hash": "8820646439731319829"
-        },
-        {
-          "file": ".postcssrc.json",
-          "hash": "12098411909725170385"
-        },
-        {
-          "file": ".prettierignore",
-          "hash": "5407418692668764289"
-        },
-        {
-          "file": ".prettierrc",
-          "hash": "16267754514737964994"
-        },
-        {
-          "file": ".vscode/extensions.json",
-          "hash": "10066300031063478629"
-        },
-        {
-          "file": ".vscode/launch.json",
-          "hash": "15087956415758002850"
-        },
-        {
-          "file": "docker-compose.yml",
-          "hash": "8164536306749250294"
-        },
-        {
-          "file": "eslint.config.mjs",
-          "hash": "12926286793420397906",
-          "deps": [
-            "npm:@nx/eslint-plugin"
-          ]
-        },
-        {
-          "file": "jest.config.ts",
-          "hash": "6870352021923392442",
-          "deps": [
-            "npm:jest",
-            "npm:@nx/jest"
-          ]
-        },
-        {
-          "file": "jest.preset.js",
-          "hash": "9430166341120122740",
-          "deps": [
-            "npm:@nx/jest"
-          ]
-        },
-        {
-          "file": "nx.json",
-          "hash": "9691923261939552420"
-        },
-        {
-          "file": "package-lock.json",
-          "hash": "14966343016792550644"
-        },
-        {
-          "file": "package.json",
-          "hash": "17975728281794021320"
-        },
-        {
-          "file": "tsconfig.base.json",
-          "hash": "16936441711144470533"
-        }
-      ],
       "backend-e2e": [
         {
           "file": "backend-e2e/eslint.config.mjs",
@@ -378,5 +387,5 @@
     },
     "nonProjectFiles": []
   },
-  "externalNodesHash": "2271224661599624828"
+  "externalNodesHash": "14265112493168733962"
 }
