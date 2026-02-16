@@ -19,20 +19,16 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         password: configService.get('DB_PASSWORD'),
         database: 'postgres',
         schema: configService.get('DB_SCHEMA'),
-        entities: [
-          Card,
-        ],
+        entities: [Card],
         synchronize: true,
         autoLoadEntities: true,
-      })
+      }),
     }),
     ConfigModule.forRoot({}),
     ConfigModule,
     CardModule,
   ],
   controllers: [AppController],
-  providers: [
-    AppService,
-  ],
+  providers: [AppService],
 })
 export class AppModule {}

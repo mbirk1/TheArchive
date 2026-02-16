@@ -9,6 +9,6 @@ export class CardsGateway {
   private configService: ConfigService = inject(ConfigService);
 
   getAllCards() {
-    return this.http.get(this.configService.apiUrl + '/cards')
+    return this.http.get(this.configService.apiUrl + '/cards');
   }
 }

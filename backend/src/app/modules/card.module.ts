@@ -5,12 +5,8 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { Card } from '../database/entities/card.entity';
 
 @Module({
-  imports: [
-    TypeOrmModule.forFeature([Card])
-  ],
-  providers: [
-    CardService,
-  ],
+  imports: [TypeOrmModule.forFeature([Card])],
+  providers: [CardService],
   controllers: [CardController],
 })
 export class CardModule {}
