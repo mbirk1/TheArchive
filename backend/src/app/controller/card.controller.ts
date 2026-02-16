@@ -9,5 +9,6 @@ export class CardController {
 
   @Get()
   public async getCards(): Promise<Card[]> {
-    return this.cardService.findAll();  }
+    return this.cardService.findAll();
+  }
 }
