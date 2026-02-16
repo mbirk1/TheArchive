@@ -35,6 +35,39 @@
   ],
   "fileMap": {
     "projectFileMap": {
+      "frontend-e2e": [
+        {
+          "file": "frontend-e2e/eslint.config.mjs",
+          "hash": "9406519109376614868",
+          "deps": [
+            "npm:eslint-plugin-playwright"
+          ]
+        },
+        {
+          "file": "frontend-e2e/playwright.config.ts",
+          "hash": "4535250053304126287",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "frontend-e2e/project.json",
+          "hash": "16623643415870234688"
+        },
+        {
+          "file": "frontend-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "frontend-e2e/tsconfig.json",
+          "hash": "2249461092017240593"
+        }
+      ],
       "frontend": [
         {
           "file": "frontend/eslint.config.mjs",
@@ -349,39 +382,6 @@
         {
           "file": "backend-e2e/tsconfig.spec.json",
           "hash": "14226830188665428950"
-        }
-      ],
-      "frontend-e2e": [
-        {
-          "file": "frontend-e2e/eslint.config.mjs",
-          "hash": "9406519109376614868",
-          "deps": [
-            "npm:eslint-plugin-playwright"
-          ]
-        },
-        {
-          "file": "frontend-e2e/playwright.config.ts",
-          "hash": "4535250053304126287",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "frontend-e2e/project.json",
-          "hash": "16623643415870234688"
-        },
-        {
-          "file": "frontend-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        },
-        {
-          "file": "frontend-e2e/tsconfig.json",
-          "hash": "2249461092017240593"
         }
       ]
     },
