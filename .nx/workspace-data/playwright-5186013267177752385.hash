@@ -337,7 +337,7 @@
       }
     }
   },
-  "7205752658880192237": {
+  "6134532262611580690": {
     "targets": {
       "e2e": {
         "command": "playwright test",
@@ -378,8 +378,7 @@
         ],
         "outputs": [
           "{workspaceRoot}/dist/.playwright/frontend-e2e/test-output",
-          "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report",
-          "{workspaceRoot}/dist/.playwright/frontend-e2e/blob-report"
+          "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report"
         ]
       },
       "e2e-ci--src/example.spec.ts": {
@@ -388,8 +387,7 @@
           "cwd": "{projectRoot}",
           "env": {
             "PLAYWRIGHT_HTML_OUTPUT_DIR": "..\\dist\\.playwright\\frontend-e2e\\playwright-report\\src-example-spec-ts",
-            "PLAYWRIGHT_HTML_REPORT": "..\\dist\\.playwright\\frontend-e2e\\playwright-report\\src-example-spec-ts",
-            "PLAYWRIGHT_BLOB_OUTPUT_FILE": "..\\dist\\.playwright\\frontend-e2e\\blob-report\\src-example-spec-ts.zip"
+            "PLAYWRIGHT_HTML_REPORT": "..\\dist\\.playwright\\frontend-e2e\\playwright-report\\src-example-spec-ts"
           }
         },
         "metadata": {
@@ -426,8 +424,7 @@
         ],
         "outputs": [
           "{workspaceRoot}/dist/.playwright/frontend-e2e/test-output/src-example-spec-ts",
-          "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report/src-example-spec-ts",
-          "{workspaceRoot}/dist/.playwright/frontend-e2e/blob-report/src-example-spec-ts.zip"
+          "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report/src-example-spec-ts"
         ]
       },
       "e2e-ci": {
@@ -444,8 +441,7 @@
         ],
         "outputs": [
           "{workspaceRoot}/dist/.playwright/frontend-e2e/test-output",
-          "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report",
-          "{workspaceRoot}/dist/.playwright/frontend-e2e/blob-report"
+          "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report"
         ],
         "dependsOn": [
           {
@@ -508,7 +504,7 @@
       }
     }
   },
-  "6134532262611580690": {
+  "7368207288693397696": {
     "targets": {
       "e2e": {
         "command": "playwright test",

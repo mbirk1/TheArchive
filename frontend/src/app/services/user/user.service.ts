@@ -4,4 +4,8 @@ import { UserStore } from '../../api/user/user.store';
 @Injectable({ providedIn: 'root' })
 export class UserService {
   private userStore = inject(UserStore);
+
+  public isUserLoggedIn(): boolean {
+    return this.userStore.isLoggedIn();
+  }
 }

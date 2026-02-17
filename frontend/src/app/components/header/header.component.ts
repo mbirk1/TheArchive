@@ -1,4 +1,6 @@
-import { Component, signal, Signal } from '@angular/core';
+import { Component, computed, inject, signal, Signal } from '@angular/core';
+import { UserService } from '../../services/user/user.service';
+import { Router } from '@angular/router';
 
 @Component({
   imports: [],
@@ -7,9 +9,22 @@ import { Component, signal, Signal } from '@angular/core';
   standalone: true,
 })
 export class HeaderComponent {
-  protected isBurgerMenuActive: Signal<boolean> = signal<boolean>(false);
+  protected userService: UserService = inject(UserService);
+  protected isUserLoggedIn: Signal<boolean> = computed(() =>
+    this.userService.isUserLoggedIn(),
+  );
 
-  toggleBurgerMenu(): void {
-    this.isBurgerMenuActive = signal<boolean>(!this.isBurgerMenuActive());
+  constructor(private router: Router) {}
+
+  protected navigateToDecks(): void {
+    this.router.navigate(['/user/decks']);
+  }
+
+  protected navigateToCollection(): void {
+    this.router.navigate(['/user/collection']);
+  }
+
+  protected navigateToProfile(): void {
+    this.router.navigate(['/user/profile']);
   }
 }

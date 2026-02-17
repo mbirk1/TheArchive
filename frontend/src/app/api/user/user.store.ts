@@ -12,4 +12,9 @@ export class UserStore {
   private userResource: ResourceRef<IUser | undefined> = resource({
     loader: (): Promise<IUser> => firstValueFrom(this.userGateway.getMyUser()),
   });
+
+  public isLoggedIn(): boolean {
+    //TODO LoginLogic must be implemented. OAuth2, Discord or smth like that
+    return true;
+  }
 }
