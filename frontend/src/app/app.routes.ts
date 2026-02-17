@@ -1,13 +1,13 @@
 import { Route } from '@angular/router';
-import { AllCardsComponent } from './pages/all-cards/all-cards.component';
 import { PersonalDecksComponent } from './pages/personal/decks/personal-decks.component';
 import { PersonalCollectionComponent } from './pages/personal/collection/personal-collection.component';
 import { PersonalProfileComponent } from './pages/personal/profile/personal-profile.component';
+import { CardDetailComponent } from './pages/card-detail/card-detail.component';
 
 export const appRoutes: Route[] = [
   {
     path: '',
-    component: AllCardsComponent,
+    component: CardDetailComponent,
   },
   {
     path: 'user',

@@ -1,9 +1,9 @@
 import { Component, computed, inject, signal, Signal } from '@angular/core';
 import { UserService } from '../../services/user/user.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [RouterLink],
   selector: 'app-header',
   templateUrl: './header.component.html',
   standalone: true,

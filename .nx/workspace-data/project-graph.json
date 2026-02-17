@@ -193,7 +193,7 @@
             "inputs": [
               "default",
               "^default",
-              "{workspaceRoot}/eslint.config.mjs",
+              "{workspaceRoot}/eslint.base.config.mjs",
               "{workspaceRoot}/frontend-e2e/eslint.config.mjs",
               "{workspaceRoot}/tools/eslint-rules/**/*",
               {
@@ -249,7 +249,7 @@
             "inputs": [
               "default",
               "^default",
-              "{workspaceRoot}/eslint.config.mjs",
+              "{workspaceRoot}/eslint.base.config.mjs",
               "{workspaceRoot}/backend-e2e/eslint.config.mjs",
               "{workspaceRoot}/tools/eslint-rules/**/*",
               {
@@ -439,7 +439,7 @@
             "inputs": [
               "default",
               "^default",
-              "{workspaceRoot}/eslint.config.mjs",
+              "{workspaceRoot}/eslint.base.config.mjs",
               "{workspaceRoot}/backend/eslint.config.mjs",
               "{workspaceRoot}/tools/eslint-rules/**/*",
               {
@@ -662,30 +662,337 @@
         "implicitDependencies": []
       }
     },
+    "lib": {
+      "name": "lib",
+      "type": "lib",
+      "data": {
+        "root": "lib",
+        "targets": {
+          "lint": {
+            "cache": true,
+            "options": {
+              "cwd": "lib",
+              "command": "eslint ."
+            },
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/eslint.base.config.mjs",
+              "{workspaceRoot}/lib/eslint.config.mjs",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "metadata": {
+              "technologies": [
+                "eslint"
+              ],
+              "description": "Runs ESLint on project",
+              "help": {
+                "command": "npx eslint --help",
+                "example": {
+                  "options": {
+                    "max-warnings": 0
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "test": {
+            "options": {
+              "cwd": "lib",
+              "env": {
+                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\",\"module\":\"commonjs\",\"customConditions\":null}"
+              },
+              "command": "jest"
+            },
+            "metadata": {
+              "technologies": [
+                "jest"
+              ],
+              "description": "Run Jest Tests",
+              "help": {
+                "command": "npx jest --help",
+                "example": {
+                  "options": {
+                    "coverage": true
+                  }
+                }
+              }
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}\\jest.preset.js",
+              {
+                "externalDependencies": [
+                  "jest"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\coverage\\shared"
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "build": {
+            "options": {
+              "cwd": "lib",
+              "command": "vite build"
+            },
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "default",
+              "^default",
+              {
+                "externalDependencies": [
+                  "vite"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\dist\\shared"
+            ],
+            "metadata": {
+              "technologies": [
+                "vite"
+              ],
+              "description": "Run Vite build",
+              "help": {
+                "command": "npx vite build --help",
+                "example": {
+                  "options": {
+                    "sourcemap": true,
+                    "manifest": "manifest.json"
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "serve": {
+            "continuous": true,
+            "options": {
+              "cwd": "lib",
+              "command": "vite"
+            },
+            "metadata": {
+              "technologies": [
+                "vite"
+              ],
+              "description": "Starts Vite dev server",
+              "help": {
+                "command": "npx vite --help",
+                "example": {
+                  "options": {
+                    "port": 3000
+                  }
+                }
+              },
+              "deprecated": "Use devTargetName instead. This option will be removed in Nx 22."
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "dev": {
+            "continuous": true,
+            "options": {
+              "cwd": "lib",
+              "command": "vite"
+            },
+            "metadata": {
+              "technologies": [
+                "vite"
+              ],
+              "description": "Starts Vite dev server",
+              "help": {
+                "command": "npx vite --help",
+                "example": {
+                  "options": {
+                    "port": 3000
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "preview": {
+            "continuous": true,
+            "dependsOn": [
+              "build"
+            ],
+            "options": {
+              "cwd": "lib",
+              "command": "vite preview"
+            },
+            "metadata": {
+              "technologies": [
+                "vite"
+              ],
+              "description": "Locally preview Vite production build",
+              "help": {
+                "command": "npx vite preview --help",
+                "example": {
+                  "options": {
+                    "port": 3000
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "serve-static": {
+            "continuous": true,
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "build",
+              "spa": true
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "typecheck": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "^default",
+              {
+                "externalDependencies": [
+                  "typescript"
+                ]
+              }
+            ],
+            "options": {
+              "cwd": "lib",
+              "command": "tsc --noEmit -p tsconfig.lib.json"
+            },
+            "metadata": {
+              "description": "Runs type-checking for the project.",
+              "technologies": [
+                "typescript"
+              ],
+              "help": {
+                "command": "npx tsc -p tsconfig.lib.json --help",
+                "example": {
+                  "options": {
+                    "noEmit": true
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "build-deps": {
+            "dependsOn": [
+              "^build"
+            ],
+            "configurations": {},
+            "options": {},
+            "parallelism": true,
+            "executor": "nx:noop"
+          },
+          "watch-deps": {
+            "continuous": true,
+            "dependsOn": [
+              "build-deps"
+            ],
+            "executor": "nx:run-commands",
+            "options": {
+              "command": "npx nx watch --projects lib --includeDependentProjects -- npx nx build-deps lib"
+            },
+            "configurations": {},
+            "parallelism": true
+          }
+        },
+        "projectType": "library",
+        "metadata": {
+          "targetGroups": {},
+          "js": {
+            "packageName": "lib",
+            "packageVersion": "0.0.1",
+            "packageMain": "./index.js",
+            "isInPackageManagerWorkspaces": false
+          }
+        },
+        "name": "lib",
+        "tags": [
+          "npm:private"
+        ],
+        "$schema": "../node_modules/nx/schemas/project-schema.json",
+        "sourceRoot": "lib/src",
+        "implicitDependencies": []
+      }
+    },
     "sideboard": {
       "name": "sideboard",
       "type": "lib",
       "data": {
         "root": ".",
-        "name": "sideboard",
-        "tags": [
-          "npm:public"
-        ],
-        "metadata": {
-          "targetGroups": {
-            "NPM Scripts": [
-              "test"
-            ]
-          },
-          "description": "",
-          "js": {
-            "packageName": "sideboard",
-            "packageVersion": "1.0.0",
-            "packageMain": "index.js",
-            "isInPackageManagerWorkspaces": true
-          }
-        },
         "targets": {
+          "lint": {
+            "cache": true,
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}/eslint.base.config.mjs",
+              "{workspaceRoot}/eslint.config.mts",
+              "{workspaceRoot}/tools/eslint-rules/**/*",
+              {
+                "externalDependencies": [
+                  "eslint"
+                ]
+              }
+            ],
+            "outputs": [
+              "{options.outputFile}"
+            ],
+            "metadata": {
+              "technologies": [
+                "eslint",
+                "eslint"
+              ],
+              "description": "Runs ESLint on project",
+              "help": {
+                "command": "npx eslint --help",
+                "example": {
+                  "options": {
+                    "max-warnings": 0
+                  }
+                }
+              }
+            },
+            "executor": "nx:run-commands",
+            "options": {
+              "cwd": ".",
+              "command": "eslint ./lib"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
           "test": {
             "executor": "nx:run-script",
             "options": {
@@ -706,6 +1013,24 @@
             "options": {},
             "configurations": {},
             "parallelism": true
+          }
+        },
+        "name": "sideboard",
+        "tags": [
+          "npm:public"
+        ],
+        "metadata": {
+          "targetGroups": {
+            "NPM Scripts": [
+              "test"
+            ]
+          },
+          "description": "",
+          "js": {
+            "packageName": "sideboard",
+            "packageVersion": "1.0.0",
+            "packageMain": "index.js",
+            "isInPackageManagerWorkspaces": true
           }
         },
         "implicitDependencies": []
@@ -17427,6 +17752,11 @@
       },
       {
         "source": "frontend",
+        "target": "lib",
+        "type": "static"
+      },
+      {
+        "source": "frontend",
         "target": "npm:rxjs",
         "type": "static"
       },
@@ -17473,7 +17803,34 @@
         "type": "static"
       }
     ],
+    "lib": [
+      {
+        "source": "lib",
+        "target": "npm:jsonc-eslint-parser",
+        "type": "dynamic"
+      },
+      {
+        "source": "lib",
+        "target": "npm:vite",
+        "type": "static"
+      },
+      {
+        "source": "lib",
+        "target": "npm:vite-plugin-dts",
+        "type": "static"
+      },
+      {
+        "source": "lib",
+        "target": "npm:@nx/vite",
+        "type": "static"
+      }
+    ],
     "sideboard": [
+      {
+        "source": "sideboard",
+        "target": "npm:@nx/eslint-plugin",
+        "type": "static"
+      },
       {
         "source": "sideboard",
         "target": "npm:@eslint/js",
@@ -41026,5 +41383,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1771352726206
+  "computedAt": 1771355494601
 }

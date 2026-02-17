@@ -1,4 +1,4 @@
-import { inject, ResourceRef } from '@angular/core';
+import { inject, ResourceRef, signal, WritableSignal } from '@angular/core';
 import { CardsGateway } from './cards.gateway';
 import { resource } from '@angular/core';
 import { Injectable } from '@angular/core';
@@ -9,9 +9,17 @@ import { ICard } from 'lib';
 export class CardsStore {
   private cardGateway: CardsGateway = inject(CardsGateway);
 
+  public cardId: WritableSignal<string> = signal('');
+
   private allCardsResource: ResourceRef<ICard[] | undefined> = resource({
     loader: (): Promise<ICard[]> =>
       firstValueFrom(this.cardGateway.getAllCards()),
+  });
+
+  private specificCardResource: ResourceRef<ICard | undefined> = resource({
+    params: () => ({ id: this.cardId() }),
+    loader: ({ params }) =>
+      firstValueFrom(this.cardGateway.findById(params.id)),
   });
 
   public isLoading(): boolean {
@@ -23,5 +31,9 @@ export class CardsStore {
       return this.allCardsResource.value();
     }
     return [];
+  }
+
+  public specificCardValue(): ICard {
+    return this.specificCardResource.value()!;
   }
 }

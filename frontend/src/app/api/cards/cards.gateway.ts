@@ -13,4 +13,8 @@ export class CardsGateway {
   getAllCards(): Observable<ICard[]> {
     return this.http.get<ICard[]>(this.configService.apiUrl + '/cards');
   }
+
+  findById(id: string): Observable<ICard> {
+    return this.http.get<ICard>(`${this.configService.apiUrl}/cards/${id}`);
+  }
 }

@@ -1,5 +1,5 @@
 import { Component, inject } from '@angular/core';
-import { AllCardsService } from '../../services/cards/all-cards.service';
+import { CardService } from '../../services/cards/card.service';
 
 @Component({
   imports: [],
@@ -8,6 +8,6 @@ import { AllCardsService } from '../../services/cards/all-cards.service';
   standalone: true,
 })
 export class AllCardsComponent {
-  public cardService: AllCardsService = inject(AllCardsService);
+  public cardService: CardService = inject(CardService);
   protected readonly cards = this.cardService.getAllCards();
 }

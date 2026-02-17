@@ -7,10 +7,10 @@ import { InjectRepository } from '@nestjs/typeorm';
 export class CardService {
   constructor(
     @InjectRepository(Card)
-    private photoRepository: Repository<Card>,
+    private cardRepository: Repository<Card>,
   ) {}
 
   async findAll(): Promise<Card[]> {
-    return this.photoRepository.find();
+    return this.cardRepository.find();
   }
 }
