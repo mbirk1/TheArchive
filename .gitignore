@@ -4,3 +4,4 @@
 /tmp
 /.nx
 /.idea
+vite.config.*.timestamp*

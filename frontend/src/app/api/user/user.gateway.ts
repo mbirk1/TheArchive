@@ -1,16 +1,15 @@
-import { Injectable } from '@angular/core';
-import { inject } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ConfigService } from '../../services/config/config.service';
-import { ICard } from 'lib';
 import { Observable } from 'rxjs';
+import { IUser } from 'lib';
 
 @Injectable({ providedIn: 'root' })
-export class CardsGateway {
+export class UserGateway {
   private http: HttpClient = inject(HttpClient);
   private configService: ConfigService = inject(ConfigService);
 
-  getAllCards(): Observable<ICard[]> {
-    return this.http.get<ICard[]>(this.configService.apiUrl + '/cards');
+  getMyUser(): Observable<IUser> {
+    return this.http.get<IUser>(this.configService.apiUrl + '/user/me');
   }
 }

@@ -1,9 +1,11 @@
-import baseConfig from './eslint.base.config.mjs';
+import nx from '@nx/eslint-plugin';
 
 export default [
-  ...baseConfig,
+  ...nx.configs['flat/base'],
+  ...nx.configs['flat/typescript'],
+  ...nx.configs['flat/javascript'],
   {
-    ignores: ['**/dist', '**/out-tsc', '**/vite.config.*.timestamp*'],
+    ignores: ['**/dist', '**/out-tsc'],
   },
   {
     files: ['**/*.ts', '**/*.tsx', '**/*.js', '**/*.jsx'],
