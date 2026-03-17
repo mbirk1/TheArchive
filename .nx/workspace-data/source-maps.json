@@ -507,12 +507,12 @@
       "@nx/webpack/plugin"
     ],
     "targets.test": [
-      "backend/project.json",
-      "nx/core/project-json"
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
     ],
     "targets.test.options": [
-      "backend/project.json",
-      "nx/core/project-json"
+      "backend/jest.config.cts",
+      "@nx/jest/plugin"
     ],
     "targets.test.metadata": [
       "backend/jest.config.cts",
@@ -602,83 +602,15 @@
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.prune-lockfile": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.prune-lockfile.dependsOn": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.prune-lockfile.cache": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.prune-lockfile.executor": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.prune-lockfile.outputs": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.prune-lockfile.options": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.prune-lockfile.options.buildTarget": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.copy-workspace-modules": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.copy-workspace-modules.dependsOn": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.copy-workspace-modules.cache": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.copy-workspace-modules.outputs": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.copy-workspace-modules.executor": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.copy-workspace-modules.options": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.copy-workspace-modules.options.buildTarget": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.prune": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.prune.dependsOn": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.prune.executor": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
     "targets.build": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.build.executor": [
+    "targets.build.outputs": [
       "backend/project.json",
       "nx/core/project-json"
     ],
-    "targets.build.outputs": [
+    "targets.build.executor": [
       "backend/project.json",
       "nx/core/project-json"
     ],
@@ -711,26 +643,6 @@
       "nx/core/project-json"
     ],
     "targets.serve.options.watch": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.start": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.start.executor": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.start.options": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.start.options.buildTarget": [
-      "backend/project.json",
-      "nx/core/project-json"
-    ],
-    "targets.test.options.passWithNoTests": [
       "backend/project.json",
       "nx/core/project-json"
     ]

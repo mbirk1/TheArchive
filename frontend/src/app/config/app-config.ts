@@ -6,7 +6,7 @@ export interface AppConfig {
 
 export const APP_CONFIG_MAP: Record<EnvName, AppConfig> = {
   dev: {
-    apiUrl: 'http://localhost:3000',
+    apiUrl: 'http://localhost:3000/api',
   },
   prod: {
     apiUrl: 'https://api.example.com',

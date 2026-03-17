@@ -3,8 +3,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { CardModule } from './modules/card.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { Card } from './database/entities/card.entity';
 import { ConfigModule, ConfigService } from '@nestjs/config';
+import { allEntities } from './database/entities';
+import { allMigrations } from './database/migrations';
 
 @Module({
   imports: [
@@ -19,7 +20,8 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
         password: configService.get('DB_PASSWORD'),
         database: 'postgres',
         schema: configService.get('DB_SCHEMA'),
-        entities: [Card],
+        entities: allEntities,
+        migrations: allMigrations,
         synchronize: true,
         autoLoadEntities: true,
       }),

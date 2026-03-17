@@ -470,12 +470,12 @@
             "parallelism": true
           },
           "build": {
-            "executor": "@nx/webpack:webpack",
             "outputs": [
-              "dist/backend"
+              "{options.outputPath}"
             ],
+            "executor": "@nx/webpack:webpack",
             "options": {
-              "outputPath": "dist/backend",
+              "outputPath": "dist/apps/backend",
               "webpackConfig": "backend/webpack.config.js"
             },
             "configurations": {},
@@ -555,6 +555,13 @@
             "parallelism": true
           },
           "test": {
+            "options": {
+              "cwd": "backend",
+              "env": {
+                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\",\"module\":\"commonjs\",\"customConditions\":null}"
+              },
+              "command": "jest"
+            },
             "metadata": {
               "technologies": [
                 "jest"
@@ -584,70 +591,13 @@
               "{workspaceRoot}\\coverage\\backend"
             ],
             "executor": "nx:run-commands",
-            "options": {
-              "cwd": "backend",
-              "env": {
-                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\",\"module\":\"commonjs\",\"customConditions\":null}"
-              },
-              "command": "jest",
-              "passWithNoTests": true
-            },
             "configurations": {},
             "parallelism": true
           },
           "migration:generate": {
             "executor": "nx:run-commands",
             "options": {
-              "command": "typeorm-ts-node-commonjs migration:generate backend/src/app/database/migrations/InitSchema -d backend/src/app/database/datasource.ts"
-            },
-            "configurations": {},
-            "parallelism": true
-          },
-          "prune-lockfile": {
-            "dependsOn": [
-              "build"
-            ],
-            "cache": true,
-            "executor": "@nx/js:prune-lockfile",
-            "outputs": [
-              "{workspaceRoot}/dist/backend/package.json",
-              "{workspaceRoot}/dist/backend/package-lock.json"
-            ],
-            "options": {
-              "buildTarget": "build"
-            },
-            "configurations": {},
-            "parallelism": true
-          },
-          "copy-workspace-modules": {
-            "dependsOn": [
-              "build"
-            ],
-            "cache": true,
-            "outputs": [
-              "{workspaceRoot}/dist/backend/workspace_modules"
-            ],
-            "executor": "@nx/js:copy-workspace-modules",
-            "options": {
-              "buildTarget": "build"
-            },
-            "configurations": {},
-            "parallelism": true
-          },
-          "prune": {
-            "dependsOn": [
-              "prune-lockfile",
-              "copy-workspace-modules"
-            ],
-            "executor": "nx:noop",
-            "configurations": {},
-            "options": {},
-            "parallelism": true
-          },
-          "start": {
-            "executor": "@nrwl/node:execute",
-            "options": {
-              "buildTarget": "backend:build:development"
+              "command": "ts-node -p ./backend/tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:generate ./backend/src/app/database/migrations/migration -d ./backend/src/app/database/datasource.ts"
             },
             "configurations": {},
             "parallelism": true
@@ -41383,5 +41333,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1771355494601
+  "computedAt": 1773766349465
 }

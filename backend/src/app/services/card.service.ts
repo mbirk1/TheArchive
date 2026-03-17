@@ -13,4 +13,12 @@ export class CardService {
   async findAll(): Promise<Card[]> {
     return this.cardRepository.find();
   }
+
+  async findSpecificCardById(id: string): Promise<Card> {
+    return this.cardRepository.findOne({
+      where: {
+        id: id
+      }
+    });
+  }
 }

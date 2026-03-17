@@ -8,39 +8,14 @@
     "migration:generate": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "typeorm-ts-node-commonjs migration:generate backend/src/app/database/migrations/InitSchema -d backend/src/app/database/datasource.ts"
+        "command": "ts-node -p ./backend/tsconfig.json -r tsconfig-paths/register ./node_modules/typeorm/cli.js migration:generate ./backend/src/app/database/migrations/migration -d ./backend/src/app/database/datasource.ts"
       }
-    },
-    "prune-lockfile": {
-      "dependsOn": ["build"],
-      "cache": true,
-      "executor": "@nx/js:prune-lockfile",
-      "outputs": [
-        "{workspaceRoot}/dist/backend/package.json",
-        "{workspaceRoot}/dist/backend/package-lock.json"
-      ],
-      "options": {
-        "buildTarget": "build"
-      }
-    },
-    "copy-workspace-modules": {
-      "dependsOn": ["build"],
-      "cache": true,
-      "outputs": ["{workspaceRoot}/dist/backend/workspace_modules"],
-      "executor": "@nx/js:copy-workspace-modules",
-      "options": {
-        "buildTarget": "build"
-      }
-    },
-    "prune": {
-      "dependsOn": ["prune-lockfile", "copy-workspace-modules"],
-      "executor": "nx:noop"
     },
     "build": {
+      "outputs": ["{options.outputPath}"],
       "executor": "@nx/webpack:webpack",
-      "outputs": ["dist/backend"],
       "options": {
-        "outputPath": "dist/backend",
+        "outputPath": "dist/apps/backend",
         "webpackConfig": "backend/webpack.config.js"
       }
     },
@@ -49,17 +24,6 @@
       "options": {
         "buildTarget": "backend:build",
         "watch": false
-      }
-    },
-    "start": {
-      "executor": "@nrwl/node:execute",
-      "options": {
-        "buildTarget": "backend:build:development"
-      }
-    },
-    "test": {
-      "options": {
-        "passWithNoTests": true
       }
     }
   }

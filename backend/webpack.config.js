@@ -5,7 +5,7 @@ module.exports = {
   mode: 'development',
   target: 'node',
   output: {
-    path: join(__dirname, '../dist/backend'),
+    path: join(__dirname, '../dist/apps/backend'),
     clean: true,
     devtoolModuleFilenameTemplate: '[absolute-resource-path]',
   },

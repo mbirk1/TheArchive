@@ -34,6 +34,8 @@ export class CardsStore {
   }
 
   public specificCardValue(): ICard {
-    return this.specificCardResource.value()!;
+    const value = this.specificCardResource.value()!;
+    console.log(value);
+    return value;
   }
 }
