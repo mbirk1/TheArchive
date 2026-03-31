@@ -13,11 +13,11 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'browse',
-    component: BrowseCardsComponent
+    component: BrowseCardsComponent,
   },
   {
     path: 'cardDetail',
-    component: CardDetailComponent
+    component: CardDetailComponent,
   },
   {
     path: 'user',

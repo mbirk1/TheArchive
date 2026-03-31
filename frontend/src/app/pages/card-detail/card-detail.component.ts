@@ -9,9 +9,7 @@ import { CardService } from '../../services/cards/card.service';
 })
 export class CardDetailComponent {
   private cardService: CardService = inject(CardService);
-  protected cardDetails = this.cardService.findCardById(
-    '1',
-  );
+  protected cardDetails = this.cardService.findCardById('1');
 
   constructor() {
     console.log(this.cardDetails);

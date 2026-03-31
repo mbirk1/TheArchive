@@ -8,5 +8,4 @@ import { Component, input, InputSignal, Signal } from '@angular/core';
 })
 export class HeaderChipComponent {
   text: InputSignal<string> = input.required();
-
 }

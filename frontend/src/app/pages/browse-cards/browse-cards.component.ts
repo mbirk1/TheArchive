@@ -7,5 +7,4 @@ import { CardService } from '../../services/cards/card.service';
   templateUrl: './browse-cards.component.html',
   standalone: true,
 })
-export class BrowseCardsComponent {
-}
+export class BrowseCardsComponent {}

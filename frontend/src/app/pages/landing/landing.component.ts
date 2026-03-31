@@ -7,5 +7,4 @@ import { CardService } from '../../services/cards/card.service';
   templateUrl: './landing.component.html',
   standalone: true,
 })
-export class LandingComponent {
-}
+export class LandingComponent {}

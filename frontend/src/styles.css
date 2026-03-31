@@ -1,13 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap');
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: #58C7F3;
-  --color-secondary: #2196F3;
-  --color-tertiary: #00BCD4;
-  --color-neutral: #12111E;
+  --color-primary: #58c7f3;
+  --color-secondary: #2196f3;
+  --color-tertiary: #00bcd4;
+  --color-neutral: #12111e;
   --color-background: #13121f;
   --color-surface: #020617;
   --color-surface-raised: #1e293b;

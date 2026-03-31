@@ -8,8 +8,14 @@
         routerLink="/"
       />
       <h2 class="text-primary font-bold text-2xl font-headline">The Archive</h2>
-      <app-header-chip [text]="'Library'" (click)="navigateToCollection()"></app-header-chip>
-      <app-header-chip [text]="'Decks'" (click)="navigateToDecks()"></app-header-chip>
+      <app-header-chip
+        [text]="'Library'"
+        (click)="navigateToCollection()"
+      ></app-header-chip>
+      <app-header-chip
+        [text]="'Decks'"
+        (click)="navigateToDecks()"
+      ></app-header-chip>
     </div>
     @if (this.isUserLoggedIn()) {
       <div class="flex m-4 text-text-primary gap-4">
