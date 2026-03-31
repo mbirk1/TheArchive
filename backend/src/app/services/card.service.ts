@@ -2,12 +2,14 @@ import { Injectable } from '@nestjs/common';
 import { Repository } from 'typeorm';
 import { Card } from '../database/entities/card.entity';
 import { InjectRepository } from '@nestjs/typeorm';
+import { ScryfallRepository } from '../repositories/scryfall.repository';
 
 @Injectable()
 export class CardService {
   constructor(
     @InjectRepository(Card)
     private cardRepository: Repository<Card>,
+    private scryFallRepository: ScryfallRepository
   ) {}
 
   async findAll(): Promise<Card[]> {
@@ -20,5 +22,17 @@ export class CardService {
         id: id
       }
     });
+  }
+
+  async searchForCardsByName(name: string): Promise<Card[]> {
+    const foundCards = await this.cardRepository.findBy({ name });
+
+    const externalFoundCard = await this.scryFallRepository.searchByName(name);
+
+    // Karten aus foundCards aus externalCards streichen
+
+    //Arrays aggegieren
+
+    // Result zurückgeben
   }
 }

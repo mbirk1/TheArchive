@@ -1,14 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap");
 @import 'tailwindcss';
 
 @theme {
-  --color-primary: #1a1b29;
-  --color-secondary: #1d546d;
-  --color-tertiary: #5f9598;
-  --color-background: #0f172a;
+  --color-primary: #58C7F3;
+  --color-secondary: #2196F3;
+  --color-tertiary: #00BCD4;
+  --color-neutral: #12111E;
+  --color-background: #13121f;
   --color-surface: #020617;
   --color-surface-raised: #1e293b;
   --color-border: #334155;
   --color-text-primary: #f3f4f4;
   --color-text-muted: #94a3b8;
+
+  --default-font: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-headline: 'Space Grotesk', sans-serif;
+  --font-title: 'Inter', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-label: 'Inter', sans-serif;
 }

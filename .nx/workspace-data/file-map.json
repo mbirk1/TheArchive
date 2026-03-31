@@ -53,6 +53,39 @@
   ],
   "fileMap": {
     "projectFileMap": {
+      "frontend-e2e": [
+        {
+          "file": "frontend-e2e/eslint.config.mjs",
+          "hash": "8440876809151955804",
+          "deps": [
+            "npm:eslint-plugin-playwright"
+          ]
+        },
+        {
+          "file": "frontend-e2e/playwright.config.ts",
+          "hash": "4535250053304126287",
+          "deps": [
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
+          ]
+        },
+        {
+          "file": "frontend-e2e/project.json",
+          "hash": "16623643415870234688"
+        },
+        {
+          "file": "frontend-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
+          "deps": [
+            "npm:@playwright/test"
+          ]
+        },
+        {
+          "file": "frontend-e2e/tsconfig.json",
+          "hash": "2249461092017240593"
+        }
+      ],
       "backend": [
         {
           "file": "backend/.env",
@@ -68,7 +101,7 @@
         },
         {
           "file": "backend/project.json",
-          "hash": "11259417675753754495"
+          "hash": "10190899261612174947"
         },
         {
           "file": "backend/src/app/app.controller.ts",
@@ -95,14 +128,15 @@
         },
         {
           "file": "backend/src/app/controller/card.controller.ts",
-          "hash": "14979188583704144832",
+          "hash": "4861137736006091929",
           "deps": [
-            "npm:@nestjs/common"
+            "npm:@nestjs/common",
+            "npm:rxjs"
           ]
         },
         {
           "file": "backend/src/app/database/datasource.ts",
-          "hash": "3492021118068362660",
+          "hash": "10592597040692164525",
           "deps": [
             "npm:typeorm"
           ]
@@ -144,8 +178,15 @@
           ]
         },
         {
+          "file": "backend/src/app/repositories/scryfall.repository.ts",
+          "hash": "5524805239170196725",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
           "file": "backend/src/app/services/card.service.ts",
-          "hash": "13143996498385740355",
+          "hash": "11342716505291787885",
           "deps": [
             "npm:@nestjs/common",
             "npm:typeorm",
@@ -158,7 +199,7 @@
         },
         {
           "file": "backend/src/main.ts",
-          "hash": "8923646734388161094",
+          "hash": "3826146415797598441",
           "deps": [
             "npm:@nestjs/common",
             "npm:@nestjs/core"
@@ -178,93 +219,10 @@
         },
         {
           "file": "backend/webpack.config.js",
-          "hash": "9720109979981046007",
+          "hash": "14745191999203244382",
           "deps": [
             "npm:@nx/webpack"
           ]
-        }
-      ],
-      "backend-e2e": [
-        {
-          "file": "backend-e2e/eslint.config.mjs",
-          "hash": "7393662435575919928"
-        },
-        {
-          "file": "backend-e2e/jest.config.cts",
-          "hash": "11549239295235047736"
-        },
-        {
-          "file": "backend-e2e/project.json",
-          "hash": "10421535034015476284"
-        },
-        {
-          "file": "backend-e2e/src/backend/backend.spec.ts",
-          "hash": "110394728024017389",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "backend-e2e/src/support/global-setup.ts",
-          "hash": "10817858795115919263",
-          "deps": [
-            "npm:@nx/node"
-          ]
-        },
-        {
-          "file": "backend-e2e/src/support/global-teardown.ts",
-          "hash": "14210317125869451873",
-          "deps": [
-            "npm:@nx/node"
-          ]
-        },
-        {
-          "file": "backend-e2e/src/support/test-setup.ts",
-          "hash": "15521797170623961900",
-          "deps": [
-            "npm:axios"
-          ]
-        },
-        {
-          "file": "backend-e2e/tsconfig.json",
-          "hash": "2346920493880922870"
-        },
-        {
-          "file": "backend-e2e/tsconfig.spec.json",
-          "hash": "14226830188665428950"
-        }
-      ],
-      "frontend-e2e": [
-        {
-          "file": "frontend-e2e/eslint.config.mjs",
-          "hash": "8440876809151955804",
-          "deps": [
-            "npm:eslint-plugin-playwright"
-          ]
-        },
-        {
-          "file": "frontend-e2e/playwright.config.ts",
-          "hash": "4535250053304126287",
-          "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
-          ]
-        },
-        {
-          "file": "frontend-e2e/project.json",
-          "hash": "16623643415870234688"
-        },
-        {
-          "file": "frontend-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
-          "deps": [
-            "npm:@playwright/test"
-          ]
-        },
-        {
-          "file": "frontend-e2e/tsconfig.json",
-          "hash": "2249461092017240593"
         }
       ],
       "frontend": [
@@ -343,30 +301,52 @@
         },
         {
           "file": "frontend/src/app/app.html",
-          "hash": "1279458413949181427"
+          "hash": "11905878256963802760"
         },
         {
           "file": "frontend/src/app/app.routes.ts",
-          "hash": "3032894363494127108",
+          "hash": "12578728651449269297",
           "deps": [
             "npm:@angular/router"
           ]
         },
         {
           "file": "frontend/src/app/app.ts",
-          "hash": "16721965452287994084",
+          "hash": "7276707058627324212",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
           ]
         },
         {
+          "file": "frontend/src/app/components/footer/footer.component.html",
+          "hash": "6549336840742931400"
+        },
+        {
+          "file": "frontend/src/app/components/footer/footer.component.ts",
+          "hash": "17377881813277155680",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
+          "file": "frontend/src/app/components/header/header-chips/header-chip.component.html",
+          "hash": "5896863497607754942"
+        },
+        {
+          "file": "frontend/src/app/components/header/header-chips/header-chip.component.ts",
+          "hash": "9465357362240418186",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "frontend/src/app/components/header/header.component.html",
-          "hash": "7526460970915891933"
+          "hash": "6812863271652847764"
         },
         {
           "file": "frontend/src/app/components/header/header.component.ts",
-          "hash": "6719025587302558421",
+          "hash": "18220716650086252945",
           "deps": [
             "npm:@angular/core",
             "npm:@angular/router"
@@ -396,6 +376,17 @@
           ]
         },
         {
+          "file": "frontend/src/app/pages/browse-cards/browse-cards.component.html",
+          "hash": "4055606894390288348"
+        },
+        {
+          "file": "frontend/src/app/pages/browse-cards/browse-cards.component.ts",
+          "hash": "4668059607003020419",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "frontend/src/app/pages/card-detail/card-detail.component.html",
           "hash": "8291602728962085503"
         },
@@ -407,8 +398,19 @@
           ]
         },
         {
+          "file": "frontend/src/app/pages/landing/landing.component.html",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "frontend/src/app/pages/landing/landing.component.ts",
+          "hash": "13894812172934773533",
+          "deps": [
+            "npm:@angular/core"
+          ]
+        },
+        {
           "file": "frontend/src/app/pages/personal/collection/personal-collection.component.html",
-          "hash": "9337820935916926802"
+          "hash": "18156102152658860939"
         },
         {
           "file": "frontend/src/app/pages/personal/collection/personal-collection.component.ts",
@@ -475,7 +477,7 @@
         },
         {
           "file": "frontend/src/styles.css",
-          "hash": "214049569791401702"
+          "hash": "12814557984029196543"
         },
         {
           "file": "frontend/tailwind.config.js",
@@ -488,6 +490,267 @@
         {
           "file": "frontend/tsconfig.json",
           "hash": "11230960146127938886"
+        }
+      ],
+      "backend-e2e": [
+        {
+          "file": "backend-e2e/eslint.config.mjs",
+          "hash": "7393662435575919928"
+        },
+        {
+          "file": "backend-e2e/jest.config.cts",
+          "hash": "11549239295235047736"
+        },
+        {
+          "file": "backend-e2e/project.json",
+          "hash": "10421535034015476284"
+        },
+        {
+          "file": "backend-e2e/src/backend/backend.spec.ts",
+          "hash": "110394728024017389",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "backend-e2e/src/support/global-setup.ts",
+          "hash": "10817858795115919263",
+          "deps": [
+            "npm:@nx/node"
+          ]
+        },
+        {
+          "file": "backend-e2e/src/support/global-teardown.ts",
+          "hash": "14210317125869451873",
+          "deps": [
+            "npm:@nx/node"
+          ]
+        },
+        {
+          "file": "backend-e2e/src/support/test-setup.ts",
+          "hash": "15521797170623961900",
+          "deps": [
+            "npm:axios"
+          ]
+        },
+        {
+          "file": "backend-e2e/tsconfig.json",
+          "hash": "2346920493880922870"
+        },
+        {
+          "file": "backend-e2e/tsconfig.spec.json",
+          "hash": "14226830188665428950"
+        }
+      ],
+      "docs": [
+        {
+          "file": "docs/.gitignore",
+          "hash": "16756425970169599954"
+        },
+        {
+          "file": "docs/README.md",
+          "hash": "13322021930525524360"
+        },
+        {
+          "file": "docs/blog/2019-05-28-first-blog-post.md",
+          "hash": "14136523309309972909"
+        },
+        {
+          "file": "docs/blog/2019-05-29-long-blog-post.md",
+          "hash": "4259135237937492657"
+        },
+        {
+          "file": "docs/blog/2021-08-01-mdx-blog-post.mdx",
+          "hash": "2043610790558586431"
+        },
+        {
+          "file": "docs/blog/2021-08-26-welcome/docusaurus-plushie-banner.jpeg",
+          "hash": "15758227656434439664"
+        },
+        {
+          "file": "docs/blog/2021-08-26-welcome/index.md",
+          "hash": "15716521779109455393"
+        },
+        {
+          "file": "docs/blog/authors.yml",
+          "hash": "10378581696034923402"
+        },
+        {
+          "file": "docs/blog/tags.yml",
+          "hash": "4117025237655315203"
+        },
+        {
+          "file": "docs/docs/design.md",
+          "hash": "10099951902751875439"
+        },
+        {
+          "file": "docs/docs/intro.md",
+          "hash": "2461157429634864669"
+        },
+        {
+          "file": "docs/docusaurus.config.ts",
+          "hash": "13552462250833699788",
+          "deps": [
+            "npm:prism-react-renderer",
+            "npm:@docusaurus/types",
+            "npm:@docusaurus/preset-classic"
+          ]
+        },
+        {
+          "file": "docs/package-lock.json",
+          "hash": "3571057471197556585"
+        },
+        {
+          "file": "docs/package.json",
+          "hash": "15831472778590737942"
+        },
+        {
+          "file": "docs/sidebars.ts",
+          "hash": "11039473932810979101",
+          "deps": [
+            "npm:@docusaurus/plugin-content-docs"
+          ]
+        },
+        {
+          "file": "docs/src/components/HomepageFeatures/index.tsx",
+          "hash": "4102447848239114758",
+          "deps": [
+            "npm:react",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "docs/src/components/HomepageFeatures/styles.module.css",
+          "hash": "14149773169115351739"
+        },
+        {
+          "file": "docs/src/css/custom.css",
+          "hash": "10125109349468303754"
+        },
+        {
+          "file": "docs/src/pages/index.module.css",
+          "hash": "2272732276868299116"
+        },
+        {
+          "file": "docs/src/pages/index.tsx",
+          "hash": "1361351035871701348",
+          "deps": [
+            "npm:react",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "docs/src/pages/markdown-page.md",
+          "hash": "2637912770613796076"
+        },
+        {
+          "file": "docs/static/.nojekyll",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/static/img/docusaurus-social-card.jpg",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/static/img/docusaurus.png",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/static/img/favicon.ico",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/static/img/logo.svg",
+          "hash": "15756779054106865036"
+        },
+        {
+          "file": "docs/static/img/undraw_docusaurus_mountain.svg",
+          "hash": "14081778507541877421"
+        },
+        {
+          "file": "docs/static/img/undraw_docusaurus_react.svg",
+          "hash": "17162343818337932230"
+        },
+        {
+          "file": "docs/static/img/undraw_docusaurus_tree.svg",
+          "hash": "12684630426846910715"
+        },
+        {
+          "file": "docs/static/logo-blue-background.png",
+          "hash": "3255133497151389408"
+        },
+        {
+          "file": "docs/tsconfig.json",
+          "hash": "7731723909559504543"
+        }
+      ],
+      "lib": [
+        {
+          "file": "lib/README.md",
+          "hash": "12643788801428417843"
+        },
+        {
+          "file": "lib/eslint.config.mjs",
+          "hash": "18414256800222540513",
+          "deps": [
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "lib/jest.config.cts",
+          "hash": "4781512833943815778"
+        },
+        {
+          "file": "lib/package.json",
+          "hash": "8623726966524273430"
+        },
+        {
+          "file": "lib/project.json",
+          "hash": "14739758092616537677"
+        },
+        {
+          "file": "lib/src/index.ts",
+          "hash": "17070814342585674857"
+        },
+        {
+          "file": "lib/src/shared/entities/card.ts",
+          "hash": "11280119504123275544"
+        },
+        {
+          "file": "lib/src/shared/entities/user.ts",
+          "hash": "17547189626849133221"
+        },
+        {
+          "file": "lib/src/shared/lib.spec.ts",
+          "hash": "15696180619441963589"
+        },
+        {
+          "file": "lib/src/shared/lib.ts",
+          "hash": "6610388781340973787"
+        },
+        {
+          "file": "lib/tsconfig.json",
+          "hash": "10148903843036702529"
+        },
+        {
+          "file": "lib/tsconfig.lib.json",
+          "hash": "5302676815253789741"
+        },
+        {
+          "file": "lib/tsconfig.spec.json",
+          "hash": "16514264766063949355"
+        },
+        {
+          "file": "lib/vite.config.mts",
+          "hash": "3244750953672301366",
+          "deps": [
+            "npm:vite",
+            "npm:vite-plugin-dts",
+            "npm:@nx/vite"
+          ]
         }
       ],
       "sideboard": [
@@ -561,88 +824,19 @@
         },
         {
           "file": "package-lock.json",
-          "hash": "14470556388059653195"
+          "hash": "5683945286454354356"
         },
         {
           "file": "package.json",
-          "hash": "40409888966027753"
+          "hash": "4627899178307062632"
         },
         {
           "file": "tsconfig.base.json",
           "hash": "3592470868319689003"
         }
-      ],
-      "lib": [
-        {
-          "file": "lib/README.md",
-          "hash": "12643788801428417843"
-        },
-        {
-          "file": "lib/eslint.config.mjs",
-          "hash": "18414256800222540513",
-          "deps": [
-            [
-              "npm:jsonc-eslint-parser",
-              "dynamic"
-            ]
-          ]
-        },
-        {
-          "file": "lib/jest.config.cts",
-          "hash": "4781512833943815778"
-        },
-        {
-          "file": "lib/package.json",
-          "hash": "8623726966524273430"
-        },
-        {
-          "file": "lib/project.json",
-          "hash": "14739758092616537677"
-        },
-        {
-          "file": "lib/src/index.ts",
-          "hash": "17070814342585674857"
-        },
-        {
-          "file": "lib/src/shared/entities/card.ts",
-          "hash": "11280119504123275544"
-        },
-        {
-          "file": "lib/src/shared/entities/user.ts",
-          "hash": "17547189626849133221"
-        },
-        {
-          "file": "lib/src/shared/lib.spec.ts",
-          "hash": "15696180619441963589"
-        },
-        {
-          "file": "lib/src/shared/lib.ts",
-          "hash": "6610388781340973787"
-        },
-        {
-          "file": "lib/tsconfig.json",
-          "hash": "10148903843036702529"
-        },
-        {
-          "file": "lib/tsconfig.lib.json",
-          "hash": "5302676815253789741"
-        },
-        {
-          "file": "lib/tsconfig.spec.json",
-          "hash": "16514264766063949355"
-        },
-        {
-          "file": "lib/vite.config.mts",
-          "hash": "3244750953672301366",
-          "deps": [
-            "npm:vite",
-            "npm:vite-plugin-dts",
-            "npm:@nx/vite"
-          ]
-        }
       ]
     },
     "nonProjectFiles": []
   },
-  "externalNodesHash": "4232787105527982424"
+  "externalNodesHash": "9406774899594075658"
 }
