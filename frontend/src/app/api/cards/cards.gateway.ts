@@ -15,7 +15,10 @@ export class CardsGateway {
   }
 
   findById(id: string): Observable<ICard> {
-    console.log(this.configService.apiUrl);
     return this.http.get<ICard>(`${this.configService.apiUrl}/cards/${id}`);
+  }
+
+  getRandomCard(): Observable<ICard> {
+    return this.http.get<ICard>(`${this.configService.apiUrl}/cards/random`);
   }
 }

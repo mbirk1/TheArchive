@@ -12,4 +12,12 @@ export class UserGateway {
   getMyUser(): Observable<IUser> {
     return this.http.get<IUser>(this.configService.apiUrl + '/user/me');
   }
+
+  getNumberOfUsers(): Observable<number> {
+    return this.http.get<number>(this.configService.apiUrl + '/user/amount');
+  }
+
+  getNumberOfTodaysActiveUsers(): Observable<number> {
+    return this.http.get<number>(this.configService.apiUrl + '/user/today');
+  }
 }

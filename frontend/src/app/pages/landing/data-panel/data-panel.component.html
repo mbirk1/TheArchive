@@ -1,0 +1,44 @@
+<section class="py-20 bg-background overflow-hidden">
+  <div
+    class="max-w-7xl mx-auto px-8 grid grid-cols-2 md:grid-cols-4 gap-12 text-center"
+  >
+    <div class="space-y-2">
+      <p class="text-5xl font-headline font-extrabold text-primary">
+        {{ cardService.getAllCards().length }}
+      </p>
+      <p
+        class="text-xs font-label tracking-widest text-on-surface-variant uppercase"
+      >
+        Karten katalogisiert
+      </p>
+    </div>
+    <div class="space-y-2">
+      <p class="text-5xl font-headline font-extrabold text-tertiary">
+        {{ numberOfDecks() }}
+      </p>
+      <p
+        class="text-xs font-label tracking-widest text-on-surface-variant uppercase"
+      >
+        Decks gebaut
+      </p>
+    </div>
+    <div class="space-y-2">
+      <p class="text-5xl font-headline font-extrabold text-secondary">99.9%</p>
+      <p
+        class="text-xs font-label tracking-widest text-on-surface-variant uppercase"
+      >
+        Uptime Mana
+      </p>
+    </div>
+    <div class="space-y-2">
+      <p class="text-5xl font-headline font-extrabold text-on-surface">
+        {{ numberOfUsers() }}
+      </p>
+      <p
+        class="text-xs font-label tracking-widest text-on-surface-variant uppercase"
+      >
+        Player registriert
+      </p>
+    </div>
+  </div>
+</section>

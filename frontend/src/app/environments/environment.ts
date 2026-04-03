@@ -1,4 +1,5 @@
 export const environment = {
   production: false,
   envName: 'dev',
+  githubLink: 'https://github.com/mbirk1/TheArchive',
 };

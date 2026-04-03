@@ -16,4 +16,8 @@ export class CardService {
     this.cardStore.cardId.set(id);
     return this.cardStore.specificCardValue();
   }
+
+  getRandomCard(): Observable<ICard> {
+    return this.cardStore.getRandomCard();
+  }
 }

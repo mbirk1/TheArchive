@@ -1,36 +1,68 @@
-<div class="flex justify-evenly bg-neutral items-center">
-  <div class="flex-1 flex-col">
-    <div class="flex">
-      <img
-        src="/images/logo-blue-background.png"
-        alt="Logo"
-        class="text-primary h-12"
-      />
-      <span class="text-primary font-label my-auto">The Archive</span>
+<footer
+  class="bg-background w-full border-t border-surface-container-highest/20"
+>
+  <div
+    class="flex flex-col md:flex-row justify-between items-center px-12 py-10 w-full gap-6"
+  >
+    <div class="flex flex-col gap-4 items-center md:items-start">
+      <div class="flex items-center gap-2">
+        <img
+          src="/images/logo-blue-background.png"
+          alt="Logo"
+          class="text-primary h-12 w-12 opacity-80"
+        />
+        <span class="text-lg font-bold text-on-surface font-headline"
+          >The Archive</span
+        >
+      </div>
+      <p
+        class="font-['Inter'] text-sm text-text-muted max-w-xs text-center md:text-left"
+      >
+        Das hochwertige digitale Grimoire für moderne Deckbauer und Sammler.
+      </p>
     </div>
-    <div class="text-text-muted">
-      Das hochwertige digitale Grimoire für <br />
-      moderne Deckbauer und Sammler.
+    <div class="flex flex-wrap justify-center gap-8">
+      <a
+        class="font-['Inter'] text-sm text-text-muted hover:text-surface-tint transition-colors opacity-80 hover:opacity-100"
+        href="#"
+        >Privacy Policy</a
+      >
+      <a
+        class="font-['Inter'] text-sm text-text-muted hover:text-surface-tint transition-colors opacity-80 hover:opacity-100"
+        href="#"
+        >Terms of Sorcery</a
+      >
+      <a
+        class="font-['Inter'] text-sm text-text-muted hover:text-surface-tint transition-colors opacity-80 hover:opacity-100"
+        href="#"
+        >API Documentation</a
+      >
+      <a
+        class="font-['Inter'] text-sm text-text-muted hover:text-surface-tint transition-colors opacity-80 hover:opacity-100"
+        href="#"
+        >Contact support</a
+      >
+    </div>
+    <div class="flex flex-col items-center md:items-end gap-2">
+      <div class="flex gap-4">
+        <span
+          class="material-symbols-outlined text-text-muted hover:text-surface-tint cursor-pointer"
+          >public</span
+        >
+        <span
+          class="material-symbols-outlined text-text-muted hover:text-surface-tint cursor-pointer"
+          >forum</span
+        >
+        <a href="{{ configService.gitHubLink }}" target="_blank">
+          <span
+            class="material-symbols-outlined text-text-muted hover:text-surface-tint cursor-pointer"
+            >code</span
+          >
+        </a>
+      </div>
+      <p class="font-['Inter'] text-sm text-text-muted">
+        © 2026 The Archive. All mana reserved.
+      </p>
     </div>
   </div>
-  <div class="flex flex-1 justify-between text-text-muted">
-    <div>
-      <a routerLink="/">Private Policy</a>
-    </div>
-    <div>
-      <a routerLink="/">Terms of Spellslinging</a>
-    </div>
-    <div>
-      <a routerLink="/">API Dokumentation</a>
-    </div>
-    <div>
-      <a routerLink="/">Kontakt</a>
-    </div>
-  </div>
-  <div class="flex flex-1 flex-col text-text-muted">
-    <div class="flex flex-row-reverse">ICONS</div>
-    <div class="flex flex-row-reverse">
-      © 2026 The Archive. All mana reserved.
-    </div>
-  </div>
-</div>
+</footer>

@@ -20,4 +20,8 @@ export class ConfigService {
   isProduction(): boolean {
     return environment.production;
   }
+
+  get gitHubLink(): string {
+    return environment.githubLink;
+  }
 }

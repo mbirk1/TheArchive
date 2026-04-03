@@ -1,7 +1,7 @@
 import { inject, ResourceRef } from '@angular/core';
 import { resource } from '@angular/core';
 import { Injectable } from '@angular/core';
-import { firstValueFrom } from 'rxjs';
+import { firstValueFrom, Observable } from 'rxjs';
 import { UserGateway } from './user.gateway';
 import { IUser } from 'lib';
 
@@ -13,8 +13,16 @@ export class UserStore {
     loader: (): Promise<IUser> => firstValueFrom(this.userGateway.getMyUser()),
   });
 
-  public isLoggedIn(): boolean {
+  isLoggedIn(): boolean {
     //TODO LoginLogic must be implemented. OAuth2, Discord or smth like that
-    return true;
+    return false;
+  }
+
+  getNumberOfUsers(): Observable<number> {
+    return this.userGateway.getNumberOfUsers();
+  }
+
+  getNumberOfTodaysActiveUsers(): Observable<number> {
+    return this.userGateway.getNumberOfTodaysActiveUsers();
   }
 }

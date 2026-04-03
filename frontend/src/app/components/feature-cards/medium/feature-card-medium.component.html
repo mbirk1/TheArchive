@@ -1,0 +1,15 @@
+<div class="flex-1 space-y-4">
+  <div
+    class="w-12 h-12 rounded bg-on-primary-container/10 flex items-center justify-center mb-2 border border-on-primary-container/20"
+  >
+    <span
+      class="material-symbols-outlined text-{{ symbolColor() }}"
+      data-weight="fill"
+    >
+      {{ symbol() }}
+    </span>
+  </div>
+  <h3 class="text-2xl font-headline font-bold">{{ title() }}</h3>
+  <p class="text-on-surface-variant text-sm leading-relaxed">{{ subText() }}</p>
+</div>
+<ng-container *ngTemplateOutlet="template ?? null" />

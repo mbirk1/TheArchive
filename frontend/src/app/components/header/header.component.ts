@@ -10,12 +10,11 @@ import { HeaderChipComponent } from './header-chips/header-chip.component';
   standalone: true,
 })
 export class HeaderComponent {
+  private router: Router = inject(Router);
   protected userService: UserService = inject(UserService);
   protected isUserLoggedIn: Signal<boolean> = computed(() =>
     this.userService.isUserLoggedIn(),
   );
-
-  constructor(private router: Router) {}
 
   navigateToDecks(): void {
     this.router.navigate(['/user/decks']);

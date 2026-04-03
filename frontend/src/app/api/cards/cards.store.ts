@@ -1,9 +1,15 @@
-import { inject, ResourceRef, signal, WritableSignal } from '@angular/core';
+import {
+  inject,
+  Injectable,
+  resource,
+  ResourceRef,
+  signal,
+  WritableSignal,
+} from '@angular/core';
 import { CardsGateway } from './cards.gateway';
-import { resource } from '@angular/core';
-import { Injectable } from '@angular/core';
 import { firstValueFrom } from 'rxjs';
 import { ICard } from 'lib';
+import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class CardsStore {
@@ -22,20 +28,22 @@ export class CardsStore {
       firstValueFrom(this.cardGateway.findById(params.id)),
   });
 
-  public isLoading(): boolean {
+  isLoading(): boolean {
     return this.allCardsResource.isLoading();
   }
 
-  public allCards(): ICard[] {
+  allCards(): ICard[] {
     if (this.allCardsResource.hasValue()) {
       return this.allCardsResource.value();
     }
     return [];
   }
 
-  public specificCardValue(): ICard {
-    const value = this.specificCardResource.value()!;
-    console.log(value);
-    return value;
+  specificCardValue(): ICard {
+    return this.specificCardResource.value()!;
+  }
+
+  getRandomCard(): Observable<ICard> {
+    return this.cardGateway.getRandomCard();
   }
 }

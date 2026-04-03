@@ -1,0 +1,28 @@
+<ng-container *ngTemplateOutlet="template ?? null" />
+<div class="relative z-10 max-w-xs">
+  <div
+    class="w-12 h-12 rounded bg-primary/10 flex items-center justify-center mb-6 border border-primary/20"
+  >
+    <span
+      class="material-symbols-outlined text-{{ symbolColor() }}"
+      data-weight="fill"
+      >{{ symbol() }}</span
+    >
+  </div>
+  <h3 class="text-3xl font-headline font-bold mb-4">{{ title() }}</h3>
+  <p class="text-on-surface-variant leading-relaxed">
+    {{ subText() }}
+  </p>
+</div>
+<div class="relative z-10 pt-8">
+  <a
+    class="text-primary font-bold font-headline flex items-center gap-2 group/link"
+    href="#"
+  >
+    Open Vault
+    <span
+      class="material-symbols-outlined text-sm group-hover/link:translate-x-1 transition-transform"
+      >arrow_forward</span
+    >
+  </a>
+</div>

@@ -4,7 +4,63 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="docusaurus and landingpage styling" />
+    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="prettier run">
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/images/GitHub_Invertocat_Black.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/images/GitHub_Invertocat_White.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/api/deck/deck.gateway.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/api/deck/deck.store.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/large/feature-card-large.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/large/feature-card-large.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/medium/feature-card-medium.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/medium/feature-card-medium.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/small/feature-card-small.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/small/feature-card-small.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/bento-grid-panel/bento-grid-panel.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/bento-grid-panel/bento-grid-panel.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/services/deck/deck.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/shared/entities/deck.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/controller/card.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/card.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/modules/card.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/modules/card.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/repositories/scryfall.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/repositories/scryfall.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/services/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/card.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/footer/footer.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/footer/footer.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/landing.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/landing.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/landing.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/landing.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/cards/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/cards/card.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/config/config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/config/config.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -54,7 +110,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mariu/WebstormProjects/Sideboard/frontend/src/app/pages/browse-cards",
+    "last_opened_file_path": "C:/Users/mariu/WebstormProjects/Sideboard/frontend/src/app/components/feature-cards",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -72,6 +128,7 @@
       "postgresql"
     ],
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "HTML",
       "PLAIN_TEXT"
     ],
     "dev.nx.console.project_details_files": [
@@ -87,11 +144,9 @@
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\project.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\docs\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\docs\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\eslint.config.mjs",
@@ -105,21 +160,21 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\browse-cards" />
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\components\feature-cards" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing" />
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing\hero-panel" />
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\browse-cards" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\docs\static" />
-      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\personal\profile" />
-      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\personal\collection" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing" />
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\public\images" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\personal" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\public" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\assets\images" />
-      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\backend2" />
-      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\backend\src\app\database" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.frontend:lint">
+  <component name="RunManager" selected="Nx.frontend:serve">
     <configuration name="backend:build" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="build" />
@@ -273,7 +328,9 @@
       <workItem from="1774452306912" duration="633000" />
       <workItem from="1774949824438" duration="1328000" />
       <workItem from="1774951185137" duration="241000" />
-      <workItem from="1774951502602" duration="11905000" />
+      <workItem from="1774951502602" duration="12777000" />
+      <workItem from="1775219797478" duration="3320000" />
+      <workItem from="1775242217425" duration="12153000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -387,7 +444,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774963813902</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="prettier run">
+      <option name="closed" value="true" />
+      <created>1774964155432</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1774964155432</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,6 +475,7 @@
     <MESSAGE value="starting to obtain card details" />
     <MESSAGE value="setting up migrations n stuff" />
     <MESSAGE value="docusaurus and landingpage styling" />
-    <option name="LAST_COMMIT_MESSAGE" value="docusaurus and landingpage styling" />
+    <MESSAGE value="prettier run" />
+    <option name="LAST_COMMIT_MESSAGE" value="prettier run" />
   </component>
 </project>

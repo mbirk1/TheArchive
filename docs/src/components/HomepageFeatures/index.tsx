@@ -1,4 +1,4 @@
-import type {ReactNode} from 'react';
+import type { ReactNode } from 'react';
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
@@ -15,7 +15,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        The Archive ist dazu entworfen, die eigene Sammlung einfacher zu organisieren und zu verwalten.
+        The Archive ist dazu entworfen, die eigene Sammlung einfacher zu
+        organisieren und zu verwalten.
       </>
     ),
   },
@@ -24,7 +25,8 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        The Archive soll der einfache Weg sein deine Karten in Decks zu organisieren und deine Sammlung nach deinen Wünschen zu verwalten.
+        The Archive soll der einfache Weg sein deine Karten in Decks zu
+        organisieren und deine Sammlung nach deinen Wünschen zu verwalten.
       </>
     ),
   },
@@ -33,22 +35,19 @@ const FeatureList: FeatureItem[] = [
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Trage für deine Decks Ergebnisse und Statistiken ein. Womit wurde ein Gegner eliminiert worden? Poison, Commander Schaden?
+        Trage für deine Decks Ergebnisse und Statistiken ein. Womit wurde ein
+        Gegner eliminiert worden? Poison, Commander Schaden?
       </>
     ),
   },
   {
     title: 'Powered by Angular and NestJS',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-    description: (
-      <>
-        Erstellt und gewartet mit Angular und NestJS.
-      </>
-    ),
+    description: <>Erstellt und gewartet mit Angular und NestJS.</>,
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({ title, Svg, description }: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">

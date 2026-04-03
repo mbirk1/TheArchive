@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Router } from '@angular/router';
+import { ConfigService } from '../../services/config/config.service';
 
 @Component({
   imports: [],
@@ -6,4 +8,6 @@ import { Component } from '@angular/core';
   templateUrl: './footer.component.html',
   standalone: true,
 })
-export class FooterComponent {}
+export class FooterComponent {
+  protected configService: ConfigService = inject(ConfigService);
+}

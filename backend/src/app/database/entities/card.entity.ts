@@ -2,7 +2,6 @@ import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
 
 @Entity({ name: 'card' })
 export class Card {
-
   @PrimaryGeneratedColumn('uuid')
   id: string;
 

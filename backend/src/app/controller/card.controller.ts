@@ -2,6 +2,7 @@ import { Controller, Get, Inject, Param } from '@nestjs/common';
 import { CardService } from '../services/card.service';
 import { Card } from '../database/entities/card.entity';
 import { firstValueFrom, of } from 'rxjs';
+import { ICard } from 'lib';
 
 @Controller('cards')
 export class CardController {
@@ -13,7 +14,7 @@ export class CardController {
     return this.cardService.findAll();
   }
 
-  @Get(':id')
+  @Get('id=:id')
   public async getSpecificCard(@Param('id') id: string): Promise<Card> {
     return this.cardService.findSpecificCardById(id);
   }
@@ -25,5 +26,10 @@ export class CardController {
     this.cardService.searchForCardsByName(query);
 
     return firstValueFrom(of());
+  }
+
+  @Get('random')
+  public async randomCard(): Promise<ICard> {
+    return this.cardService.getRandomCard();
   }
 }

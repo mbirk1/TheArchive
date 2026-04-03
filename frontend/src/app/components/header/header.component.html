@@ -1,21 +1,29 @@
-<div class="bg-neutral">
-  <div class="flex justify-between gap-2">
-    <div class="flex items-center cursor-pointer">
-      <img
-        src="/images/logo-blue-background.png"
-        alt="Logo"
-        class="text-primary h-16"
-        routerLink="/"
-      />
-      <h2 class="text-primary font-bold text-2xl font-headline">The Archive</h2>
-      <app-header-chip
-        [text]="'Library'"
-        (click)="navigateToCollection()"
-      ></app-header-chip>
-      <app-header-chip
-        [text]="'Decks'"
-        (click)="navigateToDecks()"
-      ></app-header-chip>
+<div class="bg-neutral/80 backdrop-blur-xl fixed top-0 w-full z-50">
+  <div class="flex items-center justify-between px-8 py-4 max-w-none mx-auto">
+    <div class="flex items-center gap-8 cursor-pointer">
+      <div class="flex items-center gap-2">
+        <img
+          src="/images/logo-blue-background.png"
+          alt="Logo"
+          class="text-primary h-16"
+          routerLink="/"
+        />
+        <h2 class="text-primary font-bold text-2xl font-headline">
+          The Archive
+        </h2>
+      </div>
+      <div
+        class="hidden md:flex items-center gap-6 font-headline tracking-tight text-on-surface"
+      >
+        <app-header-chip
+          [text]="'Library'"
+          (click)="navigateToCollection()"
+        ></app-header-chip>
+        <app-header-chip
+          [text]="'Decks'"
+          (click)="navigateToDecks()"
+        ></app-header-chip>
+      </div>
     </div>
     @if (this.isUserLoggedIn()) {
       <div class="flex m-4 text-text-primary gap-4">
@@ -28,10 +36,14 @@
       </div>
     } @else {
       <div class="flex m-4">
-        <button class="menu right-0.5 text-text-primary cursor-pointer mr-4">
+        <button
+          class="menu text-[#94a3b8] hover:text-on-surface transition-colors font-headline px-4 py-2"
+        >
           Login
         </button>
-        <button class="menu right-0.5 text-text-primary cursor-pointer">
+        <button
+          class="menu bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-6 py-2 rounded-md font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-300"
+        >
           Registrieren
         </button>
       </div>

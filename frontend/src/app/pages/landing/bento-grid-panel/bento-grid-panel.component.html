@@ -1,0 +1,112 @@
+<section class="py-24 bg-surface-container-low relative">
+  <div class="max-w-7xl mx-auto px-8">
+    <div class="mb-16 space-y-4">
+      <h2 class="text-4xl font-headline font-bold tracking-tight">
+        Arkane Tools
+      </h2>
+      <p class="text-on-surface-variant max-w-xl">
+        Jede Funktion wurde entwickelt, um dir im Multiversum einen Vorteil zu
+        verschaffen.
+      </p>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      <!-- Large Feature Card -->
+      <app-feature-card-large
+        [title]="'Collection Tracking'"
+        [subText]="
+          'Erfasse jeden Pull, jeden Tausch und jede Foil-Karte. Dank der Integration von Marktwerten in Echtzeit behältst du dein Vermögen stets im Blick.'
+        "
+        [symbolColor]="'primary'"
+        [symbol]="'inventory_2'"
+        [template]="collectionTracker"
+      />
+      <!-- Small Feature Card 1 -->
+      <app-feature-card-small
+        [symbol]="'auto_fix_high'"
+        [symbolColor]="'tertiary'"
+        [subText]="
+          'KI-gestützte Manakurvenanalyse und Synergie Vorschläge, um dein 100-Karten-Meisterwerk zu perfektionieren.'
+        "
+        [title]="'Baue Decks'"
+        [template]="deckBuildingCard"
+      />
+
+      <!-- Small Feature Card 2 -->
+      <app-feature-card-small
+        [symbol]="'upload_file'"
+        [symbolColor]="'secondary'"
+        [subText]="
+          'Übertrage deine gesamte digitale oder physische Sammlung in Sekundenschnelle mit unserem CSV- und Bildscanner.'
+        "
+        [title]="'Massenimport'"
+        [template]="massImportCards"
+      />
+
+      <!-- Medium Feature Card -->
+      <app-feature-card-medium
+        [symbol]="'monitoring'"
+        [symbolColor]="'on-primary-container'"
+        [subText]="
+          'Ein detaillierter Einblick in die Deck-Leistung im gesamten Meta. Verfolge Gewinnquoten, die Wirksamkeit des Sideboards und lokale Turniere-Trends.'
+        "
+        [title]="'Fahre Analysen'"
+        [template]="analyzeDecks"
+      />
+    </div>
+  </div>
+</section>
+
+<ng-template #massImportCards>
+  <div
+    class="mt-auto bg-surface-container-lowest p-4 rounded-lg border border-outline-variant/10"
+  >
+    <div
+      class="flex items-center justify-between text-[10px] text-on-surface-variant mb-2"
+    >
+      <span>Sammlung importieren...</span>
+      <span class="text-primary">82%</span>
+    </div>
+    <div
+      class="w-full h-1 bg-surface-container-high rounded-full overflow-hidden"
+    >
+      <div class="h-full bg-primary w-[82%]"></div>
+    </div>
+  </div>
+</ng-template>
+
+<ng-template #deckBuildingCard>
+  <div class="mt-auto">
+    <img
+      alt="Deck Editor"
+      class="rounded-lg opacity-80"
+      data-alt="A clean UI widget showing a mana curve bar chart with teal and blue bars against a dark background."
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCcOoGhPgluvP1zCF2b46iw43vFJgxYZWnWVGJZBKk03Sp-6jRPQ4pSNqKf7xth3a8KpdoYcHq_bJW56W8Bx5eqPCP3OpsBhyflxf4k4h7gvUe6Zo5STHj4PCPT8mvRectjUv6FZw0-DShbqiJ8KwRjCeUUcpVl5pWR6zy-VSbjexSwWD5XsK3Kef9KKpuWFk6lHJMS2XQ8mR_6xOZENJE911t89TJquxy6WVlwUXSVDzt8GRv9v1JAK_dGYY4yhGXHOqXg5v4IlaSV"
+    />
+  </div>
+</ng-template>
+
+<ng-template #analyzeDecks>
+  <div
+    class="flex-1 w-full h-48 bg-surface-container-lowest rounded-lg border border-outline-variant/5 overflow-hidden"
+  >
+    <img
+      alt="Analytics View"
+      class="w-full h-full object-cover opacity-50"
+      data-alt="Abstract data visualization with glowing line charts and mystical runes glowing in cyan."
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1ZhO6YhIiKb67iZo6Gcv8y2CqPDTFeESHhAmACbwern-v8X6c_-kYYgcx2NY458s7mCPzGytU6UYUqZcBM4HnWeh_XP6jR-DabHd39GY43HWfQ2doGHOkKV5LEixGQDV1N4HDOLmDvS4vAjUP0hjh3hFs15uIIrm5X1FWQqVoGddJESiZkXwucrfcQleYIV00iaJP0ed88UKjzSLNtDwYJ_CwNQo8ebanPUcQNQNiNnNe6ec_LF8jw8LtaRAunLZL6NFKujKGCTtQ"
+    />
+  </div>
+</ng-template>
+
+<ng-template #collectionTracker>
+  <div
+    class="absolute top-0 right-0 w-2/3 h-full opacity-40 group-hover:opacity-60 transition-opacity duration-500"
+  >
+    <img
+      alt="Collection View"
+      class="object-cover h-full w-full"
+      data-alt="Close up of a digital card library interface with complex sorting icons and glowing card borders."
+      src="https://lh3.googleusercontent.com/aida-public/AB6AXuCfcx4tDKqYe-jjjKltSzodqqspoqKtgMeN7WcQAzdpS_2R2ylDjz4lf0fkvOJzN85o6Xgr3n1NgrXsDQ9ii2ujl8Pr8x7kPzXiIzY3ZEyU_MZnoRh8kwy4Yd-RqLfr84dX7ZR2E4UfQNAGylqKMXFDYs7wMaMRGNG0x-MqjvUUch_y3PcmwEuBncDnn4CKE1xy2Ya0w1YMTdAGWouSaWdMSOdVWMLWOPP7LaC56wgEg9L3JsIKzUp7bgi-HokzFZx6e_IoE6TM_iPr"
+    />
+  </div>
+</ng-template>

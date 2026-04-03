@@ -1,0 +1,122 @@
+<main class="relative pt-32 pb-20 overflow-hidden">
+  <div
+    class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[800px] opacity-20 pointer-events-none"
+  >
+    <div
+      class="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,#67d3ff_0%,transparent_70%)] blur-[120px]"
+    ></div>
+  </div>
+  <div
+    class="relative max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center"
+  >
+    <div class="space-y-8">
+      <div
+        class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high border border-outline-variant/20 text-tertiary text-sm font-medium tracking-wide"
+      >
+        <span
+          class="material-symbols-outlined text-sm"
+          style="font-variation-settings: 'FILL' 1"
+          >auto_awesome</span
+        >
+        DAS ULTIMATIVE GRIMOIRE FÜR PLANESWALKER
+      </div>
+      <h1
+        class="text-7xl font-headline font-extrabold tracking-tighter text-on-surface leading-[0.9]"
+      >
+        Meistere dein
+        <span
+          class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-tertiary"
+          >Mana</span
+        >
+      </h1>
+      <p
+        class="text-xl text-on-surface-variant max-w-xl font-light leading-relaxed"
+      >
+        Ein himmlisches Archiv für hochkarätige Deck-Designer. Organisiere deine
+        Sammlung mit mystischer Präzision und entwickle das nächste
+        Meta-definierende Deck.
+      </p>
+      <div class="flex flex-wrap gap-4">
+        <button
+          class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-8 py-4 rounded-md font-headline font-bold text-lg hover:shadow-[0_0_20px_rgba(103,211,255,0.4)] transition-all"
+        >
+          Tritt ein in das Archive
+        </button>
+        <button
+          class="px-8 py-4 rounded-md font-headline font-bold text-lg border border-outline-variant/20 text-on-surface hover:bg-surface-container-low transition-colors flex items-center gap-2"
+        >
+          Erforsche das Archive
+          <span class="material-symbols-outlined">arrow_forward</span>
+        </button>
+      </div>
+      <div class="flex items-center gap-6 pt-4">
+        <div class="flex -space-x-3">
+          <div
+            class="w-10 h-10 rounded-full border-2 border-background overflow-hidden bg-surface-container"
+          >
+            <img
+              alt="User"
+              data-alt="Portrait of a young woman with neon blue lighting highlights, cyberpunk aesthetic, digital art style."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBqGQBdcFqY5mChoyZXrzVtBCcxVQHGh1tmwpraDmZ27WvEfUDRqIdgd5F1cAWgFx0MCt4JoV5TdTv0aA6QdV3mgbsmJvIu_YRG-uyGVuoUzM9_Px9tcHQk0-eIa_rPEm17Nz592-OrswEX9LSuJWGYJyTcWa5pgKxe_lvyliQACn5HXVfDI6fb-tnAZXP8fzfgpfTHzpD_iYIBIrsAo83Yu8Ad_30RTsaRICjm2ES7NV9RiyzogTQPJ51yW2VODQ3n3_PfCaMHDI_Z"
+            />
+          </div>
+          <div
+            class="w-10 h-10 rounded-full border-2 border-background overflow-hidden bg-surface-container"
+          >
+            <img
+              alt="User"
+              data-alt="Portrait of a wizard character with glowing ethereal eyes and a dark hooded cloak, cinematic lighting."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuBep7H5nyZolc3NGvWN01HBS2MR0Xjvc09ICy_td-LbbxVc9DjyfDhTxorr-o6tfOvFJiuvsUx6yIdYmAZII_WIJRFjRF-9KFtpmGlobhlNUI1lGjxcirhF4dUy36rOjFyMqydDAj--9jV9Jp53O9teavbMvGLIhK1EH3RzcCa071-xK2rVqqRD9xUeuXBHBSCQFrV5YbCV8hW-7PpzndO5O8W-60muJ2RNFrTXPlVARIQV6ADBoV72lPaFa7q_NXSbMIlMX13dHH3q"
+            />
+          </div>
+          <div
+            class="w-10 h-10 rounded-full border-2 border-background overflow-hidden bg-surface-container"
+          >
+            <img
+              alt="User"
+              data-alt="Abstract mystical avatar representing a mana symbol with glowing purple and cyan energy patterns."
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9-pp0Kk2gRlJwP2aYNaNNc9rkenuoQ1C49YUfei158SbGSXh0GcLLd9p1zdutRqw-npxQY5MWZ1S6vYCqCpfJgXrOAdPw5k5L_TuIyj1DRHyvyepy5jtVmu461D38GmjxP3JIZl6ccvzuVZ_Y0byI86irTr_k3S-iuRMfiBHpPsqQhUwbVtIXi42srTWe_ypSSmU_6pPShQGvAU10E88amidvf9z1bvGj8XW_qQq13RM4BjF8hQzYwRG085PyIZSyzV1jmXyOi-Zz"
+            />
+          </div>
+        </div>
+        <p class="text-sm text-on-surface-variant font-label">
+          <span class="text-primary font-bold">{{
+            numberOfActiveUsers()
+          }}</span>
+          aktive Player heute
+        </p>
+      </div>
+    </div>
+
+    <!-- Hero Visual Section -->
+    <div class="relative group">
+      <div
+        class="absolute -inset-4 bg-primary/20 blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 rounded-full"
+      ></div>
+      <div
+        class="relative glass-panel rounded-xl border border-outline-variant/10 overflow-hidden shadow-2xl"
+      >
+        <img
+          alt="Featured Deck View"
+          class="w-full h-auto scale-105 group-hover:scale-110 transition-transform duration-700"
+          data-alt="Sophisticated UI dashboard displaying a collection of glowing magical trading cards floating in a digital dark space with energy threads."
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYuM0ditv5KF5wVog90pACRGetKguaL0Tue33CFfATQV6TCk0t54WwoH1J3IsV6Lrz9Py0Jbdqn3RPnmD9MWaA3ciNOAcn3PKFD3Mdd3o59yUJUwcBS9-u-wbKhr521fzbljactlYaGAHmk4sNEkUgzz3BWStiHvCcFzTUyt_p3JQPvV2fP9OY8naV2esIn5UtSsSCyaJ0lAb0ASeSfAeM-hAoyPTvUTYelS1qMwcA8tVJHsAmMTv-S9NpdEcocz0hI6qryoLFWSBw"
+        />
+        <div
+          class="absolute bottom-0 left-0 right-0 p-6 bg-gradient-to-t from-background to-transparent"
+        >
+          <div class="flex justify-between items-end">
+            <div>
+              <p
+                class="text-xs font-label text-tertiary tracking-widest uppercase"
+              >
+                Aktuell im Trend
+              </p>
+              <h3 class="text-2xl font-headline font-bold">{{ card() }}</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
