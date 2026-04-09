@@ -6,6 +6,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { allEntities } from './database/entities';
 import { allMigrations } from './database/migrations';
+import { UserModule } from './modules/user.module';
 
 @Module({
   imports: [
@@ -29,6 +30,7 @@ import { allMigrations } from './database/migrations';
     ConfigModule.forRoot({}),
     ConfigModule,
     CardModule,
+    UserModule,
   ],
   controllers: [AppController],
   providers: [AppService],

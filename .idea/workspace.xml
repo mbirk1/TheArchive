@@ -4,62 +4,34 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="prettier run">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/images/GitHub_Invertocat_Black.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/images/GitHub_Invertocat_White.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/api/deck/deck.gateway.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/api/deck/deck.store.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/large/feature-card-large.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/large/feature-card-large.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/medium/feature-card-medium.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/medium/feature-card-medium.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/small/feature-card-small.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/components/feature-cards/small/feature-card-small.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/bento-grid-panel/bento-grid-panel.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/bento-grid-panel/bento-grid-panel.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/services/deck/deck.service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/src/shared/entities/deck.ts" afterDir="false" />
+    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="almost finished landing page, hero section not">
+      <change afterPath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/database/entities/user.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/modules/user.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-visual-section/hero-visual-section.component.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-visual-section/hero-visual-section.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/controller/card.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/card.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/modules/card.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/modules/card.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/repositories/scryfall.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/repositories/scryfall.repository.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/services/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/card.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.gateway.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.gateway.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/footer/footer.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/footer/footer.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/footer/footer.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/footer/footer.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/landing.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/landing.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/landing.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/landing.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/cards/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/cards/card.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/config/config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/config/config.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/styles.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/card.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/card.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/images/logo-blue-background.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/images/logo-blue-background.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,12 +77,13 @@
     "Nx.frontend:build.executor": "Run",
     "Nx.frontend:lint.executor": "Run",
     "Nx.frontend:serve.executor": "Run",
+    "Nx.frontend:serve:development.executor": "Run",
     "Nx.shop:serve.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mariu/WebstormProjects/Sideboard/frontend/src/app/components/feature-cards",
+    "last_opened_file_path": "C:/Users/mariu/WebstormProjects/Sideboard/backend/src/app/database/entities",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -160,15 +133,15 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\backend\src\app\database\entities" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\components\feature-cards" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing\hero-panel" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\browse-cards" />
-      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\docs\static" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\public\images" />
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\personal" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\public" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\assets\images" />
@@ -207,14 +180,6 @@
       <option name="arguments" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="backend:serve:development" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
-      <option name="nx-projects" value="backend" />
-      <option name="nx-targets" value="serve" />
-      <option name="nx-target-configuration" value="development" />
-      <envs />
-      <option name="arguments" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="frontend:build" type="NxRunConfigurationType">
       <option name="nx-projects" value="frontend" />
       <option name="nx-targets" value="build" />
@@ -235,6 +200,14 @@
       <option name="nx-projects" value="frontend" />
       <option name="nx-targets" value="serve" />
       <option name="nx-target-configuration" value="" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="frontend:serve:development" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="nx-projects" value="frontend" />
+      <option name="nx-targets" value="serve" />
+      <option name="nx-target-configuration" value="development" />
       <envs />
       <option name="arguments" value="" />
       <method v="2" />
@@ -288,11 +261,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Nx.frontend:serve:development" />
         <item itemvalue="Nx.backend:build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
         <item itemvalue="Docker.docker-compose.yml.sideboard-db: Compose Deployment" />
-        <item itemvalue="Nx.backend:serve:development" />
       </list>
     </recent_temporary>
   </component>
@@ -330,7 +303,17 @@
       <workItem from="1774951185137" duration="241000" />
       <workItem from="1774951502602" duration="12777000" />
       <workItem from="1775219797478" duration="3320000" />
-      <workItem from="1775242217425" duration="12153000" />
+      <workItem from="1775242217425" duration="12578000" />
+      <workItem from="1775390481615" duration="358000" />
+      <workItem from="1775390914539" duration="29000" />
+      <workItem from="1775390950990" duration="21000" />
+      <workItem from="1775391035843" duration="1474000" />
+      <workItem from="1775392558169" duration="413000" />
+      <workItem from="1775392980541" duration="751000" />
+      <workItem from="1775393754509" duration="151000" />
+      <workItem from="1775643815914" duration="532000" />
+      <workItem from="1775644372960" duration="27000" />
+      <workItem from="1775727299426" duration="1968000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -452,7 +435,15 @@
       <option name="project" value="LOCAL" />
       <updated>1774964155432</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="almost finished landing page, hero section not">
+      <option name="closed" value="true" />
+      <created>1775255216910</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1775255216910</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -476,6 +467,7 @@
     <MESSAGE value="setting up migrations n stuff" />
     <MESSAGE value="docusaurus and landingpage styling" />
     <MESSAGE value="prettier run" />
-    <option name="LAST_COMMIT_MESSAGE" value="prettier run" />
+    <MESSAGE value="almost finished landing page, hero section not" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost finished landing page, hero section not" />
   </component>
 </project>

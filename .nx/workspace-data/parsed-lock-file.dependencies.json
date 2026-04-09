@@ -9875,6 +9875,21 @@
     "type": "static"
   },
   {
+    "source": "npm:@nestjs/axios",
+    "target": "npm:@nestjs/common",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/axios",
+    "target": "npm:axios",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/axios",
+    "target": "npm:rxjs",
+    "type": "static"
+  },
+  {
     "source": "npm:@nestjs/common",
     "target": "npm:reflect-metadata",
     "type": "static"

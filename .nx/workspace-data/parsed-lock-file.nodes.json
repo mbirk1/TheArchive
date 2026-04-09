@@ -6021,6 +6021,15 @@
         "hash": "sha512-ZVWUcfwY4E/yPitQJl481FjFo3K22D6qF0DuFH6Y/nbnE11GY5uguDxZMGXPQ8WQ0128MXQD7TnfHyK4oWoIJQ=="
       }
     },
+    "npm:@nestjs/axios": {
+      "type": "npm",
+      "name": "npm:@nestjs/axios",
+      "data": {
+        "version": "4.0.1",
+        "packageName": "@nestjs/axios",
+        "hash": "sha512-68pFJgu+/AZbWkGu65Z3r55bTsCPlgyKaV4BSG8yUAD72q1PPuyVRgUwFv6BxdnibTUHlyxm06FmYWNC+bjN7A=="
+      }
+    },
     "npm:@nestjs/common": {
       "type": "npm",
       "name": "npm:@nestjs/common",
@@ -10849,9 +10858,9 @@
       "type": "npm",
       "name": "npm:axios",
       "data": {
-        "version": "1.13.3",
+        "version": "1.14.0",
         "packageName": "axios",
-        "hash": "sha512-ERT8kdX7DZjtUm7IitEyV7InTHAF42iJuMArIiDIV5YtPanJkgw4hw5Dyg9fh0mihdWNn1GKaeIWErfe56UQ1g=="
+        "hash": "sha512-3Y8yrqLSwjuzpXuZ0oIYZ/XGgLwUIBU3uLvbcpb0pidD9ctpShJd43KSlEEkVQg6DS0G9NKyzOvBfUtDKEyHvQ=="
       }
     },
     "npm:axobject-query": {
@@ -18382,9 +18391,9 @@
       "type": "npm",
       "name": "npm:proxy-from-env",
       "data": {
-        "version": "1.1.0",
+        "version": "2.1.0",
         "packageName": "proxy-from-env",
-        "hash": "sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg=="
+        "hash": "sha512-cJ+oHTW1VAEa8cJslgmUZrc+sjRKgAKl3Zyse6+PV38hZe/V6Z14TbCuXcan9F9ghlz4QrFr2c92TNF82UkYHA=="
       }
     },
     "npm:prr": {
@@ -21800,6 +21809,7 @@
     "node_modules/@napi-rs/nice-win32-ia32-msvc": "npm:@napi-rs/nice-win32-ia32-msvc",
     "node_modules/@napi-rs/nice-win32-x64-msvc": "npm:@napi-rs/nice-win32-x64-msvc",
     "node_modules/@napi-rs/wasm-runtime": "npm:@napi-rs/wasm-runtime",
+    "node_modules/@nestjs/axios": "npm:@nestjs/axios",
     "node_modules/@nestjs/common": "npm:@nestjs/common",
     "node_modules/@nestjs/config": "npm:@nestjs/config",
     "node_modules/@nestjs/core": "npm:@nestjs/core",

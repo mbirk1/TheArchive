@@ -1,0 +1,25 @@
+<div class="flex justify-between items-end w-1/2">
+  <div>
+    <p class="text-xs font-label text-tertiary tracking-widest uppercase">
+      Aktuell im Trend
+    </p>
+    <h3 class="text-2xl font-headline font-bold text-white">
+      {{ card()?.name }}
+    </h3>
+  </div>
+</div>
+
+<div class="relative group w-1/2">
+  <div
+    class="absolute -inset-4 bg-primary/20 blur-3xl opacity-30 group-hover:opacity-50 transition-opacity duration-500 rounded-full"
+  ></div>
+  <div
+    class="relative rounded-xl border border-outline-variant/10 overflow-hidden shadow-2xl"
+  >
+    <img
+      [alt]="card()?.oracle_text"
+      class="h-auto scale-105 group-hover:scale-110 transition-transform duration-700 z-0"
+      [src]="card()?.image_uris?.png"
+    />
+  </div>
+</div>
