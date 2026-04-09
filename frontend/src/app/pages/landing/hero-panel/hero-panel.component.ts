@@ -3,9 +3,10 @@ import { UserService } from '../../../services/user/user.service';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { CommonModule } from '@angular/common';
 import { HeroVisualSectionComponent } from './hero-visual-section/hero-visual-section.component';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [CommonModule, HeroVisualSectionComponent],
+  imports: [CommonModule, HeroVisualSectionComponent, RouterLink],
   selector: 'app-hero-panel',
   templateUrl: './hero-panel.component.html',
   standalone: true,

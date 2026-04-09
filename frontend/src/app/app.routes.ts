@@ -5,6 +5,7 @@ import { PersonalProfileComponent } from './pages/personal/profile/personal-prof
 import { CardDetailComponent } from './pages/card-detail/card-detail.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { BrowseCardsComponent } from './pages/browse-cards/browse-cards.component';
+import { SignUpInComponent } from './pages/sign-up/sign-up-in.component';
 
 export const appRoutes: Route[] = [
   {
@@ -35,5 +36,9 @@ export const appRoutes: Route[] = [
         component: PersonalProfileComponent,
       },
     ],
+  },
+  {
+    path: 'login',
+    component: SignUpInComponent,
   },
 ];

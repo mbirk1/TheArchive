@@ -24,4 +24,8 @@ export class ConfigService {
   get gitHubLink(): string {
     return environment.githubLink;
   }
+
+  get enableSsoLoginOrSignUp() {
+    return environment.enableSsoLoginOrSignUp;
+  }
 }

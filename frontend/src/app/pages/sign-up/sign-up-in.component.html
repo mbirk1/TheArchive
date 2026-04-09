@@ -1,0 +1,84 @@
+<div class="min-h-screen flex items-center justify-center">
+  <div
+    class="relative z-10 w-full max-w-[1200px] px-6 pb-12 pt-20 flex items-center justify-center"
+  >
+    <div class="w-full max-w-md space-y-8">
+      <!-- Switcher -->
+      <div class="flex bg-surface-container-low p-1 rounded-lg">
+        <button
+          class="flex-1 py-2 px-4 rounded text-sm font-medium transition-all"
+          [ngClass]="{
+            'bg-surface-container-highest text-primary shadow-sm':
+              switcherState() === 'login',
+            'text-on-surface-variant hover:text-on-surface':
+              switcherState() !== 'login',
+          }"
+          (click)="switcherState.set('login')"
+        >
+          Login
+        </button>
+        <button
+          class="flex-1 py-2 px-4 rounded text-sm font-medium transition-all"
+          [ngClass]="{
+            'bg-surface-container-highest text-primary shadow-sm':
+              switcherState() === 'signup',
+            'text-on-surface-variant hover:text-on-surface':
+              switcherState() !== 'signup',
+          }"
+          (click)="switcherState.set('signup')"
+        >
+          Account erstellen
+        </button>
+      </div>
+
+      <!-- Form Card -->
+      <div class="space-y-6">
+        <div class="relative min-h-[522px]">
+          @if (switcherState() === 'login') {
+            <app-sign-in />
+          } @else {
+            <app-sign-up />
+          }
+        </div>
+        @if (this.enableSso()) {
+          <div class="relative flex items-center py-4">
+            <div class="flex-grow border-t border-outline-variant/10"></div>
+            <span
+              class="flex-shrink mx-4 text-xs font-label text-on-surface-variant uppercase tracking-widest"
+              >Verbinden über Leylinien</span
+            >
+            <div class="flex-grow border-t border-outline-variant/10"></div>
+          </div>
+          <div class="grid grid-cols-2 gap-4">
+            <button
+              class="flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors group"
+            >
+              <span
+                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors"
+                >hub</span
+              >
+              <span class="text-xs font-medium">Discord</span>
+            </button>
+            <button
+              class="flex items-center justify-center gap-2 py-3 px-4 rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors group"
+            >
+              <span
+                class="material-symbols-outlined text-on-surface-variant group-hover:text-primary transition-colors"
+                >token</span
+              >
+              <span class="text-xs font-medium">Web3</span>
+            </button>
+          </div>
+        }
+      </div>
+      <footer class="pt-8 text-center">
+        <p class="text-xs text-on-surface-variant leading-relaxed">
+          © 2026 The Archive. All mana reserved. <br />
+          <span class="opacity-60"
+            >Bei Registrierung stimmt man den Terms of Sorcery zu.</span
+          >
+        </p>
+      </footer>
+    </div>
+  </div>
+</div>

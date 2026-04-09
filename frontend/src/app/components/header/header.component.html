@@ -1,12 +1,11 @@
 <div class="bg-neutral/80 backdrop-blur-xl fixed top-0 w-full z-50">
   <div class="flex items-center justify-between px-8 py-4 max-w-none mx-auto">
-    <div class="flex items-center gap-8 cursor-pointer">
+    <div class="flex items-center gap-8 cursor-pointer" routerLink="">
       <div class="flex items-center gap-2">
         <img
           src="/images/logo-blue-background.png"
           alt="Logo"
           class="text-primary h-16"
-          routerLink="/"
         />
         <h2 class="text-primary font-bold text-2xl font-headline">
           The Archive
@@ -43,6 +42,7 @@
         </button>
         <button
           class="menu bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-6 py-2 rounded-md font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-300"
+          (click)="navigateToLoginSignUp()"
         >
           Registrieren
         </button>

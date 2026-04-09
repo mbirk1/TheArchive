@@ -10,7 +10,7 @@ import { HeaderChipComponent } from './header-chips/header-chip.component';
   standalone: true,
 })
 export class HeaderComponent {
-  private router: Router = inject(Router);
+  protected router: Router = inject(Router);
   protected userService: UserService = inject(UserService);
   protected isUserLoggedIn: Signal<boolean> = computed(() =>
     this.userService.isUserLoggedIn(),
@@ -26,5 +26,9 @@ export class HeaderComponent {
 
   protected navigateToProfile(): void {
     this.router.navigate(['/user/profile']);
+  }
+
+  protected navigateToLoginSignUp(): void {
+    this.router.navigate(['/login']);
   }
 }
