@@ -17940,6 +17940,26 @@
     "type": "static"
   },
   {
+    "source": "npm:argon2",
+    "target": "npm:@phc/format",
+    "type": "static"
+  },
+  {
+    "source": "npm:argon2",
+    "target": "npm:cross-env",
+    "type": "static"
+  },
+  {
+    "source": "npm:argon2",
+    "target": "npm:node-addon-api@8.7.0",
+    "type": "static"
+  },
+  {
+    "source": "npm:argon2",
+    "target": "npm:node-gyp-build",
+    "type": "static"
+  },
+  {
     "source": "npm:autoprefixer",
     "target": "npm:postcss",
     "type": "static"
@@ -19212,6 +19232,16 @@
   {
     "source": "npm:cron-parser",
     "target": "npm:luxon",
+    "type": "static"
+  },
+  {
+    "source": "npm:cross-env",
+    "target": "npm:@epic-web/invariant",
+    "type": "static"
+  },
+  {
+    "source": "npm:cross-env",
+    "target": "npm:cross-spawn",
     "type": "static"
   },
   {

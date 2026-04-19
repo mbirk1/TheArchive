@@ -2,7 +2,7 @@ import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ConfigService } from '../../services/config/config.service';
 import { Observable } from 'rxjs';
-import { IUser } from 'lib';
+import { ICreateUserFormDataValue, IUser } from 'lib';
 
 @Injectable({ providedIn: 'root' })
 export class UserGateway {
@@ -19,5 +19,10 @@ export class UserGateway {
 
   getNumberOfTodaysActiveUsers(): Observable<number> {
     return this.http.get<number>(this.configService.apiUrl + '/user/today');
+  }
+
+  createUser(user: ICreateUserFormDataValue): Observable<IUser> {
+    console.log(this.configService.apiUrl);
+    return this.http.post<IUser>(this.configService.apiUrl + '/user', user);
   }
 }

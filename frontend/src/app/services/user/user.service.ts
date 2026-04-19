@@ -1,6 +1,7 @@
 import { inject, Injectable } from '@angular/core';
 import { UserStore } from '../../api/user/user.store';
-import { Observable } from 'rxjs';
+import { firstValueFrom, Observable } from 'rxjs';
+import { ICreateUserFormData, ICreateUserFormDataValue, IUser } from 'lib';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
@@ -16,5 +17,15 @@ export class UserService {
 
   getNumberOfTodaysActiveUsers(): Observable<number> {
     return this.userStore.getNumberOfTodaysActiveUsers();
+  }
+
+  createUser(user: Partial<ICreateUserFormDataValue>) {
+    const { userName, password, confirmPassword, eMail } = user;
+
+    if (!userName?.trim() || !password?.trim() || !confirmPassword?.trim() || !eMail?.trim()) {
+      return;
+    }
+
+    return firstValueFrom(this.userStore.createUser(user as ICreateUserFormDataValue));
   }
 }

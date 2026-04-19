@@ -7,6 +7,7 @@ import { ConfigModule, ConfigService } from '@nestjs/config';
 import { allEntities } from './database/entities';
 import { allMigrations } from './database/migrations';
 import { UserModule } from './modules/user.module';
+import { LoggerModule } from './modules/logger.module';
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { UserModule } from './modules/user.module';
     ConfigModule,
     CardModule,
     UserModule,
+    LoggerModule
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -2,7 +2,6 @@ import { DataSource } from 'typeorm';
 import { join } from 'path';
 import { allMigrations } from './migrations';
 
-console.log(__dirname + '/migrations');
 export const AppDataSource = new DataSource({
   synchronize: false,
   migrations: allMigrations,

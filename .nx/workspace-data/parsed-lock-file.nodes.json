@@ -3951,6 +3951,15 @@
         "hash": "sha512-WI0DdZ8xFSbgMjR1sFsKABJ/C5OnRrjT06JXbZKexJGrDuPTzZdDYfFlsgcCXCyf+suG5QU2e/y1Wo2V/OapLQ=="
       }
     },
+    "npm:@epic-web/invariant": {
+      "type": "npm",
+      "name": "npm:@epic-web/invariant",
+      "data": {
+        "version": "1.0.0",
+        "packageName": "@epic-web/invariant",
+        "hash": "sha512-lrTPqgvfFQtR/eY/qkIzp98OGdNJu0m5ji3q/nJI8v3SXkRKEnWiOxMmbvcSoAIzv/cGiuvRy57k4suKQSAdwA=="
+      }
+    },
     "npm:@eslint-community/eslint-utils": {
       "type": "npm",
       "name": "npm:@eslint-community/eslint-utils",
@@ -8001,6 +8010,15 @@
         "hash": "sha512-hbQlYcCq5dlAX9Qx+kFb0FHue6vbjlf0FrNzSKdYK2APUf7tGfGxQCk2ihEREmbR6ZMc0MVAD5RIX/41gpUzTw=="
       }
     },
+    "npm:@phc/format": {
+      "type": "npm",
+      "name": "npm:@phc/format",
+      "data": {
+        "version": "1.0.0",
+        "packageName": "@phc/format",
+        "hash": "sha512-m7X9U6BG2+J+R1lSOdCiITLLrxm+cWlNI3HUFA92oLO77ObGNzaKdh8pMLqdZcshtkKuV84olNNXDfMc4FezBQ=="
+      }
+    },
     "npm:@pkgjs/parseargs": {
       "type": "npm",
       "name": "npm:@pkgjs/parseargs",
@@ -10773,6 +10791,42 @@
         "hash": "sha512-PYjyFOLKQ9y57JvQ6QLo8dAgNqswh8M1RMJYdQduT6xbWSgK36P/Z/v+p888pM69jMMfS8Xd8F6I1kQ/I9HUGg=="
       }
     },
+    "npm:argon2": {
+      "type": "npm",
+      "name": "npm:argon2",
+      "data": {
+        "version": "0.44.0",
+        "packageName": "argon2",
+        "hash": "sha512-zHPGN3S55sihSQo0dBbK0A5qpi2R31z7HZDZnry3ifOyj8bZZnpZND2gpmhnRGO1V/d555RwBqIK5W4Mrmv3ig=="
+      }
+    },
+    "npm:node-addon-api@8.7.0": {
+      "type": "npm",
+      "name": "npm:node-addon-api@8.7.0",
+      "data": {
+        "version": "8.7.0",
+        "packageName": "node-addon-api",
+        "hash": "sha512-9MdFxmkKaOYVTV+XVRG8ArDwwQ77XIgIPyKASB1k3JPq3M8fGQQQE3YpMOrKm6g//Ktx8ivZr8xo1Qmtqub+GA=="
+      }
+    },
+    "npm:node-addon-api@6.1.0": {
+      "type": "npm",
+      "name": "npm:node-addon-api@6.1.0",
+      "data": {
+        "version": "6.1.0",
+        "packageName": "node-addon-api",
+        "hash": "sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA=="
+      }
+    },
+    "npm:node-addon-api": {
+      "type": "npm",
+      "name": "npm:node-addon-api",
+      "data": {
+        "version": "7.1.1",
+        "packageName": "node-addon-api",
+        "hash": "sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ=="
+      }
+    },
     "npm:aria-query": {
       "type": "npm",
       "name": "npm:aria-query",
@@ -12121,6 +12175,15 @@
         "version": "4.9.0",
         "packageName": "cron-parser",
         "hash": "sha512-p0SaNjrHOnQeR8/VnfGbmg9te2kfyYSQ7Sc/j/6DtPL3JQvKxmjO9TSjNFpujqV3vEYYBvNNvXSxzyksBWAx1Q=="
+      }
+    },
+    "npm:cross-env": {
+      "type": "npm",
+      "name": "npm:cross-env",
+      "data": {
+        "version": "10.1.0",
+        "packageName": "cross-env",
+        "hash": "sha512-GsYosgnACZTADcmEyJctkJIoqAhHjttw7RsFrVoJNXbsWWqaq6Ym+7kZjq6mS45O0jij6vtiReppKQEtqWy6Dw=="
       }
     },
     "npm:cross-spawn": {
@@ -15750,24 +15813,6 @@
         "hash": "sha512-GWV1kVi6uhrXWqe+3NXWO73OYe8fto6q8JMo0HOpk1vf8nEyFWgo4CSNJpIFzsOxOrysVUlcO48qRbQfmKd1gA=="
       }
     },
-    "npm:node-addon-api@6.1.0": {
-      "type": "npm",
-      "name": "npm:node-addon-api@6.1.0",
-      "data": {
-        "version": "6.1.0",
-        "packageName": "node-addon-api",
-        "hash": "sha512-+eawOlIgy680F0kBzPUNFhMZGtJ1YmqM6l4+Crf4IkImjYrO/mqPwRMh352g23uIaQKFItcQ64I7KMaJxHgAVA=="
-      }
-    },
-    "npm:node-addon-api": {
-      "type": "npm",
-      "name": "npm:node-addon-api",
-      "data": {
-        "version": "7.1.1",
-        "packageName": "node-addon-api",
-        "hash": "sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ=="
-      }
-    },
     "npm:load-esm": {
       "type": "npm",
       "name": "npm:load-esm",
@@ -16873,6 +16918,15 @@
         "version": "12.1.0",
         "packageName": "node-gyp",
         "hash": "sha512-W+RYA8jBnhSr2vrTtlPYPc1K+CSjGpVDRZxcqJcERZ8ND3A1ThWPHRwctTx3qC3oW99jt726jhdz3Y6ky87J4g=="
+      }
+    },
+    "npm:node-gyp-build": {
+      "type": "npm",
+      "name": "npm:node-gyp-build",
+      "data": {
+        "version": "4.8.4",
+        "packageName": "node-gyp-build",
+        "hash": "sha512-LA4ZjwlnUblHVgq0oBF3Jl/6h/Nvs5fzBLwdEF4nuxnFdsfajde4WfxtJr3CaiH+F6ewcIB/q4jQ4UzPyid+CQ=="
       }
     },
     "npm:node-gyp-build-optional-packages": {
@@ -21588,6 +21642,7 @@
     "node_modules/@emnapi/core": "npm:@emnapi/core",
     "node_modules/@emnapi/runtime": "npm:@emnapi/runtime",
     "node_modules/@emnapi/wasi-threads": "npm:@emnapi/wasi-threads",
+    "node_modules/@epic-web/invariant": "npm:@epic-web/invariant",
     "node_modules/@esbuild/aix-ppc64": "npm:@esbuild/aix-ppc64",
     "node_modules/@esbuild/android-arm": "npm:@esbuild/android-arm",
     "node_modules/@esbuild/android-arm64": "npm:@esbuild/android-arm64",
@@ -22078,6 +22133,7 @@
     "node_modules/@parcel/watcher-win32-arm64": "npm:@parcel/watcher-win32-arm64",
     "node_modules/@parcel/watcher-win32-ia32": "npm:@parcel/watcher-win32-ia32",
     "node_modules/@parcel/watcher-win32-x64": "npm:@parcel/watcher-win32-x64",
+    "node_modules/@phc/format": "npm:@phc/format",
     "node_modules/@phenomnomnominal/tsquery": "npm:@phenomnomnominal/tsquery",
     "node_modules/@pkgjs/parseargs": "npm:@pkgjs/parseargs",
     "node_modules/@pkgr/core": "npm:@pkgr/core",
@@ -22441,6 +22497,8 @@
     "node_modules/anymatch/node_modules/picomatch": "npm:picomatch@2.3.1",
     "node_modules/append-field": "npm:append-field",
     "node_modules/arg": "npm:arg",
+    "node_modules/argon2": "npm:argon2",
+    "node_modules/argon2/node_modules/node-addon-api": "npm:node-addon-api@8.7.0",
     "node_modules/argparse": "npm:argparse",
     "node_modules/aria-query": "npm:aria-query",
     "node_modules/array-flatten": "npm:array-flatten",
@@ -22613,6 +22671,7 @@
     "node_modules/cosmiconfig/node_modules/yaml": "npm:yaml@1.10.2",
     "node_modules/create-require": "npm:create-require",
     "node_modules/cron-parser": "npm:cron-parser",
+    "node_modules/cross-env": "npm:cross-env",
     "node_modules/cross-spawn": "npm:cross-spawn",
     "node_modules/crypto-random-string": "npm:crypto-random-string",
     "node_modules/crypto-random-string/node_modules/type-fest": "npm:type-fest@1.4.0",
@@ -23356,6 +23415,7 @@
     "node_modules/node-fetch": "npm:node-fetch",
     "node_modules/node-forge": "npm:node-forge",
     "node_modules/node-gyp": "npm:node-gyp",
+    "node_modules/node-gyp-build": "npm:node-gyp-build",
     "node_modules/node-gyp-build-optional-packages": "npm:node-gyp-build-optional-packages",
     "node_modules/node-gyp/node_modules/isexe": "npm:isexe@3.1.1",
     "node_modules/node-gyp/node_modules/proc-log": "npm:proc-log@6.1.0",

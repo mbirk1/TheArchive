@@ -3,7 +3,7 @@ import { resource } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { firstValueFrom, Observable } from 'rxjs';
 import { UserGateway } from './user.gateway';
-import { IUser } from 'lib';
+import { ICreateUserFormDataValue, IUser } from 'lib';
 
 @Injectable({ providedIn: 'root' })
 export class UserStore {
@@ -24,5 +24,9 @@ export class UserStore {
 
   getNumberOfTodaysActiveUsers(): Observable<number> {
     return this.userGateway.getNumberOfTodaysActiveUsers();
+  }
+
+  createUser(user: ICreateUserFormDataValue): Observable<IUser> {
+    return this.userGateway.createUser(user);
   }
 }

@@ -2,6 +2,8 @@ import { Injectable } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Between, Repository } from 'typeorm';
 import { User } from '../database/entities/user.entity';
+import { ICreateUserFormDataValue, IUser } from 'lib';
+import * as argon2 from 'argon2';
 
 @Injectable()
 export class UserService {
@@ -24,5 +26,20 @@ export class UserService {
     });
 
     return users;
+  }
+
+  async createUser(user: ICreateUserFormDataValue): Promise<IUser> {
+    user.password = await argon2.hash(user.password);
+    if (await argon2.verify(user.password, user.confirmPassword)) {
+      const toBeRegistered = {
+        userName: user.userName,
+        email: user.eMail,
+        password: user.password,
+        createdAt: new Date().toISOString(),
+        lastActiveAt: new Date().toISOString(),
+      }
+      return this.userRepository.save(toBeRegistered);
+    }
+    return;
   }
 }

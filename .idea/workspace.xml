@@ -4,25 +4,39 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="improved landing page">
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-in.component/sign-in.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-in.component/sign-in.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up-in.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up-in.component.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up.component/sign-up.component.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up.component/sign-up.component.ts" afterDir="false" />
+    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="create login and sign up page">
+      <change afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/1776605335575-migration.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/modules/logger.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/services/logging.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/hero-panel/hero-panel.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/config/config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/config/config.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/project.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/datasource.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/datasource.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/user.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/modules/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/modules/user.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up.component/sign-up.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up.component/sign-up.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up.component/sign-up.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up.component/sign-up.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/shared/entities/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shared/entities/user.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,9 +122,6 @@
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\project.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\eslint.config.mjs",
@@ -118,7 +129,10 @@
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\eslint.config.mjs",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\jest.config.cts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts"
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json"
     ]
   }
 }]]></component>
@@ -131,14 +145,14 @@
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing\hero-panel" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\backend\src\app\modules" />
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\backend\src\app\services" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\public\images" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\personal" />
-      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\public" />
-      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\assets\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.frontend:serve">
+  <component name="RunManager" selected="Nx.backend:migration:generate">
     <configuration name="backend:build" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="build" />
@@ -304,7 +318,9 @@
       <workItem from="1775393754509" duration="151000" />
       <workItem from="1775643815914" duration="532000" />
       <workItem from="1775644372960" duration="27000" />
-      <workItem from="1775727299426" duration="8141000" />
+      <workItem from="1775727299426" duration="8278000" />
+      <workItem from="1775814934916" duration="8248000" />
+      <workItem from="1776601476705" duration="3894000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -442,7 +458,15 @@
       <option name="project" value="LOCAL" />
       <updated>1775729430849</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="create login and sign up page">
+      <option name="closed" value="true" />
+      <created>1775738558410</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1775738558410</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -468,6 +492,7 @@
     <MESSAGE value="prettier run" />
     <MESSAGE value="almost finished landing page, hero section not" />
     <MESSAGE value="improved landing page" />
-    <option name="LAST_COMMIT_MESSAGE" value="improved landing page" />
+    <MESSAGE value="create login and sign up page" />
+    <option name="LAST_COMMIT_MESSAGE" value="create login and sign up page" />
   </component>
 </project>

@@ -1,15 +1,16 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { IUser } from 'lib';
 
 @Entity({ name: 'user' })
-export class User {
+export class User implements IUser {
   @PrimaryGeneratedColumn('uuid')
   id: string;
 
-  @Column({ type: 'varchar', length: 500 })
-  name: string;
+  @Column({ type: 'varchar', length: 500, unique: true })
+  userName: string;
 
-  @Column({ type: 'varchar', length: 500 })
-  mail: string;
+  @Column({ type: 'varchar', length: 500, unique: true })
+  email: string;
 
   @Column({ type: 'varchar' })
   password: string;
