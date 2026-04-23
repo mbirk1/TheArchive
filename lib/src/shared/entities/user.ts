@@ -1,4 +1,4 @@
-import { FormControl, Validators } from '@angular/forms';
+import { FormControl } from '@angular/forms';
 
 export interface IUser {
   id?: string;
@@ -8,6 +8,7 @@ export interface IUser {
   createdAt: Date;
   lastActiveAt: Date;
 }
+
 export interface ICreateUserFormData {
   userName: FormControl<string>,
   eMail: FormControl<string>,
@@ -20,4 +21,14 @@ export interface ICreateUserFormDataValue {
   eMail: string,
   password: string,
   confirmPassword: string,
+}
+
+export interface IUserSignInFormData {
+  eMail: FormControl<string>,
+  password: FormControl<string>,
+}
+
+export interface IUserSignInFormDataValue {
+  eMail: string,
+  password: string,
 }

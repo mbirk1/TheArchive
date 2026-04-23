@@ -2,7 +2,6 @@ import { Component, inject } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { UserService } from '../../../services/user/user.service';
 import { ICreateUserFormData } from 'lib';
-import { firstValueFrom } from 'rxjs';
 
 @Component({
   imports: [ReactiveFormsModule],

@@ -2,7 +2,7 @@ import { inject, Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ConfigService } from '../../services/config/config.service';
 import { Observable } from 'rxjs';
-import { ICreateUserFormDataValue, IUser } from 'lib';
+import { ICreateUserFormDataValue, IUser, IUserSignInFormDataValue } from 'lib';
 
 @Injectable({ providedIn: 'root' })
 export class UserGateway {
@@ -22,7 +22,11 @@ export class UserGateway {
   }
 
   createUser(user: ICreateUserFormDataValue): Observable<IUser> {
-    console.log(this.configService.apiUrl);
     return this.http.post<IUser>(this.configService.apiUrl + '/user', user);
+  }
+
+  signingInUser(user: IUserSignInFormDataValue): Observable<IUser> {
+    console.log(this.configService.apiUrl + '/user/signIn')
+    return this.http.post<IUser>(this.configService.apiUrl + '/user/signIn', user);
   }
 }

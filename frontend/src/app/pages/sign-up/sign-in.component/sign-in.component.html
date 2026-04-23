@@ -1,4 +1,4 @@
-<form class="space-y-5">
+<form class="space-y-5" (ngSubmit)="signingInUser()" [formGroup]="userDataFormGroup">
   <div class="space-y-2">
     <label class="block text-sm font-label text-on-surface-variant" for="email"
       >Email</label
@@ -13,6 +13,7 @@
         id="email"
         placeholder="archivist@archive.io"
         type="email"
+        formControlName="eMail"
       />
     </div>
   </div>
@@ -39,6 +40,7 @@
         id="password"
         placeholder="••••••••••••"
         type="password"
+        formControlName="password"
       />
       <span
         class="material-symbols-outlined absolute right-3 top-1/2 -translate-y-1/2 text-on-surface-variant cursor-pointer hover:text-on-surface transition-colors"

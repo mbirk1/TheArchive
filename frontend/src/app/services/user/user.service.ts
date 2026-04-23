@@ -1,7 +1,13 @@
 import { inject, Injectable } from '@angular/core';
 import { UserStore } from '../../api/user/user.store';
 import { firstValueFrom, Observable } from 'rxjs';
-import { ICreateUserFormData, ICreateUserFormDataValue, IUser } from 'lib';
+import {
+  ICreateUserFormData,
+  ICreateUserFormDataValue,
+  IUser,
+  IUserSignInFormData,
+  IUserSignInFormDataValue
+} from 'lib';
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
@@ -27,5 +33,9 @@ export class UserService {
     }
 
     return firstValueFrom(this.userStore.createUser(user as ICreateUserFormDataValue));
+  }
+
+  signingInUser(user: Partial<ICreateUserFormDataValue>) {
+    return firstValueFrom(this.userStore.signingInUser(user as IUserSignInFormDataValue));
   }
 }
