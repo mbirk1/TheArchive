@@ -26,6 +26,9 @@ export class UserGateway {
   }
 
   signingInUser(user: IUserSignInFormDataValue): Observable<boolean> {
-    return this.http.post<boolean>(this.configService.apiUrl + '/user/signIn', user);
+    return this.http.post<boolean>(
+      this.configService.apiUrl + '/user/signIn',
+      user,
+    );
   }
 }

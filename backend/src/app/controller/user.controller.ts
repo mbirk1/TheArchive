@@ -29,7 +29,9 @@ export class UserController {
   }
 
   @Post('signIn')
-  async signingUserIn(@Body() user: IUserSignInFormDataValue): Promise<boolean> {
+  async signingUserIn(
+    @Body() user: IUserSignInFormDataValue,
+  ): Promise<boolean> {
     try {
       this.logger.info(
         `Received login request for user with mail ${user.eMail})`,

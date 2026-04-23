@@ -1,38 +1,40 @@
-@if(!userService.isUserLoggedIn()){
-<section class="py-24 relative">
-  <div class="max-w-5xl mx-auto px-8">
-    <div
-      class="relative rounded-2xl p-12 text-center border border-primary/20 overflow-hidden"
-    >
+@if (!userService.isUserLoggedIn()) {
+  <section class="py-24 relative">
+    <div class="max-w-5xl mx-auto px-8">
       <div
-        class="absolute -top-24 -left-24 w-64 h-64 bg-primary/20 blur-[100px] rounded-full"
-      ></div>
-      <div
-        class="absolute -bottom-24 -right-24 w-64 h-64 bg-tertiary/20 blur-[100px] rounded-full"
-      ></div>
-      <h2 class="text-5xl font-headline font-extrabold mb-6">
-        Bereit einzusteigen?
-      </h2>
-      <p
-        class="text-xl text-on-surface-variant mb-10 max-w-2xl mx-auto font-light leading-relaxed"
+        class="relative rounded-2xl p-12 text-center border border-primary/20 overflow-hidden"
       >
-        Hör auf, Tabellen manuell zu verwalten. Tritt ein in das Archive und
-        schenke deiner Sammlung die Wertschätzung, die sie verdient.
-      </p>
-      <div class="flex flex-col sm:flex-row justify-center gap-4 relative z-10">
-        <button
-          class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-10 py-4 rounded-md font-headline font-bold text-lg hover:scale-105 transition-transform"
-          routerLink="/login"
+        <div
+          class="absolute -top-24 -left-24 w-64 h-64 bg-primary/20 blur-[100px] rounded-full"
+        ></div>
+        <div
+          class="absolute -bottom-24 -right-24 w-64 h-64 bg-tertiary/20 blur-[100px] rounded-full"
+        ></div>
+        <h2 class="text-5xl font-headline font-extrabold mb-6">
+          Bereit einzusteigen?
+        </h2>
+        <p
+          class="text-xl text-on-surface-variant mb-10 max-w-2xl mx-auto font-light leading-relaxed"
         >
-          Kostenlosen Account erstellen
-        </button>
-        <button
-          class="px-10 py-4 rounded-md font-headline font-bold text-lg text-on-surface border border-outline-variant/30 hover:bg-surface-container-high transition-colors"
+          Hör auf, Tabellen manuell zu verwalten. Tritt ein in das Archive und
+          schenke deiner Sammlung die Wertschätzung, die sie verdient.
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-center gap-4 relative z-10"
         >
-          Konklave kontaktieren
-        </button>
+          <button
+            class="bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-10 py-4 rounded-md font-headline font-bold text-lg hover:scale-105 transition-transform"
+            routerLink="/login"
+          >
+            Kostenlosen Account erstellen
+          </button>
+          <button
+            class="px-10 py-4 rounded-md font-headline font-bold text-lg text-on-surface border border-outline-variant/30 hover:bg-surface-container-high transition-colors"
+          >
+            Konklave kontaktieren
+          </button>
+        </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 }

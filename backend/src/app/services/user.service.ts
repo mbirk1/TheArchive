@@ -1,4 +1,8 @@
-import { Injectable, NotFoundException, UnauthorizedException } from '@nestjs/common';
+import {
+  Injectable,
+  NotFoundException,
+  UnauthorizedException,
+} from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Between, Repository } from 'typeorm';
 import { User } from '../database/entities/user.entity';
@@ -61,7 +65,7 @@ export class UserService {
       throw new NotFoundException('User not found');
     }
 
-    if(!(await argon2.verify(foundUser.password, user.password))) {
+    if (!(await argon2.verify(foundUser.password, user.password))) {
       throw new UnauthorizedException();
     }
     this.updateLastActive(foundUser);

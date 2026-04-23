@@ -32,7 +32,7 @@ import { LoggerModule } from './modules/logger.module';
     ConfigModule,
     CardModule,
     UserModule,
-    LoggerModule
+    LoggerModule,
   ],
   controllers: [AppController],
   providers: [AppService],

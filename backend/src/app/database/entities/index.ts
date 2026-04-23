@@ -4,5 +4,5 @@ import { User } from './user.entity';
 
 export const allEntities: MixedList<string | Function | EntitySchema<any>> = [
   Card,
-  User
+  User,
 ];

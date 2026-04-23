@@ -10,25 +10,25 @@ export interface IUser {
 }
 
 export interface ICreateUserFormData {
-  userName: FormControl<string>,
-  eMail: FormControl<string>,
-  password: FormControl<string>,
-  confirmPassword: FormControl<string>,
+  userName: FormControl<string>;
+  eMail: FormControl<string>;
+  password: FormControl<string>;
+  confirmPassword: FormControl<string>;
 }
 
 export interface ICreateUserFormDataValue {
-  userName: string,
-  eMail: string,
-  password: string,
-  confirmPassword: string,
+  userName: string;
+  eMail: string;
+  password: string;
+  confirmPassword: string;
 }
 
 export interface IUserSignInFormData {
-  eMail: FormControl<string>,
-  password: FormControl<string>,
+  eMail: FormControl<string>;
+  password: FormControl<string>;
 }
 
 export interface IUserSignInFormDataValue {
-  eMail: string,
-  password: string,
+  eMail: string;
+  password: string;
 }

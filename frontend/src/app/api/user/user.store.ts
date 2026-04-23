@@ -1,11 +1,12 @@
 import {
   booleanAttribute,
-  computed, effect,
+  computed,
+  effect,
   inject,
   ResourceRef,
   Signal,
   signal,
-  WritableSignal
+  WritableSignal,
 } from '@angular/core';
 import { resource } from '@angular/core';
 import { Injectable } from '@angular/core';
@@ -16,34 +17,43 @@ import { Router } from '@angular/router';
 
 @Injectable({ providedIn: 'root' })
 export class UserStore {
-  private userGateway: UserGateway = inject(UserGateway)
-  private signInData: WritableSignal<IUserSignInFormDataValue | undefined> = signal(undefined);
+  private userGateway: UserGateway = inject(UserGateway);
+  private signInData: WritableSignal<IUserSignInFormDataValue | undefined> =
+    signal(undefined);
   private router: Router = inject(Router);
 
   private signInResource: ResourceRef<boolean | undefined> = resource({
     params: () => this.signInData(),
     loader: ({ params }): Promise<boolean> => {
-      if(localStorage.getItem('loggedIn') !== null) {
-        const item = localStorage.getItem('loggedIn')
-        return firstValueFrom(of(booleanAttribute(item)))
+      if (localStorage.getItem('loggedIn') !== null) {
+        const item = localStorage.getItem('loggedIn');
+        return firstValueFrom(of(booleanAttribute(item)));
       }
-      const signedIn: Promise<boolean> = firstValueFrom(this.userGateway.signingInUser(params))
-      signedIn.then(user => localStorage.setItem('loggedIn', String(user)));
+      const signedIn: Promise<boolean> = firstValueFrom(
+        this.userGateway.signingInUser(params),
+      );
+      signedIn.then((user) => localStorage.setItem('loggedIn', String(user)));
       return signedIn;
     },
   });
 
-  readonly isLoggedIn: Signal<boolean> = computed(() => this.signInResource.value() !== undefined);
-  readonly isLoading: Signal<boolean> = computed(() => this.signInResource.isLoading());
+  readonly isLoggedIn: Signal<boolean> = computed(
+    () => this.signInResource.value() !== undefined,
+  );
+  readonly isLoading: Signal<boolean> = computed(() =>
+    this.signInResource.isLoading(),
+  );
 
-
- constructor() {
-   effect(() => {
-     if (!this.signInResource.isLoading() && this.signInResource.value() !== undefined) {
-       this.router.navigate(['']);
-     }
-   });
- }
+  constructor() {
+    effect(() => {
+      if (
+        !this.signInResource.isLoading() &&
+        this.signInResource.value() !== undefined
+      ) {
+        this.router.navigate(['']);
+      }
+    });
+  }
 
   getNumberOfUsers(): Observable<number> {
     return this.userGateway.getNumberOfUsers();

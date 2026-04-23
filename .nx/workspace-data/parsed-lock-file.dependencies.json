@@ -801,6 +801,11 @@
   },
   {
     "source": "npm:vite@7.2.2",
+    "target": "npm:tsx",
+    "type": "static"
+  },
+  {
+    "source": "npm:vite@7.2.2",
     "target": "npm:yaml",
     "type": "static"
   },
@@ -16795,6 +16800,21 @@
     "type": "static"
   },
   {
+    "source": "npm:@types/pg",
+    "target": "npm:@types/node",
+    "type": "static"
+  },
+  {
+    "source": "npm:@types/pg",
+    "target": "npm:pg-protocol",
+    "type": "static"
+  },
+  {
+    "source": "npm:@types/pg",
+    "target": "npm:pg-types",
+    "type": "static"
+  },
+  {
     "source": "npm:@types/react",
     "target": "npm:csstype",
     "type": "static"
@@ -21412,6 +21432,11 @@
   {
     "source": "npm:get-proto",
     "target": "npm:es-object-atoms",
+    "type": "static"
+  },
+  {
+    "source": "npm:get-tsconfig",
+    "target": "npm:resolve-pkg-maps",
     "type": "static"
   },
   {
@@ -32150,6 +32175,151 @@
     "type": "static"
   },
   {
+    "source": "npm:tsx",
+    "target": "npm:esbuild@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:tsx",
+    "target": "npm:get-tsconfig",
+    "type": "static"
+  },
+  {
+    "source": "npm:tsx",
+    "target": "npm:fsevents",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/aix-ppc64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/android-arm@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/android-arm64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/android-x64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/darwin-arm64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/darwin-x64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/freebsd-arm64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/freebsd-x64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/linux-arm@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/linux-arm64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/linux-ia32@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/linux-loong64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/linux-mips64el@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/linux-ppc64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/linux-riscv64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/linux-s390x@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/linux-x64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/netbsd-arm64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/netbsd-x64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/openbsd-arm64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/openbsd-x64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/openharmony-arm64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/sunos-x64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/win32-arm64@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/win32-ia32@0.27.7",
+    "type": "static"
+  },
+  {
+    "source": "npm:esbuild@0.27.7",
+    "target": "npm:@esbuild/win32-x64@0.27.7",
+    "type": "static"
+  },
+  {
     "source": "npm:tuf-js",
     "target": "npm:@tufjs/models",
     "type": "static"
@@ -32917,6 +33087,11 @@
   {
     "source": "npm:vite",
     "target": "npm:terser",
+    "type": "static"
+  },
+  {
+    "source": "npm:vite",
+    "target": "npm:tsx",
     "type": "static"
   },
   {

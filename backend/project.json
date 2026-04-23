@@ -11,6 +11,12 @@
         "command": "ts-node --project ./backend/tsconfig.app.json ./node_modules/typeorm/cli.js migration:generate ./backend/src/app/database/migrations/migration -d ./backend/src/app/database/datasource.ts"
       }
     },
+    "import-cards": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "tsx import-cards-scryfall.ts ./importableFiles/default-cards-20260423090859.json"
+      }
+    },
     "build": {
       "outputs": ["{options.outputPath}"],
       "executor": "@nx/webpack:webpack",

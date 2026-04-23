@@ -6,7 +6,7 @@ import {
   ICreateUserFormDataValue,
   IUser,
   IUserSignInFormData,
-  IUserSignInFormDataValue
+  IUserSignInFormDataValue,
 } from 'lib';
 
 @Injectable({ providedIn: 'root' })
@@ -28,11 +28,18 @@ export class UserService {
   createUser(user: Partial<ICreateUserFormDataValue>) {
     const { userName, password, confirmPassword, eMail } = user;
 
-    if (!userName?.trim() || !password?.trim() || !confirmPassword?.trim() || !eMail?.trim()) {
+    if (
+      !userName?.trim() ||
+      !password?.trim() ||
+      !confirmPassword?.trim() ||
+      !eMail?.trim()
+    ) {
       return;
     }
 
-    return firstValueFrom(this.userStore.createUser(user as ICreateUserFormDataValue));
+    return firstValueFrom(
+      this.userStore.createUser(user as ICreateUserFormDataValue),
+    );
   }
 
   signingInUser(user: Partial<ICreateUserFormDataValue>): void {
