@@ -25,12 +25,9 @@ export class SignInComponent {
     });
 
   protected async signingInUser() {
-    console.log('test')
     if (this.userDataFormGroup.invalid) {
-      console.log(this.userDataFormGroup.getRawValue())
       return;
     }
-    console.log('test')
     this.userService.signingInUser(this.userDataFormGroup.value);
   }
 }

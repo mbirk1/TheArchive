@@ -1,4 +1,11 @@
-import { inject, ResourceRef } from '@angular/core';
+import {
+  computed,
+  inject,
+  ResourceRef,
+  Signal,
+  signal,
+  WritableSignal,
+} from '@angular/core';
 import { resource } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { firstValueFrom, Observable } from 'rxjs';
@@ -7,16 +14,15 @@ import { ICreateUserFormDataValue, IUser, IUserSignInFormDataValue } from 'lib';
 
 @Injectable({ providedIn: 'root' })
 export class UserStore {
-  private userGateway: UserGateway = inject(UserGateway);
+  private userGateway: UserGateway = inject(UserGateway)
+  private signInData: WritableSignal<IUserSignInFormDataValue | undefined> = signal(undefined);
 
-  private userResource: ResourceRef<IUser | undefined> = resource({
-    loader: (): Promise<IUser> => firstValueFrom(this.userGateway.getMyUser()),
+  private signInResource: ResourceRef<IUser | undefined> = resource({
+    params: () => this.signInData(),
+    loader: ({ params }): Promise<IUser> => firstValueFrom(this.userGateway.signingInUser(params)),
   });
 
-  isLoggedIn(): boolean {
-    //TODO LoginLogic must be implemented. OAuth2, Discord or smth like that
-    return false;
-  }
+  readonly isLoggedIn: Signal<boolean> = computed(() => this.signInResource.value() !== undefined);
 
   getNumberOfUsers(): Observable<number> {
     return this.userGateway.getNumberOfUsers();
@@ -30,7 +36,7 @@ export class UserStore {
     return this.userGateway.createUser(user);
   }
 
-  signingInUser(user: IUserSignInFormDataValue): Observable<IUser> {
-    return this.userGateway.signingInUser(user);
+  signingInUser(user: IUserSignInFormDataValue): void {
+    return this.signInData.set(user);
   }
 }

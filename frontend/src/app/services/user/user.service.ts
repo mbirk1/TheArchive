@@ -35,7 +35,7 @@ export class UserService {
     return firstValueFrom(this.userStore.createUser(user as ICreateUserFormDataValue));
   }
 
-  signingInUser(user: Partial<ICreateUserFormDataValue>) {
-    return firstValueFrom(this.userStore.signingInUser(user as IUserSignInFormDataValue));
+  signingInUser(user: Partial<ICreateUserFormDataValue>): void {
+    this.userStore.signingInUser(user as IUserSignInFormDataValue);
   }
 }
