@@ -1,4 +1,5 @@
 import {
+  booleanAttribute,
   computed, effect,
   inject,
   ResourceRef,
@@ -8,7 +9,7 @@ import {
 } from '@angular/core';
 import { resource } from '@angular/core';
 import { Injectable } from '@angular/core';
-import { firstValueFrom, Observable } from 'rxjs';
+import { first, firstValueFrom, Observable, of } from 'rxjs';
 import { UserGateway } from './user.gateway';
 import { ICreateUserFormDataValue, IUser, IUserSignInFormDataValue } from 'lib';
 import { Router } from '@angular/router';
@@ -19,9 +20,17 @@ export class UserStore {
   private signInData: WritableSignal<IUserSignInFormDataValue | undefined> = signal(undefined);
   private router: Router = inject(Router);
 
-  private signInResource: ResourceRef<IUser | undefined> = resource({
+  private signInResource: ResourceRef<boolean | undefined> = resource({
     params: () => this.signInData(),
-    loader: ({ params }): Promise<IUser> => firstValueFrom(this.userGateway.signingInUser(params)),
+    loader: ({ params }): Promise<boolean> => {
+      if(localStorage.getItem('loggedIn') !== null) {
+        const item = localStorage.getItem('loggedIn')
+        return firstValueFrom(of(booleanAttribute(item)))
+      }
+      const signedIn: Promise<boolean> = firstValueFrom(this.userGateway.signingInUser(params))
+      signedIn.then(user => localStorage.setItem('loggedIn', String(user)));
+      return signedIn;
+    },
   });
 
   readonly isLoggedIn: Signal<boolean> = computed(() => this.signInResource.value() !== undefined);
