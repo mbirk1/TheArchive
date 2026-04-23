@@ -29,14 +29,14 @@ export class UserController {
   }
 
   @Post('signIn')
-  async signingUserIn(@Body() user: IUserSignInFormDataValue): Promise<IUser> {
+  async signingUserIn(@Body() user: IUserSignInFormDataValue): Promise<boolean> {
     try {
       this.logger.info(
         `Received login request for user with mail ${user.eMail})`,
       );
-      const signIn: IUser = await this.userService.signInUser(user);
+      const signIn: boolean = await this.userService.signInUser(user);
       this.logger.info(`Successfully logged in user with mail ${user.eMail}`);
-      return (signIn);
+      return signIn;
     } catch (error) {
       this.logger.error(`Error loging in user with mail ${user.eMail}`, error);
       return Promise.reject(error);

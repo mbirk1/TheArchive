@@ -51,7 +51,7 @@ export class UserService {
     return;
   }
 
-  async signInUser(user: IUserSignInFormDataValue): Promise<IUser> {
+  async signInUser(user: IUserSignInFormDataValue): Promise<boolean> {
     const foundUser: User = await this.userRepository.findOne({
       where: {
         email: user.eMail,
@@ -65,8 +65,7 @@ export class UserService {
       throw new UnauthorizedException();
     }
     this.updateLastActive(foundUser);
-    foundUser.password = '';
-    return foundUser;
+    return true;
   }
 
   private updateLastActive(user: User): void {
