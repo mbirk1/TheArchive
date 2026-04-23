@@ -4,10 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="change signIn Response to bool">
+    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="change user store">
+      <change afterPath="$PROJECT_DIR$/frontend/src/app/guards/alreadyLoggedIn.guard.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -292,7 +297,7 @@
       <workItem from="1775727299426" duration="8278000" />
       <workItem from="1775814934916" duration="8248000" />
       <workItem from="1776601476705" duration="6911000" />
-      <workItem from="1776953630166" duration="3651000" />
+      <workItem from="1776953630166" duration="4944000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -462,7 +467,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776956496974</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="change user store">
+      <option name="closed" value="true" />
+      <created>1776957486584</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1776957486584</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,6 +505,7 @@
     <MESSAGE value="register a new user and initial logging" />
     <MESSAGE value="register finished and simple sign in" />
     <MESSAGE value="change signIn Response to bool" />
-    <option name="LAST_COMMIT_MESSAGE" value="change signIn Response to bool" />
+    <MESSAGE value="change user store" />
+    <option name="LAST_COMMIT_MESSAGE" value="change user store" />
   </component>
 </project>

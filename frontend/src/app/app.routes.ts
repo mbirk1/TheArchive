@@ -6,6 +6,7 @@ import { CardDetailComponent } from './pages/card-detail/card-detail.component';
 import { LandingComponent } from './pages/landing/landing.component';
 import { BrowseCardsComponent } from './pages/browse-cards/browse-cards.component';
 import { SignUpInComponent } from './pages/sign-up/sign-up-in.component';
+import { alreadyLoggedInGuard, notLoggedInGuard } from './guards/alreadyLoggedIn.guard';
 
 export const appRoutes: Route[] = [
   {
@@ -22,6 +23,7 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'user',
+    canActivate: [alreadyLoggedInGuard],
     children: [
       {
         path: 'decks',
@@ -39,6 +41,7 @@ export const appRoutes: Route[] = [
   },
   {
     path: 'login',
+    canActivate: [notLoggedInGuard],
     component: SignUpInComponent,
   },
 ];

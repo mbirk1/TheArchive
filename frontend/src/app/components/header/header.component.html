@@ -27,8 +27,8 @@
     @if (this.isUserLoggedIn()) {
       <div class="flex m-4 text-text-primary gap-4">
         <button
-          class="bg-secondary rounded-lg px-3"
-          (click)="navigateToProfile()"
+          class="menu bg-gradient-to-br from-primary to-on-primary-container text-on-primary px-6 py-2 rounded-md font-headline font-bold hover:scale-105 active:scale-95 transition-all duration-300"
+          (click)="navigateToLoginSignUp()"
         >
           [Hier Profilbild einfügen]
         </button>
@@ -37,6 +37,7 @@
       <div class="flex m-4">
         <button
           class="menu text-[#94a3b8] hover:text-on-surface transition-colors font-headline px-4 py-2"
+          (click)="navigateToLoginSignUp()"
         >
           Login
         </button>
