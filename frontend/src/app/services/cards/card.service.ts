@@ -1,6 +1,5 @@
 import { CardsStore } from '../../api/cards/cards.store';
-import { inject } from '@angular/core';
-import { Injectable } from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { ICard } from 'lib';
 import { Observable } from 'rxjs';
 
@@ -8,16 +7,11 @@ import { Observable } from 'rxjs';
 export class CardService {
   private cardStore = inject(CardsStore);
 
-  getAllCards(): ICard[] {
-    return this.cardStore.allCards();
-  }
-
-  findCardById(id: string): ICard {
-    this.cardStore.cardId.set(id);
-    return this.cardStore.specificCardValue();
-  }
-
   getRandomCard(): Observable<ICard> {
     return this.cardStore.getRandomCard();
+  }
+
+  getAmountOfCards(): Observable<number> {
+    return this.cardStore.getAmountOfCards();
   }
 }

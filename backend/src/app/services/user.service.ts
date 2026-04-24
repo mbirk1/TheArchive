@@ -76,4 +76,8 @@ export class UserService {
     user.lastActiveAt = new Date();
     this.userRepository.save(user);
   }
+
+  getNumberOfRegisteredUsers(): Promise<number> {
+    return this.userRepository.count({})
+  }
 }

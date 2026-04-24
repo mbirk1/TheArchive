@@ -3,9 +3,10 @@ export interface ICard {
   object: string;
   oracle_id: string;
   multiverse_ids: number[];
-  mtgo_id: number;
-  tcgplayer_id: number;
-  cardmarket_id: number;
+  mtgo_id?: number;
+  arena_id?: number;
+  tcgplayer_id?: number;
+  cardmarket_id?: number;
   name: string;
   lang: string;
   released_at: string;
@@ -14,15 +15,17 @@ export interface ICard {
   layout: string;
   highres_image: boolean;
   image_status: string;
-  image_uris: ImageUris;
+  image_uris?: IImageUris;
   mana_cost: string;
   cmc: number;
   type_line: string;
-  oracle_text: string;
+  oracle_text?: string;
   colors: string[];
   color_identity: string[];
-  keywords: any[];
-  legalities: Legalities;
+  keywords: string[];
+  produced_mana?: string[];
+  all_parts?: IRelatedCard[];
+  legalities: ILegalities;
   games: string[];
   reserved: boolean;
   game_changer: boolean;
@@ -45,25 +48,25 @@ export interface ICard {
   collector_number: string;
   digital: boolean;
   rarity: string;
-  flavor_text: string;
-  card_back_id: string;
-  artist: string;
-  artist_ids: string[];
-  illustration_id: string;
+  flavor_text?: string;
+  card_back_id?: string;
+  artist?: string;
+  artist_ids?: string[];
+  illustration_id?: string;
   border_color: string;
   frame: string;
   full_art: boolean;
   textless: boolean;
   booster: boolean;
   story_spotlight: boolean;
-  edhrec_rank: number;
-  penny_rank: number;
-  prices: Prices;
-  related_uris: RelatedUris;
-  purchase_uris: PurchaseUris;
+  edhrec_rank?: number;
+  penny_rank?: number;
+  prices: IPrices;
+  related_uris: IRelatedUris;
+  purchase_uris: IPurchaseUris;
 }
 
-export interface ImageUris {
+export interface IImageUris {
   small: string;
   normal: string;
   large: string;
@@ -72,48 +75,60 @@ export interface ImageUris {
   border_crop: string;
 }
 
-export interface Legalities {
-  standard: string;
-  future: string;
-  historic: string;
-  timeless: string;
-  gladiator: string;
-  pioneer: string;
-  modern: string;
-  legacy: string;
-  pauper: string;
-  vintage: string;
-  penny: string;
-  commander: string;
-  oathbreaker: string;
-  standardbrawl: string;
-  brawl: string;
-  alchemy: string;
-  paupercommander: string;
-  duel: string;
-  oldschool: string;
-  premodern: string;
-  predh: string;
+export interface ILegalities {
+  standard: LegalStatus;
+  future: LegalStatus;
+  historic: LegalStatus;
+  timeless: LegalStatus;
+  gladiator: LegalStatus;
+  pioneer: LegalStatus;
+  modern: LegalStatus;
+  legacy: LegalStatus;
+  pauper: LegalStatus;
+  vintage: LegalStatus;
+  penny: LegalStatus;
+  commander: LegalStatus;
+  oathbreaker: LegalStatus;
+  standardbrawl: LegalStatus;
+  brawl: LegalStatus;
+  alchemy: LegalStatus;
+  paupercommander: LegalStatus;
+  duel: LegalStatus;
+  oldschool: LegalStatus;
+  premodern: LegalStatus;
+  predh: LegalStatus;
+  tlr: LegalStatus;
 }
 
-export interface Prices {
-  usd: string;
-  usd_foil: any;
-  usd_etched: any;
-  eur: string;
-  eur_foil: any;
-  tix: string;
+export type LegalStatus = 'legal' | 'not_legal' | 'restricted' | 'banned';
+
+export interface IPrices {
+  usd: string | null;
+  usd_foil: string | null;
+  usd_etched: string | null;
+  eur: string | null;
+  eur_foil: string | null;
+  tix: string | null;
 }
 
-export interface RelatedUris {
-  gatherer: string;
-  tcgplayer_infinite_articles: string;
-  tcgplayer_infinite_decks: string;
-  edhrec: string;
+export interface IRelatedUris {
+  gatherer?: string;
+  tcgplayer_infinite_articles?: string;
+  tcgplayer_infinite_decks?: string;
+  edhrec?: string;
 }
 
-export interface PurchaseUris {
-  tcgplayer: string;
-  cardmarket: string;
-  cardhoarder: string;
+export interface IPurchaseUris {
+  tcgplayer?: string;
+  cardmarket?: string;
+  cardhoarder?: string;
+}
+
+export interface IRelatedCard {
+  object: string;
+  id: string;
+  component: string;
+  name: string;
+  type_line: string;
+  uri: string;
 }

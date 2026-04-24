@@ -10,15 +10,11 @@ export class CardsGateway {
   private http: HttpClient = inject(HttpClient);
   private configService: ConfigService = inject(ConfigService);
 
-  getAllCards(): Observable<ICard[]> {
-    return this.http.get<ICard[]>(this.configService.apiUrl + '/cards');
-  }
-
-  findById(id: string): Observable<ICard> {
-    return this.http.get<ICard>(`${this.configService.apiUrl}/cards/${id}`);
-  }
-
   getRandomCard(): Observable<ICard> {
     return this.http.get<ICard>(`${this.configService.apiUrl}/cards/random`);
+  }
+
+  getAmountOfCards(): Observable<number> {
+    return this.http.get<number>(`${this.configService.apiUrl}/cards/amount`);
   }
 }

@@ -5,43 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="migrate cards and add importer for scryfall dump">
-      <change afterPath="$PROJECT_DIR$/backend/import-cards-scryfall.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/1776971090533-migration.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/1776974964877-migration.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/import-cards-scryfall.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/import-cards-scryfall.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/project.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/app.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/controller/card.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/card.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/card.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/card.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1776605335575-migration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/1776605335575-migration.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1771710854528-migration.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1776605335575-migration.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1776971090533-migration.ts" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/modules/logger.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/modules/logger.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/services/logging.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/logging.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/services/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/card.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.gateway.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/app.routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/guards/alreadyLoggedIn.guard.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/guards/alreadyLoggedIn.guard.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/cta-panel/cta-panel.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-in.component/sign-in.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-in.component/sign-in.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-in.component/sign-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-in.component/sign-in.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up.component/sign-up.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up.component/sign-up.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up.component/sign-up.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-up.component/sign-up.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/shared/entities/user.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shared/entities/user.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/all-cards/all-cards.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/all-cards/all-cards.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/card-detail/card-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/card-detail/card-detail.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/cards/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/cards/card.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/shared/entities/card.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shared/entities/card.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,73 +66,75 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Docker.docker-compose.yml.sideboard-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Nx.backend:build.executor&quot;: &quot;Run&quot;,
-    &quot;Nx.backend:lint.executor&quot;: &quot;Run&quot;,
-    &quot;Nx.backend:migration:generate.executor&quot;: &quot;Run&quot;,
-    &quot;Nx.backend:serve.executor&quot;: &quot;Run&quot;,
-    &quot;Nx.backend:serve:development.executor&quot;: &quot;Run&quot;,
-    &quot;Nx.frontend:build.executor&quot;: &quot;Run&quot;,
-    &quot;Nx.frontend:lint.executor&quot;: &quot;Run&quot;,
-    &quot;Nx.frontend:serve.executor&quot;: &quot;Run&quot;,
-    &quot;Nx.frontend:serve:development.executor&quot;: &quot;Run&quot;,
-    &quot;Nx.shop:serve.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/mariu/WebstormProjects/Sideboard/frontend/src/app/pages/sign-up&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\prettier&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;nx-console&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\typescript\\lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Docker.docker-compose.yml.sideboard-db: Compose Deployment.executor": "Run",
+    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Nx.backend:build.executor": "Run",
+    "Nx.backend:import-cards.executor": "Run",
+    "Nx.backend:lint.executor": "Run",
+    "Nx.backend:migration:generate.executor": "Run",
+    "Nx.backend:serve.executor": "Run",
+    "Nx.backend:serve:development.executor": "Run",
+    "Nx.frontend:build.executor": "Run",
+    "Nx.frontend:lint.executor": "Run",
+    "Nx.frontend:serve.executor": "Run",
+    "Nx.frontend:serve:development.executor": "Run",
+    "Nx.shop:serve.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "master",
+    "ignore.virus.scanning.warn.message": "true",
+    "last_opened_file_path": "C:/Users/mariu/WebstormProjects/Sideboard/frontend/src/app/pages/sign-up",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
+    "npm.start.executor": "Run",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\prettier",
+    "settings.editor.selected.configurable": "nx-console",
+    "ts.external.directory.path": "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ],
-    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
-      &quot;HTML&quot;,
-      &quot;PLAIN_TEXT&quot;
+    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
+      "JSON",
+      "HTML",
+      "PLAIN_TEXT"
     ],
-    &quot;dev.nx.console.project_details_files&quot;: [
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\project.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\package.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\playwright.config.ts&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\eslint.config.mjs&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\project.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\package.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\eslint.config.mjs&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\webpack.config.js&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\jest.config.cts&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\project.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\package.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\eslint.config.mjs&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\package.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\eslint.config.mjs&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\project.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\package.json&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\eslint.config.mjs&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\jest.config.cts&quot;,
-      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts&quot;
+    "dev.nx.console.project_details_files": [
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\project.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\playwright.config.ts",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\project.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\webpack.config.js",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\jest.config.cts",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\project.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\project.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\jest.config.cts",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\sign-up" />
@@ -150,17 +144,25 @@
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing\hero-panel" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\importableFiles" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\backend\src\app\modules" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\backend\src\app\services" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\public\images" />
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing" />
-      <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\personal" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.backend:migration:generate">
+  <component name="RunManager" selected="Nx.frontend:serve">
     <configuration name="backend:build" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="build" />
+      <option name="nx-target-configuration" value="" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="backend:import-cards" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="nx-projects" value="backend" />
+      <option name="nx-targets" value="import-cards" />
       <option name="nx-target-configuration" value="" />
       <envs />
       <option name="arguments" value="" />
@@ -236,19 +238,6 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="docker-compose.yml.sideboard-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
-      <deployment type="docker-compose.yml">
-        <settings>
-          <option name="services">
-            <list>
-              <option value="sideboard-db" />
-            </list>
-          </option>
-          <option name="sourceFilePath" value="docker-compose.yml" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/backend2/package.json" />
       <command value="run" />
@@ -271,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Nx.backend:import-cards" />
         <item itemvalue="Nx.frontend:serve:development" />
         <item itemvalue="Nx.backend:build" />
         <item itemvalue="npm.dev" />
         <item itemvalue="npm.start" />
-        <item itemvalue="Docker.docker-compose.yml.sideboard-db: Compose Deployment" />
       </list>
     </recent_temporary>
   </component>
@@ -326,7 +315,8 @@
       <workItem from="1775727299426" duration="8278000" />
       <workItem from="1775814934916" duration="8248000" />
       <workItem from="1776601476705" duration="6911000" />
-      <workItem from="1776953630166" duration="11719000" />
+      <workItem from="1776953630166" duration="14440000" />
+      <workItem from="1777027176686" duration="4542000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -520,7 +510,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776960559713</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="migrate cards and add importer for scryfall dump">
+      <option name="closed" value="true" />
+      <created>1776973182488</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1776973182488</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

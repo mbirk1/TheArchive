@@ -24,4 +24,9 @@ export class DataPanelComponent {
     this.userService.getNumberOfUsers(),
     { initialValue: 0 },
   );
+
+  protected amountOfCards: Signal<number> = toSignal(
+    this.cardService.getAmountOfCards(),
+    { initialValue: 0 },
+  )
 }

@@ -8,10 +8,4 @@ import { CardService } from '../../services/cards/card.service';
   standalone: true,
 })
 export class CardDetailComponent {
-  private cardService: CardService = inject(CardService);
-  protected cardDetails = this.cardService.findCardById('1');
-
-  constructor() {
-    console.log(this.cardDetails);
-  }
 }

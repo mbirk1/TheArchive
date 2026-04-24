@@ -17,6 +17,11 @@ export class UserController {
     return this.userService.getAllActiveUsersToday();
   }
 
+  @Get('amount')
+  getNumberOfUsersRegistered(): Promise<number> {
+    return this.userService.getNumberOfRegisteredUsers();
+  }
+
   @Post()
   async createUser(@Body() user: ICreateUserFormDataValue): Promise<IUser> {
     try {

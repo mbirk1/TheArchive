@@ -9,5 +9,5 @@ import { CardService } from '../../services/cards/card.service';
 })
 export class AllCardsComponent {
   public cardService: CardService = inject(CardService);
-  protected readonly cards = this.cardService.getAllCards();
+  //protected readonly cards = this.cardService.getAllCards();
 }

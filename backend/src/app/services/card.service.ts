@@ -3,11 +3,11 @@ import { Repository } from 'typeorm';
 import { Card } from '../database/entities/card.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { ScryfallRepository } from '../repositories/scryfall.repository';
-import { firstValueFrom, of } from 'rxjs';
 import { ICard } from 'lib';
 
 @Injectable()
 export class CardService {
+
   constructor(
     @InjectRepository(Card)
     private cardRepository: Repository<Card>,
@@ -40,6 +40,17 @@ export class CardService {
   }
 
   async getRandomCard(): Promise<ICard> {
-    return this.scryFallRepository.randomCard();
+    const count = await this.cardRepository.count();
+    const randomOffset = Math.floor(Math.random() * count);
+
+    return this.cardRepository
+      .createQueryBuilder('card')
+      .skip(randomOffset)
+      .take(1)
+      .getOne();
+  }
+
+  async getAmountOfCards(): Promise<number> {
+    return this.cardRepository.count();
   }
 }

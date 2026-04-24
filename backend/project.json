@@ -14,7 +14,7 @@
     "import-cards": {
       "executor": "nx:run-commands",
       "options": {
-        "command": "tsx import-cards-scryfall.ts ./importableFiles/default-cards-20260423090859.json"
+        "command": "tsx ./backend/import-cards-scryfall.ts ./importableFiles/default-cards-20260423090859.json"
       }
     },
     "build": {

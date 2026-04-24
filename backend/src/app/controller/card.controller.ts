@@ -28,6 +28,11 @@ export class CardController {
     return firstValueFrom(of());
   }
 
+  @Get('amount')
+  public async getAmountOfCards(): Promise<number> {
+    return this.cardService.getAmountOfCards();
+  }
+
   @Get('random')
   public async randomCard(): Promise<ICard> {
     return this.cardService.getRandomCard();
