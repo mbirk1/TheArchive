@@ -1,7 +1,4 @@
-import {
-  inject,
-  Injectable,
-} from '@angular/core';
+import { inject, Injectable } from '@angular/core';
 import { CardsGateway } from './cards.gateway';
 import { ICard } from 'lib';
 import { Observable } from 'rxjs';
@@ -15,6 +12,6 @@ export class CardsStore {
   }
 
   getAmountOfCards(): Observable<number> {
-    return this.cardGateway.getAmountOfCards()
+    return this.cardGateway.getAmountOfCards();
   }
 }

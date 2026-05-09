@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { CardService } from '../../services/cards/card.service';
+import { Component } from '@angular/core';
 
 @Component({
   imports: [],

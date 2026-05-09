@@ -1,7 +1,7 @@
-import { ICard } from 'lib';
+import { ICard, IUser } from 'lib';
 
 export interface IDeck {
   id?: string;
-  userId: string;
+  user: IUser;
   cards: ICard[];
 }

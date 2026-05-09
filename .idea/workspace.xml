@@ -4,36 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="migrate cards and add importer for scryfall dump">
-      <change afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/1776974964877-migration.ts" afterDir="false" />
+    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="fixing network errors">
+      <change afterPath="$PROJECT_DIR$/backend/src/app/controller/decks.controller.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/database/entities/deck.entity.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/1778364681598-migration.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/modules/decks.module.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/src/app/services/decks.service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/src/shared/abstracts/pagination.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/import-cards-scryfall.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/import-cards-scryfall.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/project.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/project.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/controller/card.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/card.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/card.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/card.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1771710854528-migration.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1776605335575-migration.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1776971090533-migration.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/user.entity.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/index.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/services/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/card.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.gateway.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/all-cards/all-cards.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/all-cards/all-cards.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/header/header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/card-detail/card-detail.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/card-detail/card-detail.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/landing/data-panel/data-panel.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/cards/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/cards/card.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/src/shared/entities/card.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shared/entities/card.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/src/shared/entities/deck.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/src/shared/entities/deck.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,6 +82,7 @@
     "Nx.backend:import-cards.executor": "Run",
     "Nx.backend:lint.executor": "Run",
     "Nx.backend:migration:generate.executor": "Run",
+    "Nx.backend:migration:run.executor": "Run",
     "Nx.backend:serve.executor": "Run",
     "Nx.backend:serve:development.executor": "Run",
     "Nx.frontend:build.executor": "Run",
@@ -151,7 +159,7 @@
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.frontend:serve">
+  <component name="RunManager" selected="Nx.backend:migration:run">
     <configuration name="backend:build" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="build" />
@@ -179,6 +187,14 @@
     <configuration name="backend:migration:generate" type="NxRunConfigurationType">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="migration:generate" />
+      <option name="nx-target-configuration" value="" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="backend:migration:run" type="NxRunConfigurationType">
+      <option name="nx-projects" value="backend" />
+      <option name="nx-targets" value="migration:run" />
       <option name="nx-target-configuration" value="" />
       <envs />
       <option name="arguments" value="" />
@@ -316,7 +332,8 @@
       <workItem from="1775814934916" duration="8248000" />
       <workItem from="1776601476705" duration="6911000" />
       <workItem from="1776953630166" duration="14440000" />
-      <workItem from="1777027176686" duration="4542000" />
+      <workItem from="1777027176686" duration="6843000" />
+      <workItem from="1778356749388" duration="3843000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -518,7 +535,15 @@
       <option name="project" value="LOCAL" />
       <updated>1776973182488</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="fixing network errors">
+      <option name="closed" value="true" />
+      <created>1777034199390</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1777034199390</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,6 +552,17 @@
       <list>
         <option value="$PROJECT_DIR$/eslint.config.mjs" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">
@@ -552,6 +588,7 @@
     <MESSAGE value="apply logged in guards" />
     <MESSAGE value="permanent signed in status" />
     <MESSAGE value="migrate cards and add importer for scryfall dump" />
-    <option name="LAST_COMMIT_MESSAGE" value="migrate cards and add importer for scryfall dump" />
+    <MESSAGE value="fixing network errors" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing network errors" />
   </component>
 </project>

@@ -3,19 +3,34 @@ import { Repository } from 'typeorm';
 import { Card } from '../database/entities/card.entity';
 import { InjectRepository } from '@nestjs/typeorm';
 import { ScryfallRepository } from '../repositories/scryfall.repository';
-import { ICard } from 'lib';
+import { ICard, PaginationDto } from 'lib';
+import { PaginationResponse } from 'lib';
 
 @Injectable()
 export class CardService {
-
   constructor(
     @InjectRepository(Card)
     private cardRepository: Repository<Card>,
     private scryFallRepository: ScryfallRepository,
   ) {}
 
-  async findAll(): Promise<Card[]> {
-    return this.cardRepository.find();
+  async findAll(
+    paginationDto: PaginationDto,
+  ): Promise<PaginationResponse<Card>> {
+    const { limit = 10, offset = 0 } = paginationDto;
+
+    const [cards, total] = await this.cardRepository.findAndCount({
+      take: limit,
+      skip: offset,
+    });
+
+    return {
+      limit: paginationDto.limit,
+      nextPage: total > offset + limit ? offset + limit : null,
+      offset: paginationDto.offset,
+      data: cards,
+      total: total,
+    };
   }
 
   async findSpecificCardById(id: string): Promise<Card> {

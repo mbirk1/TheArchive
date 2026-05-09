@@ -21,7 +21,7 @@ export class HeaderComponent {
   }
 
   navigateToCollection(): void {
-    this.router.navigate(['/user/collection']);
+    this.router.navigate(['/browse']);
   }
 
   protected navigateToProfile(): void {
@@ -30,5 +30,9 @@ export class HeaderComponent {
 
   protected navigateToLoginSignUp(): void {
     this.router.navigate(['/login']);
+  }
+
+  navigateToOwnCollection(): void {
+    this.router.navigate(['/user/collection']);
   }
 }

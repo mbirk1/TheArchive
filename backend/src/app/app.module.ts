@@ -8,6 +8,7 @@ import { allEntities } from './database/entities';
 import { allMigrations } from './database/migrations';
 import { UserModule } from './modules/user.module';
 import { LoggerModule } from './modules/logger.module';
+import { DeckModule } from './modules/decks.module';
 
 @Module({
   imports: [
@@ -31,6 +32,7 @@ import { LoggerModule } from './modules/logger.module';
     ConfigModule.forRoot({}),
     ConfigModule,
     CardModule,
+    DeckModule,
     UserModule,
     LoggerModule,
   ],

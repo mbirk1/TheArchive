@@ -9896,6 +9896,16 @@
   },
   {
     "source": "npm:@nestjs/common",
+    "target": "npm:class-transformer",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/common",
+    "target": "npm:class-validator",
+    "type": "static"
+  },
+  {
+    "source": "npm:@nestjs/common",
     "target": "npm:reflect-metadata",
     "type": "static"
   },
@@ -18882,6 +18892,21 @@
   {
     "source": "npm:chokidar",
     "target": "npm:readdirp",
+    "type": "static"
+  },
+  {
+    "source": "npm:class-validator",
+    "target": "npm:@types/validator",
+    "type": "static"
+  },
+  {
+    "source": "npm:class-validator",
+    "target": "npm:libphonenumber-js",
+    "type": "static"
+  },
+  {
+    "source": "npm:class-validator",
+    "target": "npm:validator",
     "type": "static"
   },
   {

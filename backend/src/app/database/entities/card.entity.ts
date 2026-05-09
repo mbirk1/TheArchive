@@ -1,4 +1,4 @@
-import { Entity, PrimaryColumn, Column } from 'typeorm';
+import { Entity, PrimaryColumn, Column, ManyToMany, JoinTable } from 'typeorm';
 import {
   ICard,
   IImageUris,
@@ -8,6 +8,7 @@ import {
   IRelatedCard,
   IRelatedUris,
 } from 'lib';
+import { Deck } from './deck.entity';
 
 @Entity('card', { schema: 'sideboard' })
 export class Card implements ICard {
@@ -208,4 +209,11 @@ export class Card implements ICard {
 
   @Column({ type: 'jsonb', nullable: true })
   raw: ICard;
+
+  @ManyToMany((type) => Deck, (x) => x.cards, {
+    cascade: true,
+    nullable: true,
+  })
+  @JoinTable()
+  decks: Deck[];
 }

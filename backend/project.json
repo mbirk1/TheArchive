@@ -11,6 +11,12 @@
         "command": "ts-node --project ./backend/tsconfig.app.json ./node_modules/typeorm/cli.js migration:generate ./backend/src/app/database/migrations/migration -d ./backend/src/app/database/datasource.ts"
       }
     },
+    "migration:run": {
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "ts-node --project ./backend/tsconfig.app.json ./node_modules/typeorm/cli.js migration:run -d ./backend/src/app/database/datasource.ts"
+      }
+    },
     "import-cards": {
       "executor": "nx:run-commands",
       "options": {

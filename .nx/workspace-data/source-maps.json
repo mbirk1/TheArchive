@@ -602,6 +602,22 @@
       "backend/project.json",
       "nx/core/project-json"
     ],
+    "targets.migration:run": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.executor": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.migration:run.options.command": [
+      "backend/project.json",
+      "nx/core/project-json"
+    ],
     "targets.import-cards": [
       "backend/project.json",
       "nx/core/project-json"

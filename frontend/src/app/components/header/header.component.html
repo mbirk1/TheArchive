@@ -22,6 +22,12 @@
           [text]="'Decks'"
           (click)="navigateToDecks()"
         ></app-header-chip>
+        @if (isUserLoggedIn()) {
+          <app-header-chip
+            [text]="'My Collection'"
+            (click)="navigateToOwnCollection()"
+          ></app-header-chip>
+        }
       </div>
     </div>
     @if (this.isUserLoggedIn()) {

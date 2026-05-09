@@ -78,6 +78,6 @@ export class UserService {
   }
 
   getNumberOfRegisteredUsers(): Promise<number> {
-    return this.userRepository.count({})
+    return this.userRepository.count({});
   }
 }

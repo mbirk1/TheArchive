@@ -10107,6 +10107,15 @@
         "hash": "sha512-CmBKiL6NNo/OqgmMn95Fk9Whlp2mtvIv+KNpQKN2F4SjvrEesubTRWGYSg+BnWZOnlCaSTU1sMpsBOzgbYhnsA=="
       }
     },
+    "npm:@types/validator": {
+      "type": "npm",
+      "name": "npm:@types/validator",
+      "data": {
+        "version": "13.15.10",
+        "packageName": "@types/validator",
+        "hash": "sha512-T8L6i7wCuyoK8A/ZeLYt1+q0ty3Zb9+qbSSvrIVitzT3YjZqkTZ40IbRsPanlB4h1QB3JVL1SYCdR6ngtFYcuA=="
+      }
+    },
     "npm:@types/ws": {
       "type": "npm",
       "name": "npm:@types/ws",
@@ -11923,6 +11932,24 @@
         "version": "2.2.0",
         "packageName": "cjs-module-lexer",
         "hash": "sha512-4bHTS2YuzUvtoLjdy+98ykbNB5jS0+07EvFNXerqZQJ89F7DI6ET7OQo/HJuW6K0aVsKA9hj9/RVb2kQVOrPDQ=="
+      }
+    },
+    "npm:class-transformer": {
+      "type": "npm",
+      "name": "npm:class-transformer",
+      "data": {
+        "version": "0.5.1",
+        "packageName": "class-transformer",
+        "hash": "sha512-SQa1Ws6hUbfC98vKGxZH3KFY0Y1lm5Zm0SY8XX9zbK7FJCyVEac3ATW0RIpwzW+oOfmHE5PMPufDG9hCfoEOMw=="
+      }
+    },
+    "npm:class-validator": {
+      "type": "npm",
+      "name": "npm:class-validator",
+      "data": {
+        "version": "0.15.1",
+        "packageName": "class-validator",
+        "hash": "sha512-LqoS80HBBSCVhz/3KloUly0ovokxpdOLR++Al3J3+dHXWt9sTKlKd4eYtoxhxyUjoe5+UcIM+5k9MIxyBWnRTw=="
       }
     },
     "npm:clean-css": {
@@ -15910,6 +15937,15 @@
         "version": "0.4.1",
         "packageName": "levn",
         "hash": "sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ=="
+      }
+    },
+    "npm:libphonenumber-js": {
+      "type": "npm",
+      "name": "npm:libphonenumber-js",
+      "data": {
+        "version": "1.12.42",
+        "packageName": "libphonenumber-js",
+        "hash": "sha512-oKQFPTibqQwZZkChCDVMFVJXMZdyJNqDWZWYNn8BgyAaK/6yFJEowxCY0RVFirRyWP63hMRuKlkSEd9qlvbWXg=="
       }
     },
     "npm:license-webpack-plugin": {
@@ -21123,6 +21159,15 @@
         "hash": "sha512-IUoow1YUtvoBBC06dXs8bR8B9vuA3aJfmQNKMoaPG/OFsPmoQvw8xh+6Ye25Gx9DQhoEom3Pcu9MKHerm/NpUQ=="
       }
     },
+    "npm:validator": {
+      "type": "npm",
+      "name": "npm:validator",
+      "data": {
+        "version": "13.15.35",
+        "packageName": "validator",
+        "hash": "sha512-TQ5pAGhd5whStmqWvYF4OjQROlmv9SMFVt37qoCBdqRffuuklWYQlCNnEs2ZaIBD1kZRNnikiZOS1eqgkar0iw=="
+      }
+    },
     "npm:value-equal": {
       "type": "npm",
       "name": "npm:value-equal",
@@ -22662,6 +22707,7 @@
     "node_modules/@types/sockjs": "npm:@types/sockjs",
     "node_modules/@types/stack-utils": "npm:@types/stack-utils",
     "node_modules/@types/unist": "npm:@types/unist",
+    "node_modules/@types/validator": "npm:@types/validator",
     "node_modules/@types/ws": "npm:@types/ws",
     "node_modules/@types/yargs": "npm:@types/yargs",
     "node_modules/@types/yargs-parser": "npm:@types/yargs-parser",
@@ -22878,6 +22924,8 @@
     "node_modules/chrome-trace-event": "npm:chrome-trace-event",
     "node_modules/ci-info": "npm:ci-info",
     "node_modules/cjs-module-lexer": "npm:cjs-module-lexer",
+    "node_modules/class-transformer": "npm:class-transformer",
+    "node_modules/class-validator": "npm:class-validator",
     "node_modules/clean-css": "npm:clean-css",
     "node_modules/clean-css/node_modules/source-map": "npm:source-map@0.6.1",
     "node_modules/clean-stack": "npm:clean-stack",
@@ -23453,6 +23501,7 @@
     "node_modules/less/node_modules/source-map": "npm:source-map@0.6.1",
     "node_modules/leven": "npm:leven",
     "node_modules/levn": "npm:levn",
+    "node_modules/libphonenumber-js": "npm:libphonenumber-js",
     "node_modules/license-webpack-plugin": "npm:license-webpack-plugin",
     "node_modules/lightningcss": "npm:lightningcss",
     "node_modules/lightningcss-android-arm64": "npm:lightningcss-android-arm64",
@@ -24355,6 +24404,7 @@
     "node_modules/v8-to-istanbul/node_modules/convert-source-map": "npm:convert-source-map@2.0.0",
     "node_modules/validate-npm-package-license": "npm:validate-npm-package-license",
     "node_modules/validate-npm-package-name": "npm:validate-npm-package-name",
+    "node_modules/validator": "npm:validator",
     "node_modules/value-equal": "npm:value-equal",
     "node_modules/varint": "npm:varint",
     "node_modules/vary": "npm:vary",

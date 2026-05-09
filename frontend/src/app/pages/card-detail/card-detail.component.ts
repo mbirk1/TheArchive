@@ -1,5 +1,4 @@
-import { Component, inject } from '@angular/core';
-import { CardService } from '../../services/cards/card.service';
+import { Component } from '@angular/core';
 
 @Component({
   imports: [],
@@ -7,5 +6,4 @@ import { CardService } from '../../services/cards/card.service';
   templateUrl: './card-detail.component.html',
   standalone: true,
 })
-export class CardDetailComponent {
-}
+export class CardDetailComponent {}

@@ -1,5 +1,6 @@
-import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
+import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { IUser } from 'lib';
+import { Deck } from './deck.entity';
 
 @Entity({ name: 'user' })
 export class User implements IUser {
@@ -20,4 +21,9 @@ export class User implements IUser {
 
   @Column()
   lastActiveAt: Date;
+
+  @OneToMany(() => Deck, (deck) => deck.user, {
+    nullable: true,
+  })
+  decks: Deck[];
 }

@@ -1,8 +1,8 @@
-import { Controller, Get, Inject, Param } from '@nestjs/common';
+import { Controller, Get, Inject, Param, Query } from '@nestjs/common';
 import { CardService } from '../services/card.service';
 import { Card } from '../database/entities/card.entity';
 import { firstValueFrom, of } from 'rxjs';
-import { ICard } from 'lib';
+import { ICard, PaginationDto, PaginationResponse } from 'lib';
 
 @Controller('cards')
 export class CardController {
@@ -10,8 +10,10 @@ export class CardController {
   private cardService: CardService;
 
   @Get()
-  public async getCards(): Promise<Card[]> {
-    return this.cardService.findAll();
+  public async getCards(
+    @Query() paginationDto: PaginationDto,
+  ): Promise<PaginationResponse<Card>> {
+    return this.cardService.findAll(paginationDto);
   }
 
   @Get('id=:id')
