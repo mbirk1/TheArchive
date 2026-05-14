@@ -1,10 +1,10 @@
-import { Component, computed, inject, signal, Signal } from '@angular/core';
+import { Component, computed, inject, Signal } from '@angular/core';
 import { UserService } from '../../services/user/user.service';
-import { Router, RouterLink } from '@angular/router';
+import { Router } from '@angular/router';
 import { HeaderChipComponent } from './header-chips/header-chip.component';
 
 @Component({
-  imports: [RouterLink, HeaderChipComponent],
+  imports: [HeaderChipComponent],
   selector: 'app-header',
   templateUrl: './header.component.html',
   standalone: true,

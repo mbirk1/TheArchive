@@ -22748,6 +22748,11 @@
       },
       {
         "source": "frontend",
+        "target": "npm:@playwright/test",
+        "type": "static"
+      },
+      {
+        "source": "frontend",
         "target": "npm:@angular/router",
         "type": "static"
       },
@@ -55609,5 +55614,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1778365178866
+  "computedAt": 1778787308648
 }

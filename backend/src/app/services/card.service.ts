@@ -19,10 +19,20 @@ export class CardService {
   ): Promise<PaginationResponse<Card>> {
     const { limit = 10, offset = 0 } = paginationDto;
 
-    const [cards, total] = await this.cardRepository.findAndCount({
-      take: limit,
-      skip: offset,
-    });
+    const [cards, total] = await this.cardRepository
+      .createQueryBuilder('card')
+      .orderBy(
+        `CASE card.type_line
+      WHEN '%Creature%' THEN 0 
+      WHEN '%Instant%' THEN 1 
+      WHEN '%Sorcery%' THEN 2 
+      WHEN '%Enchantment%' THEN 3 
+      ELSE 4 
+     END`
+      )
+      .take(limit)
+      .skip(offset)
+      .getManyAndCount();
 
     return {
       limit: paginationDto.limit,

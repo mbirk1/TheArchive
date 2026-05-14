@@ -1,6 +1,6 @@
 import { CardsStore } from '../../api/cards/cards.store';
 import { inject, Injectable } from '@angular/core';
-import { ICard } from 'lib';
+import { ICard, PaginationResponse } from 'lib';
 import { Observable } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
@@ -13,5 +13,21 @@ export class CardService {
 
   getAmountOfCards(): Observable<number> {
     return this.cardStore.getAmountOfCards();
+  }
+
+  getPagedCards(): PaginationResponse<ICard> {
+    return this.cardStore.cards();
+  }
+
+  setLimitOffset(limit: number, offset: number) {
+    this.cardStore.setPage(limit, offset);
+  }
+
+  setLimit(limit: number): void {
+    this.cardStore.setLimit(limit);
+  }
+
+  setOffset(offset: number): void {
+    this.cardStore.setOffset(offset);
   }
 }

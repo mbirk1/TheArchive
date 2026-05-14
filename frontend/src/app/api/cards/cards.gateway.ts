@@ -2,8 +2,9 @@ import { Injectable } from '@angular/core';
 import { inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { ConfigService } from '../../services/config/config.service';
-import { ICard } from 'lib';
+import { ICard, PaginationResponse } from 'lib';
 import { Observable } from 'rxjs';
+import { Page } from '@playwright/test';
 
 @Injectable({ providedIn: 'root' })
 export class CardsGateway {
@@ -16,5 +17,9 @@ export class CardsGateway {
 
   getAmountOfCards(): Observable<number> {
     return this.http.get<number>(`${this.configService.apiUrl}/cards/amount`);
+  }
+
+  getPagedCards(limit: number, offset: number): Observable<PaginationResponse<ICard>> {
+    return this.http.get<PaginationResponse<ICard>>(`${this.configService.apiUrl}/cards?limit=${limit}&offset=${offset}`);
   }
 }
