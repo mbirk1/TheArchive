@@ -22763,6 +22763,11 @@
       },
       {
         "source": "frontend",
+        "target": "npm:react",
+        "type": "static"
+      },
+      {
+        "source": "frontend",
         "target": "npm:@angular/platform-browser",
         "type": "static"
       }
@@ -55614,5 +55619,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1778787308648
+  "computedAt": 1778789895545
 }

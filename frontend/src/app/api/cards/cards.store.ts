@@ -16,11 +16,12 @@ export class CardsStore {
   private cardGateway: CardsGateway = inject(CardsGateway);
   private limit: WritableSignal<number> = signal(20);
   private offset: WritableSignal<number> = signal(0);
+  private textFilter: WritableSignal<string> = signal('');
 
   #cardsResource: ResourceRef<PaginationResponse<ICard> | undefined> =  resource({
-    params: () => ({ limit: this.limit(), offset: this.offset() }),
+    params: () => ({ limit: this.limit(), offset: this.offset(), textFilter: this.textFilter() }),
     loader: async ({ params }): Promise<PaginationResponse<ICard>> => {
-      return await firstValueFrom(this.cardGateway.getPagedCards(params.limit, params.offset));
+      return await firstValueFrom(this.cardGateway.getPagedCards(params.limit, params.offset, params.textFilter));
     },
   });
 
@@ -54,5 +55,9 @@ export class CardsStore {
 
   setOffset(offset: number): void {
     this.offset.set(offset);
+  }
+
+  setTextFilter(textFilter: string): void {
+    this.textFilter.set(textFilter);
   }
 }

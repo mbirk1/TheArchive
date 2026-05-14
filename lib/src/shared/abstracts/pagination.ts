@@ -8,6 +8,9 @@ export class PaginationDto {
   @IsOptional()
   @Min(0)
   offset?: number;
+
+  @IsOptional()
+  textFilter?: string;
 }
 
 export interface PaginationResponse<T> {

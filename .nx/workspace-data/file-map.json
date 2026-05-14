@@ -53,6 +53,148 @@
   ],
   "fileMap": {
     "projectFileMap": {
+      "docs": [
+        {
+          "file": "docs/.gitignore",
+          "hash": "16756425970169599954"
+        },
+        {
+          "file": "docs/README.md",
+          "hash": "13322021930525524360"
+        },
+        {
+          "file": "docs/blog/2019-05-28-first-blog-post.md",
+          "hash": "14136523309309972909"
+        },
+        {
+          "file": "docs/blog/2019-05-29-long-blog-post.md",
+          "hash": "4259135237937492657"
+        },
+        {
+          "file": "docs/blog/2021-08-01-mdx-blog-post.mdx",
+          "hash": "2043610790558586431"
+        },
+        {
+          "file": "docs/blog/2021-08-26-welcome/docusaurus-plushie-banner.jpeg",
+          "hash": "15758227656434439664"
+        },
+        {
+          "file": "docs/blog/2021-08-26-welcome/index.md",
+          "hash": "15716521779109455393"
+        },
+        {
+          "file": "docs/blog/authors.yml",
+          "hash": "10378581696034923402"
+        },
+        {
+          "file": "docs/blog/tags.yml",
+          "hash": "4117025237655315203"
+        },
+        {
+          "file": "docs/docs/design.md",
+          "hash": "13989972219225297942"
+        },
+        {
+          "file": "docs/docs/intro.md",
+          "hash": "2461157429634864669"
+        },
+        {
+          "file": "docs/docusaurus.config.ts",
+          "hash": "14688524650610312309",
+          "deps": [
+            "npm:prism-react-renderer",
+            "npm:@docusaurus/types",
+            "npm:@docusaurus/preset-classic"
+          ]
+        },
+        {
+          "file": "docs/package-lock.json",
+          "hash": "3571057471197556585"
+        },
+        {
+          "file": "docs/package.json",
+          "hash": "18326852501669487310"
+        },
+        {
+          "file": "docs/sidebars.ts",
+          "hash": "13864027318303209681",
+          "deps": [
+            "npm:@docusaurus/plugin-content-docs"
+          ]
+        },
+        {
+          "file": "docs/src/components/HomepageFeatures/index.tsx",
+          "hash": "14914397419926044116",
+          "deps": [
+            "npm:react",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "docs/src/components/HomepageFeatures/styles.module.css",
+          "hash": "14149773169115351739"
+        },
+        {
+          "file": "docs/src/css/custom.css",
+          "hash": "4615626686794514287"
+        },
+        {
+          "file": "docs/src/pages/index.module.css",
+          "hash": "2272732276868299116"
+        },
+        {
+          "file": "docs/src/pages/index.tsx",
+          "hash": "15855159043814315030",
+          "deps": [
+            "npm:react",
+            "npm:clsx"
+          ]
+        },
+        {
+          "file": "docs/src/pages/markdown-page.md",
+          "hash": "2637912770613796076"
+        },
+        {
+          "file": "docs/static/.nojekyll",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/static/img/docusaurus-social-card.jpg",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/static/img/docusaurus.png",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/static/img/favicon.ico",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docs/static/img/logo.svg",
+          "hash": "15756779054106865036"
+        },
+        {
+          "file": "docs/static/img/undraw_docusaurus_mountain.svg",
+          "hash": "14081778507541877421"
+        },
+        {
+          "file": "docs/static/img/undraw_docusaurus_react.svg",
+          "hash": "17162343818337932230"
+        },
+        {
+          "file": "docs/static/img/undraw_docusaurus_tree.svg",
+          "hash": "12684630426846910715"
+        },
+        {
+          "file": "docs/static/logo-blue-background.png",
+          "hash": "3255133497151389408"
+        },
+        {
+          "file": "docs/tsconfig.json",
+          "hash": "7731723909559504543"
+        }
+      ],
       "backend": [
         {
           "file": "backend/.env",
@@ -414,148 +556,6 @@
           ]
         }
       ],
-      "docs": [
-        {
-          "file": "docs/.gitignore",
-          "hash": "16756425970169599954"
-        },
-        {
-          "file": "docs/README.md",
-          "hash": "13322021930525524360"
-        },
-        {
-          "file": "docs/blog/2019-05-28-first-blog-post.md",
-          "hash": "14136523309309972909"
-        },
-        {
-          "file": "docs/blog/2019-05-29-long-blog-post.md",
-          "hash": "4259135237937492657"
-        },
-        {
-          "file": "docs/blog/2021-08-01-mdx-blog-post.mdx",
-          "hash": "2043610790558586431"
-        },
-        {
-          "file": "docs/blog/2021-08-26-welcome/docusaurus-plushie-banner.jpeg",
-          "hash": "15758227656434439664"
-        },
-        {
-          "file": "docs/blog/2021-08-26-welcome/index.md",
-          "hash": "15716521779109455393"
-        },
-        {
-          "file": "docs/blog/authors.yml",
-          "hash": "10378581696034923402"
-        },
-        {
-          "file": "docs/blog/tags.yml",
-          "hash": "4117025237655315203"
-        },
-        {
-          "file": "docs/docs/design.md",
-          "hash": "13989972219225297942"
-        },
-        {
-          "file": "docs/docs/intro.md",
-          "hash": "2461157429634864669"
-        },
-        {
-          "file": "docs/docusaurus.config.ts",
-          "hash": "14688524650610312309",
-          "deps": [
-            "npm:prism-react-renderer",
-            "npm:@docusaurus/types",
-            "npm:@docusaurus/preset-classic"
-          ]
-        },
-        {
-          "file": "docs/package-lock.json",
-          "hash": "3571057471197556585"
-        },
-        {
-          "file": "docs/package.json",
-          "hash": "18326852501669487310"
-        },
-        {
-          "file": "docs/sidebars.ts",
-          "hash": "13864027318303209681",
-          "deps": [
-            "npm:@docusaurus/plugin-content-docs"
-          ]
-        },
-        {
-          "file": "docs/src/components/HomepageFeatures/index.tsx",
-          "hash": "14914397419926044116",
-          "deps": [
-            "npm:react",
-            "npm:clsx"
-          ]
-        },
-        {
-          "file": "docs/src/components/HomepageFeatures/styles.module.css",
-          "hash": "14149773169115351739"
-        },
-        {
-          "file": "docs/src/css/custom.css",
-          "hash": "4615626686794514287"
-        },
-        {
-          "file": "docs/src/pages/index.module.css",
-          "hash": "2272732276868299116"
-        },
-        {
-          "file": "docs/src/pages/index.tsx",
-          "hash": "15855159043814315030",
-          "deps": [
-            "npm:react",
-            "npm:clsx"
-          ]
-        },
-        {
-          "file": "docs/src/pages/markdown-page.md",
-          "hash": "2637912770613796076"
-        },
-        {
-          "file": "docs/static/.nojekyll",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "docs/static/img/docusaurus-social-card.jpg",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "docs/static/img/docusaurus.png",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "docs/static/img/favicon.ico",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "docs/static/img/logo.svg",
-          "hash": "15756779054106865036"
-        },
-        {
-          "file": "docs/static/img/undraw_docusaurus_mountain.svg",
-          "hash": "14081778507541877421"
-        },
-        {
-          "file": "docs/static/img/undraw_docusaurus_react.svg",
-          "hash": "17162343818337932230"
-        },
-        {
-          "file": "docs/static/img/undraw_docusaurus_tree.svg",
-          "hash": "12684630426846910715"
-        },
-        {
-          "file": "docs/static/logo-blue-background.png",
-          "hash": "3255133497151389408"
-        },
-        {
-          "file": "docs/tsconfig.json",
-          "hash": "7731723909559504543"
-        }
-      ],
       "frontend": [
         {
           "file": "frontend/eslint.config.mjs",
@@ -800,7 +800,10 @@
           "hash": "17954731776038543886",
           "deps": [
             "npm:@angular/core",
-            "lib"
+            "lib",
+            "npm:@angular/common",
+            "npm:@angular/forms",
+            "npm:react"
           ]
         },
         {

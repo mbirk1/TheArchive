@@ -3,6 +3,19 @@
     <div>
       <h2 class="text-4xl font-display font-bold text-on-surface tracking-tight">Alle Karten</h2>
     </div>
+    <div class="relative group">
+      <span
+        class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-on-surface-variant group-focus-within:text-primary transition-colors"
+      >search</span
+      >
+      <input
+        class="w-full bg-surface-container-lowest border-none rounded-lg py-3 pl-12 pr-4 text-on-surface placeholder:text-outline/40 focus:ring-1 focus:ring-primary/20 focus:bg-surface-container transition-all"
+        id="serach-text"
+        placeholder="Forest, ..."
+        type="text"
+        (keyup)="this.filterCards($event)"
+      />
+    </div>
     <div class="flex space-x-3">
       <div class="flex bg-surface-container rounded-sm p-1">
         <button class="px-6 py-1.5 rounded-sm bg-secondary-container text-on-secondary-container text-[10px] font-bold uppercase tracking-widest transition-all">Grid</button>

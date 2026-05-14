@@ -19,7 +19,7 @@ export class CardsGateway {
     return this.http.get<number>(`${this.configService.apiUrl}/cards/amount`);
   }
 
-  getPagedCards(limit: number, offset: number): Observable<PaginationResponse<ICard>> {
-    return this.http.get<PaginationResponse<ICard>>(`${this.configService.apiUrl}/cards?limit=${limit}&offset=${offset}`);
+  getPagedCards(limit: number, offset: number, textFilter: string): Observable<PaginationResponse<ICard>> {
+    return this.http.get<PaginationResponse<ICard>>(`${this.configService.apiUrl}/cards?limit=${limit}&offset=${offset}&textFilter=${textFilter}`);
   }
 }

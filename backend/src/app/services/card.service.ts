@@ -17,17 +17,18 @@ export class CardService {
   async findAll(
     paginationDto: PaginationDto,
   ): Promise<PaginationResponse<Card>> {
-    const { limit = 10, offset = 0 } = paginationDto;
+    const { limit = 10, offset = 0, textFilter = '' } = paginationDto;
 
     const [cards, total] = await this.cardRepository
       .createQueryBuilder('card')
+      .where('card.name LIKE :name', { name: `%${textFilter}%` })
       .orderBy(
-        `CASE card.type_line
-      WHEN '%Creature%' THEN 0 
-      WHEN '%Instant%' THEN 1 
-      WHEN '%Sorcery%' THEN 2 
-      WHEN '%Enchantment%' THEN 3 
-      ELSE 4 
+        `CASE 
+      WHEN card.type_line LIKE '%Creature%' THEN 0
+      WHEN card.type_line LIKE '%Instant%' THEN 1
+      WHEN card.type_line LIKE '%Sorcery%' THEN 2
+      WHEN card.type_line LIKE '%Enchantment%' THEN 3
+      ELSE 4
      END`
       )
       .take(limit)

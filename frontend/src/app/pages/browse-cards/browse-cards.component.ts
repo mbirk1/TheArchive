@@ -1,25 +1,25 @@
-import { Component, computed, inject, Signal } from '@angular/core';
+import { Component, computed, inject, OnInit, Signal } from '@angular/core';
 import { CardService } from '../../services/cards/card.service';
 import { ICard, PaginationResponse } from 'lib';
 import { CardTileComponent } from '../../components/card-tile/card-tile.component';
-import { NgClass, NgStyle } from '@angular/common';
+import { NgClass } from '@angular/common';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { debounceTime, Subject } from 'rxjs';
 
 @Component({
-  imports: [CardTileComponent, NgClass],
+  imports: [CardTileComponent, NgClass, FormsModule, ReactiveFormsModule],
   selector: 'app-browse-cards',
   templateUrl: './browse-cards.component.html',
   standalone: true,
 })
-export class BrowseCardsComponent {
+export class BrowseCardsComponent implements OnInit {
   private cardService: CardService = inject(CardService);
+  private searchInput = new Subject<string>();
   protected cards: Signal<PaginationResponse<ICard>> = computed(() =>
     this.cardService.getPagedCards(),
   );
   protected totalPages = computed(() =>
     Math.ceil(this.cards().total / this.cards().limit),
-  );
-  protected pageNumbers: Signal<number[]> = computed(() =>
-    Array.from({ length: this.totalPages() }, (_, i) => i),
   );
   protected currentPage = computed(() =>
     Math.floor(this.cards().offset / this.cards().limit),
@@ -54,7 +54,19 @@ export class BrowseCardsComponent {
     return pages;
   });
 
+  ngOnInit() {
+    this.searchInput.pipe(
+      debounceTime(300) // Adjust the debounce time (in milliseconds) as needed
+    ).subscribe((searchTerm: string) => {
+      this.cardService.setTextFilter(searchTerm);
+    });
+  }
+
   goToPage(page: number): void {
-    this.cardService.setOffset(page*this.cards().limit);
+    this.cardService.setOffset(page * this.cards().limit);
+  }
+
+  filterCards(event: any){
+    this.searchInput.next((event.target as HTMLInputElement).value);
   }
 }

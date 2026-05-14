@@ -30,4 +30,8 @@ export class CardService {
   setOffset(offset: number): void {
     this.cardStore.setOffset(offset);
   }
+
+  setTextFilter(textValue: string): void {
+    this.cardStore.setTextFilter(textValue);
+  }
 }
