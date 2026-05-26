@@ -3,7 +3,7 @@ import { ICard, IDeck } from 'lib';
 import { Card } from './card.entity';
 import { User } from './user.entity';
 
-@Entity('deck', { schema: 'sideboard' })
+@Entity('deck', { schema: 'archive' })
 export class Deck implements IDeck {
   @PrimaryColumn({ type: 'uuid' })
   id: string;

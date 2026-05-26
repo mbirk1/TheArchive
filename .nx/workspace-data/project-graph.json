@@ -965,8 +965,8 @@
         "implicitDependencies": []
       }
     },
-    "sideboard": {
-      "name": "sideboard",
+    "archive": {
+      "name": "archive",
       "type": "lib",
       "data": {
         "root": ".",
@@ -1033,7 +1033,7 @@
             "parallelism": true
           }
         },
-        "name": "sideboard",
+        "name": "archive",
         "tags": [
           "npm:public"
         ],
@@ -1045,7 +1045,7 @@
           },
           "description": "",
           "js": {
-            "packageName": "sideboard",
+            "packageName": "archive",
             "packageVersion": "1.0.0",
             "packageMain": "index.js",
             "isInPackageManagerWorkspaces": true
@@ -22763,11 +22763,6 @@
       },
       {
         "source": "frontend",
-        "target": "npm:react",
-        "type": "static"
-      },
-      {
-        "source": "frontend",
         "target": "npm:@angular/platform-browser",
         "type": "static"
       }
@@ -22893,39 +22888,39 @@
         "type": "static"
       }
     ],
-    "sideboard": [
+    "archive": [
       {
-        "source": "sideboard",
+        "source": "archive",
         "target": "npm:@nx/eslint-plugin",
         "type": "static"
       },
       {
-        "source": "sideboard",
+        "source": "archive",
         "target": "npm:@eslint/js",
         "type": "static"
       },
       {
-        "source": "sideboard",
+        "source": "archive",
         "target": "npm:globals",
         "type": "static"
       },
       {
-        "source": "sideboard",
+        "source": "archive",
         "target": "npm:typescript-eslint",
         "type": "static"
       },
       {
-        "source": "sideboard",
+        "source": "archive",
         "target": "npm:eslint",
         "type": "static"
       },
       {
-        "source": "sideboard",
+        "source": "archive",
         "target": "npm:jest",
         "type": "static"
       },
       {
-        "source": "sideboard",
+        "source": "archive",
         "target": "npm:@nx/jest",
         "type": "static"
       }
@@ -55619,5 +55614,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1778789895545
+  "computedAt": 1779801017169
 }

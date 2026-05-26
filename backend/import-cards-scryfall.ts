@@ -7,9 +7,9 @@ const DB_CONFIG = {
   host: 'localhost',
   port: 5432,
   database: 'postgres',
-  user: 'sideboard-db',
+  user: 'archive-db',
   password: 'V40jN2gavmfj1q9Ln5Aq',
-  schema: 'sideboard',
+  schema: 'archive',
 };
 
 const BATCH_SIZE = 500;
@@ -30,7 +30,7 @@ async function insertBatch(pool: Pool, batch: any[]): Promise<number> {
 
     for (const card of batch) {
       const result = await client.query(
-        `INSERT INTO sideboard.card (
+        `INSERT INTO archive.card (
           id, oracle_id, object, multiverse_ids, mtgo_id, arena_id,
           tcgplayer_id, cardmarket_id, name, lang, released_at, uri,
           scryfall_uri, layout, highres_image, image_status, image_uris,

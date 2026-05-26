@@ -1,5 +1,5 @@
 {
-  "name": "sideboard",
+  "name": "archive",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -8,15 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/mbirk1/Sideboard.git"
+    "url": "git+https://github.com/mbirk1/archive.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/mbirk1/Sideboard/issues"
+    "url": "https://github.com/mbirk1/archive/issues"
   },
-  "homepage": "https://github.com/mbirk1/Sideboard#readme",
+  "homepage": "https://github.com/mbirk1/archive#readme",
   "devDependencies": {
     "@angular-devkit/build-angular": "~21.0.0",
     "@angular-devkit/core": "~21.0.0",

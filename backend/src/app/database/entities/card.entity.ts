@@ -10,7 +10,7 @@ import {
 } from 'lib';
 import { Deck } from './deck.entity';
 
-@Entity('card', { schema: 'sideboard' })
+@Entity('card', { schema: 'archive' })
 export class Card implements ICard {
   @PrimaryColumn({ type: 'uuid' })
   id: string;
