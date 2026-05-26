@@ -1,6 +1,6 @@
 FROM nginx:alpine
 
-COPY dist/apps/frontend /usr/share/nginx/html
+COPY dist/frontend /usr/share/nginx/html
 
 RUN printf 'server {\n\
   listen 80;\n\
