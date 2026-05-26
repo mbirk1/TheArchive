@@ -38,7 +38,7 @@ jobs:
         run: npm ci
 
       - name: Derive base/head SHAs
-        uses: nrwl/nx-set-shas@v4   # setzt NX_BASE und NX_HEAD automatisch
+        uses: nrwl/nx-set-shas@v4
 
       - name: Check affected projects
         id: check
@@ -99,7 +99,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.DOCKERHUB_USERNAME }}/archive-frontend   # Image-Name anpassen
+          images: ${{ env.DOCKERHUB_USERNAME }}/archive-frontend
           tags: |
             type=ref,event=branch
             type=sha,prefix=sha-,format=short
@@ -109,7 +109,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./apps/frontend/Dockerfile   # Pfad anpassen
+          file: ./apps/frontend/Dockerfile
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
@@ -156,7 +156,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v5
         with:
-          images: ${{ env.DOCKERHUB_USERNAME }}/archive-backend    # Image-Name anpassen
+          images: ${{ env.DOCKERHUB_USERNAME }}/archive-backend
           tags: |
             type=ref,event=branch
             type=sha,prefix=sha-,format=short
@@ -166,7 +166,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           context: .
-          file: ./apps/backend/Dockerfile    # Pfad anpassen
+          file: ./apps/backend/Dockerfile
           push: ${{ github.ref == 'refs/heads/main' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
