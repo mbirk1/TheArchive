@@ -3,9 +3,9 @@ version: '3.8'
 services:
   app:
     image: mbirk2/archive
-    container_name: calory-count
+    container_name: archive
     networks:
-      calory-count-network:
+      archive-network:
         ipv4_address: 192.168.0.121
     ports:
       - "8080:80"
@@ -19,7 +19,7 @@ services:
     image: 'postgres:16.3'
     container_name: archive-db
     networks:
-      calory-count-network:
+      archive-network:
         ipv4_address: 192.168.0.122
     ports:
       - '5432:5432'
