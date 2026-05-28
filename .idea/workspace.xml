@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="search field in browse cards">
-      <change afterPath="$PROJECT_DIR$/.github/dependabot.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.github/workflows/build_upload.yml" afterDir="false" />
+    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="fix build">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/.env" beforeDir="false" afterPath="$PROJECT_DIR$/backend/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/import-cards-scryfall.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/import-cards-scryfall.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/card.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/card.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/deck.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/deck.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1776974964877-migration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/1776974964877-migration.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1778364681598-migration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/1778364681598-migration.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="workflow" />
+        <option value="Dockerfile" />
       </list>
     </option>
   </component>
@@ -61,6 +55,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Docker.docker-compose.yml.archive-db: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml.sideboard-db: Compose Deployment.executor": "Run",
     "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
@@ -75,6 +70,7 @@
     "Nx.frontend:lint.executor": "Run",
     "Nx.frontend:serve.executor": "Run",
     "Nx.frontend:serve:development.executor": "Run",
+    "Nx.lib:build.executor": "Run",
     "Nx.shop:serve.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
@@ -146,7 +142,7 @@
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.frontend:serve">
+  <component name="RunManager" selected="Nx.backend:migration:generate">
     <configuration name="backend:build" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="build" />
@@ -227,6 +223,14 @@
       <option name="arguments" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="lib:build" type="NxRunConfigurationType">
+      <option name="nx-projects" value="lib" />
+      <option name="nx-targets" value="build" />
+      <option name="nx-target-configuration" value="" />
+      <envs />
+      <option name="arguments" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="shop:serve" type="NxRunConfigurationType">
       <option name="nx-projects" value="shop" />
       <option name="nx-targets" value="serve" />
@@ -241,33 +245,34 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/backend2/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="dev" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/backend2/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
+    <configuration name="docker-compose.yml.archive-db: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="services">
+            <list>
+              <option value="archive-db" />
+            </list>
+          </option>
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yml.archive-db: Compose Deployment" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
         <item itemvalue="Nx.backend:import-cards" />
         <item itemvalue="Nx.frontend:serve:development" />
         <item itemvalue="Nx.backend:build" />
-        <item itemvalue="npm.dev" />
-        <item itemvalue="npm.start" />
       </list>
     </recent_temporary>
   </component>
@@ -324,7 +329,8 @@
       <workItem from="1778524198589" duration="5333000" />
       <workItem from="1778712161288" duration="3547000" />
       <workItem from="1778784494594" duration="5797000" />
-      <workItem from="1779798377597" duration="1798000" />
+      <workItem from="1779798377597" duration="3938000" />
+      <workItem from="1779986575538" duration="5074000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -558,7 +564,79 @@
       <option name="project" value="LOCAL" />
       <updated>1778789973375</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="start with ci">
+      <option name="closed" value="true" />
+      <created>1779801064833</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1779801064833</updated>
+    </task>
+    <task id="LOCAL-00031" summary="start ci">
+      <option name="closed" value="true" />
+      <created>1779801410596</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1779801410596</updated>
+    </task>
+    <task id="LOCAL-00032" summary="start ci">
+      <option name="closed" value="true" />
+      <created>1779801463531</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1779801463531</updated>
+    </task>
+    <task id="LOCAL-00033" summary="fix build">
+      <option name="closed" value="true" />
+      <created>1779802046025</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1779802046025</updated>
+    </task>
+    <task id="LOCAL-00034" summary="fix build">
+      <option name="closed" value="true" />
+      <created>1779802704896</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1779802704896</updated>
+    </task>
+    <task id="LOCAL-00035" summary="fix build">
+      <option name="closed" value="true" />
+      <created>1779803005532</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1779803005532</updated>
+    </task>
+    <task id="LOCAL-00036" summary="fix build">
+      <option name="closed" value="true" />
+      <created>1779986745355</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1779986745355</updated>
+    </task>
+    <task id="LOCAL-00037" summary="fix build">
+      <option name="closed" value="true" />
+      <created>1779987524887</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1779987524887</updated>
+    </task>
+    <task id="LOCAL-00038" summary="fix build">
+      <option name="closed" value="true" />
+      <created>1779987845261</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1779987845261</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -581,9 +659,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="First Entity and setup" />
-    <MESSAGE value="header and tailwind setup" />
-    <MESSAGE value="header styling" />
     <MESSAGE value="card store etc" />
     <MESSAGE value="run prettier" />
     <MESSAGE value="add shared lib" />
@@ -606,6 +681,9 @@
     <MESSAGE value="get amount of decks" />
     <MESSAGE value="browse cards site" />
     <MESSAGE value="search field in browse cards" />
-    <option name="LAST_COMMIT_MESSAGE" value="search field in browse cards" />
+    <MESSAGE value="start with ci" />
+    <MESSAGE value="start ci" />
+    <MESSAGE value="fix build" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix build" />
   </component>
 </project>

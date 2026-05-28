@@ -4,9 +4,6 @@ services:
   app:
     image: mbirk2/archive
     container_name: archive
-    networks:
-      archive-network:
-        ipv4_address: 192.168.0.121
     ports:
       - "8080:80"
     deploy:
@@ -18,9 +15,6 @@ services:
   archive-db:
     image: 'postgres:16.3'
     container_name: archive-db
-    networks:
-      archive-network:
-        ipv4_address: 192.168.0.122
     ports:
       - '5432:5432'
     environment:
@@ -28,13 +22,3 @@ services:
       - POSTGRES_PASSWORD=V40jN2gavmfj1q9Ln5Aq
       - PGUSER=archive-db
       - POSTGRES_DB=archive
-networks:
-  archive-network:
-    driver: macvlan
-    driver_opts:
-      parent: eth0
-    ipam:
-      config:
-        - subnet: 192.168.0.0/24
-          gateway: 192.168.0.1
-          ip_range: 192.168.0.120/29
