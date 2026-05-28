@@ -168,7 +168,7 @@ jobs:
           context: .
           file: ./backend/Dockerfile
           push: ${{ github.ref == 'refs/heads/master' }}
-          tags: ${{ env.DOCKERHUB_USERNAME }}/archive-frontend:latest
+          tags: ${{ env.DOCKERHUB_USERNAME }}/archive-backend:latest
           labels: ${{ steps.meta.outputs.labels }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
