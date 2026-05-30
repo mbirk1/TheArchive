@@ -54,7 +54,8 @@
             ],
             "outputs": [
               "{workspaceRoot}/dist/.playwright/frontend-e2e/test-output",
-              "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report"
+              "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report",
+              "{workspaceRoot}/dist/.playwright/frontend-e2e/blob-report"
             ],
             "executor": "nx:run-commands",
             "configurations": {},
@@ -65,7 +66,8 @@
               "cwd": "frontend-e2e",
               "env": {
                 "PLAYWRIGHT_HTML_OUTPUT_DIR": "..\\dist\\.playwright\\frontend-e2e\\playwright-report\\src-example-spec-ts",
-                "PLAYWRIGHT_HTML_REPORT": "..\\dist\\.playwright\\frontend-e2e\\playwright-report\\src-example-spec-ts"
+                "PLAYWRIGHT_HTML_REPORT": "..\\dist\\.playwright\\frontend-e2e\\playwright-report\\src-example-spec-ts",
+                "PLAYWRIGHT_BLOB_OUTPUT_FILE": "..\\dist\\.playwright\\frontend-e2e\\blob-report\\src-example-spec-ts.zip"
               },
               "command": "playwright test src/example.spec.ts --output=..\\dist\\.playwright\\frontend-e2e\\test-output\\src-example-spec-ts"
             },
@@ -103,7 +105,8 @@
             ],
             "outputs": [
               "{workspaceRoot}/dist/.playwright/frontend-e2e/test-output/src-example-spec-ts",
-              "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report/src-example-spec-ts"
+              "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report/src-example-spec-ts",
+              "{workspaceRoot}/dist/.playwright/frontend-e2e/blob-report/src-example-spec-ts.zip"
             ],
             "executor": "nx:run-commands",
             "configurations": {},
@@ -123,7 +126,8 @@
             ],
             "outputs": [
               "{workspaceRoot}/dist/.playwright/frontend-e2e/test-output",
-              "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report"
+              "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report",
+              "{workspaceRoot}/dist/.playwright/frontend-e2e/blob-report"
             ],
             "dependsOn": [
               {
@@ -55630,5 +55634,5 @@
   },
   "version": "6.0",
   "errors": [],
-  "computedAt": 1780171232456
+  "computedAt": 1780171799836
 }
