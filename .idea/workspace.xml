@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="try to fix cors">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -115,6 +116,9 @@
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\project.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\eslint.config.mjs",
@@ -122,10 +126,7 @@
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\eslint.config.mjs",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\jest.config.cts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json"
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts"
     ]
   }
 }]]></component>
@@ -674,7 +675,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780171263882</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="try to fix cors">
+      <option name="closed" value="true" />
+      <created>1780171818111</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1780171818111</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
