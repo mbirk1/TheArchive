@@ -47,19 +47,19 @@ jobs:
       - name: Check affected projects
         id: check
         run: |
-          AFFECTED=$(npx nx show projects --affected --base=$NX_BASE --head=$NX_HEAD 2>/dev/null || npx nx show projects)
-          echo "Affected projects: $AFFECTED"
+          echo "NX_BASE: $NX_BASE"
+          echo "NX_HEAD: $NX_HEAD"
           
+          npx nx show projects --affected --base=$NX_BASE --head=$NX_HEAD || true
+          npx nx show projects || true
+          
+          AFFECTED=$(npx nx show projects --affected --base=$NX_BASE --head=$NX_HEAD 2>&1 || npx nx show projects 2>&1 || echo "")
+          echo "Affected projects: $AFFECTED"
+      
           if echo "$AFFECTED" | grep -qw "frontend"; then
             echo "frontend=true" >> $GITHUB_OUTPUT
           else
             echo "frontend=false" >> $GITHUB_OUTPUT
-          fi
-          
-          if echo "$AFFECTED" | grep -qw "backend"; then
-            echo "backend=true" >> $GITHUB_OUTPUT
-          else
-            echo "backend=false" >> $GITHUB_OUTPUT
           fi
 
   # ---------------------------------------------------------------
