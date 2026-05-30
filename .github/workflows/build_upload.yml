@@ -39,20 +39,23 @@ jobs:
 
       - name: Derive base/head SHAs
         uses: nrwl/nx-set-shas@v4
+        with:
+          main-branch-name: master
+          error-on-no-successful-workflow: false
+          fallback-sha: ${{ github.event.before }}
 
       - name: Check affected projects
         id: check
         run: |
-          AFFECTED=$(npx nx show projects --affected --base=$NX_BASE --head=$NX_HEAD)
+          AFFECTED=$(npx nx show projects --affected --base=$NX_BASE --head=$NX_HEAD 2>/dev/null || npx nx show projects)
           echo "Affected projects: $AFFECTED"
-
-          # Namen deiner NX-Apps anpassen (wie in project.json definiert)
+          
           if echo "$AFFECTED" | grep -qw "frontend"; then
             echo "frontend=true" >> $GITHUB_OUTPUT
           else
             echo "frontend=false" >> $GITHUB_OUTPUT
           fi
-
+          
           if echo "$AFFECTED" | grep -qw "backend"; then
             echo "backend=true" >> $GITHUB_OUTPUT
           else
