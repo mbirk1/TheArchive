@@ -26,8 +26,8 @@
         "production": {
           "fileReplacements": [
             {
-              "replace": "src/app/environments/environment.ts",
-              "with": "src/app/environments/environment.prod.ts"
+              "replace": "frontend/src/app/environments/environment.ts",
+              "with": "frontend/src/app/environments/environment.prod.ts"
             }
           ],
           "budgets": [

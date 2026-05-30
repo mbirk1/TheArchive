@@ -1,5 +1,13 @@
 import { Injectable } from '@angular/core';
-import { environment, ENVIRONMENT_SCHEMA } from './../../environments/environment';
+import { environment } from './../../environments/environment';
+
+export interface ENVIRONMENT_SCHEMA {
+  apiUrl: string,
+  production: boolean,
+  envName: string,
+  githubLink: string,
+  enableSsoLoginOrSignUp: boolean,
+}
 
 @Injectable({
   providedIn: 'root',

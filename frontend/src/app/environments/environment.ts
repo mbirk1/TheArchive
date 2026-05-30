@@ -1,12 +1,4 @@
-export interface ENVIRONMENT_SCHEMA {
-  apiUrl: string,
-  production: boolean,
-  envName: string,
-  githubLink: string,
-  enableSsoLoginOrSignUp: boolean,
-}
-
-export const environment: ENVIRONMENT_SCHEMA = {
+export const environment = {
   apiUrl: 'http://localhost:3000/api',
   production: false,
   envName: 'dev',
