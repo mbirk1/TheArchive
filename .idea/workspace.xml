@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="try to fix cors">
+    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="figuring port">
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" afterDir="false" />
@@ -683,7 +683,15 @@
       <option name="project" value="LOCAL" />
       <updated>1780171818111</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="figuring port">
+      <option name="closed" value="true" />
+      <created>1780172249740</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1780172249740</updated>
+    </task>
+    <option name="localTasksCounter" value="44" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -706,7 +714,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="run prettier" />
     <MESSAGE value="add shared lib" />
     <MESSAGE value="adding new sites" />
     <MESSAGE value="starting to obtain card details" />
@@ -731,6 +738,7 @@
     <MESSAGE value="start ci" />
     <MESSAGE value="fix build" />
     <MESSAGE value="try to fix cors" />
-    <option name="LAST_COMMIT_MESSAGE" value="try to fix cors" />
+    <MESSAGE value="figuring port" />
+    <option name="LAST_COMMIT_MESSAGE" value="figuring port" />
   </component>
 </project>
