@@ -1,16 +1,14 @@
 import { Injectable } from '@angular/core';
-import { environment } from './../../environments/environment';
-import { APP_CONFIG_MAP, AppConfig, EnvName } from '../../config/app-config';
+import { environment, ENVIRONMENT_SCHEMA } from './../../environments/environment';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ConfigService {
-  private readonly config: AppConfig;
+  private readonly config: ENVIRONMENT_SCHEMA;
 
   constructor() {
-    const env = environment.envName as EnvName;
-    this.config = APP_CONFIG_MAP[env];
+      this.config = environment;
   }
 
   get apiUrl(): string {

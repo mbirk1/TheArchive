@@ -53,185 +53,279 @@
   ],
   "fileMap": {
     "projectFileMap": {
-      "lib": [
+      "backend": [
         {
-          "file": "lib/README.md",
-          "hash": "12643788801428417843"
+          "file": "backend/.env",
+          "hash": "7043574945961005049"
         },
         {
-          "file": "lib/eslint.config.mjs",
-          "hash": "18414256800222540513",
+          "file": "backend/Dockerfile",
+          "hash": "2478914876889127262"
+        },
+        {
+          "file": "backend/eslint.config.mjs",
+          "hash": "7393662435575919928"
+        },
+        {
+          "file": "backend/import-cards-scryfall.ts",
+          "hash": "10270074381308458834",
           "deps": [
-            [
-              "npm:jsonc-eslint-parser",
-              "dynamic"
-            ]
+            "npm:pg"
           ]
         },
         {
-          "file": "lib/jest.config.cts",
-          "hash": "4781512833943815778"
+          "file": "backend/jest.config.cts",
+          "hash": "7101609706908807572"
         },
         {
-          "file": "lib/package.json",
-          "hash": "8623726966524273430"
+          "file": "backend/project.json",
+          "hash": "5768042043943900458"
         },
         {
-          "file": "lib/project.json",
-          "hash": "14739758092616537677"
-        },
-        {
-          "file": "lib/src/index.ts",
-          "hash": "2539524065856516781"
-        },
-        {
-          "file": "lib/src/shared/abstracts/pagination.ts",
-          "hash": "15386794356618644380",
+          "file": "backend/src/app/app.controller.ts",
+          "hash": "15276891910009544695",
           "deps": [
-            "npm:class-validator"
+            "npm:@nestjs/common"
           ]
         },
         {
-          "file": "lib/src/shared/entities/card.ts",
-          "hash": "14879807309050237657"
-        },
-        {
-          "file": "lib/src/shared/entities/deck.ts",
-          "hash": "7020391653924289016"
-        },
-        {
-          "file": "lib/src/shared/entities/user.ts",
-          "hash": "6416820748314925698",
+          "file": "backend/src/app/app.module.ts",
+          "hash": "2053662479194032766",
           "deps": [
-            "npm:@angular/forms"
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:@nestjs/config"
           ]
         },
         {
-          "file": "lib/src/shared/lib.spec.ts",
-          "hash": "15696180619441963589"
-        },
-        {
-          "file": "lib/src/shared/lib.ts",
-          "hash": "6610388781340973787"
-        },
-        {
-          "file": "lib/tsconfig.json",
-          "hash": "10148903843036702529"
-        },
-        {
-          "file": "lib/tsconfig.lib.json",
-          "hash": "5302676815253789741"
-        },
-        {
-          "file": "lib/tsconfig.spec.json",
-          "hash": "16514264766063949355"
-        },
-        {
-          "file": "lib/vite.config.mts",
-          "hash": "3785863900643997497",
+          "file": "backend/src/app/app.service.ts",
+          "hash": "9967902337593410053",
           "deps": [
-            "npm:vite",
-            "npm:vite-plugin-dts",
-            "npm:@nx/vite"
+            "npm:@nestjs/common"
           ]
-        }
-      ],
-      "archive": [
-        {
-          "file": ".github/dependabot.yml",
-          "hash": "4565219587866205240"
         },
         {
-          "file": ".github/workflows/build_upload.yml",
-          "hash": "9774114036208598311"
+          "file": "backend/src/app/controller/card.controller.ts",
+          "hash": "8935572735724013635",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:rxjs",
+            "lib"
+          ]
         },
         {
-          "file": ".gitignore",
-          "hash": "1820522855572084368"
+          "file": "backend/src/app/controller/decks.controller.ts",
+          "hash": "13536967500755912219",
+          "deps": [
+            "npm:@nestjs/common",
+            "lib"
+          ]
         },
         {
-          "file": ".postcssrc.json",
-          "hash": "1757434806578486340"
+          "file": "backend/src/app/controller/user.controller.ts",
+          "hash": "16644139457938934558",
+          "deps": [
+            "npm:@nestjs/common",
+            "lib"
+          ]
         },
         {
-          "file": ".prettierignore",
-          "hash": "5407418692668764289"
+          "file": "backend/src/app/database/datasource.ts",
+          "hash": "7289752556570902357",
+          "deps": [
+            "npm:typeorm"
+          ]
         },
         {
-          "file": ".prettierrc",
-          "hash": "16267754514737964994"
+          "file": "backend/src/app/database/entities/card.entity.ts",
+          "hash": "12142985872611274188",
+          "deps": [
+            "npm:typeorm",
+            "lib"
+          ]
         },
         {
-          "file": ".vscode/extensions.json",
-          "hash": "10066300031063478629"
+          "file": "backend/src/app/database/entities/deck.entity.ts",
+          "hash": "7257793608198060584",
+          "deps": [
+            "npm:typeorm",
+            "lib"
+          ]
         },
         {
-          "file": ".vscode/launch.json",
-          "hash": "15087956415758002850"
+          "file": "backend/src/app/database/entities/index.ts",
+          "hash": "16588777659011915997",
+          "deps": [
+            "npm:typeorm"
+          ]
         },
         {
-          "file": "README.md",
+          "file": "backend/src/app/database/entities/user.entity.ts",
+          "hash": "18134441050301601459",
+          "deps": [
+            "npm:typeorm",
+            "lib"
+          ]
+        },
+        {
+          "file": "backend/src/app/database/migrations/1779993617040-migration.ts",
+          "hash": "3804147507167538310",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/src/app/database/migrations/index.ts",
+          "hash": "9720560447632199453",
+          "deps": [
+            "npm:typeorm"
+          ]
+        },
+        {
+          "file": "backend/src/app/modules/card.module.ts",
+          "hash": "4203165220136388565",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:@nestjs/axios"
+          ]
+        },
+        {
+          "file": "backend/src/app/modules/decks.module.ts",
+          "hash": "1234528946291595529",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:@nestjs/axios"
+          ]
+        },
+        {
+          "file": "backend/src/app/modules/logger.module.ts",
+          "hash": "5049667179305703721",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "backend/src/app/modules/user.module.ts",
+          "hash": "17066648941579867308",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:@nestjs/axios"
+          ]
+        },
+        {
+          "file": "backend/src/app/repositories/scryfall.repository.ts",
+          "hash": "13516063670265233887",
+          "deps": [
+            "npm:@nestjs/common",
+            "lib",
+            "npm:@nestjs/axios",
+            "npm:rxjs"
+          ]
+        },
+        {
+          "file": "backend/src/app/services/card.service.ts",
+          "hash": "4682440304616189730",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:typeorm",
+            "npm:@nestjs/typeorm",
+            "lib"
+          ]
+        },
+        {
+          "file": "backend/src/app/services/decks.service.ts",
+          "hash": "2750666413512039040",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm",
+            "lib"
+          ]
+        },
+        {
+          "file": "backend/src/app/services/logging.service.ts",
+          "hash": "5485361277082322452",
+          "deps": [
+            "npm:@nestjs/common"
+          ]
+        },
+        {
+          "file": "backend/src/app/services/user.service.ts",
+          "hash": "16799726702085693663",
+          "deps": [
+            "npm:@nestjs/common",
+            "npm:@nestjs/typeorm",
+            "npm:typeorm",
+            "lib",
+            "npm:argon2"
+          ]
+        },
+        {
+          "file": "backend/src/assets/.gitkeep",
           "hash": "3244421341483603138"
         },
         {
-          "file": "docker-compose.yml",
-          "hash": "12947664934245249114"
-        },
-        {
-          "file": "eslint.base.config.mjs",
-          "hash": "12926286793420397906",
+          "file": "backend/src/main.ts",
+          "hash": "6830086375915193079",
           "deps": [
-            "npm:@nx/eslint-plugin"
+            "npm:@nestjs/common",
+            "npm:@nestjs/core"
           ]
         },
         {
-          "file": "eslint.config.mjs",
-          "hash": "18413795195261745714"
+          "file": "backend/tsconfig.app.json",
+          "hash": "16188622717299352851"
         },
         {
-          "file": "eslint.config.mts",
-          "hash": "15564361937517377877",
+          "file": "backend/tsconfig.json",
+          "hash": "10204528453628863725"
+        },
+        {
+          "file": "backend/tsconfig.spec.json",
+          "hash": "16514264766063949355"
+        },
+        {
+          "file": "backend/webpack.config.js",
+          "hash": "14745191999203244382",
           "deps": [
-            "npm:@eslint/js",
-            "npm:globals",
-            "npm:typescript-eslint",
-            "npm:eslint"
+            "npm:@nx/webpack"
+          ]
+        }
+      ],
+      "frontend-e2e": [
+        {
+          "file": "frontend-e2e/eslint.config.mjs",
+          "hash": "8440876809151955804",
+          "deps": [
+            "npm:eslint-plugin-playwright"
           ]
         },
         {
-          "file": "importableFiles/default-cards-20260423090859.json",
-          "hash": "4840317770603104415"
-        },
-        {
-          "file": "jest.config.ts",
-          "hash": "6870352021923392442",
+          "file": "frontend-e2e/playwright.config.ts",
+          "hash": "4535250053304126287",
           "deps": [
-            "npm:jest",
-            "npm:@nx/jest"
+            "npm:@playwright/test",
+            "npm:@nx/playwright",
+            "npm:@nx/devkit"
           ]
         },
         {
-          "file": "jest.preset.js",
-          "hash": "9430166341120122740",
+          "file": "frontend-e2e/project.json",
+          "hash": "16623643415870234688"
+        },
+        {
+          "file": "frontend-e2e/src/example.spec.ts",
+          "hash": "16019101014373124625",
           "deps": [
-            "npm:@nx/jest"
+            "npm:@playwright/test"
           ]
         },
         {
-          "file": "nx.json",
-          "hash": "1836625580536221238"
-        },
-        {
-          "file": "package-lock.json",
-          "hash": "15194760142015786026"
-        },
-        {
-          "file": "package.json",
-          "hash": "16118180303408504499"
-        },
-        {
-          "file": "tsconfig.base.json",
-          "hash": "15308860045193297425"
+          "file": "frontend-e2e/tsconfig.json",
+          "hash": "2249461092017240593"
         }
       ],
       "docs": [
@@ -374,249 +468,6 @@
         {
           "file": "docs/tsconfig.json",
           "hash": "7731723909559504543"
-        }
-      ],
-      "backend": [
-        {
-          "file": "backend/.env",
-          "hash": "7043574945961005049"
-        },
-        {
-          "file": "backend/Dockerfile",
-          "hash": "2478914876889127262"
-        },
-        {
-          "file": "backend/eslint.config.mjs",
-          "hash": "7393662435575919928"
-        },
-        {
-          "file": "backend/import-cards-scryfall.ts",
-          "hash": "10270074381308458834",
-          "deps": [
-            "npm:pg"
-          ]
-        },
-        {
-          "file": "backend/jest.config.cts",
-          "hash": "7101609706908807572"
-        },
-        {
-          "file": "backend/project.json",
-          "hash": "5768042043943900458"
-        },
-        {
-          "file": "backend/src/app/app.controller.ts",
-          "hash": "15276891910009544695",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/src/app/app.module.ts",
-          "hash": "2053662479194032766",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:@nestjs/config"
-          ]
-        },
-        {
-          "file": "backend/src/app/app.service.ts",
-          "hash": "9967902337593410053",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/src/app/controller/card.controller.ts",
-          "hash": "8935572735724013635",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:rxjs",
-            "lib"
-          ]
-        },
-        {
-          "file": "backend/src/app/controller/decks.controller.ts",
-          "hash": "13536967500755912219",
-          "deps": [
-            "npm:@nestjs/common",
-            "lib"
-          ]
-        },
-        {
-          "file": "backend/src/app/controller/user.controller.ts",
-          "hash": "16644139457938934558",
-          "deps": [
-            "npm:@nestjs/common",
-            "lib"
-          ]
-        },
-        {
-          "file": "backend/src/app/database/datasource.ts",
-          "hash": "7289752556570902357",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/src/app/database/entities/card.entity.ts",
-          "hash": "12142985872611274188",
-          "deps": [
-            "npm:typeorm",
-            "lib"
-          ]
-        },
-        {
-          "file": "backend/src/app/database/entities/deck.entity.ts",
-          "hash": "7257793608198060584",
-          "deps": [
-            "npm:typeorm",
-            "lib"
-          ]
-        },
-        {
-          "file": "backend/src/app/database/entities/index.ts",
-          "hash": "16588777659011915997",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/src/app/database/entities/user.entity.ts",
-          "hash": "18134441050301601459",
-          "deps": [
-            "npm:typeorm",
-            "lib"
-          ]
-        },
-        {
-          "file": "backend/src/app/database/migrations/1776974964877-migration.ts",
-          "hash": "6818530462303406538"
-        },
-        {
-          "file": "backend/src/app/database/migrations/1778364681598-migration.ts",
-          "hash": "513924683579629100"
-        },
-        {
-          "file": "backend/src/app/database/migrations/index.ts",
-          "hash": "11181773048404926137",
-          "deps": [
-            "npm:typeorm"
-          ]
-        },
-        {
-          "file": "backend/src/app/modules/card.module.ts",
-          "hash": "4203165220136388565",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:@nestjs/axios"
-          ]
-        },
-        {
-          "file": "backend/src/app/modules/decks.module.ts",
-          "hash": "1234528946291595529",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:@nestjs/axios"
-          ]
-        },
-        {
-          "file": "backend/src/app/modules/logger.module.ts",
-          "hash": "5049667179305703721",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/src/app/modules/user.module.ts",
-          "hash": "17066648941579867308",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:@nestjs/axios"
-          ]
-        },
-        {
-          "file": "backend/src/app/repositories/scryfall.repository.ts",
-          "hash": "13516063670265233887",
-          "deps": [
-            "npm:@nestjs/common",
-            "lib",
-            "npm:@nestjs/axios",
-            "npm:rxjs"
-          ]
-        },
-        {
-          "file": "backend/src/app/services/card.service.ts",
-          "hash": "4682440304616189730",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:typeorm",
-            "npm:@nestjs/typeorm",
-            "lib"
-          ]
-        },
-        {
-          "file": "backend/src/app/services/decks.service.ts",
-          "hash": "2750666413512039040",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:typeorm",
-            "lib"
-          ]
-        },
-        {
-          "file": "backend/src/app/services/logging.service.ts",
-          "hash": "5485361277082322452",
-          "deps": [
-            "npm:@nestjs/common"
-          ]
-        },
-        {
-          "file": "backend/src/app/services/user.service.ts",
-          "hash": "16799726702085693663",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/typeorm",
-            "npm:typeorm",
-            "lib",
-            "npm:argon2"
-          ]
-        },
-        {
-          "file": "backend/src/assets/.gitkeep",
-          "hash": "3244421341483603138"
-        },
-        {
-          "file": "backend/src/main.ts",
-          "hash": "14932187938001252580",
-          "deps": [
-            "npm:@nestjs/common",
-            "npm:@nestjs/core"
-          ]
-        },
-        {
-          "file": "backend/tsconfig.app.json",
-          "hash": "16188622717299352851"
-        },
-        {
-          "file": "backend/tsconfig.json",
-          "hash": "10204528453628863725"
-        },
-        {
-          "file": "backend/tsconfig.spec.json",
-          "hash": "16514264766063949355"
-        },
-        {
-          "file": "backend/webpack.config.js",
-          "hash": "14745191999203244382",
-          "deps": [
-            "npm:@nx/webpack"
-          ]
         }
       ],
       "frontend": [
@@ -829,15 +680,7 @@
         },
         {
           "file": "frontend/src/app/config/app-config.ts",
-          "hash": "1221159430307882446"
-        },
-        {
-          "file": "frontend/src/app/environments/environment.prod.ts",
-          "hash": "6921421373155807035"
-        },
-        {
-          "file": "frontend/src/app/environments/environment.ts",
-          "hash": "4370749607894647815"
+          "hash": "2626330480875838221"
         },
         {
           "file": "frontend/src/app/guards/alreadyLoggedIn.guard.ts",
@@ -1037,7 +880,7 @@
         },
         {
           "file": "frontend/src/app/services/config/config.service.ts",
-          "hash": "14762999267352885168",
+          "hash": "16766541520310242882",
           "deps": [
             "npm:@angular/core"
           ]
@@ -1080,44 +923,109 @@
         },
         {
           "file": "frontend/tsconfig.app.json",
-          "hash": "16703496410476911733"
+          "hash": "7105362342879095472"
         },
         {
           "file": "frontend/tsconfig.json",
-          "hash": "11230960146127938886"
+          "hash": "2822577925548606389"
         }
       ],
-      "frontend-e2e": [
+      "archive": [
         {
-          "file": "frontend-e2e/eslint.config.mjs",
-          "hash": "8440876809151955804",
+          "file": ".github/dependabot.yml",
+          "hash": "4565219587866205240"
+        },
+        {
+          "file": ".github/workflows/build_upload.yml",
+          "hash": "15538932787432655710"
+        },
+        {
+          "file": ".gitignore",
+          "hash": "1820522855572084368"
+        },
+        {
+          "file": ".postcssrc.json",
+          "hash": "1757434806578486340"
+        },
+        {
+          "file": ".prettierignore",
+          "hash": "5407418692668764289"
+        },
+        {
+          "file": ".prettierrc",
+          "hash": "16267754514737964994"
+        },
+        {
+          "file": ".vscode/extensions.json",
+          "hash": "10066300031063478629"
+        },
+        {
+          "file": ".vscode/launch.json",
+          "hash": "15087956415758002850"
+        },
+        {
+          "file": "README.md",
+          "hash": "3244421341483603138"
+        },
+        {
+          "file": "docker-compose.yml",
+          "hash": "1161625249100531163"
+        },
+        {
+          "file": "eslint.base.config.mjs",
+          "hash": "12926286793420397906",
           "deps": [
-            "npm:eslint-plugin-playwright"
+            "npm:@nx/eslint-plugin"
           ]
         },
         {
-          "file": "frontend-e2e/playwright.config.ts",
-          "hash": "4535250053304126287",
+          "file": "eslint.config.mjs",
+          "hash": "18413795195261745714"
+        },
+        {
+          "file": "eslint.config.mts",
+          "hash": "15564361937517377877",
           "deps": [
-            "npm:@playwright/test",
-            "npm:@nx/playwright",
-            "npm:@nx/devkit"
+            "npm:@eslint/js",
+            "npm:globals",
+            "npm:typescript-eslint",
+            "npm:eslint"
           ]
         },
         {
-          "file": "frontend-e2e/project.json",
-          "hash": "16623643415870234688"
+          "file": "importableFiles/default-cards-20260423090859.json",
+          "hash": "4840317770603104415"
         },
         {
-          "file": "frontend-e2e/src/example.spec.ts",
-          "hash": "16019101014373124625",
+          "file": "jest.config.ts",
+          "hash": "6870352021923392442",
           "deps": [
-            "npm:@playwright/test"
+            "npm:jest",
+            "npm:@nx/jest"
           ]
         },
         {
-          "file": "frontend-e2e/tsconfig.json",
-          "hash": "2249461092017240593"
+          "file": "jest.preset.js",
+          "hash": "9430166341120122740",
+          "deps": [
+            "npm:@nx/jest"
+          ]
+        },
+        {
+          "file": "nx.json",
+          "hash": "1836625580536221238"
+        },
+        {
+          "file": "package-lock.json",
+          "hash": "7563890889580018815"
+        },
+        {
+          "file": "package.json",
+          "hash": "3450581486269791814"
+        },
+        {
+          "file": "tsconfig.base.json",
+          "hash": "8938039845044189961"
         }
       ],
       "backend-e2e": [
@@ -1169,9 +1077,92 @@
           "file": "backend-e2e/tsconfig.spec.json",
           "hash": "14226830188665428950"
         }
+      ],
+      "lib": [
+        {
+          "file": "lib/README.md",
+          "hash": "12643788801428417843"
+        },
+        {
+          "file": "lib/eslint.config.mjs",
+          "hash": "18414256800222540513",
+          "deps": [
+            [
+              "npm:jsonc-eslint-parser",
+              "dynamic"
+            ]
+          ]
+        },
+        {
+          "file": "lib/jest.config.cts",
+          "hash": "4781512833943815778"
+        },
+        {
+          "file": "lib/package.json",
+          "hash": "8623726966524273430"
+        },
+        {
+          "file": "lib/project.json",
+          "hash": "14739758092616537677"
+        },
+        {
+          "file": "lib/src/index.ts",
+          "hash": "2539524065856516781"
+        },
+        {
+          "file": "lib/src/shared/abstracts/pagination.ts",
+          "hash": "15386794356618644380",
+          "deps": [
+            "npm:class-validator"
+          ]
+        },
+        {
+          "file": "lib/src/shared/entities/card.ts",
+          "hash": "14879807309050237657"
+        },
+        {
+          "file": "lib/src/shared/entities/deck.ts",
+          "hash": "7020391653924289016"
+        },
+        {
+          "file": "lib/src/shared/entities/user.ts",
+          "hash": "6416820748314925698",
+          "deps": [
+            "npm:@angular/forms"
+          ]
+        },
+        {
+          "file": "lib/src/shared/lib.spec.ts",
+          "hash": "15696180619441963589"
+        },
+        {
+          "file": "lib/src/shared/lib.ts",
+          "hash": "6610388781340973787"
+        },
+        {
+          "file": "lib/tsconfig.json",
+          "hash": "10148903843036702529"
+        },
+        {
+          "file": "lib/tsconfig.lib.json",
+          "hash": "5302676815253789741"
+        },
+        {
+          "file": "lib/tsconfig.spec.json",
+          "hash": "16514264766063949355"
+        },
+        {
+          "file": "lib/vite.config.mts",
+          "hash": "3785863900643997497",
+          "deps": [
+            "npm:vite",
+            "npm:vite-plugin-dts",
+            "npm:@nx/vite"
+          ]
+        }
       ]
     },
     "nonProjectFiles": []
   },
-  "externalNodesHash": "17945512714259145087"
+  "externalNodesHash": "17554573915549185911"
 }

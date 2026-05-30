@@ -9,10 +9,24 @@
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/config/app-config.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/config/config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/config/config.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -142,7 +156,7 @@
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\landing" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.backend:migration:generate">
+  <component name="RunManager" selected="Nx.frontend:build">
     <configuration name="backend:build" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="build" />
@@ -331,6 +345,9 @@
       <workItem from="1778784494594" duration="5797000" />
       <workItem from="1779798377597" duration="3938000" />
       <workItem from="1779986575538" duration="5074000" />
+      <workItem from="1780157627113" duration="1729000" />
+      <workItem from="1780167258165" duration="9000" />
+      <workItem from="1780167274571" duration="1885000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Commit">
       <option name="closed" value="true" />

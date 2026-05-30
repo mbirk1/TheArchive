@@ -9951,7 +9951,7 @@
   },
   {
     "source": "npm:@nestjs/config",
-    "target": "npm:dotenv",
+    "target": "npm:dotenv@16.4.7",
     "type": "static"
   },
   {
@@ -14486,7 +14486,7 @@
   },
   {
     "source": "npm:dotenv-expand@11.0.7",
-    "target": "npm:dotenv",
+    "target": "npm:dotenv@16.6.1",
     "type": "static"
   },
   {
@@ -14566,7 +14566,7 @@
   },
   {
     "source": "npm:nx@22.4.1",
-    "target": "npm:dotenv",
+    "target": "npm:dotenv@16.4.7",
     "type": "static"
   },
   {
@@ -19976,7 +19976,7 @@
   },
   {
     "source": "npm:dotenv-expand",
-    "target": "npm:dotenv",
+    "target": "npm:dotenv@16.6.1",
     "type": "static"
   },
   {
@@ -27026,7 +27026,7 @@
   },
   {
     "source": "npm:nx",
-    "target": "npm:dotenv",
+    "target": "npm:dotenv@16.4.7",
     "type": "static"
   },
   {
@@ -27241,7 +27241,7 @@
   },
   {
     "source": "npm:dotenv-expand@11.0.7",
-    "target": "npm:dotenv",
+    "target": "npm:dotenv@16.4.7",
     "type": "static"
   },
   {

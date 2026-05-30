@@ -6300,6 +6300,33 @@
         "hash": "sha512-McMW6EXtpc8+CwTUwFdg6h7dYcBUpH5iUILCclAsa+MbCEvC9ZKu4dCHRlJqALuhjLw97pbQu62l4+wRwGeZqA=="
       }
     },
+    "npm:dotenv@16.4.7": {
+      "type": "npm",
+      "name": "npm:dotenv@16.4.7",
+      "data": {
+        "version": "16.4.7",
+        "packageName": "dotenv",
+        "hash": "sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ=="
+      }
+    },
+    "npm:dotenv@16.6.1": {
+      "type": "npm",
+      "name": "npm:dotenv@16.6.1",
+      "data": {
+        "version": "16.6.1",
+        "packageName": "dotenv",
+        "hash": "sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow=="
+      }
+    },
+    "npm:dotenv": {
+      "type": "npm",
+      "name": "npm:dotenv",
+      "data": {
+        "version": "17.4.2",
+        "packageName": "dotenv",
+        "hash": "sha512-nI4U3TottKAcAD9LLud4Cb7b2QztQMUEfHbvhTH09bqXTxnSie8WnjPALV/WMCrJZ6UV/qHJ6L03OqO3LcdYZw=="
+      }
+    },
     "npm:@nestjs/core": {
       "type": "npm",
       "name": "npm:@nestjs/core",
@@ -9904,9 +9931,9 @@
       "type": "npm",
       "name": "npm:@types/node",
       "data": {
-        "version": "20.19.9",
+        "version": "20.19.41",
         "packageName": "@types/node",
-        "hash": "sha512-cuVNgarYWZqxRJDQHEB58GEONhOK79QVR/qYx4S7kcUObQvUwvFnYxJuuHUKm2aieN9X3yZB4LZsuYNU1Qphsw=="
+        "hash": "sha512-ECymXOukMnOoVkC2bb1Vc/w/836DXncOg5m8Xj1RH7xSHZJWNYY6Zh7EH477vcnD5egKNNfy2RpNOmuChhFPgQ=="
       }
     },
     "npm:@types/node@17.0.45": {
@@ -13075,24 +13102,6 @@
         "version": "1.0.1",
         "packageName": "is-obj",
         "hash": "sha512-l4RyHgRqGN4Y3+9JHVrNqO+tN0rV5My76uW5/nuO4K1b6vw5G8d/cmFjP9tRfEsdhZNt0IFdZuK/c2Vr4Nb+Qg=="
-      }
-    },
-    "npm:dotenv": {
-      "type": "npm",
-      "name": "npm:dotenv",
-      "data": {
-        "version": "16.4.7",
-        "packageName": "dotenv",
-        "hash": "sha512-47qPchRCykZC03FhkYAhrvwU4xDBFIj1QPqaarj6mdM/hgUzfPHcpkHJOn3mJAufFeeAxAzeGsr5X0M4k6fLZQ=="
-      }
-    },
-    "npm:dotenv@16.6.1": {
-      "type": "npm",
-      "name": "npm:dotenv@16.6.1",
-      "data": {
-        "version": "16.6.1",
-        "packageName": "dotenv",
-        "hash": "sha512-uBq4egWHTcTt33a72vpSG0z3HnPuIl6NqYcTrKEg2azoEyl2hpW0zqlxysq2pK9HlDIHyHyakeYaYnSAwd8bow=="
       }
     },
     "npm:dunder-proto": {
@@ -22191,6 +22200,7 @@
     "node_modules/@nestjs/axios": "npm:@nestjs/axios",
     "node_modules/@nestjs/common": "npm:@nestjs/common",
     "node_modules/@nestjs/config": "npm:@nestjs/config",
+    "node_modules/@nestjs/config/node_modules/dotenv": "npm:dotenv@16.4.7",
     "node_modules/@nestjs/core": "npm:@nestjs/core",
     "node_modules/@nestjs/platform-express": "npm:@nestjs/platform-express",
     "node_modules/@nestjs/platform-express/node_modules/cors": "npm:cors@2.8.5",
@@ -22423,6 +22433,7 @@
     "node_modules/@nx/workspace/node_modules/chalk": "npm:chalk@4.1.2",
     "node_modules/@nx/workspace/node_modules/cli-cursor": "npm:cli-cursor@3.1.0",
     "node_modules/@nx/workspace/node_modules/define-lazy-prop": "npm:define-lazy-prop@2.0.0",
+    "node_modules/@nx/workspace/node_modules/dotenv": "npm:dotenv@16.6.1",
     "node_modules/@nx/workspace/node_modules/dotenv-expand": "npm:dotenv-expand@11.0.7",
     "node_modules/@nx/workspace/node_modules/emoji-regex": "npm:emoji-regex@8.0.0",
     "node_modules/@nx/workspace/node_modules/ignore": "npm:ignore@7.0.5",
@@ -22435,6 +22446,7 @@
     "node_modules/@nx/workspace/node_modules/log-symbols": "npm:log-symbols@4.1.0",
     "node_modules/@nx/workspace/node_modules/minimatch": "npm:minimatch@10.1.1",
     "node_modules/@nx/workspace/node_modules/nx": "npm:nx@22.4.1",
+    "node_modules/@nx/workspace/node_modules/nx/node_modules/dotenv": "npm:dotenv@16.4.7",
     "node_modules/@nx/workspace/node_modules/open": "npm:open@8.4.2",
     "node_modules/@nx/workspace/node_modules/ora": "npm:ora@5.3.0",
     "node_modules/@nx/workspace/node_modules/picomatch": "npm:picomatch@4.0.2",
@@ -23079,6 +23091,7 @@
     "node_modules/dot-prop/node_modules/is-obj": "npm:is-obj@2.0.0",
     "node_modules/dotenv": "npm:dotenv",
     "node_modules/dotenv-expand": "npm:dotenv-expand",
+    "node_modules/dotenv-expand/node_modules/dotenv": "npm:dotenv@16.6.1",
     "node_modules/dunder-proto": "npm:dunder-proto",
     "node_modules/duplexer": "npm:duplexer",
     "node_modules/eastasianwidth": "npm:eastasianwidth",
@@ -23783,6 +23796,7 @@
     "node_modules/nx/node_modules/chalk": "npm:chalk@4.1.2",
     "node_modules/nx/node_modules/cli-cursor": "npm:cli-cursor@3.1.0",
     "node_modules/nx/node_modules/define-lazy-prop": "npm:define-lazy-prop@2.0.0",
+    "node_modules/nx/node_modules/dotenv": "npm:dotenv@16.4.7",
     "node_modules/nx/node_modules/dotenv-expand": "npm:dotenv-expand@11.0.7",
     "node_modules/nx/node_modules/emoji-regex": "npm:emoji-regex@8.0.0",
     "node_modules/nx/node_modules/ignore": "npm:ignore@7.0.5",
