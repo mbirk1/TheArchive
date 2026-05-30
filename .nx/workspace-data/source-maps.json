@@ -1122,6 +1122,10 @@
       "frontend/project.json",
       "nx/core/project-json"
     ],
+    "targets.build.configurations.production.fileReplacements": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
     "targets.build.configurations.production.budgets": [
       "frontend/project.json",
       "nx/core/project-json"

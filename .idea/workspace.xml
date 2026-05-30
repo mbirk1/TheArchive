@@ -5,28 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="fix build">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/main.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/main.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/config/app-config.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.prod.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/config/config.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/config/config.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.base.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.base.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,7 +27,15 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RESET_MODE" value="HARD" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -67,79 +60,79 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Docker.docker-compose.yml.archive-db: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml.sideboard-db: Compose Deployment.executor": "Run",
-    "Docker.docker-compose.yml: Compose Deployment.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Nx.backend:build.executor": "Run",
-    "Nx.backend:import-cards.executor": "Run",
-    "Nx.backend:lint.executor": "Run",
-    "Nx.backend:migration:generate.executor": "Run",
-    "Nx.backend:migration:run.executor": "Run",
-    "Nx.backend:serve.executor": "Run",
-    "Nx.backend:serve:development.executor": "Run",
-    "Nx.frontend:build.executor": "Run",
-    "Nx.frontend:lint.executor": "Run",
-    "Nx.frontend:serve.executor": "Run",
-    "Nx.frontend:serve:development.executor": "Run",
-    "Nx.lib:build.executor": "Run",
-    "Nx.shop:serve.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mariu/WebstormProjects/Sideboard/frontend/src/app/pages/sign-up",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "npm.start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "nx-console",
-    "ts.external.directory.path": "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Docker.docker-compose.yml.archive-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml.sideboard-db: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;Docker.docker-compose.yml: Compose Deployment.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Nx.backend:build.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.backend:import-cards.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.backend:lint.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.backend:migration:generate.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.backend:migration:run.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.backend:serve.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.backend:serve:development.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.frontend:build.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.frontend:lint.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.frontend:serve.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.frontend:serve:development.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.lib:build.executor&quot;: &quot;Run&quot;,
+    &quot;Nx.shop:serve.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/mariu/WebstormProjects/Sideboard/frontend/src/app/pages/sign-up&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;nx-console&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ],
-    "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
-      "yaml",
-      "JSON",
-      "HTML",
-      "PLAIN_TEXT"
+    &quot;com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File&quot;: [
+      &quot;yaml&quot;,
+      &quot;JSON&quot;,
+      &quot;HTML&quot;,
+      &quot;PLAIN_TEXT&quot;
     ],
-    "dev.nx.console.project_details_files": [
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\playwright.config.ts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\webpack.config.js",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\jest.config.cts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\jest.config.cts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts"
+    &quot;dev.nx.console.project_details_files&quot;: [
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\project.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\package.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\playwright.config.ts&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\eslint.config.mjs&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\project.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\package.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\eslint.config.mjs&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\webpack.config.js&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\jest.config.cts&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\project.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\package.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\eslint.config.mjs&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\package.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\eslint.config.mjs&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\project.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\package.json&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\eslint.config.mjs&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\jest.config.cts&quot;,
+      &quot;C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\src\app\pages\sign-up" />

@@ -312,48 +312,122 @@
         "root": "frontend",
         "targets": {
           "lint": {
+            "executor": "@nx/eslint:lint",
+            "options": {},
+            "configurations": {},
+            "parallelism": true,
             "cache": true,
-            "options": {
-              "cwd": "frontend",
-              "command": "eslint ."
-            },
             "inputs": [
               "default",
-              "^default",
-              "{workspaceRoot}/eslint.base.config.mjs",
-              "{workspaceRoot}/frontend/eslint.config.mjs",
-              "{workspaceRoot}/tools/eslint-rules/**/*",
-              {
-                "externalDependencies": [
-                  "eslint"
-                ]
-              }
-            ],
+              "{workspaceRoot}/.eslintrc.json",
+              "{workspaceRoot}/.eslintignore",
+              "{workspaceRoot}/eslint.config.mjs"
+            ]
+          },
+          "build": {
+            "executor": "@angular-devkit/build-angular:browser",
             "outputs": [
-              "{options.outputFile}"
+              "{options.outputPath}"
             ],
-            "metadata": {
-              "technologies": [
-                "eslint"
-              ],
-              "description": "Runs ESLint on project",
-              "help": {
-                "command": "npx eslint --help",
-                "example": {
-                  "options": {
-                    "max-warnings": 0
-                  }
+            "options": {
+              "outputPath": "dist/frontend",
+              "index": "frontend/src/index.html",
+              "main": "frontend/src/main.ts",
+              "tsConfig": "frontend/tsconfig.app.json",
+              "assets": [
+                {
+                  "glob": "**/*",
+                  "input": "frontend/public"
                 }
+              ],
+              "styles": [
+                "frontend/src/styles.css"
+              ]
+            },
+            "configurations": {
+              "production": {
+                "fileReplacements": [
+                  {
+                    "replace": "src/environments/environment.ts",
+                    "with": "src/environments/environment.prod.ts"
+                  }
+                ],
+                "budgets": [
+                  {
+                    "type": "initial",
+                    "maximumWarning": "500kb",
+                    "maximumError": "1mb"
+                  },
+                  {
+                    "type": "anyComponentStyle",
+                    "maximumWarning": "4kb",
+                    "maximumError": "8kb"
+                  }
+                ],
+                "outputHashing": "all"
+              },
+              "development": {
+                "buildOptimizer": false,
+                "optimization": false,
+                "vendorChunk": true,
+                "extractLicenses": false,
+                "sourceMap": true,
+                "namedChunks": true
               }
             },
-            "executor": "nx:run-commands",
+            "defaultConfiguration": "production",
+            "parallelism": true,
+            "cache": true,
+            "dependsOn": [
+              "^build"
+            ],
+            "inputs": [
+              "default",
+              "^default"
+            ]
+          },
+          "serve": {
+            "continuous": true,
+            "executor": "@angular-devkit/build-angular:dev-server",
+            "configurations": {
+              "production": {
+                "buildTarget": "frontend:build:production"
+              },
+              "development": {
+                "buildTarget": "frontend:build:development"
+              }
+            },
+            "defaultConfiguration": "development",
+            "options": {},
+            "parallelism": true
+          },
+          "extract-i18n": {
+            "executor": "@angular-devkit/build-angular:extract-i18n",
+            "options": {
+              "buildTarget": "frontend:build"
+            },
+            "configurations": {},
+            "parallelism": true
+          },
+          "serve-static": {
+            "continuous": true,
+            "executor": "@nx/web:file-server",
+            "options": {
+              "buildTarget": "frontend:build",
+              "port": 4200,
+              "spa": true
+            },
             "configurations": {},
             "parallelism": true
           }
         },
         "name": "frontend",
-        "implicitDependencies": [],
-        "tags": []
+        "$schema": "../node_modules/nx/schemas/project-schema.json",
+        "projectType": "application",
+        "prefix": "app",
+        "sourceRoot": "frontend/src",
+        "tags": [],
+        "implicitDependencies": []
       }
     },
     "backend": {
@@ -55559,143 +55633,6 @@
     ]
   },
   "version": "6.0",
-  "errors": [
-    {
-      "stack": " - frontend/project.json: Error: CommaExpected in C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json at 33:11\n  31 |             }\n  32 |           ]\n> 33 |           \"budgets\": [\n     |           ^^^^^^^^^\n  34 |             {\n  35 |               \"type\": \"initial\",\n  36 |               \"maximumWarning\": \"500kb\",\n\n    at parseJson (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\utils\\json.js:29:15)\n    at readJsonFile (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\utils\\fileutils.js:32:37)\n    at C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\plugins\\project-json\\build-nodes\\project-json.js:14:59\n    at C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\project-graph\\plugins\\utils.js:10:33\n    at Array.map (<anonymous>)\n    at createNodesFromFiles (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\project-graph\\plugins\\utils.js:8:35)\n    at exports.ProjectJsonProjectsPlugin.createNodesV2 (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\plugins\\project-json\\build-nodes\\project-json.js:13:55)\n    at LoadedNxPlugin.createNodes (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:25:62)\n    at LoadedNxPlugin.createNodes.<computed> (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:39:34)\n    at createNodes (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\project-graph\\plugins\\isolation\\plugin-worker.js:76:63)",
-      "message": "An error occurred while processing files for the nx/core/project-json plugin\n.\n  - frontend/project.json: CommaExpected in C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json at 33:11\n  31 |             }\n  32 |           ]\n> 33 |           \"budgets\": [\n     |           ^^^^^^^^^\n  34 |             {\n  35 |               \"type\": \"initial\",\n  36 |               \"maximumWarning\": \"500kb\",\n",
-      "errors": [
-        [
-          "frontend/project.json",
-          {
-            "stack": "Error: CommaExpected in C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json at 33:11\n  31 |             }\n  32 |           ]\n> 33 |           \"budgets\": [\n     |           ^^^^^^^^^\n  34 |             {\n  35 |               \"type\": \"initial\",\n  36 |               \"maximumWarning\": \"500kb\",\n\n    at parseJson (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\utils\\json.js:29:15)\n    at readJsonFile (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\utils\\fileutils.js:32:37)\n    at C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\plugins\\project-json\\build-nodes\\project-json.js:14:59\n    at C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\project-graph\\plugins\\utils.js:10:33\n    at Array.map (<anonymous>)\n    at createNodesFromFiles (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\project-graph\\plugins\\utils.js:8:35)\n    at exports.ProjectJsonProjectsPlugin.createNodesV2 (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\plugins\\project-json\\build-nodes\\project-json.js:13:55)\n    at LoadedNxPlugin.createNodes (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:25:62)\n    at LoadedNxPlugin.createNodes.<computed> (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:39:34)\n    at createNodes (C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\nx\\src\\project-graph\\plugins\\isolation\\plugin-worker.js:76:63)",
-            "message": "CommaExpected in C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json at 33:11\n  31 |             }\n  32 |           ]\n> 33 |           \"budgets\": [\n     |           ^^^^^^^^^\n  34 |             {\n  35 |               \"type\": \"initial\",\n  36 |               \"maximumWarning\": \"500kb\",\n"
-          }
-        ]
-      ],
-      "partialResults": [
-        [
-          "backend/project.json",
-          {
-            "projects": {
-              "backend": {
-                "name": "backend",
-                "root": "backend",
-                "$schema": "../node_modules/nx/schemas/project-schema.json",
-                "sourceRoot": "backend/src",
-                "projectType": "application",
-                "tags": [],
-                "targets": {
-                  "migration:generate": {
-                    "executor": "nx:run-commands",
-                    "options": {
-                      "command": "ts-node --project ./backend/tsconfig.app.json ./node_modules/typeorm/cli.js migration:generate ./backend/src/app/database/migrations/migration -d ./backend/src/app/database/datasource.ts"
-                    }
-                  },
-                  "migration:run": {
-                    "executor": "nx:run-commands",
-                    "options": {
-                      "command": "ts-node --project ./backend/tsconfig.app.json ./node_modules/typeorm/cli.js migration:run -d ./backend/src/app/database/datasource.ts"
-                    }
-                  },
-                  "import-cards": {
-                    "executor": "nx:run-commands",
-                    "options": {
-                      "command": "tsx ./backend/import-cards-scryfall.ts ./importableFiles/default-cards-20260423090859.json"
-                    }
-                  },
-                  "build": {
-                    "outputs": [
-                      "{options.outputPath}"
-                    ],
-                    "executor": "@nx/webpack:webpack",
-                    "options": {
-                      "outputPath": "dist/apps/backend",
-                      "webpackConfig": "backend/webpack.config.js"
-                    }
-                  },
-                  "serve": {
-                    "executor": "@nx/js:node",
-                    "options": {
-                      "buildTarget": "backend:build",
-                      "watch": false
-                    }
-                  }
-                }
-              }
-            }
-          }
-        ],
-        [
-          "backend-e2e/project.json",
-          {
-            "projects": {
-              "backend-e2e": {
-                "name": "backend-e2e",
-                "root": "backend-e2e",
-                "$schema": "../node_modules/nx/schemas/project-schema.json",
-                "projectType": "application",
-                "implicitDependencies": [
-                  "backend"
-                ],
-                "targets": {
-                  "e2e": {
-                    "executor": "@nx/jest:jest",
-                    "outputs": [
-                      "{workspaceRoot}/coverage/{e2eProjectRoot}"
-                    ],
-                    "options": {
-                      "jestConfig": "backend-e2e/jest.config.cts",
-                      "passWithNoTests": true
-                    },
-                    "dependsOn": [
-                      "backend:build",
-                      "backend:serve"
-                    ]
-                  }
-                }
-              }
-            }
-          }
-        ],
-        [
-          "frontend-e2e/project.json",
-          {
-            "projects": {
-              "frontend-e2e": {
-                "name": "frontend-e2e",
-                "root": "frontend-e2e",
-                "$schema": "../node_modules/nx/schemas/project-schema.json",
-                "projectType": "application",
-                "sourceRoot": "frontend-e2e/src",
-                "implicitDependencies": [
-                  "frontend"
-                ],
-                "// targets": "to see all targets run: nx show project frontend-e2e --web",
-                "targets": {}
-              }
-            }
-          }
-        ],
-        [
-          "lib/project.json",
-          {
-            "projects": {
-              "lib": {
-                "name": "lib",
-                "root": "lib",
-                "$schema": "../node_modules/nx/schemas/project-schema.json",
-                "sourceRoot": "lib/src",
-                "projectType": "library",
-                "tags": [],
-                "// targets": "to see all targets run: nx show project lib --web",
-                "targets": {}
-              }
-            }
-          }
-        ]
-      ],
-      "name": "AggregateCreateNodesError"
-    }
-  ],
-  "computedAt": 1780169221688
+  "errors": [],
+  "computedAt": 1780170600512
 }
