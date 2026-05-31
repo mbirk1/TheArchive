@@ -6336,6 +6336,24 @@
         "hash": "sha512-97DzTYMf5RtGAVvX1cjwpKRiCUpkeQ9CCzSAenqkAhOmNVVFaApbhuw+xrDt13rsCa2hHVOYPrV4dBgOYMJjsA=="
       }
     },
+    "npm:@nestjs/jwt": {
+      "type": "npm",
+      "name": "npm:@nestjs/jwt",
+      "data": {
+        "version": "11.0.2",
+        "packageName": "@nestjs/jwt",
+        "hash": "sha512-rK8aE/3/Ma45gAWfCksAXUNbOoSOUudU0Kn3rT39htPF7wsYXtKfjALKeKKJbFrIWbLjsbqfXX5bIJNvgBugGA=="
+      }
+    },
+    "npm:@nestjs/passport": {
+      "type": "npm",
+      "name": "npm:@nestjs/passport",
+      "data": {
+        "version": "11.0.5",
+        "packageName": "@nestjs/passport",
+        "hash": "sha512-ulQX6mbjlws92PIM15Naes4F4p2JoxGnIJuUsdXQPT+Oo2sqQmENEZXM7eYuimocfHnKlcfZOuyzbA33LwUlOQ=="
+      }
+    },
     "npm:@nestjs/platform-express": {
       "type": "npm",
       "name": "npm:@nestjs/platform-express",
@@ -9648,6 +9666,15 @@
         "hash": "sha512-8PvcXf70gTDZBgt9ptxJ8elBeBjcLOAcOtoO/mPJjtji1+CdGbHgm77om1GrsPxsiE+uXIpNSK64UYaIwQXd4Q=="
       }
     },
+    "npm:@types/bcrypt": {
+      "type": "npm",
+      "name": "npm:@types/bcrypt",
+      "data": {
+        "version": "6.0.0",
+        "packageName": "@types/bcrypt",
+        "hash": "sha512-/oJGukuH3D2+D+3H4JWLaAsJ/ji86dhRidzZ/Od7H/i8g+aCmvkeCc6Ni/f9uxGLSQVCRZkX2/lqEFG2BvWtlQ=="
+      }
+    },
     "npm:@types/body-parser": {
       "type": "npm",
       "name": "npm:@types/body-parser",
@@ -9891,6 +9918,15 @@
         "hash": "sha512-5+fP8P8MFNC+AyZCDxrB2pkZFPGzqQWUzpSeuuVLvm8VMcorNYavBqoFcxK8bQz4Qsbn4oUEEem4wDLfcysGHA=="
       }
     },
+    "npm:@types/jsonwebtoken": {
+      "type": "npm",
+      "name": "npm:@types/jsonwebtoken",
+      "data": {
+        "version": "9.0.10",
+        "packageName": "@types/jsonwebtoken",
+        "hash": "sha512-asx5hIG9Qmf/1oStypjanR7iKTv0gXQ1Ov/jfrX6kS/EO0OFni8orbmGCn0672NHR3kXHwpAwR+B368ZGN/2rA=="
+      }
+    },
     "npm:@types/mdast": {
       "type": "npm",
       "name": "npm:@types/mdast",
@@ -9961,6 +9997,42 @@
         "version": "4.0.2",
         "packageName": "@types/parse-json",
         "hash": "sha512-dISoDXWWQwUquiKsyZ4Ng+HX2KsPL7LyHKHQwgGFEA3IaKac4Obd+h2a/a6waisAoepJlBcx9paWqjA8/HVjCw=="
+      }
+    },
+    "npm:@types/passport": {
+      "type": "npm",
+      "name": "npm:@types/passport",
+      "data": {
+        "version": "1.0.17",
+        "packageName": "@types/passport",
+        "hash": "sha512-aciLyx+wDwT2t2/kJGJR2AEeBz0nJU4WuRX04Wu9Dqc5lSUtwu0WERPHYsLhF9PtseiAMPBGNUOtFjxZ56prsg=="
+      }
+    },
+    "npm:@types/passport-jwt": {
+      "type": "npm",
+      "name": "npm:@types/passport-jwt",
+      "data": {
+        "version": "4.0.1",
+        "packageName": "@types/passport-jwt",
+        "hash": "sha512-Y0Ykz6nWP4jpxgEUYq8NoVZeCQPo1ZndJLfapI249g1jHChvRfZRO/LS3tqu26YgAS/laI1qx98sYGz0IalRXQ=="
+      }
+    },
+    "npm:@types/passport-local": {
+      "type": "npm",
+      "name": "npm:@types/passport-local",
+      "data": {
+        "version": "1.0.38",
+        "packageName": "@types/passport-local",
+        "hash": "sha512-nsrW4A963lYE7lNTv9cr5WmiUD1ibYJvWrpE13oxApFsRt77b0RdtZvKbCdNIY4v/QZ6TRQWaDDEwV1kCTmcXg=="
+      }
+    },
+    "npm:@types/passport-strategy": {
+      "type": "npm",
+      "name": "npm:@types/passport-strategy",
+      "data": {
+        "version": "0.2.38",
+        "packageName": "@types/passport-strategy",
+        "hash": "sha512-GC6eMqqojOooq993Tmnmp7AUTbbQSgilyvpCYQjT+H6JfG/g6RGc7nXEniZlp0zyKJ0WUdOiZWLBZft9Yug1uA=="
       }
     },
     "npm:@types/pg": {
@@ -11097,6 +11169,15 @@
         "hash": "sha512-9MdFxmkKaOYVTV+XVRG8ArDwwQ77XIgIPyKASB1k3JPq3M8fGQQQE3YpMOrKm6g//Ktx8ivZr8xo1Qmtqub+GA=="
       }
     },
+    "npm:node-addon-api@8.8.0": {
+      "type": "npm",
+      "name": "npm:node-addon-api@8.8.0",
+      "data": {
+        "version": "8.8.0",
+        "packageName": "node-addon-api",
+        "hash": "sha512-c5Ko1fZJIJmzhFIkhRN76WTq+fC6tWnGy9CXA0fA+XygsWZmEwG8vmbkNqxMyoaa0Tin4djul49NzdVcJJcjeA=="
+      }
+    },
     "npm:node-addon-api@6.1.0": {
       "type": "npm",
       "name": "npm:node-addon-api@6.1.0",
@@ -11394,6 +11475,15 @@
         "hash": "sha512-x+VAiMRL6UPkx+kudNvxTl6hB2XNNCG2r+7wixVfIYwu/2HKRXimwQyaumLjMveWvT2Hkd/cAJw+QBMfJ/EKVw=="
       }
     },
+    "npm:bcrypt": {
+      "type": "npm",
+      "name": "npm:bcrypt",
+      "data": {
+        "version": "6.0.0",
+        "packageName": "bcrypt",
+        "hash": "sha512-cU8v/EGSrnH+HnxV2z0J7/blxH8gq7Xh2JFT6Aroax7UohdmiJJlxApMxtKfuI7z68NvvVcmR78k2LbT6efhRg=="
+      }
+    },
     "npm:beasties": {
       "type": "npm",
       "name": "npm:beasties",
@@ -11617,6 +11707,15 @@
         "version": "6.0.3",
         "packageName": "buffer",
         "hash": "sha512-FTiCpNxtwiZZHEZbcbTIcZjERVICn9yq/pDFkTl95/AxzD1naBctN7YO68riM/gLSDY7sdrMby8hofADYuuqOA=="
+      }
+    },
+    "npm:buffer-equal-constant-time": {
+      "type": "npm",
+      "name": "npm:buffer-equal-constant-time",
+      "data": {
+        "version": "1.0.1",
+        "packageName": "buffer-equal-constant-time",
+        "hash": "sha512-zRpUiDwd/xk6ADqPMATG8vc9VPrkck7T07OIx0gnjmJAnHnTVXNQG3vfvWNuiZIkwu9KrKdA1iJKfsfTVxE6NA=="
       }
     },
     "npm:buffer-from": {
@@ -13129,6 +13228,15 @@
         "version": "0.2.0",
         "packageName": "eastasianwidth",
         "hash": "sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA=="
+      }
+    },
+    "npm:ecdsa-sig-formatter": {
+      "type": "npm",
+      "name": "npm:ecdsa-sig-formatter",
+      "data": {
+        "version": "1.0.11",
+        "packageName": "ecdsa-sig-formatter",
+        "hash": "sha512-nagl3RYrbNv6kQkeJIpt6NJZy8twLB/2vtz6yN9Z4vRKHN4/QZJIEbqohALSgwKdnksuY3k5Addp5lg8sVoVcQ=="
       }
     },
     "npm:ee-first": {
@@ -15777,6 +15885,33 @@
         "hash": "sha512-POQXvpdL69+CluYsillJ7SUhKvytYjW9vG/GKpnf+xP8UWgYEM/RaMzHHofbALDiKbbP1W8UEYmgGl39WkPZsg=="
       }
     },
+    "npm:jsonwebtoken": {
+      "type": "npm",
+      "name": "npm:jsonwebtoken",
+      "data": {
+        "version": "9.0.3",
+        "packageName": "jsonwebtoken",
+        "hash": "sha512-MT/xP0CrubFRNLNKvxJ2BYfy53Zkm++5bX9dtuPbqAeQpTVe0MQTFhao8+Cp//EmJp244xt6Drw/GVEGCUj40g=="
+      }
+    },
+    "npm:jwa": {
+      "type": "npm",
+      "name": "npm:jwa",
+      "data": {
+        "version": "2.0.1",
+        "packageName": "jwa",
+        "hash": "sha512-hRF04fqJIP8Abbkq5NKGN0Bbr3JxlQ+qhZufXVr0DvujKy93ZCbXZMHDL4EOtodSbCWxOqR8MS1tXA5hwqCXDg=="
+      }
+    },
+    "npm:jws": {
+      "type": "npm",
+      "name": "npm:jws",
+      "data": {
+        "version": "4.0.1",
+        "packageName": "jws",
+        "hash": "sha512-EKI/M/yqPncGUUh44xz0PxSidXFr/+r0pA70+gIYhjv+et7yxM+s29Y+VGDkovRofQem0fs7Uvf4+YmAdyRduA=="
+      }
+    },
     "npm:karma-source-map-support": {
       "type": "npm",
       "name": "npm:karma-source-map-support",
@@ -16164,6 +16299,60 @@
         "hash": "sha512-FT1yDzDYEoYWhnSGnpE/4Kj1fLZkDFyqRb7fNt6FdYOSxlUWAtp42Eh6Wb0rGIv/m9Bgo7x4GhQbm5Ys4SG5ow=="
       }
     },
+    "npm:lodash.includes": {
+      "type": "npm",
+      "name": "npm:lodash.includes",
+      "data": {
+        "version": "4.3.0",
+        "packageName": "lodash.includes",
+        "hash": "sha512-W3Bx6mdkRTGtlJISOvVD/lbqjTlPPUDTMnlXZFnVwi9NKJ6tiAk6LVdlhZMm17VZisqhKcgzpO5Wz91PCt5b0w=="
+      }
+    },
+    "npm:lodash.isboolean": {
+      "type": "npm",
+      "name": "npm:lodash.isboolean",
+      "data": {
+        "version": "3.0.3",
+        "packageName": "lodash.isboolean",
+        "hash": "sha512-Bz5mupy2SVbPHURB98VAcw+aHh4vRV5IPNhILUCsOzRmsTmSQ17jIuqopAentWoehktxGd9e/hbIXq980/1QJg=="
+      }
+    },
+    "npm:lodash.isinteger": {
+      "type": "npm",
+      "name": "npm:lodash.isinteger",
+      "data": {
+        "version": "4.0.4",
+        "packageName": "lodash.isinteger",
+        "hash": "sha512-DBwtEWN2caHQ9/imiNeEA5ys1JoRtRfY3d7V9wkqtbycnAmTvRRmbHKDV4a0EYc678/dia0jrte4tjYwVBaZUA=="
+      }
+    },
+    "npm:lodash.isnumber": {
+      "type": "npm",
+      "name": "npm:lodash.isnumber",
+      "data": {
+        "version": "3.0.3",
+        "packageName": "lodash.isnumber",
+        "hash": "sha512-QYqzpfwO3/CWf3XP+Z+tkQsfaLL/EnUlXWVkIk5FUPc4sBdTehEqZONuyRt2P67PXAk+NXmTBcc97zw9t1FQrw=="
+      }
+    },
+    "npm:lodash.isplainobject": {
+      "type": "npm",
+      "name": "npm:lodash.isplainobject",
+      "data": {
+        "version": "4.0.6",
+        "packageName": "lodash.isplainobject",
+        "hash": "sha512-oSXzaWypCMHkPC3NvBEaPHf0KsA5mvPrOPgQWDsbg8n7orZ290M0BmC/jgRZ4vcJ6DTAhjrsSYgdsW/F+MFOBA=="
+      }
+    },
+    "npm:lodash.isstring": {
+      "type": "npm",
+      "name": "npm:lodash.isstring",
+      "data": {
+        "version": "4.0.1",
+        "packageName": "lodash.isstring",
+        "hash": "sha512-0wJxfxH1wgO3GrbuP+dTTk7op+6L41QCXbGINEmD+ny/G/eCqGzxyCsh7159S+mgDDcoarnBw6PC1PS5+wUGgw=="
+      }
+    },
     "npm:lodash.memoize": {
       "type": "npm",
       "name": "npm:lodash.memoize",
@@ -16180,6 +16369,15 @@
         "version": "4.6.2",
         "packageName": "lodash.merge",
         "hash": "sha512-0KpjqXRVvrYyCsX1swR/XTK0va6VQkQM6MNo7PqW77ByjAhoARA8EfrP1N4+KlKj8YS0ZUCtRT/YUuhyYDujIQ=="
+      }
+    },
+    "npm:lodash.once": {
+      "type": "npm",
+      "name": "npm:lodash.once",
+      "data": {
+        "version": "4.1.1",
+        "packageName": "lodash.once",
+        "hash": "sha512-Sb487aTOCr9drQVL8pIxOzVhafOjZN9UU54hiN8PU3uAiSV7lx1yYNpbNmex2PK6dSJoNTSJUUswT651yww3Mg=="
       }
     },
     "npm:lodash.uniq": {
@@ -17739,6 +17937,42 @@
         "hash": "sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g=="
       }
     },
+    "npm:passport": {
+      "type": "npm",
+      "name": "npm:passport",
+      "data": {
+        "version": "0.7.0",
+        "packageName": "passport",
+        "hash": "sha512-cPLl+qZpSc+ireUvt+IzqbED1cHHkDoVYMo30jbJIdOOjQ1MQYZBPiNvmi8UM6lJuOpTPXJGZQk0DtC4y61MYQ=="
+      }
+    },
+    "npm:passport-jwt": {
+      "type": "npm",
+      "name": "npm:passport-jwt",
+      "data": {
+        "version": "4.0.1",
+        "packageName": "passport-jwt",
+        "hash": "sha512-UCKMDYhNuGOBE9/9Ycuoyh7vP6jpeTp/+sfMJl7nLff/t6dps+iaeE0hhNkKN8/HZHcJ7lCdOyDxHdDoxoSvdQ=="
+      }
+    },
+    "npm:passport-local": {
+      "type": "npm",
+      "name": "npm:passport-local",
+      "data": {
+        "version": "1.0.0",
+        "packageName": "passport-local",
+        "hash": "sha512-9wCE6qKznvf9mQYYbgJ3sVOHmCWoUNMVFoZzNoznmISbhnNNPhN9xfY3sLmScHMetEJeoY7CXwfhCe7argfQow=="
+      }
+    },
+    "npm:passport-strategy": {
+      "type": "npm",
+      "name": "npm:passport-strategy",
+      "data": {
+        "version": "1.0.0",
+        "packageName": "passport-strategy",
+        "hash": "sha512-CB97UUvDKJde2V0KDWWB3lyf6PC3FaZP7YxZ2G8OAtn9p4HI9j9JLP9qjOGZFvyl8uwNT8qM+hGnz/n16NI7oA=="
+      }
+    },
     "npm:path-browserify": {
       "type": "npm",
       "name": "npm:path-browserify",
@@ -17800,6 +18034,15 @@
         "version": "2.0.3",
         "packageName": "pathe",
         "hash": "sha512-WUjGcAqP1gQacoQe+OBJsFA7Ld4DyXuUIjZ5cc75cLHvJ7dtNsTugphxIADwspS+AraAUePCKrSVtPLFj/F88w=="
+      }
+    },
+    "npm:pause": {
+      "type": "npm",
+      "name": "npm:pause",
+      "data": {
+        "version": "0.0.1",
+        "packageName": "pause",
+        "hash": "sha512-KG8UEiEVkR3wGEb4m5yZkVCzigAD+cVEJck2CzYZO37ZGJfctvVptVO192MwrtPhzONn6go8ylnOdMhKqi4nfg=="
       }
     },
     "npm:pg": {
@@ -22202,6 +22445,8 @@
     "node_modules/@nestjs/config": "npm:@nestjs/config",
     "node_modules/@nestjs/config/node_modules/dotenv": "npm:dotenv@16.4.7",
     "node_modules/@nestjs/core": "npm:@nestjs/core",
+    "node_modules/@nestjs/jwt": "npm:@nestjs/jwt",
+    "node_modules/@nestjs/passport": "npm:@nestjs/passport",
     "node_modules/@nestjs/platform-express": "npm:@nestjs/platform-express",
     "node_modules/@nestjs/platform-express/node_modules/cors": "npm:cors@2.8.5",
     "node_modules/@nestjs/schematics": "npm:@nestjs/schematics",
@@ -22667,6 +22912,7 @@
     "node_modules/@types/babel__generator": "npm:@types/babel__generator",
     "node_modules/@types/babel__template": "npm:@types/babel__template",
     "node_modules/@types/babel__traverse": "npm:@types/babel__traverse",
+    "node_modules/@types/bcrypt": "npm:@types/bcrypt",
     "node_modules/@types/body-parser": "npm:@types/body-parser",
     "node_modules/@types/bonjour": "npm:@types/bonjour",
     "node_modules/@types/chai": "npm:@types/chai",
@@ -22694,6 +22940,7 @@
     "node_modules/@types/istanbul-reports": "npm:@types/istanbul-reports",
     "node_modules/@types/jest": "npm:@types/jest",
     "node_modules/@types/json-schema": "npm:@types/json-schema",
+    "node_modules/@types/jsonwebtoken": "npm:@types/jsonwebtoken",
     "node_modules/@types/mdast": "npm:@types/mdast",
     "node_modules/@types/mdx": "npm:@types/mdx",
     "node_modules/@types/mime": "npm:@types/mime",
@@ -22701,6 +22948,10 @@
     "node_modules/@types/node": "npm:@types/node",
     "node_modules/@types/node-forge": "npm:@types/node-forge",
     "node_modules/@types/parse-json": "npm:@types/parse-json",
+    "node_modules/@types/passport": "npm:@types/passport",
+    "node_modules/@types/passport-jwt": "npm:@types/passport-jwt",
+    "node_modules/@types/passport-local": "npm:@types/passport-local",
+    "node_modules/@types/passport-strategy": "npm:@types/passport-strategy",
     "node_modules/@types/pg": "npm:@types/pg",
     "node_modules/@types/prismjs": "npm:@types/prismjs",
     "node_modules/@types/qs": "npm:@types/qs",
@@ -22873,6 +23124,8 @@
     "node_modules/basic-auth": "npm:basic-auth",
     "node_modules/basic-auth/node_modules/safe-buffer": "npm:safe-buffer@5.1.2",
     "node_modules/batch": "npm:batch",
+    "node_modules/bcrypt": "npm:bcrypt",
+    "node_modules/bcrypt/node_modules/node-addon-api": "npm:node-addon-api@8.8.0",
     "node_modules/beasties": "npm:beasties",
     "node_modules/beasties/node_modules/css-select": "npm:css-select@6.0.0",
     "node_modules/beasties/node_modules/css-what": "npm:css-what@7.0.0",
@@ -22897,6 +23150,7 @@
     "node_modules/bser": "npm:bser",
     "node_modules/btoa": "npm:btoa",
     "node_modules/buffer": "npm:buffer",
+    "node_modules/buffer-equal-constant-time": "npm:buffer-equal-constant-time",
     "node_modules/buffer-from": "npm:buffer-from",
     "node_modules/bundle-name": "npm:bundle-name",
     "node_modules/busboy": "npm:busboy",
@@ -23095,6 +23349,7 @@
     "node_modules/dunder-proto": "npm:dunder-proto",
     "node_modules/duplexer": "npm:duplexer",
     "node_modules/eastasianwidth": "npm:eastasianwidth",
+    "node_modules/ecdsa-sig-formatter": "npm:ecdsa-sig-formatter",
     "node_modules/ee-first": "npm:ee-first",
     "node_modules/ejs": "npm:ejs",
     "node_modules/electron-to-chromium": "npm:electron-to-chromium",
@@ -23488,6 +23743,9 @@
     "node_modules/jsonc-parser": "npm:jsonc-parser",
     "node_modules/jsonfile": "npm:jsonfile",
     "node_modules/jsonparse": "npm:jsonparse",
+    "node_modules/jsonwebtoken": "npm:jsonwebtoken",
+    "node_modules/jwa": "npm:jwa",
+    "node_modules/jws": "npm:jws",
     "node_modules/karma-source-map-support": "npm:karma-source-map-support",
     "node_modules/keygrip": "npm:keygrip",
     "node_modules/keyv": "npm:keyv",
@@ -23548,8 +23806,15 @@
     "node_modules/lodash": "npm:lodash",
     "node_modules/lodash.clonedeepwith": "npm:lodash.clonedeepwith",
     "node_modules/lodash.debounce": "npm:lodash.debounce",
+    "node_modules/lodash.includes": "npm:lodash.includes",
+    "node_modules/lodash.isboolean": "npm:lodash.isboolean",
+    "node_modules/lodash.isinteger": "npm:lodash.isinteger",
+    "node_modules/lodash.isnumber": "npm:lodash.isnumber",
+    "node_modules/lodash.isplainobject": "npm:lodash.isplainobject",
+    "node_modules/lodash.isstring": "npm:lodash.isstring",
     "node_modules/lodash.memoize": "npm:lodash.memoize",
     "node_modules/lodash.merge": "npm:lodash.merge",
+    "node_modules/lodash.once": "npm:lodash.once",
     "node_modules/lodash.uniq": "npm:lodash.uniq",
     "node_modules/log-symbols": "npm:log-symbols",
     "node_modules/log-update": "npm:log-update",
@@ -23864,6 +24129,10 @@
     "node_modules/parse5-sax-parser/node_modules/parse5": "npm:parse5@8.0.0",
     "node_modules/parseurl": "npm:parseurl",
     "node_modules/pascal-case": "npm:pascal-case",
+    "node_modules/passport": "npm:passport",
+    "node_modules/passport-jwt": "npm:passport-jwt",
+    "node_modules/passport-local": "npm:passport-local",
+    "node_modules/passport-strategy": "npm:passport-strategy",
     "node_modules/path-browserify": "npm:path-browserify",
     "node_modules/path-exists": "npm:path-exists",
     "node_modules/path-is-absolute": "npm:path-is-absolute",
@@ -23875,6 +24144,7 @@
     "node_modules/path-to-regexp": "npm:path-to-regexp",
     "node_modules/path-type": "npm:path-type",
     "node_modules/pathe": "npm:pathe",
+    "node_modules/pause": "npm:pause",
     "node_modules/pg": "npm:pg",
     "node_modules/pg-cloudflare": "npm:pg-cloudflare",
     "node_modules/pg-connection-string": "npm:pg-connection-string",

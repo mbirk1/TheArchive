@@ -1,5 +1,5 @@
 export const environment = {
-  apiUrl: 'http://localhost:3000/api',
+  apiUrl: '/api',
   production: false,
   envName: 'dev',
   githubLink: 'https://github.com/mbirk1/TheArchive',

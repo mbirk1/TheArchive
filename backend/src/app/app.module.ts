@@ -9,6 +9,7 @@ import { allMigrations } from './database/migrations';
 import { UserModule } from './modules/user.module';
 import { LoggerModule } from './modules/logger.module';
 import { DeckModule } from './modules/decks.module';
+import { AuthModule } from './modules/auth.module';
 
 @Module({
   imports: [
@@ -35,6 +36,7 @@ import { DeckModule } from './modules/decks.module';
     DeckModule,
     UserModule,
     LoggerModule,
+    AuthModule,
   ],
   controllers: [AppController],
   providers: [AppService],

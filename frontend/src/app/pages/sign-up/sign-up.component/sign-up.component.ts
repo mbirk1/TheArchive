@@ -6,7 +6,6 @@ import {
   Validators,
 } from '@angular/forms';
 import { UserService } from '../../../services/user/user.service';
-import { ICreateUserFormData } from 'lib';
 
 @Component({
   imports: [ReactiveFormsModule],
@@ -17,13 +16,13 @@ import { ICreateUserFormData } from 'lib';
 export class SignUpComponent {
   private userService: UserService = inject(UserService);
 
-  protected userDataFormGroup: FormGroup<ICreateUserFormData> =
-    new FormGroup<ICreateUserFormData>({
+  protected userDataFormGroup: FormGroup =
+    new FormGroup({
       userName: new FormControl<string>('', {
         validators: Validators.required,
         nonNullable: true,
       }),
-      eMail: new FormControl<string>('', {
+      email: new FormControl<string>('', {
         validators: [Validators.email, Validators.required],
         nonNullable: true,
       }),

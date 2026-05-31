@@ -13,3 +13,6 @@ export * from './shared/entities/card';
 
 // DECK
 export * from './shared/entities/deck';
+
+// EXCEPTIONS
+export * from './shared/exceptions/auth/auth.exeptions';

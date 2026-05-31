@@ -26,4 +26,7 @@ export class User implements IUser {
     nullable: true,
   })
   decks: Deck[];
+
+  @Column({ type: 'varchar', nullable: true })
+  refreshToken: string;
 }

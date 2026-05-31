@@ -6,8 +6,8 @@ import {
   ReactiveFormsModule,
   Validators,
 } from '@angular/forms';
-import { IUserSignInFormData } from 'lib';
-import { UserService } from '../../../services/user/user.service';
+import { AuthService } from '../../../services/auth/auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   imports: [FormsModule, ReactiveFormsModule],
@@ -16,11 +16,12 @@ import { UserService } from '../../../services/user/user.service';
   standalone: true,
 })
 export class SignInComponent {
-  private userService: UserService = inject(UserService);
+  private authService: AuthService = inject(AuthService);
+  private router: Router = inject(Router);
 
-  protected userDataFormGroup: FormGroup<IUserSignInFormData> =
-    new FormGroup<IUserSignInFormData>({
-      eMail: new FormControl<string>('', {
+  protected userDataFormGroup: FormGroup =
+    new FormGroup({
+      email: new FormControl<string>('', {
         validators: [Validators.email, Validators.required],
         nonNullable: true,
       }),
@@ -34,6 +35,8 @@ export class SignInComponent {
     if (this.userDataFormGroup.invalid) {
       return;
     }
-    this.userService.signingInUser(this.userDataFormGroup.value);
+    this.authService.login(this.userDataFormGroup.value).subscribe({
+      next: async () => { this.router.navigate(['/']); },
+    });
   }
 }

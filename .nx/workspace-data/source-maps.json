@@ -1174,11 +1174,19 @@
       "frontend/project.json",
       "nx/core/project-json"
     ],
+    "targets.serve.options": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
     "targets.serve.configurations": [
       "frontend/project.json",
       "nx/core/project-json"
     ],
     "targets.serve.defaultConfiguration": [
+      "frontend/project.json",
+      "nx/core/project-json"
+    ],
+    "targets.serve.options.proxyConfig": [
       "frontend/project.json",
       "nx/core/project-json"
     ],

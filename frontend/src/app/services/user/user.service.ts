@@ -1,20 +1,17 @@
 import { inject, Injectable } from '@angular/core';
 import { UserStore } from '../../api/user/user.store';
 import { firstValueFrom, Observable } from 'rxjs';
-import {
-  ICreateUserFormData,
-  ICreateUserFormDataValue,
-  IUser,
-  IUserSignInFormData,
-  IUserSignInFormDataValue,
-} from 'lib';
+import { AuthStore } from '../../api/auth/auth.store';
+import { IRegisterRequest } from 'lib';
+
 
 @Injectable({ providedIn: 'root' })
 export class UserService {
+  private authStore = inject(AuthStore);
   private userStore = inject(UserStore);
 
   public isUserLoggedIn(): boolean {
-    return this.userStore.isLoggedIn();
+    return this.authStore.isAuthenticated();
   }
 
   getNumberOfUsers(): Observable<number> {
@@ -25,24 +22,19 @@ export class UserService {
     return this.userStore.getNumberOfTodaysActiveUsers();
   }
 
-  createUser(user: Partial<ICreateUserFormDataValue>) {
-    const { userName, password, confirmPassword, eMail } = user;
-
+  createUser(user: IRegisterRequest) {
+    const { userName, password, confirmPassword, email } = user;
     if (
       !userName?.trim() ||
       !password?.trim() ||
       !confirmPassword?.trim() ||
-      !eMail?.trim()
+      !email?.trim()
     ) {
       return;
     }
-
     return firstValueFrom(
-      this.userStore.createUser(user as ICreateUserFormDataValue),
+      this.userStore.createUser(user),
     );
   }
 
-  signingInUser(user: Partial<ICreateUserFormDataValue>): void {
-    this.userStore.signingInUser(user as IUserSignInFormDataValue);
-  }
 }

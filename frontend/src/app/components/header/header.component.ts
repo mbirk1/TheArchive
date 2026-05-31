@@ -2,6 +2,7 @@ import { Component, computed, inject, Signal } from '@angular/core';
 import { UserService } from '../../services/user/user.service';
 import { Router } from '@angular/router';
 import { HeaderChipComponent } from './header-chips/header-chip.component';
+import { AuthService } from '../../services/auth/auth.service';
 
 @Component({
   imports: [HeaderChipComponent],
@@ -12,6 +13,7 @@ import { HeaderChipComponent } from './header-chips/header-chip.component';
 export class HeaderComponent {
   protected router: Router = inject(Router);
   protected userService: UserService = inject(UserService);
+  protected authService: AuthService = inject(AuthService);
   protected isUserLoggedIn: Signal<boolean> = computed(() =>
     this.userService.isUserLoggedIn(),
   );

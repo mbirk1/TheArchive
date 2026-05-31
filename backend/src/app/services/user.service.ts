@@ -1,24 +1,24 @@
 import {
+  ConflictException,
   Injectable,
+  InternalServerErrorException,
+  Logger,
   NotFoundException,
-  UnauthorizedException,
 } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
 import { Between, Repository } from 'typeorm';
+import * as bcrypt from 'bcrypt';
 import { User } from '../database/entities/user.entity';
-import { ICreateUserFormDataValue, IUser, IUserSignInFormDataValue } from 'lib';
-import * as argon2 from 'argon2';
-import { LoggingService } from './logging.service';
+import { IRegisterRequest } from 'lib';
 
 @Injectable()
 export class UserService {
+  private readonly logger = new Logger(UserService.name);
+
   constructor(
     @InjectRepository(User)
     private userRepository: Repository<User>,
-    private logger: LoggingService,
-  ) {
-    this.logger.setContext(UserService.name);
-  }
+  ) {}
 
   async getAllActiveUsersToday(): Promise<number> {
     const start = new Date();
@@ -27,54 +27,131 @@ export class UserService {
     const end = new Date();
     end.setHours(23, 59, 59, 999);
 
-    const users = await this.userRepository.count({
+    return await this.userRepository.count({
       where: {
         lastActiveAt: Between(start, end),
       },
     });
-
-    return users;
   }
 
-  async createUser(user: ICreateUserFormDataValue): Promise<IUser> {
-    user.password = await argon2.hash(user.password);
-    this.logger.info('Validating new user');
-    if (await argon2.verify(user.password, user.confirmPassword)) {
-      this.logger.info('Validated new user');
-      const toBeRegistered = {
-        userName: user.userName,
-        email: user.eMail,
-        password: user.password,
-        createdAt: new Date().toISOString(),
-        lastActiveAt: new Date().toISOString(),
-      };
-      const newUser = this.userRepository.save(toBeRegistered);
-      this.logger.info('Created new user with mail ' + user.eMail);
-      return newUser;
+  async create(createUserDto: IRegisterRequest): Promise<User> {
+    this.logger.debug(`Creating user with email: ${createUserDto.email}`);
+
+    if (!createUserDto.email) {
+      this.logger.warn('Create user called without email');
+      throw new InternalServerErrorException('Email is required');
     }
-    return;
+
+    try {
+      const existing: User = await this.userRepository.findOne({
+        where: { email: createUserDto.email },
+      });
+
+      if (existing) {
+        this.logger.warn(
+          `User creation failed – email already exists: ${createUserDto.email}`,
+        );
+        throw new ConflictException('Email already in use');
+      }
+
+      const user: User = this.userRepository.create({
+        userName: createUserDto.userName,
+        createdAt: new Date(),
+        lastActiveAt: new Date(),
+        email: createUserDto.email,
+        password: await bcrypt.hash(createUserDto.password, 10),
+      });
+
+      const saved: User = await this.userRepository.save(user);
+      this.logger.log(`User created successfully: ${saved.id}`);
+
+      return saved;
+    } catch (error) {
+      if (error instanceof ConflictException) throw error;
+      this.logger.error(
+        `Unexpected error creating user: ${error.message}`,
+        error.stack,
+      );
+      throw new InternalServerErrorException('User creation failed');
+    }
   }
 
-  async signInUser(user: IUserSignInFormDataValue): Promise<boolean> {
-    const foundUser: User = await this.userRepository.findOne({
-      where: {
-        email: user.eMail,
-      },
-    });
-    if (!foundUser) {
-      throw new NotFoundException('User not found');
+  async findByEmail(email: string): Promise<User | null> {
+    if (!email) {
+      this.logger.warn('findByEmail called without email');
+      return null;
     }
 
-    if (!(await argon2.verify(foundUser.password, user.password))) {
-      throw new UnauthorizedException();
+    try {
+      const user = await this.userRepository.findOne({ where: { email } });
+
+      if (!user) {
+        this.logger.debug(`No user found for email: ${email}`);
+      }
+
+      return user;
+    } catch (error) {
+      this.logger.error(
+        `Error finding user by email: ${error.message}`,
+        error.stack,
+      );
+      throw new InternalServerErrorException('Database error');
     }
-    this.updateLastActive(foundUser);
-    return true;
   }
 
-  private updateLastActive(user: User): void {
-    user.lastActiveAt = new Date();
-    this.userRepository.save(user);
+  async findById(id: string): Promise<User | null> {
+    if (!id) {
+      this.logger.warn('findById called without id');
+      return null;
+    }
+
+    try {
+      const user = await this.userRepository.findOne({ where: { id } });
+
+      if (!user) {
+        this.logger.debug(`No user found for id: ${id}`);
+      }
+
+      return user;
+    } catch (error) {
+      this.logger.error(
+        `Error finding user by id: ${error.message}`,
+        error.stack,
+      );
+      throw new InternalServerErrorException('Database error');
+    }
+  }
+
+  async updateRefreshToken(
+    userId: string,
+    refreshToken: string | null,
+  ): Promise<void> {
+    if (!userId) {
+      this.logger.warn('updateRefreshToken called without userId');
+      throw new InternalServerErrorException('UserId is required');
+    }
+
+    try {
+      const user = await this.findById(userId);
+      if (!user) {
+        this.logger.warn(
+          `updateRefreshToken called for non-existent userId: ${userId}`,
+        );
+        throw new NotFoundException('User not found');
+      }
+
+      const hashed = refreshToken ? await bcrypt.hash(refreshToken, 10) : null;
+
+      await this.userRepository.update(userId, { refreshToken: hashed });
+      this.logger.debug(`Refresh token updated for userId: ${userId}`);
+    } catch (error) {
+      if (error instanceof NotFoundException) throw error;
+      this.logger.error(
+        `Error updating refresh token for userId ${userId}: ${error.message}`,
+        error.stack,
+      );
+      throw new InternalServerErrorException('Failed to update refresh token');
+    }
   }
 
   getNumberOfRegisteredUsers(): Promise<number> {
