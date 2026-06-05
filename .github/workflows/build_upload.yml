@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     outputs:
       frontend: ${{ steps.check.outputs.frontend }}
-      backend:  ${{ steps.check.outputs.backend }}
+      backend: ${{ steps.check.outputs.backend }}
 
     steps:
       - name: Checkout
@@ -49,13 +49,13 @@ jobs:
         run: |
           AFFECTED=$(npx nx show projects --affected --base=$NX_BASE --head=$NX_HEAD 2>/dev/null || npx nx show projects)
           echo "Affected projects: $AFFECTED"
-          
+
           if echo "$AFFECTED" | grep -qw "frontend"; then
             echo "frontend=true" >> $GITHUB_OUTPUT
           else
             echo "frontend=false" >> $GITHUB_OUTPUT
           fi
-          
+
           if echo "$AFFECTED" | grep -qw "backend"; then
             echo "backend=true" >> $GITHUB_OUTPUT
           else

@@ -2,10 +2,11 @@ import {
   computed,
   inject,
   Injectable,
-  resource, ResourceRef,
+  resource,
+  ResourceRef,
   Signal,
   signal,
-  WritableSignal
+  WritableSignal,
 } from '@angular/core';
 import { CardsGateway } from './cards.gateway';
 import { ICard, PaginationResponse } from 'lib';
@@ -18,12 +19,24 @@ export class CardsStore {
   private offset: WritableSignal<number> = signal(0);
   private textFilter: WritableSignal<string> = signal('');
 
-  #cardsResource: ResourceRef<PaginationResponse<ICard> | undefined> =  resource({
-    params: () => ({ limit: this.limit(), offset: this.offset(), textFilter: this.textFilter() }),
-    loader: async ({ params }): Promise<PaginationResponse<ICard>> => {
-      return await firstValueFrom(this.cardGateway.getPagedCards(params.limit, params.offset, params.textFilter));
+  #cardsResource: ResourceRef<PaginationResponse<ICard> | undefined> = resource(
+    {
+      params: () => ({
+        limit: this.limit(),
+        offset: this.offset(),
+        textFilter: this.textFilter(),
+      }),
+      loader: async ({ params }): Promise<PaginationResponse<ICard>> => {
+        return await firstValueFrom(
+          this.cardGateway.getPagedCards(
+            params.limit,
+            params.offset,
+            params.textFilter,
+          ),
+        );
+      },
     },
-  });
+  );
 
   getRandomCard(): Observable<ICard> {
     return this.cardGateway.getRandomCard();
@@ -33,16 +46,22 @@ export class CardsStore {
     return this.cardGateway.getAmountOfCards();
   }
 
-  cards: Signal<PaginationResponse<ICard>> = computed((): PaginationResponse<ICard> => this.#cardsResource.value() || {
-    data: [],
-    total: 0,
-    limit: 0,
-    offset: 0,
-    nextPage: 0
-  });
-  isLoading: Signal<boolean> = computed((): boolean => this.#cardsResource.isLoading());
-  total: Signal<number> = computed((): number => this.#cardsResource.value()?.total ?? 0);
-
+  cards: Signal<PaginationResponse<ICard>> = computed(
+    (): PaginationResponse<ICard> =>
+      this.#cardsResource.value() || {
+        data: [],
+        total: 0,
+        limit: 0,
+        offset: 0,
+        nextPage: 0,
+      },
+  );
+  isLoading: Signal<boolean> = computed((): boolean =>
+    this.#cardsResource.isLoading(),
+  );
+  total: Signal<number> = computed(
+    (): number => this.#cardsResource.value()?.total ?? 0,
+  );
 
   setPage(limit: number, offset: number): void {
     this.limit.set(limit);

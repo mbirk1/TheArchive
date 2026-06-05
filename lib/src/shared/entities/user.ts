@@ -1,5 +1,5 @@
-import { FormControl } from '@angular/forms';
 import { IDeck } from './deck';
+import { ICollection } from './collection';
 
 export interface IUser {
   id?: string;

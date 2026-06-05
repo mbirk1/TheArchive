@@ -5,7 +5,7 @@ services:
     image: mbirk2/archive
     container_name: archive
     ports:
-      - "8080:80"
+      - '8080:80'
     deploy:
       update_config:
         parallelism: 1

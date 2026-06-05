@@ -1,4 +1,4 @@
-import { Injectable, signal, computed, inject } from '@angular/core';
+import { Injectable, signal, computed, inject, Signal } from '@angular/core';
 import { IAuthState, IAuthTokens, IAuthUser, ILoginRequest } from 'lib';
 import { AuthGateway } from './auth.gateway';
 import { Observable } from 'rxjs';
@@ -15,11 +15,11 @@ export class AuthStore {
   private readonly _state = signal<IAuthState>(INITIAL_STATE);
   private authGateway: AuthGateway = inject(AuthGateway);
   private tokenService: TokenService = inject(TokenService);
-  readonly user = computed(() => this._state().user);
-  readonly isLoading = computed(() => this._state().isLoading);
-  readonly error = computed(() => this._state().error);
-  readonly isAuthenticated = computed(() =>
-    !!this._state().user && !this.tokenService.isAccessTokenExpired()
+  readonly user: Signal<IAuthUser | null> = computed(() => this._state().user);
+  readonly isLoading: Signal<boolean> = computed(() => this._state().isLoading);
+  readonly error: Signal<string | null> = computed(() => this._state().error);
+  readonly isAuthenticated: Signal<boolean> = computed(
+    () => !!this._state().user && !this.tokenService.isAccessTokenExpired(),
   );
 
   get accessToken(): string | null {
@@ -27,14 +27,14 @@ export class AuthStore {
   }
 
   get refreshToken(): string {
-    if(this.tokenService.getRefreshToken() === null) {
+    if (this.tokenService.getRefreshToken() === null) {
       return '';
     }
     return this.tokenService.getRefreshToken()!;
   }
 
   setLoading(isLoading: boolean): void {
-    this._state.update(state => ({ ...state, isLoading, error: null }));
+    this._state.update((state) => ({ ...state, isLoading, error: null }));
   }
 
   setTokens(accessToken: string, refreshToken: string): void {
@@ -42,7 +42,7 @@ export class AuthStore {
       console.error('AuthStore: Attempted to set invalid tokens');
       return;
     }
-    this._state.update(state => ({ ...state, accessToken, refreshToken }));
+    this._state.update((state) => ({ ...state, accessToken, refreshToken }));
   }
 
   setUser(user: IAuthUser): void {
@@ -50,11 +50,11 @@ export class AuthStore {
       console.error('AuthStore: Attempted to set invalid user');
       return;
     }
-    this._state.update(state => ({ ...state, user }));
+    this._state.update((state) => ({ ...state, user }));
   }
 
   setError(error: string): void {
-    this._state.update(state => ({
+    this._state.update((state) => ({
       ...state,
       error,
       isLoading: false,
@@ -77,7 +77,9 @@ export class AuthStore {
     this._state.set(INITIAL_STATE);
   }
 
-  login(user: ILoginRequest): Observable<{ access_token: string, refresh_token: string}> {
+  login(
+    user: ILoginRequest,
+  ): Observable<{ access_token: string; refresh_token: string }> {
     return this.authGateway.signingInUser(user);
   }
 

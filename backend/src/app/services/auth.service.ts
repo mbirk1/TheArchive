@@ -1,9 +1,14 @@
-import { Injectable, UnauthorizedException, InternalServerErrorException, Logger } from '@nestjs/common';
-import { JwtService } from '@nestjs/jwt';
-import { ConfigService } from '@nestjs/config';
+import {
+  Injectable,
+  UnauthorizedException,
+  InternalServerErrorException,
+  Logger,
+  Inject,
+} from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import { UserService } from './user.service';
 import { InvalidCredentialsException, InvalidTokenException } from 'lib';
+import { TokenService } from './token.service';
 
 @Injectable()
 export class AuthService {
@@ -11,8 +16,7 @@ export class AuthService {
 
   constructor(
     private userService: UserService,
-    private jwtService: JwtService,
-    private configService: ConfigService,
+    private tokenService: TokenService,
   ) {}
 
   async validateUser(email: string, password: string) {
@@ -46,7 +50,10 @@ export class AuthService {
       return result;
     } catch (error) {
       if (error instanceof InvalidCredentialsException) throw error;
-      this.logger.error(`Unexpected error during user validation: ${error.message}`, error.stack);
+      this.logger.error(
+        `Unexpected error during user validation: ${error.message}`,
+        error.stack,
+      );
       throw new InternalServerErrorException();
     }
   }
@@ -55,11 +62,17 @@ export class AuthService {
     this.logger.log(`User logged in: ${user.email}`);
 
     try {
-      const tokens = await this.generateTokens(user.id, user.email);
+      const tokens = await this.tokenService.generateTokens(
+        user.id,
+        user.email,
+      );
       await this.userService.updateRefreshToken(user.id, tokens.refresh_token);
       return tokens;
     } catch (error) {
-      this.logger.error(`Error during login for user ${user.email}: ${error.message}`, error.stack);
+      this.logger.error(
+        `Error during login for user ${user.email}: ${error.message}`,
+        error.stack,
+      );
       throw new InternalServerErrorException('Login failed');
     }
   }
@@ -85,21 +98,32 @@ export class AuthService {
         throw new InvalidTokenException();
       }
 
-      const tokenMatches = await bcrypt.compare(refreshToken, user.refreshToken);
+      const tokenMatches = await bcrypt.compare(
+        refreshToken,
+        user.refreshToken,
+      );
       if (!tokenMatches) {
-        this.logger.warn(`Possible token theft detected for userId: ${userId} – invalidating all tokens`);
+        this.logger.warn(
+          `Possible token theft detected for userId: ${userId} – invalidating all tokens`,
+        );
         await this.userService.updateRefreshToken(userId, null);
         throw new InvalidTokenException();
       }
 
-      const tokens = await this.generateTokens(user.id, user.email);
+      const tokens = await this.tokenService.generateTokens(
+        user.id,
+        user.email,
+      );
       await this.userService.updateRefreshToken(user.id, tokens.refresh_token);
 
       this.logger.log(`Token refreshed for userId: ${userId}`);
       return tokens;
     } catch (error) {
       if (error instanceof InvalidTokenException) throw error;
-      this.logger.error(`Unexpected error during token refresh: ${error.message}`, error.stack);
+      this.logger.error(
+        `Unexpected error during token refresh: ${error.message}`,
+        error.stack,
+      );
       throw new InternalServerErrorException('Token refresh failed');
     }
   }
@@ -122,35 +146,11 @@ export class AuthService {
       await this.userService.updateRefreshToken(userId, null);
     } catch (error) {
       if (error instanceof UnauthorizedException) throw error;
-      this.logger.error(`Error during logout for userId ${userId}: ${error.message}`, error.stack);
+      this.logger.error(
+        `Error during logout for userId ${userId}: ${error.message}`,
+        error.stack,
+      );
       throw new InternalServerErrorException('Logout failed');
-    }
-  }
-
-  private async generateTokens(userId: string, email: string) {
-    if (!userId || !email) {
-      this.logger.error('generateTokens called with missing userId or email');
-      throw new InternalServerErrorException();
-    }
-
-    const payload = { sub: userId, email };
-
-    try {
-      const [access_token, refresh_token] = await Promise.all([
-        this.jwtService.signAsync(payload, {
-          secret: this.configService.get('JWT_ACCESS_SECRET'),
-          expiresIn: '15m',
-        }),
-        this.jwtService.signAsync(payload, {
-          secret: this.configService.get('JWT_REFRESH_SECRET'),
-          expiresIn: '7d',
-        }),
-      ]);
-
-      return { access_token, refresh_token };
-    } catch (error) {
-      this.logger.error(`Error generating tokens: ${error.message}`, error.stack);
-      throw new InternalServerErrorException('Token generation failed');
     }
   }
 }

@@ -1,4 +1,10 @@
-import { Entity, ManyToMany, ManyToOne, PrimaryColumn } from 'typeorm';
+import {
+  Entity,
+  JoinTable,
+  ManyToMany,
+  ManyToOne,
+  PrimaryColumn,
+} from 'typeorm';
 import { ICard, IDeck } from 'lib';
 import { Card } from './card.entity';
 import { User } from './user.entity';
@@ -12,5 +18,6 @@ export class Deck implements IDeck {
   user: User;
 
   @ManyToMany((type) => Card, (card) => card.decks)
+  @JoinTable()
   cards: ICard[];
 }

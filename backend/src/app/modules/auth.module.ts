@@ -8,15 +8,18 @@ import { JwtStrategy } from '../auth-strategies/jwt.strategy';
 import { JwtRefreshStrategy } from '../auth-strategies/jwt-refresh.strategy';
 import { AuthController } from '../controller/auth.controller';
 import { ConfigService } from '@nestjs/config';
-
+import { TokenService } from '../services/token.service';
 
 @Module({
-  imports: [
-    UserModule,
-    PassportModule,
-    JwtModule.register({}),
+  imports: [UserModule, PassportModule, JwtModule.register({})],
+  providers: [
+    AuthService,
+    LocalStrategy,
+    JwtStrategy,
+    JwtRefreshStrategy,
+    ConfigService,
+    TokenService,
   ],
-  providers: [AuthService, LocalStrategy, JwtStrategy, JwtRefreshStrategy, ConfigService],
   controllers: [AuthController],
 })
 export class AuthModule {}

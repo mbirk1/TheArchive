@@ -16,25 +16,24 @@ import { UserService } from '../../../services/user/user.service';
 export class SignUpComponent {
   private userService: UserService = inject(UserService);
 
-  protected userDataFormGroup: FormGroup =
-    new FormGroup({
-      userName: new FormControl<string>('', {
-        validators: Validators.required,
-        nonNullable: true,
-      }),
-      email: new FormControl<string>('', {
-        validators: [Validators.email, Validators.required],
-        nonNullable: true,
-      }),
-      password: new FormControl<string>('', {
-        validators: Validators.required,
-        nonNullable: true,
-      }),
-      confirmPassword: new FormControl<string>('', {
-        validators: Validators.required,
-        nonNullable: true,
-      }),
-    });
+  protected userDataFormGroup: FormGroup = new FormGroup({
+    userName: new FormControl<string>('', {
+      validators: Validators.required,
+      nonNullable: true,
+    }),
+    email: new FormControl<string>('', {
+      validators: [Validators.email, Validators.required],
+      nonNullable: true,
+    }),
+    password: new FormControl<string>('', {
+      validators: Validators.required,
+      nonNullable: true,
+    }),
+    confirmPassword: new FormControl<string>('', {
+      validators: Validators.required,
+      nonNullable: true,
+    }),
+  });
 
   protected async createUser() {
     if (this.userDataFormGroup.invalid) return;

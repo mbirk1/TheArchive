@@ -2,11 +2,11 @@ import { Injectable } from '@angular/core';
 import { environment } from './../../environments/environment';
 
 export interface ENVIRONMENT_SCHEMA {
-  apiUrl: string,
-  production: boolean,
-  envName: string,
-  githubLink: string,
-  enableSsoLoginOrSignUp: boolean,
+  apiUrl: string;
+  production: boolean;
+  envName: string;
+  githubLink: string;
+  enableSsoLoginOrSignUp: boolean;
 }
 
 @Injectable({
@@ -16,7 +16,7 @@ export class ConfigService {
   private readonly config: ENVIRONMENT_SCHEMA;
 
   constructor() {
-      this.config = environment;
+    this.config = environment;
   }
 
   get apiUrl(): string {

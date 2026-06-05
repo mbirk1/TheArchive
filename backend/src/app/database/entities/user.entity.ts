@@ -24,6 +24,7 @@ export class User implements IUser {
 
   @OneToMany(() => Deck, (deck) => deck.user, {
     nullable: true,
+    cascade: true,
   })
   decks: Deck[];
 

@@ -9,6 +9,7 @@ import {
   IRelatedUris,
 } from 'lib';
 import { Deck } from './deck.entity';
+import { Collection } from './collection.entity';
 
 @Entity('card', { schema: 'archive' })
 export class Card implements ICard {
@@ -214,6 +215,10 @@ export class Card implements ICard {
     cascade: true,
     nullable: true,
   })
-  @JoinTable()
   decks: Deck[];
+
+  @ManyToMany((type) => Collection, (x) => x.cards, {
+    nullable: true,
+  })
+  collections: Collection[];
 }

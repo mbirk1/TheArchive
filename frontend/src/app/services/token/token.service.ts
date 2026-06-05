@@ -62,7 +62,7 @@ export class TokenService {
 
     try {
       const payload = JSON.parse(atob(token.split('.')[1]));
-      return Date.now() >= (payload.exp * 1000) - 10_000;
+      return Date.now() >= payload.exp * 1000 - 10_000;
     } catch {
       return true;
     }

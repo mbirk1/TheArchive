@@ -8,6 +8,8 @@ import {
 } from '@angular/forms';
 import { AuthService } from '../../../services/auth/auth.service';
 import { Router } from '@angular/router';
+import { switchMap } from 'rxjs';
+import { UserService } from '../../../services/user/user.service';
 
 @Component({
   imports: [FormsModule, ReactiveFormsModule],
@@ -17,19 +19,19 @@ import { Router } from '@angular/router';
 })
 export class SignInComponent {
   private authService: AuthService = inject(AuthService);
+  private userService: UserService = inject(UserService);
   private router: Router = inject(Router);
 
-  protected userDataFormGroup: FormGroup =
-    new FormGroup({
-      email: new FormControl<string>('', {
-        validators: [Validators.email, Validators.required],
-        nonNullable: true,
-      }),
-      password: new FormControl<string>('', {
-        validators: Validators.required,
-        nonNullable: true,
-      }),
-    });
+  protected userDataFormGroup: FormGroup = new FormGroup({
+    email: new FormControl<string>('', {
+      validators: [Validators.email, Validators.required],
+      nonNullable: true,
+    }),
+    password: new FormControl<string>('', {
+      validators: Validators.required,
+      nonNullable: true,
+    }),
+  });
 
   protected async signingInUser() {
     if (this.userDataFormGroup.invalid) {

@@ -1,5 +1,6 @@
 import {
   ConflictException,
+  Inject,
   Injectable,
   InternalServerErrorException,
   Logger,
@@ -9,15 +10,24 @@ import { InjectRepository } from '@nestjs/typeorm';
 import { Between, Repository } from 'typeorm';
 import * as bcrypt from 'bcrypt';
 import { User } from '../database/entities/user.entity';
-import { IRegisterRequest } from 'lib';
+import { IRegisterRequest, IUser } from 'lib';
+import { JwtPayload, TokenService } from './token.service';
+
+type DeepPartial<T> = {
+  [P in keyof T]?: T[P] extends object ? DeepPartial<T[P]> : T[P];
+};
 
 @Injectable()
 export class UserService {
   private readonly logger = new Logger(UserService.name);
 
+  MASKED_VALUE = '***';
+  SENSITIVE_FIELDS: (keyof IUser)[] = ['password', 'refreshToken'];
+
   constructor(
     @InjectRepository(User)
     private userRepository: Repository<User>,
+    private tokenService: TokenService,
   ) {}
 
   async getAllActiveUsersToday(): Promise<number> {
@@ -106,7 +116,10 @@ export class UserService {
     }
 
     try {
-      const user = await this.userRepository.findOne({ where: { id } });
+      const user = await this.userRepository.findOne({
+        where: { id },
+        relations: ['decks'],
+      });
 
       if (!user) {
         this.logger.debug(`No user found for id: ${id}`);
@@ -156,5 +169,34 @@ export class UserService {
 
   getNumberOfRegisteredUsers(): Promise<number> {
     return this.userRepository.count({});
+  }
+
+  async findCurrentUser(authorization: string): Promise<IUser> {
+    const extractData: JwtPayload =
+      this.tokenService.extractAndValidate(authorization);
+    let user: IUser = await this.findById(extractData.sub);
+    if (!user) {
+      throw new ConflictException('User not found');
+    }
+
+    user = this.sanitizeEntity(user);
+
+    return user;
+  }
+
+  sanitizeEntity<T extends DeepPartial<IUser>>(entity: T): T {
+    if (!entity) {
+      throw new Error('sanitizeEntity: entity is required');
+    }
+
+    const copy = structuredClone(entity);
+
+    for (const field of this.SENSITIVE_FIELDS) {
+      if (field in copy && copy[field] !== undefined) {
+        (copy as Record<string, unknown>)[field as string] = this.MASKED_VALUE;
+      }
+    }
+
+    return copy;
   }
 }

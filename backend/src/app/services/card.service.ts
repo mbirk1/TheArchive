@@ -29,7 +29,7 @@ export class CardService {
       WHEN card.type_line LIKE '%Sorcery%' THEN 2
       WHEN card.type_line LIKE '%Enchantment%' THEN 3
       ELSE 4
-     END`
+     END`,
       )
       .take(limit)
       .skip(offset)

@@ -10,6 +10,7 @@ import { UserModule } from './modules/user.module';
 import { LoggerModule } from './modules/logger.module';
 import { DeckModule } from './modules/decks.module';
 import { AuthModule } from './modules/auth.module';
+import { CollectionModule } from './modules/collection.module';
 
 @Module({
   imports: [
@@ -34,6 +35,7 @@ import { AuthModule } from './modules/auth.module';
     ConfigModule,
     CardModule,
     DeckModule,
+    CollectionModule,
     UserModule,
     LoggerModule,
     AuthModule,

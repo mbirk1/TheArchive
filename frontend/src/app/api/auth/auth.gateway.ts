@@ -9,8 +9,10 @@ export class AuthGateway {
   private http: HttpClient = inject(HttpClient);
   private configService: ConfigService = inject(ConfigService);
 
-  signingInUser(user: ILoginRequest): Observable<{ access_token: string, refresh_token: string }> {
-    return this.http.post<{ access_token: string, refresh_token: string }>(
+  signingInUser(
+    user: ILoginRequest,
+  ): Observable<{ access_token: string; refresh_token: string }> {
+    return this.http.post<{ access_token: string; refresh_token: string }>(
       this.configService.apiUrl + '/auth/login',
       user,
     );
@@ -20,7 +22,7 @@ export class AuthGateway {
     return this.http.post<IAuthTokens>(
       `${this.configService.apiUrl}/refresh`,
       {},
-      { headers: { Authorization: `Bearer ${refreshToken}` } }
-    )
+      { headers: { Authorization: `Bearer ${refreshToken}` } },
+    );
   }
 }

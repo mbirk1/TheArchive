@@ -6,12 +6,14 @@ import { TokenService } from '../token/token.service';
 import { environment } from '../../environments/environment';
 import { AuthStore } from '../../api/auth/auth.store';
 import { IAuthTokens, ILoginRequest } from 'lib';
+import { UserStore } from '../../api/user/user.store';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
   private readonly http = inject(HttpClient);
   private readonly router = inject(Router);
   private readonly authStore = inject(AuthStore);
+  private readonly userStore = inject(UserStore);
   private readonly tokenService = inject(TokenService);
   private readonly apiUrl = `${environment.apiUrl}/auth`;
 
@@ -64,11 +66,11 @@ export class AuthService {
     this.refreshInProgress = true;
 
     return this.authStore.refreshTokens().pipe(
-      tap(tokens => {
+      tap((tokens) => {
         this.handleAuthSuccess(tokens);
         this.refreshInProgress = false;
       }),
-      catchError(error => {
+      catchError((error) => {
         this.refreshInProgress = false;
         this.logout();
         return throwError(() => error);
@@ -80,9 +82,12 @@ export class AuthService {
     const accessToken = this.tokenService.getAccessToken();
 
     if (accessToken) {
-      this.http.post(`${this.apiUrl}/logout`, {}).pipe(
-        catchError(() => EMPTY) // Logout lokal auch bei Server-Fehler durchführen
-      ).subscribe();
+      this.http
+        .post(`${this.apiUrl}/logout`, {})
+        .pipe(
+          catchError(() => EMPTY),
+        )
+        .subscribe();
     }
 
     this.tokenService.clearTokens();
@@ -105,6 +110,7 @@ export class AuthService {
     }
 
     this.authStore.setAuthenticated(user);
+    this.userStore.currentUser();
   }
 
   private handleAuthError(error: HttpErrorResponse): Observable<never> {

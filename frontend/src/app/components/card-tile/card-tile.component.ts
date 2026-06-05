@@ -8,6 +8,5 @@ import { ICard } from 'lib';
   standalone: true,
 })
 export class CardTileComponent {
-
   card: InputSignal<ICard> = input.required<ICard>();
 }
