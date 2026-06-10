@@ -16,6 +16,5 @@ export class HeroProfileHeaderComponent {
   protected user: Signal<IUser> = computed(() => this.userService.getMyUser());
   protected totalCardsForUser: number =
     this.collectionService.getTotalCardsForUser();
-
-  //estValue: number = this.collectionService.getValueForAllCardsInCollection();
+  protected estValue: number = this.collectionService.getValueForAllCardsInCollection();
 }

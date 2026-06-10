@@ -34,4 +34,8 @@ export class CardService {
   setTextFilter(textValue: string): void {
     this.cardStore.setTextFilter(textValue);
   }
+
+  setSortOrder(sortOrder: string): void {
+    this.cardStore.setSortOrder(sortOrder);
+  }
 }

@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { inject } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpContext } from '@angular/common/http';
 import { ConfigService } from '../../services/config/config.service';
 import { ICard, ICollection, PaginationResponse } from 'lib';
 import { Observable } from 'rxjs';
 import { Page } from '@playwright/test';
+import { SKIP_AUTH } from '../auth/http.context';
 
 @Injectable({ providedIn: 'root' })
 export class CardsGateway {
@@ -23,9 +24,13 @@ export class CardsGateway {
     limit: number,
     offset: number,
     textFilter: string,
+    sortOrder?: 'ASC' | 'DESC',
   ): Observable<PaginationResponse<ICard>> {
     return this.http.get<PaginationResponse<ICard>>(
-      `${this.configService.apiUrl}/cards?limit=${limit}&offset=${offset}&textFilter=${textFilter}`,
+      `${this.configService.apiUrl}/cards?limit=${limit}&offset=${offset}&textFilter=${textFilter}&sortOrder=${sortOrder}`,
+      {
+        context: new HttpContext().set(SKIP_AUTH, true)
+      }
     );
   }
 }

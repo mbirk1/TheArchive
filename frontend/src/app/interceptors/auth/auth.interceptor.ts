@@ -8,10 +8,16 @@ import { inject } from '@angular/core';
 import { catchError, switchMap, throwError, EMPTY } from 'rxjs';
 import { TokenService } from '../../services/token/token.service';
 import { AuthService } from '../../services/auth/auth.service';
+import { SKIP_AUTH } from '../../api/auth/http.context';
 
 export const authInterceptor: HttpInterceptorFn = (req, next) => {
   const tokenService = inject(TokenService);
   const authService = inject(AuthService);
+
+
+  if(req.context.get(SKIP_AUTH)) {
+    return next(req)
+  }
 
   if (isAuthEndpoint(req.url)) {
     return next(req);

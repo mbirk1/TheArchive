@@ -10,7 +10,7 @@ import {
 } from '@angular/core';
 import { CardsGateway } from './cards.gateway';
 import { ICard, PaginationResponse } from 'lib';
-import { firstValueFrom, Observable } from 'rxjs';
+import { firstValueFrom, Observable, tap } from 'rxjs';
 
 @Injectable({ providedIn: 'root' })
 export class CardsStore {
@@ -18,6 +18,7 @@ export class CardsStore {
   private limit: WritableSignal<number> = signal(20);
   private offset: WritableSignal<number> = signal(0);
   private textFilter: WritableSignal<string> = signal('');
+  private sortOrder: WritableSignal<'ASC' | 'DESC'> = signal('ASC');
 
   #cardsResource: ResourceRef<PaginationResponse<ICard> | undefined> = resource(
     {
@@ -25,14 +26,16 @@ export class CardsStore {
         limit: this.limit(),
         offset: this.offset(),
         textFilter: this.textFilter(),
+        sortOrder: this.sortOrder()
       }),
-      loader: async ({ params }): Promise<PaginationResponse<ICard>> => {
-        return await firstValueFrom(
+      loader: ({ params }): Promise<PaginationResponse<ICard>> => {
+        return firstValueFrom(
           this.cardGateway.getPagedCards(
             params.limit,
             params.offset,
             params.textFilter,
-          ),
+            params.sortOrder
+          )
         );
       },
     },
@@ -56,9 +59,11 @@ export class CardsStore {
         nextPage: 0,
       },
   );
+
   isLoading: Signal<boolean> = computed((): boolean =>
     this.#cardsResource.isLoading(),
   );
+
   total: Signal<number> = computed(
     (): number => this.#cardsResource.value()?.total ?? 0,
   );
@@ -78,5 +83,12 @@ export class CardsStore {
 
   setTextFilter(textFilter: string): void {
     this.textFilter.set(textFilter);
+  }
+
+  setSortOrder(sortOrder: string): void {
+    if(sortOrder !== 'ASC' && sortOrder !== 'DESC') {
+      throw new Error('SortOrder does not meet expectations')
+    }
+    this.sortOrder.set(sortOrder);
   }
 }

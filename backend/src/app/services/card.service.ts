@@ -30,7 +30,9 @@ export class CardService {
       WHEN card.type_line LIKE '%Enchantment%' THEN 3
       ELSE 4
      END`,
+        paginationDto.sortOrder ?? 'ASC'
       )
+      .addOrderBy('card.name', paginationDto.sortOrder ?? 'ASC')
       .take(limit)
       .skip(offset)
       .getManyAndCount();

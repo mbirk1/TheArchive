@@ -1,21 +1,16 @@
 import { Injectable, inject } from '@angular/core';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
+import { HttpErrorResponse } from '@angular/common/http';
 import { Router } from '@angular/router';
 import { catchError, tap, throwError, Observable, EMPTY } from 'rxjs';
 import { TokenService } from '../token/token.service';
-import { environment } from '../../environments/environment';
 import { AuthStore } from '../../api/auth/auth.store';
 import { IAuthTokens, ILoginRequest } from 'lib';
-import { UserStore } from '../../api/user/user.store';
 
 @Injectable({ providedIn: 'root' })
 export class AuthService {
-  private readonly http = inject(HttpClient);
   private readonly router = inject(Router);
   private readonly authStore = inject(AuthStore);
-  private readonly userStore = inject(UserStore);
   private readonly tokenService = inject(TokenService);
-  private readonly apiUrl = `${environment.apiUrl}/auth`;
 
   private refreshInProgress = false;
 
@@ -49,7 +44,9 @@ export class AuthService {
     this.authStore.setLoading(true);
 
     return this.authStore.login(request).pipe(
-      tap(tokens => this.handleAuthSuccess(tokens)),
+      tap(tokens => {
+        this.handleAuthSuccess(tokens)
+      }),
       catchError(error => this.handleAuthError(error)),
     );
   }
@@ -82,8 +79,7 @@ export class AuthService {
     const accessToken = this.tokenService.getAccessToken();
 
     if (accessToken) {
-      this.http
-        .post(`${this.apiUrl}/logout`, {})
+      this.authStore.logout()
         .pipe(
           catchError(() => EMPTY),
         )
@@ -110,7 +106,6 @@ export class AuthService {
     }
 
     this.authStore.setAuthenticated(user);
-    this.userStore.currentUser();
   }
 
   private handleAuthError(error: HttpErrorResponse): Observable<never> {

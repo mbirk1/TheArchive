@@ -9,4 +9,6 @@ import { ICard } from 'lib';
 })
 export class CardTileComponent {
   card: InputSignal<ICard> = input.required<ICard>();
+
+  isInCollection: InputSignal<boolean> = input.required<boolean>();
 }

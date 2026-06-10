@@ -22,16 +22,18 @@ export class CollectionStore {
   }
 
   private collectionResource: Resource<ICollection | undefined> = resource({
-    loader: (): Promise<ICollection> =>
-      firstValueFrom(this.collectionGateway.getAllCardsInCollection()),
+    loader: (): Promise<ICollection | undefined> =>
+      firstValueFrom(this.collectionGateway.getAllCardsInCollection(), { defaultValue: undefined }),
   });
 
-  readonly count = computed(() => this.collectionResource.value() ?? 0);
-  readonly isLoading = computed(() => this.collectionResource.isLoading());
-  readonly collection = computed(() => {
+  readonly isLoading: Signal<boolean> = computed(() => this.collectionResource.isLoading());
+  readonly collection: Signal<ICollection> = computed(() => {
+    console.log(this.collectionResource.error()?.cause)
     if (this.collectionResource.hasValue()) {
+      console.log(this.collectionResource.error())
       return this.collectionResource.value();
     } else {
+
       return {} as ICollection;
     }
   });

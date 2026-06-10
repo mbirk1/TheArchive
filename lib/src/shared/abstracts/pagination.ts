@@ -11,6 +11,9 @@ export class PaginationDto {
 
   @IsOptional()
   textFilter?: string;
+
+  @IsOptional()
+  sortOrder?: 'ASC' | 'DESC';
 }
 
 export interface PaginationResponse<T> {

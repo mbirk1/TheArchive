@@ -83,6 +83,10 @@ export class AuthStore {
     return this.authGateway.signingInUser(user);
   }
 
+  logout() {
+    return this.authGateway.logoutUser();
+  }
+
   refreshTokens() {
     return this.authGateway.refreshTokens(this.refreshToken);
   }
