@@ -40,7 +40,7 @@
     class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6"
   >
     @for (card of collectionService.getAllCardsInCollection(); track card.id) {
-      <app-card-tile [card]="card" [isInCollection]="true" />
+      <app-card-tile [card]="card" [isInCollectionSection]="true" />
     }
   </section>
   <!-- Load More Section -->

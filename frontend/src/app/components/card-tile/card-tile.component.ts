@@ -1,5 +1,7 @@
-import { Component, input, InputSignal } from '@angular/core';
+import { Component, inject, input, InputSignal } from '@angular/core';
 import { ICard } from 'lib';
+import { CollectionService } from '../../services/collection/collection.service';
+import { AuthStore } from '../../api/auth/auth.store';
 
 @Component({
   imports: [],
@@ -9,6 +11,12 @@ import { ICard } from 'lib';
 })
 export class CardTileComponent {
   card: InputSignal<ICard> = input.required<ICard>();
+  isInCollectionSection: InputSignal<boolean> = input.required<boolean>();
 
-  isInCollection: InputSignal<boolean> = input.required<boolean>();
+  collectionService: CollectionService = inject(CollectionService);
+  authStore: AuthStore = inject(AuthStore);
+
+  addCardToCollection() {
+    this.collectionService.addCardToCollection(this.card())
+  }
 }

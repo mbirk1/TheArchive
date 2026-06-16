@@ -57,7 +57,7 @@ export class BrowseCardsComponent implements OnInit {
   ngOnInit() {
     this.searchInput
       .pipe(
-        debounceTime(300), // Adjust the debounce time (in milliseconds) as needed
+        debounceTime(300),
       )
       .subscribe((searchTerm: string) => {
         this.cardService.setTextFilter(searchTerm);
@@ -65,7 +65,9 @@ export class BrowseCardsComponent implements OnInit {
   }
 
   goToPage(page: number): void {
-    this.cardService.setOffset(page * this.cards().limit);
+    if (page < this.totalPages() && page > 0) {
+      this.cardService.setOffset(page * this.cards().limit);
+    }
   }
 
   filterCards(event: any) {

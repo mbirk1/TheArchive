@@ -9,6 +9,7 @@ import { User } from '../database/entities/user.entity';
 import { Repository } from 'typeorm';
 import { Collection } from '../database/entities/collection.entity';
 import { ICollection } from 'lib';
+import { Card } from '../database/entities/card.entity';
 
 @Injectable()
 export class CollectionService {
@@ -20,7 +21,7 @@ export class CollectionService {
     private collectionRepository: Repository<Collection>,
   ) {}
 
-  async getNumberOfCards(authorization: string): Promise<ICollection> {
+  async findCollectionByUser(authorization: string): Promise<ICollection> {
     if (!authorization) {
       this.logger.warn('Authorization not given');
       return null;
@@ -31,13 +32,14 @@ export class CollectionService {
         authorization,
       )) as User;
 
-      const collection: Collection = await this.collectionRepository.findOne({
+      let collection: Collection = await this.collectionRepository.findOne({
         where: { user: user },
         relations: ['cards'],
       });
 
       if (!collection) {
-        this.logger.debug(`No collection found for user with id: ${user.id}`);
+        this.logger.debug(`Creating collection for user with id: ${user.id}`);
+        collection = this.createCollectionForUser(user);
       }
 
       return collection;
@@ -48,5 +50,38 @@ export class CollectionService {
       );
       throw new InternalServerErrorException('Database error');
     }
+  }
+
+ async addCardToCollection(authorization: string, card: Card): Promise<ICollection> {
+    if (!authorization) {
+      this.logger.warn('Authorization not given');
+      return null;
+    }
+
+    try {
+      const collection: ICollection = await this.findCollectionByUser(authorization);
+      collection.cards.push(card);
+      return this.collectionRepository.save(collection);
+    } catch (error) {
+      this.logger.error(
+        `Error adding card to collection: ${error.message}`,
+        error.stack,
+      );
+      throw new InternalServerErrorException('Database error');
+    }
+  }
+
+  createCollectionForUser(user: User): Collection {
+    if (!user) {
+      this.logger.error('No user given');
+      return null;
+    }
+
+    const newCollection: ICollection = {
+      user: user,
+      cards: []
+    }
+
+    return this.collectionRepository.create(newCollection)
   }
 }

@@ -27,4 +27,8 @@ export class CollectionService {
   getAllCardsInCollection(): ICard[] {
     return this.collectionStore.collection()?.cards ?? [];
   }
+
+  addCardToCollection(card: ICard) {
+    this.collectionStore.addCardToCollection(card);
+  }
 }

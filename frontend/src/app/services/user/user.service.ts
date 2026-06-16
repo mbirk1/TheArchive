@@ -29,7 +29,7 @@ export class UserService {
     return this.userStore.getNumberOfTodaysActiveUsers();
   }
 
-  createUser(user: IRegisterRequest) {
+  createUser(user: IRegisterRequest): Promise<IUser> | undefined {
     const { userName, password, confirmPassword, email } = user;
     if (
       !userName?.trim() ||
@@ -37,6 +37,7 @@ export class UserService {
       !confirmPassword?.trim() ||
       !email?.trim()
     ) {
+      console.error('User already exists');
       return;
     }
     return firstValueFrom(this.userStore.createUser(user));

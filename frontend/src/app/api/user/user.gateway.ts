@@ -1,8 +1,9 @@
 import { inject, Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpContext } from '@angular/common/http';
 import { ConfigService } from '../../services/config/config.service';
 import { Observable } from 'rxjs';
 import { IRegisterRequest, IUser } from 'lib';
+import { SKIP_AUTH } from '../auth/http.context';
 
 @Injectable({ providedIn: 'root' })
 export class UserGateway {
@@ -22,6 +23,6 @@ export class UserGateway {
   }
 
   createUser(user: IRegisterRequest): Observable<IUser> {
-    return this.http.post<IUser>(this.configService.apiUrl + '/user', user);
+    return this.http.post<IUser>(this.configService.apiUrl + '/user', user, { context: new HttpContext().set(SKIP_AUTH, true)});
   }
 }

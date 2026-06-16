@@ -1,6 +1,5 @@
 import {
   ConflictException,
-  Inject,
   Injectable,
   InternalServerErrorException,
   Logger,
@@ -19,7 +18,7 @@ type DeepPartial<T> = {
 
 @Injectable()
 export class UserService {
-  private readonly logger = new Logger(UserService.name);
+  private readonly logger: Logger = new Logger(UserService.name);
 
   MASKED_VALUE = '***';
   SENSITIVE_FIELDS: (keyof IUser)[] = ['password', 'refreshToken'];

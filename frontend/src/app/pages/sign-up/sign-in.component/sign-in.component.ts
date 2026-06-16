@@ -38,7 +38,7 @@ export class SignInComponent {
       return;
     }
     this.authService.login(this.userDataFormGroup.value).subscribe({
-      next: async () => { this.router.navigate(['/']); },
+      next: async () => { this.router.navigate(['/browse']); },
     });
   }
 }

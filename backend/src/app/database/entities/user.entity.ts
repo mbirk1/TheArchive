@@ -2,7 +2,7 @@ import { Column, Entity, OneToMany, PrimaryGeneratedColumn } from 'typeorm';
 import { IUser } from 'lib';
 import { Deck } from './deck.entity';
 
-@Entity({ name: 'user' })
+@Entity('user', { schema: 'archive' })
 export class User implements IUser {
   @PrimaryGeneratedColumn('uuid')
   id: string;

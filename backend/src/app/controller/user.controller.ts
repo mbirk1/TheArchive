@@ -2,10 +2,10 @@ import {
   Body,
   Controller,
   Get,
-  Post,
-  UseGuards,
   Headers,
+  Post,
   UnauthorizedException,
+  UseGuards,
 } from '@nestjs/common';
 import { UserService } from '../services/user.service';
 import { IRegisterRequest, IUser } from 'lib';
@@ -46,7 +46,7 @@ export class UserController {
   async createUser(@Body() user: IRegisterRequest): Promise<IUser> {
     try {
       this.logger.info('Trying to create new user with email ' + user.email);
-      return this.userService.create(user);
+      return await this.userService.create(user);
     } catch (error) {
       this.logger.error('Error creating new user', error);
       return Promise.reject(error);

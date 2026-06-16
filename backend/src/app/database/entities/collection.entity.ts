@@ -4,7 +4,7 @@ import {
   JoinTable,
   ManyToMany,
   OneToOne,
-  PrimaryColumn,
+  PrimaryColumn, PrimaryGeneratedColumn
 } from 'typeorm';
 import { User } from './user.entity';
 import { Card } from './card.entity';
@@ -12,7 +12,7 @@ import { ICollection } from 'lib';
 
 @Entity('collection', { schema: 'archive' })
 export class Collection implements ICollection {
-  @PrimaryColumn({ type: 'uuid' })
+  @PrimaryGeneratedColumn('uuid')
   id: string;
 
   @OneToOne(() => User, { cascade: true })
