@@ -22,9 +22,8 @@ export class CollectionStore {
   readonly collection: Signal<ICollection> = computed(() => {
     if (this.collectionResource.hasValue()) {
       return this.collectionResource.value();
-    } else {
-      return {} as ICollection;
     }
+      return {} as ICollection;
   });
 
   addCardToCollection(card: ICard) {
@@ -32,4 +31,5 @@ export class CollectionStore {
       this.collectionResource.reload();
     });
   }
+
 }

@@ -4,40 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="fixing things">
-      <change afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/1781604781748-migration.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/images/Magic_Card_Back.png" afterDir="false" />
+    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="adding cards to a collection">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/controller/collection.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/collection.controller.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/collection.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/collection.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/deck.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/deck.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/user.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/user.entity.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1779993617040-migration.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1780179834131-migration.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1780655304161-migration.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1780658731443-migration.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1780659883636-migration.ts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/modules/user.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/modules/user.module.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/services/collection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/collection.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/collection/collection.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/collection/collection.gateway.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/api/collection/collection.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/collection/collection.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/card-tile/card-tile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/card-tile/card-tile.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/card-tile/card-tile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/card-tile/card-tile.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/personal/collection/personal-collection.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/personal/collection/personal-collection.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-in.component/sign-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-in.component/sign-in.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/hero-profile-header/hero-profile-header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/hero-profile-header/hero-profile-header.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/hero-profile-header/hero-profile-header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/hero-profile-header/hero-profile-header.component.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/app/services/collection/collection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/collection/collection.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/user/user.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -146,9 +129,6 @@
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\project.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\eslint.config.mjs",
@@ -156,7 +136,10 @@
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\package.json",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\eslint.config.mjs",
       "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\jest.config.cts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts"
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json"
     ]
   }
 }]]></component>
@@ -176,7 +159,7 @@
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\public\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.backend:import-cards">
+  <component name="RunManager" selected="Nx.frontend:serve">
     <configuration name="backend:build" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="build" />
@@ -380,15 +363,9 @@
       <workItem from="1780561713440" duration="7702000" />
       <workItem from="1780639762075" duration="21456000" />
       <workItem from="1781087920984" duration="8222000" />
-      <workItem from="1781596283912" duration="6790000" />
-    </task>
-    <task id="LOCAL-00001" summary="Initial Commit">
-      <option name="closed" value="true" />
-      <created>1767100959754</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1767100959754</updated>
+      <workItem from="1781596283912" duration="7873000" />
+      <workItem from="1781909525191" duration="3968000" />
+      <workItem from="1782466595639" duration="1794000" />
     </task>
     <task id="LOCAL-00002" summary="Initial Commit">
       <option name="closed" value="true" />
@@ -774,7 +751,15 @@
       <option name="project" value="LOCAL" />
       <updated>1781116174603</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="adding cards to a collection">
+      <option name="closed" value="true" />
+      <created>1781605374085</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1781605374085</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -797,7 +782,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="starting to obtain card details" />
     <MESSAGE value="setting up migrations n stuff" />
     <MESSAGE value="docusaurus and landingpage styling" />
     <MESSAGE value="prettier run" />
@@ -822,6 +806,7 @@
     <MESSAGE value="figuring port" />
     <MESSAGE value="adding collection and fixing some bugs" />
     <MESSAGE value="fixing things" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixing things" />
+    <MESSAGE value="adding cards to a collection" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding cards to a collection" />
   </component>
 </project>

@@ -1,4 +1,4 @@
-import { inject, Injectable } from '@angular/core';
+import { computed, inject, Injectable } from '@angular/core';
 import { CollectionStore } from '../../api/collection/collection.store';
 import { ICard } from 'lib';
 
@@ -6,20 +6,25 @@ import { ICard } from 'lib';
 export class CollectionService {
   private collectionStore = inject(CollectionStore);
 
+  readonly totalCollectionValue = computed(() => {
+    const cards: ICard[] = this.collectionStore.collection()?.cards;
+    if (!cards?.length) return 0;
+
+    return cards.reduce((sum, card) => {
+      const value: string | null = card.prices?.eur;
+      if(!value) return sum;
+
+      return sum + +value;
+    }, 0);
+  });
+
+  public isCollectionLoading(): boolean {
+    return this.collectionStore.isLoading();
+  }
+
   getTotalCardsForUser(): number {
     if (this.collectionStore.collection()?.cards !== undefined) {
       return this.collectionStore.collection()?.cards.length ?? 0;
-    }
-    return 0;
-  }
-
-  getValueForAllCardsInCollection(): number {
-    if (this.collectionStore.collection()?.cards !== undefined) {
-      return this.collectionStore.collection()?.cards.reduce((sum, card) => {
-        const value = card.prices.eur;
-        if (typeof value !== 'number') return sum;
-        return sum + value;
-      }, 0);
     }
     return 0;
   }

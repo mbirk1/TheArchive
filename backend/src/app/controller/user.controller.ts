@@ -33,13 +33,17 @@ export class UserController {
 
   @UseGuards(AuthGuard('jwt'))
   @Get('me')
-  getLoggedInUser(@Headers() headers: Record<string, string>): Promise<IUser> {
+  async getLoggedInUser(
+    @Headers() headers: Record<string, string>,
+  ): Promise<IUser> {
     const authorization: string = headers['authorization'];
     if (authorization.trim() === '') {
       throw new UnauthorizedException('Empty Header');
     }
 
-    return this.userService.findCurrentUser(authorization);
+    let user: IUser = await this.userService.findCurrentUser(authorization);
+    user = this.userService.sanitizeEntity(user);
+    return user;
   }
 
   @Post()

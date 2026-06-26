@@ -178,8 +178,6 @@ export class UserService {
       throw new ConflictException('User not found');
     }
 
-    user = this.sanitizeEntity(user);
-
     return user;
   }
 

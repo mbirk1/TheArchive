@@ -77,6 +77,8 @@ export class CollectionService {
       return null;
     }
 
+
+
     const newCollection: ICollection = {
       user: user,
       cards: []

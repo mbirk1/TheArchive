@@ -10,11 +10,12 @@ import { CollectionService } from '../../services/collection/collection.service'
   standalone: true,
 })
 export class HeroProfileHeaderComponent {
-  private collectionService = inject(CollectionService);
-  protected userService = inject(UserService);
+  protected collectionService: CollectionService = inject(CollectionService);
+  protected userService: UserService = inject(UserService);
 
   protected user: Signal<IUser> = computed(() => this.userService.getMyUser());
+  protected estValue: Signal<number> = this.collectionService.totalCollectionValue;
+
   protected totalCardsForUser: number =
     this.collectionService.getTotalCardsForUser();
-  protected estValue: number = this.collectionService.getValueForAllCardsInCollection();
 }

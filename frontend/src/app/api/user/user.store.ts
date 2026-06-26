@@ -30,7 +30,6 @@ export class UserStore {
     if (this.userResource.isLoading()) {
       throw new Error('User still loading');
     }
-    console.log(this.userResource.error())
     if(this.userResource.hasValue()) {
       return this.userResource.value();
     }
