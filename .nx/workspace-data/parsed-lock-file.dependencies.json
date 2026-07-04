@@ -23370,6 +23370,26 @@
     "type": "static"
   },
   {
+    "source": "npm:jest-junit",
+    "target": "npm:mkdirp@1.0.4",
+    "type": "static"
+  },
+  {
+    "source": "npm:jest-junit",
+    "target": "npm:strip-ansi",
+    "type": "static"
+  },
+  {
+    "source": "npm:jest-junit",
+    "target": "npm:uuid@14.0.1",
+    "type": "static"
+  },
+  {
+    "source": "npm:jest-junit",
+    "target": "npm:xml",
+    "type": "static"
+  },
+  {
     "source": "npm:jest-leak-detector",
     "target": "npm:@jest/get-type",
     "type": "static"

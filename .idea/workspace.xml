@@ -4,23 +4,29 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="adding cards to a collection">
+    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="change to git tags to deploy">
+      <change afterPath="$PROJECT_DIR$/frontend/jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/services/collection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/collection.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/collection/collection.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/collection/collection.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/hero-profile-header/hero-profile-header.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/hero-profile-header/hero-profile-header.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/hero-profile-header/hero-profile-header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/hero-profile-header/hero-profile-header.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/collection/collection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/collection/collection.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/jest.config.cts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tsconfig.spec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-e2e/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-e2e/eslint.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-e2e/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-e2e/playwright.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,7 +99,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/mariu/WebstormProjects/Sideboard/frontend/src/app/api/collection",
+    "last_opened_file_path": "C:/Users/mariu/WebstormProjects/Sideboard_OLD",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -101,9 +107,9 @@
     "nodejs_package_manager_path": "npm",
     "npm.dev.executor": "Run",
     "npm.start.executor": "Run",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\prettier",
+    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\prettier",
     "settings.editor.selected.configurable": "nx-console",
-    "ts.external.directory.path": "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\node_modules\\typescript\\lib",
+    "ts.external.directory.path": "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -117,29 +123,27 @@
       "PLAIN_TEXT"
     ],
     "dev.nx.console.project_details_files": [
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\playwright.config.ts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend-e2e\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\webpack.config.js",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend\\jest.config.cts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\backend-e2e\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\frontend\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\project.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\package.json",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\jest.config.cts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\lib\\vite.config.mts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mts",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\eslint.config.mjs",
-      "C:\\Users\\mariu\\WebstormProjects\\Sideboard\\package.json"
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\frontend-e2e\\project.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\frontend-e2e\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\frontend-e2e\\playwright.config.ts",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\frontend-e2e\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend\\project.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend\\webpack.config.js",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend-e2e\\project.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend-e2e\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend-e2e\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\eslint.config.mts",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\frontend\\project.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\frontend\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\frontend\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\lib\\project.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\lib\\package.json",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\lib\\eslint.config.mjs",
+      "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\lib\\vite.config.mts"
     ]
   }
 }]]></component>
@@ -159,7 +163,7 @@
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\public\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.frontend:serve">
+  <component name="RunManager" selected="Nx.backend:import-cards">
     <configuration name="backend:build" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="build" />
@@ -365,23 +369,10 @@
       <workItem from="1781087920984" duration="8222000" />
       <workItem from="1781596283912" duration="7873000" />
       <workItem from="1781909525191" duration="3968000" />
-      <workItem from="1782466595639" duration="1794000" />
-    </task>
-    <task id="LOCAL-00002" summary="Initial Commit">
-      <option name="closed" value="true" />
-      <created>1767109118041</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1767109118041</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Initial Commit">
-      <option name="closed" value="true" />
-      <created>1767109141287</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1767109141287</updated>
+      <workItem from="1782466595639" duration="1974000" />
+      <workItem from="1782468716278" duration="6000" />
+      <workItem from="1782471028089" duration="4101000" />
+      <workItem from="1783157671514" duration="2955000" />
     </task>
     <task id="LOCAL-00004" summary="First Entity and setup">
       <option name="closed" value="true" />
@@ -759,7 +750,23 @@
       <option name="project" value="LOCAL" />
       <updated>1781605374085</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="last push before tickets">
+      <option name="closed" value="true" />
+      <created>1782468486110</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1782468486110</updated>
+    </task>
+    <task id="LOCAL-00052" summary="change to git tags to deploy">
+      <option name="closed" value="true" />
+      <created>1783162663140</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1783162663141</updated>
+    </task>
+    <option name="localTasksCounter" value="53" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -782,8 +789,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="setting up migrations n stuff" />
-    <MESSAGE value="docusaurus and landingpage styling" />
     <MESSAGE value="prettier run" />
     <MESSAGE value="almost finished landing page, hero section not" />
     <MESSAGE value="improved landing page" />
@@ -807,6 +812,8 @@
     <MESSAGE value="adding collection and fixing some bugs" />
     <MESSAGE value="fixing things" />
     <MESSAGE value="adding cards to a collection" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding cards to a collection" />
+    <MESSAGE value="last push before tickets" />
+    <MESSAGE value="change to git tags to deploy" />
+    <option name="LAST_COMMIT_MESSAGE" value="change to git tags to deploy" />
   </component>
 </project>

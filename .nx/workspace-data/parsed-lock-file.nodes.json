@@ -8329,9 +8329,9 @@
       "type": "npm",
       "name": "npm:@playwright/test",
       "data": {
-        "version": "1.58.0",
+        "version": "1.61.1",
         "packageName": "@playwright/test",
-        "hash": "sha512-fWza+Lpbj6SkQKCrU6si4iu+fD2dD3gxNHFhUPxsfXBPhnv3rRSQVd0NtBUT9Z/RhF/boCBcuUaMUSTRTopjZg=="
+        "hash": "sha512-8nKv6+0RJSL9FE4jYOEGXnPeM/Hg12qZpmqzZjRh3qM0Y7c3z1mrOTfFLids72RDQYVh9WpLEfR5WdpNX4fkig=="
       }
     },
     "npm:@pnpm/config.env-replace": {
@@ -15651,6 +15651,60 @@
         "hash": "sha512-sQA/jCb9kNt+neM0anSj6eZhLZUIhQgwDt7cPGjumgLM4rXsfb9kpnlacmvZz3Q5tb80nS+oG/if+NBKrHC+Xw=="
       }
     },
+    "npm:jest-junit": {
+      "type": "npm",
+      "name": "npm:jest-junit",
+      "data": {
+        "version": "17.0.0",
+        "packageName": "jest-junit",
+        "hash": "sha512-RYWCkq4j59gUXj5DsgbIE7xFBZzu1gtibPhyjSjMmGaOTLnqlXhg7x9zuGCwgbCuMAyoyvk0Mi8wSrRR5uOeLA=="
+      }
+    },
+    "npm:mkdirp@1.0.4": {
+      "type": "npm",
+      "name": "npm:mkdirp@1.0.4",
+      "data": {
+        "version": "1.0.4",
+        "packageName": "mkdirp",
+        "hash": "sha512-vVqVZQyf3WLx2Shd0qJ9xuvqgAyKPLAiqITEtqW0oIUjzo3PePDd6fW9iFz30ef7Ysp/oiWqbhszeGWW2T6Gzw=="
+      }
+    },
+    "npm:mkdirp": {
+      "type": "npm",
+      "name": "npm:mkdirp",
+      "data": {
+        "version": "0.5.6",
+        "packageName": "mkdirp",
+        "hash": "sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw=="
+      }
+    },
+    "npm:uuid@14.0.1": {
+      "type": "npm",
+      "name": "npm:uuid@14.0.1",
+      "data": {
+        "version": "14.0.1",
+        "packageName": "uuid",
+        "hash": "sha512-6ZxzVpzDXDa3bJWaHilVayA+BH/1zmxCJoVgvmqJnid/gPoKHxUrS/aC/T6LGQtNHT+XHG9fXPJB4d+IrU30Ew=="
+      }
+    },
+    "npm:uuid@11.1.0": {
+      "type": "npm",
+      "name": "npm:uuid@11.1.0",
+      "data": {
+        "version": "11.1.0",
+        "packageName": "uuid",
+        "hash": "sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A=="
+      }
+    },
+    "npm:uuid": {
+      "type": "npm",
+      "name": "npm:uuid",
+      "data": {
+        "version": "8.3.2",
+        "packageName": "uuid",
+        "hash": "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
+      }
+    },
     "npm:jest-leak-detector": {
       "type": "npm",
       "name": "npm:jest-leak-detector",
@@ -17226,15 +17280,6 @@
         "hash": "sha512-KZxYo1BUkWD2TVFLr0MQoM8vUUigWD3LlD83a/75BqC+4qE0Hb1Vo5v1FgcfaNXvfXzr+5EhQ6ing/CaBijTlw=="
       }
     },
-    "npm:mkdirp": {
-      "type": "npm",
-      "name": "npm:mkdirp",
-      "data": {
-        "version": "0.5.6",
-        "packageName": "mkdirp",
-        "hash": "sha512-FP+p8RB8OWpF3YZBCrP5gtADmtXApB5AMLn+vdyA+PyxCjrCs00mjyUozssO33cwDeT3wNGdLxJ5M//YqtHAJw=="
-      }
-    },
     "npm:mlly": {
       "type": "npm",
       "name": "npm:mlly",
@@ -18157,18 +18202,18 @@
       "type": "npm",
       "name": "npm:playwright",
       "data": {
-        "version": "1.58.0",
+        "version": "1.61.1",
         "packageName": "playwright",
-        "hash": "sha512-2SVA0sbPktiIY/MCOPX8e86ehA/e+tDNq+e5Y8qjKYti2Z/JG7xnronT/TXTIkKbYGWlCbuucZ6dziEgkoEjQQ=="
+        "hash": "sha512-DWnY5o3YbLWK4GovuAVwpqL+1VwGNdUGrRr++8j8PtQQzvAVZUIMjKQ90fY689sEJZJBbZVw1rXaOKSTitkzPQ=="
       }
     },
     "npm:playwright-core": {
       "type": "npm",
       "name": "npm:playwright-core",
       "data": {
-        "version": "1.58.0",
+        "version": "1.61.1",
         "packageName": "playwright-core",
-        "hash": "sha512-aaoB1RWrdNi3//rOeKuMiS65UCcgOVljU46At6eFcOFPFHWtd2weHRRow6z/n+Lec0Lvu0k9ZPKJSjPugikirw=="
+        "hash": "sha512-h7Qlt6m4REp25qvIdvbDtVmD4LqVXfpRxhORv9L0jzETM05p4fuPJ3dKyuSXQxDSbXnmS79HAgi9589lGSpLkg=="
       }
     },
     "npm:pluralize": {
@@ -21042,24 +21087,6 @@
         "hash": "sha512-biN3PwB2gUtjaYy/isrU3aNWI5w+fAfvHkSvCKeQGxhmYpwKFUxudR3Yya+KqVRHBmEDYh+/lTozYCFbmzX4nA=="
       }
     },
-    "npm:uuid@11.1.0": {
-      "type": "npm",
-      "name": "npm:uuid@11.1.0",
-      "data": {
-        "version": "11.1.0",
-        "packageName": "uuid",
-        "hash": "sha512-0/A9rDy9P7cJ+8w1c9WD9V//9Wj15Ce2MPz8Ri6032usz+NfePxx5AcN3bN+r6ZL6jEo066/yNYB3tn4pQEx+A=="
-      }
-    },
-    "npm:uuid": {
-      "type": "npm",
-      "name": "npm:uuid",
-      "data": {
-        "version": "8.3.2",
-        "packageName": "uuid",
-        "hash": "sha512-+NYs2QeMWy+GWFOEm9xnn6HCDp0l7QBD7ml8zLUmJ+93Q5NF0NocErnwkTkXVFNiX3/fpC6afS8Dhb/gz7R7eg=="
-      }
-    },
     "npm:typescript-eslint": {
       "type": "npm",
       "name": "npm:typescript-eslint",
@@ -21769,6 +21796,15 @@
         "version": "5.1.0",
         "packageName": "xdg-basedir",
         "hash": "sha512-GCPAHLvrIH13+c0SuacwvRYj2SxJXQ4kaVTT5xgL3kPrz56XxkF21IGhjSE1+W0aw7gpBWRGXLCPnPby6lSpmQ=="
+      }
+    },
+    "npm:xml": {
+      "type": "npm",
+      "name": "npm:xml",
+      "data": {
+        "version": "1.0.1",
+        "packageName": "xml",
+        "hash": "sha512-huCv9IH9Tcf95zuYCsQraZtWnJvBtLVE0QHMOs8bWyZAFZNDcYjsPq1nEx8jKA9y+Beo9v+7OBPRisQTjinQMw=="
       }
     },
     "npm:xml-js": {
@@ -23696,6 +23732,9 @@
     "node_modules/jest-each/node_modules/chalk": "npm:chalk@4.1.2",
     "node_modules/jest-environment-node": "npm:jest-environment-node",
     "node_modules/jest-haste-map": "npm:jest-haste-map",
+    "node_modules/jest-junit": "npm:jest-junit",
+    "node_modules/jest-junit/node_modules/mkdirp": "npm:mkdirp@1.0.4",
+    "node_modules/jest-junit/node_modules/uuid": "npm:uuid@14.0.1",
     "node_modules/jest-leak-detector": "npm:jest-leak-detector",
     "node_modules/jest-matcher-utils": "npm:jest-matcher-utils",
     "node_modules/jest-matcher-utils/node_modules/chalk": "npm:chalk@4.1.2",
@@ -24814,6 +24853,7 @@
     "node_modules/ws": "npm:ws",
     "node_modules/wsl-utils": "npm:wsl-utils",
     "node_modules/xdg-basedir": "npm:xdg-basedir",
+    "node_modules/xml": "npm:xml",
     "node_modules/xml-js": "npm:xml-js",
     "node_modules/xtend": "npm:xtend",
     "node_modules/y18n": "npm:y18n",

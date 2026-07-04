@@ -1,22 +1,31 @@
-variables:
-  DOCKERHUB_USERNAME: $DOCKERHUB_USERNAME
-
 stages:
-  - build
+  - lint
+  - test
+  - build-check
+  - e2e
+  - release
 
 # ---------------------------------------------------------------
-# 1) Angular bauen & pushen
+# Templates
 # ---------------------------------------------------------------
-build-frontend:
-  stage: build
+.node-base:
+  image: node:22.12.0
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - node_modules/
+  before_script:
+    - npm ci
+
+.docker-base:
   image: node:22.12.0
   services:
     - docker:dind
   variables:
-    DOCKER_HOST: tcp://docker:2376
-    DOCKER_TLS_CERTDIR: "/certs"
-  rules:
-    - if: $CI_COMMIT_TAG
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_TLS_CERTDIR: ""
   cache:
     key:
       files:
@@ -25,55 +34,139 @@ build-frontend:
       - node_modules/
   before_script:
     - apt-get update -qq && apt-get install -y docker.io
-    - echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
-  script:
+    - docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY
     - npm ci
+
+# ---------------------------------------------------------------
+# LINT — läuft auf allen MRs
+# ---------------------------------------------------------------
+lint-frontend:
+  extends: .node-base
+  stage: lint
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_TAG
+  script:
+    - npx nx lint frontend
+
+lint-backend:
+  extends: .node-base
+  stage: lint
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_TAG
+  script:
+    - npx nx lint backend
+
+# ---------------------------------------------------------------
+# TEST (Unit + Integration) — läuft auf allen MRs
+# ---------------------------------------------------------------
+test-frontend:
+  extends: .node-base
+  stage: test
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_TAG
+  script:
+    - npx nx test frontend --ci --coverage
+  artifacts:
+    when: always
+    reports:
+      junit: coverage/frontend/junit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/frontend/cobertura-coverage.xml
+    expire_in: 7 days
+
+test-backend:
+  extends: .node-base
+  stage: test
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_TAG
+  script:
+    - npx nx test backend --ci --coverage
+  artifacts:
+    when: always
+    reports:
+      junit: coverage/backend/junit.xml
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage/backend/cobertura-coverage.xml
+    expire_in: 7 days
+
+# ---------------------------------------------------------------
+# BUILD-CHECK — kompilieren ohne Docker, läuft auf allen MRs
+# ---------------------------------------------------------------
+build-check-frontend:
+  extends: .node-base
+  stage: build-check
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_TAG
+  script:
+    - npx nx build frontend --configuration=production
+
+build-check-backend:
+  extends: .node-base
+  stage: build-check
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+    - if: $CI_COMMIT_TAG
+  script:
+    - npx nx build backend --configuration=production
+
+# ---------------------------------------------------------------
+# E2E — nur auf MR nach master und develop
+# ---------------------------------------------------------------
+e2e:
+  extends: .node-base
+  stage: e2e
+  before_script:
+    - npm ci
+    - npx playwright install chromium --with-deps
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "master"
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event" && $CI_MERGE_REQUEST_TARGET_BRANCH_NAME == "develop"
+  script:
+    - npx nx e2e frontend-e2e --configuration=ci
+  artifacts:
+    when: always
+    paths:
+      - dist/playwright/
+    expire_in: 7 days
+
+# ---------------------------------------------------------------
+# RELEASE — nur auf Tag, baut und pusht Docker Images
+# ---------------------------------------------------------------
+release-frontend:
+  extends: .docker-base
+  stage: release
+  rules:
+    - if: $CI_COMMIT_TAG
+  script:
     - npx nx build frontend --configuration=production
     - docker build
-        --cache-from "$DOCKERHUB_USERNAME/archive-frontend:latest"
-        -f ./frontend/Dockerfile
-        -t "$DOCKERHUB_USERNAME/archive-frontend:latest"
-        -t "$DOCKERHUB_USERNAME/archive-frontend:$CI_COMMIT_TAG"
-        .
-    - |
-      if [ "$CI_COMMIT_BRANCH" == "master" ]; then
-        docker push "$DOCKERHUB_USERNAME/archive-frontend:latest"
-        docker push "$DOCKERHUB_USERNAME/archive-frontend:sha-$(echo $CI_COMMIT_SHA | cut -c1-8)"
-      fi
+      --cache-from "$CI_REGISTRY_IMAGE/archive-frontend:latest"
+      -f ./frontend/Dockerfile
+      -t "$CI_REGISTRY_IMAGE/archive-frontend:$CI_COMMIT_TAG"
+      -t "$CI_REGISTRY_IMAGE/archive-frontend:latest"
+      .
+    - docker push "$CI_REGISTRY_IMAGE/archive-frontend:$CI_COMMIT_TAG"
+    - docker push "$CI_REGISTRY_IMAGE/archive-frontend:latest"
 
-# ---------------------------------------------------------------
-# 2) NestJS bauen & pushen
-# ---------------------------------------------------------------
-build-backend:
-  stage: build
-  image: node:22.12.0
-  services:
-    - docker:dind
-  variables:
-    DOCKER_HOST: tcp://docker:2376
-    DOCKER_TLS_CERTDIR: "/certs"
+release-backend:
+  extends: .docker-base
+  stage: release
   rules:
     - if: $CI_COMMIT_TAG
-  cache:
-    key:
-      files:
-        - package-lock.json
-    paths:
-      - node_modules/
-  before_script:
-    - apt-get update -qq && apt-get install -y docker.io
-    - echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
   script:
-    - npm ci
     - npx nx build backend --configuration=production
     - docker build
-        --cache-from "$DOCKERHUB_USERNAME/archive-backend:latest"
-        -f ./backend/Dockerfile
-        -t "$DOCKERHUB_USERNAME/archive-backend:latest"
-        -t "$DOCKERHUB_USERNAME/archive-backend:$CI_COMMIT_TAG"
-        .
-    - |
-      if [ "$CI_COMMIT_BRANCH" == "master" ]; then
-        docker push "$DOCKERHUB_USERNAME/archive-backend:latest"
-        docker push "$DOCKERHUB_USERNAME/archive-backend:sha-$(echo $CI_COMMIT_SHA | cut -c1-8)"
-      fi
+      --cache-from "$CI_REGISTRY_IMAGE/archive-backend:latest"
+      -f ./backend/Dockerfile
+      -t "$CI_REGISTRY_IMAGE/archive-backend:$CI_COMMIT_TAG"
+      -t "$CI_REGISTRY_IMAGE/archive-backend:latest"
+      .
+    - docker push "$CI_REGISTRY_IMAGE/archive-backend:$CI_COMMIT_TAG"
+    - docker push "$CI_REGISTRY_IMAGE/archive-backend:latest"
