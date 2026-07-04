@@ -23,6 +23,8 @@ export class UserGateway {
   }
 
   createUser(user: IRegisterRequest): Observable<IUser> {
-    return this.http.post<IUser>(this.configService.apiUrl + '/user', user, { context: new HttpContext().set(SKIP_AUTH, true)});
+    return this.http.post<IUser>(this.configService.apiUrl + '/user', user, {
+      context: new HttpContext().set(SKIP_AUTH, true),
+    });
   }
 }

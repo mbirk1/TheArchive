@@ -3,7 +3,7 @@ import {
   JoinTable,
   ManyToMany,
   ManyToOne,
-  PrimaryColumn, PrimaryGeneratedColumn
+  PrimaryGeneratedColumn,
 } from 'typeorm';
 import { ICard, IDeck } from 'lib';
 import { Card } from './card.entity';
@@ -17,7 +17,7 @@ export class Deck implements IDeck {
   @ManyToOne(() => User, (user) => user.decks)
   user: User;
 
-  @ManyToMany((type) => Card, (card) => card.decks)
+  @ManyToMany(() => Card, (card) => card.decks)
   @JoinTable()
   cards: ICard[];
 }

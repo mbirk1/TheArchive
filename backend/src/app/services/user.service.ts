@@ -173,7 +173,7 @@ export class UserService {
   async findCurrentUser(authorization: string): Promise<IUser> {
     const extractData: JwtPayload =
       this.tokenService.extractAndValidate(authorization);
-    let user: IUser = await this.findById(extractData.sub);
+    const user: IUser = await this.findById(extractData.sub);
     if (!user) {
       throw new ConflictException('User not found');
     }

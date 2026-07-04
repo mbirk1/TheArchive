@@ -9,9 +9,9 @@ export class ScryfallRepository {
     this.auth();
   }
 
-  private auth() {}
+  private auth() { /* empty */ }
 
-  searchByName(name: string) {}
+  searchByName(name: string) { /* empty */ }
 
   async randomCard(): Promise<ICard> {
     const randomCard = await firstValueFrom(

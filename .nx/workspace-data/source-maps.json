@@ -298,6 +298,70 @@
       "backend/webpack.config.js",
       "@nx/webpack/plugin"
     ],
+    "targets.test": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "backend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
     "name": [
       "backend/project.json",
       "nx/core/project-json"
@@ -525,246 +589,6 @@
       "nx/core/project-json"
     ]
   },
-  "docs": {
-    "root": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets": [
-      "eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.1": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ]
-  },
-  ".": {
-    "root": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets": [
-      "eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.cache": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.inputs": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.outputs": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.executor": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.cwd": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.options.command": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies": [
-      "eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.0": [
-      "eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.description": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.command": [
-      "eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.help.example": [
-      "eslint.config.mjs",
-      "@nx/eslint/plugin"
-    ],
-    "targets.lint.metadata.technologies.1": [
-      "eslint.config.mts",
-      "@nx/eslint/plugin"
-    ],
-    "name": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "tags": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "tags.npm:public": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.targetGroups": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.targetGroups.NPM Scripts": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.targetGroups.NPM Scripts.0": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.description": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.js": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.js.packageName": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.js.packageVersion": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.js.packageMain": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "metadata.js.isInPackageManagerWorkspaces": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.test": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.test.executor": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.test.options": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.test.metadata": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.test.options.script": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.test.metadata.scriptContent": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.test.metadata.runCommand": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.nx-release-publish": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.nx-release-publish.executor": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.nx-release-publish.dependsOn": [
-      "package.json",
-      "nx/core/package-json"
-    ],
-    "targets.nx-release-publish.options": [
-      "package.json",
-      "nx/core/package-json"
-    ]
-  },
   "frontend": {
     "root": [
       "frontend/project.json",
@@ -773,6 +597,70 @@
     "targets": [
       "frontend/eslint.config.mjs",
       "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "frontend/jest.config.ts",
+      "@nx/jest/plugin"
     ],
     "name": [
       "frontend/project.json",
@@ -1083,6 +971,70 @@
     "targets.lint.metadata.help.example": [
       "lib/eslint.config.mjs",
       "@nx/eslint/plugin"
+    ],
+    "targets.test": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.cache": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.inputs": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.outputs": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.executor": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.cwd": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.env": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.options.command": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.technologies.0": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.description": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.command": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
+    ],
+    "targets.test.metadata.help.example": [
+      "lib/jest.config.cts",
+      "@nx/jest/plugin"
     ],
     "projectType": [
       "lib/project.json",
@@ -1475,6 +1427,246 @@
     "// targets": [
       "lib/project.json",
       "nx/core/project-json"
+    ]
+  },
+  "docs": {
+    "root": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets": [
+      "eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.1": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ]
+  },
+  ".": {
+    "root": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets": [
+      "eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.cache": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.inputs": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.outputs": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.executor": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.cwd": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.options.command": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies": [
+      "eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.0": [
+      "eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.description": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.command": [
+      "eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.help.example": [
+      "eslint.config.mjs",
+      "@nx/eslint/plugin"
+    ],
+    "targets.lint.metadata.technologies.1": [
+      "eslint.config.mts",
+      "@nx/eslint/plugin"
+    ],
+    "name": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "tags": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "tags.npm:public": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.targetGroups.NPM Scripts.0": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.description": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageName": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageVersion": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.packageMain": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "metadata.js.isInPackageManagerWorkspaces": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.executor": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.options.script": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.scriptContent": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.test.metadata.runCommand": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.executor": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.dependsOn": [
+      "package.json",
+      "nx/core/package-json"
+    ],
+    "targets.nx-release-publish.options": [
+      "package.json",
+      "nx/core/package-json"
     ]
   }
 }

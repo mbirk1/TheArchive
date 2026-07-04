@@ -52,14 +52,18 @@ export class CollectionService {
     }
   }
 
- async addCardToCollection(authorization: string, card: Card): Promise<ICollection> {
+  async addCardToCollection(
+    authorization: string,
+    card: Card,
+  ): Promise<ICollection> {
     if (!authorization) {
       this.logger.warn('Authorization not given');
       return null;
     }
 
     try {
-      const collection: ICollection = await this.findCollectionByUser(authorization);
+      const collection: ICollection =
+        await this.findCollectionByUser(authorization);
       collection.cards.push(card);
       return this.collectionRepository.save(collection);
     } catch (error) {
@@ -77,13 +81,11 @@ export class CollectionService {
       return null;
     }
 
-
-
     const newCollection: ICollection = {
       user: user,
-      cards: []
-    }
+      cards: [],
+    };
 
-    return this.collectionRepository.create(newCollection)
+    return this.collectionRepository.create(newCollection);
   }
 }

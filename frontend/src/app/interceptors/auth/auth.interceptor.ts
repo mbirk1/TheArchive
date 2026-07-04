@@ -14,9 +14,8 @@ export const authInterceptor: HttpInterceptorFn = (req, next) => {
   const tokenService = inject(TokenService);
   const authService = inject(AuthService);
 
-
-  if(req.context.get(SKIP_AUTH)) {
-    return next(req)
+  if (req.context.get(SKIP_AUTH)) {
+    return next(req);
   }
 
   if (isAuthEndpoint(req.url)) {

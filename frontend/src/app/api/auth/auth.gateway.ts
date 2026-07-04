@@ -19,9 +19,7 @@ export class AuthGateway {
   }
 
   logoutUser() {
-    return this.http.post(
-      this.configService.apiUrl + '/auth/logout', {}
-    );
+    return this.http.post(this.configService.apiUrl + '/auth/logout', {});
   }
 
   refreshTokens(refreshToken: string): Observable<IAuthTokens> {

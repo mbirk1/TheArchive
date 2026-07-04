@@ -11,7 +11,7 @@ export class CardService {
   constructor(
     @InjectRepository(Card)
     private cardRepository: Repository<Card>,
-    private scryFallRepository: ScryfallRepository,
+    // scryFallRepository: ScryfallRepository,
   ) {}
 
   async findAll(
@@ -30,7 +30,7 @@ export class CardService {
       WHEN card.type_line LIKE '%Enchantment%' THEN 3
       ELSE 4
      END`,
-        paginationDto.sortOrder ?? 'ASC'
+        paginationDto.sortOrder ?? 'ASC',
       )
       .addOrderBy('card.name', paginationDto.sortOrder ?? 'ASC')
       .take(limit)
@@ -55,9 +55,9 @@ export class CardService {
   }
 
   async searchForCardsByName(name: string): Promise<Card[]> {
-    const foundCards = await this.cardRepository.findBy({ name });
+    //const foundCards = await this.cardRepository.findBy({ name });
 
-    const externalFoundCard = await this.scryFallRepository.searchByName(name);
+    //const externalFoundCard = await this.scryFallRepository.searchByName(name);
 
     // Karten aus foundCards aus externalCards streichen
 

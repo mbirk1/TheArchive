@@ -4,29 +4,51 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="change to git tags to deploy">
-      <change afterPath="$PROJECT_DIR$/frontend/jest.config.ts" afterDir="false" />
+    <list default="true" id="616c7442-eade-42e8-9a30-19ee01c11e31" name="Changes" comment="adding playwright and jest to pipeline">
       <change beforePath="$PROJECT_DIR$/.gitlab-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitlab-ci.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/eslint-2654242865465226088.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/file-map.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/jest-7930610538513362720.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-dependencies.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/lockfile-nodes.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/nx_files.nxt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.dependencies.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/parsed-lock-file.nodes.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/playwright-5186013267177752385.hash" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/project-graph.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/source-maps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" beforeDir="false" afterPath="$PROJECT_DIR$/.nx/workspace-data/webpack-7566275343909617285.hash" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/jest.config.cts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/jest.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/backend/tsconfig.spec.json" beforeDir="false" afterPath="$PROJECT_DIR$/backend/tsconfig.spec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-e2e/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-e2e/eslint.config.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend-e2e/playwright.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend-e2e/playwright.config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/backend/eslint.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/import-cards-scryfall.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/import-cards-scryfall.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/controller/collection.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/controller/collection.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/card.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/card.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/collection.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/collection.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/entities/deck.entity.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/entities/deck.entity.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/1781604781748-migration.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/1781604781748-migration.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/database/migrations/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/database/migrations/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/repositories/scryfall.repository.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/repositories/scryfall.repository.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/services/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/services/card.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/card.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/services/collection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/collection.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/services/token.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/token.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/backend/src/app/services/user.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/eslint.config.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/eslint.config.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/jest.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/jest.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/auth/auth.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/auth/auth.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/auth/http.context.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/auth/http.context.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/cards/cards.store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/collection/collection.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/collection/collection.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/collection/collection.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/collection/collection.store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.gateway.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.gateway.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/api/user/user.store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/card-tile/card-tile.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/card-tile/card-tile.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/card-tile/card-tile.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/card-tile/card-tile.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/components/hero-profile-header/hero-profile-header.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/components/hero-profile-header/hero-profile-header.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/interceptors/auth/auth.interceptor.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/interceptors/auth/auth.interceptor.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/browse-cards/browse-cards.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-in.component/sign-in.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/pages/sign-up/sign-in.component/sign-in.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/auth/auth.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/auth/auth.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/app/services/collection/collection.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/app/services/collection/collection.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -163,7 +185,7 @@
       <recent name="C:\Users\mariu\WebstormProjects\Sideboard\frontend\public\images" />
     </key>
   </component>
-  <component name="RunManager" selected="Nx.backend:import-cards">
+  <component name="RunManager" selected="Nx.backend:lint">
     <configuration name="backend:build" type="NxRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="nx-projects" value="backend" />
       <option name="nx-targets" value="build" />
@@ -372,15 +394,7 @@
       <workItem from="1782466595639" duration="1974000" />
       <workItem from="1782468716278" duration="6000" />
       <workItem from="1782471028089" duration="4101000" />
-      <workItem from="1783157671514" duration="2955000" />
-    </task>
-    <task id="LOCAL-00004" summary="First Entity and setup">
-      <option name="closed" value="true" />
-      <created>1768061248778</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1768061248778</updated>
+      <workItem from="1783157671514" duration="4251000" />
     </task>
     <task id="LOCAL-00005" summary="header and tailwind setup">
       <option name="closed" value="true" />
@@ -766,7 +780,15 @@
       <option name="project" value="LOCAL" />
       <updated>1783162663141</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="adding playwright and jest to pipeline">
+      <option name="closed" value="true" />
+      <created>1783164321918</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1783164321918</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -789,7 +811,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="prettier run" />
     <MESSAGE value="almost finished landing page, hero section not" />
     <MESSAGE value="improved landing page" />
     <MESSAGE value="create login and sign up page" />
@@ -814,6 +835,7 @@
     <MESSAGE value="adding cards to a collection" />
     <MESSAGE value="last push before tickets" />
     <MESSAGE value="change to git tags to deploy" />
-    <option name="LAST_COMMIT_MESSAGE" value="change to git tags to deploy" />
+    <MESSAGE value="adding playwright and jest to pipeline" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding playwright and jest to pipeline" />
   </component>
 </project>

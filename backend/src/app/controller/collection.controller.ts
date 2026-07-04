@@ -8,7 +8,9 @@ export class CollectionController {
   constructor(private collectionService: CollectionService) {}
 
   @Get()
-  getNumberOfCardsInCollection(@Headers() headers: Record<string, string>): Promise<ICollection> {
+  getNumberOfCardsInCollection(
+    @Headers() headers: Record<string, string>,
+  ): Promise<ICollection> {
     const authorization: string = headers['authorization'];
     return this.collectionService.findCollectionByUser(authorization);
   }
@@ -19,9 +21,6 @@ export class CollectionController {
     @Body() card: Card,
   ): Promise<ICollection> {
     const authorization: string = headers['authorization'];
-    return this.collectionService.addCardToCollection(
-      authorization,
-      card,
-    );
+    return this.collectionService.addCardToCollection(authorization, card);
   }
 }

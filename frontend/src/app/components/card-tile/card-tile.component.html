@@ -2,7 +2,7 @@
   class="pt-5 group relative flex flex-col bg-surface-container-low/40 border border-outline-variant/10 rounded-xl overflow-hidden transition-all duration-300 hover:-translate-y-1 glow-hover"
 >
   <div class="px-5 aspect-[3/4] relative overflow-hidden cursor-pointer">
-    @if(card().image_uris?.normal){
+    @if (card().image_uris?.normal) {
       <img
         class="w-full h-full rounded-lg"
         data-alt="{{ card().name }}"
@@ -18,24 +18,27 @@
   </div>
   <div class="p-5">
     <div class="flex flex-row w-full justify-between">
-    <h3 class="text-on-surface font-medium truncate">{{ card().name }}</h3>
-    <div class="float-end px-2 py-1 glass-card rounded text-[10px] font-bold text-tertiary border border-tertiary/30">
-      {{ card().rarity}}
-    </div>
+      <h3 class="text-on-surface font-medium truncate">{{ card().name }}</h3>
+      <div
+        class="float-end px-2 py-1 glass-card rounded text-[10px] font-bold text-tertiary border border-tertiary/30"
+      >
+        {{ card().rarity }}
+      </div>
     </div>
     <div class="flex justify-between items-center mt-1">
-          <span class="text-on-surface-variant text-xs font-label">
-            {{ card().set_name }}
-          </span>
-      <span class="text-primary font-bold font-headline">{{ card().prices.eur }}</span>
+      <span class="text-on-surface-variant text-xs font-label">
+        {{ card().set_name }}
+      </span>
+      <span class="text-primary font-bold font-headline">{{
+        card().prices.eur
+      }}</span>
     </div>
   </div>
 
-
-      <div class="p-5 flex items-center justify-between mt-auto">
-        @if(!isInCollectionSection()){
-        <div class="flex space-x-2">
-          @if(authStore.isAuthenticated()) {
+  <div class="p-5 flex items-center justify-between mt-auto">
+    @if (!isInCollectionSection()) {
+      <div class="flex space-x-2">
+        @if (authStore.isAuthenticated()) {
           <button
             class="cursor-pointer w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-highest/50 text-on-surface-variant hover:bg-primary/20 hover:text-primary transition-all"
             title="Add Original"
@@ -47,25 +50,26 @@
             class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-highest/50 text-on-surface-variant hover:bg-primary/20 hover:text-primary transition-all"
             title="Add Proxy"
           >
-            <span class="material-symbols-outlined text-[18px]">content_copy</span>
-          </button>
-          }
-          <button
-            class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-highest/50 text-on-surface-variant hover:bg-primary/20 hover:text-primary transition-all"
-            title="View Details"
-          >
-            <span class="material-symbols-outlined text-[18px]">visibility</span>
-          </button>
-        </div>
-        }
-        @if(isInCollectionSection() && authStore.isAuthenticated()){
-          <button
-            class="w-8 h-8 flex items-center justify-center rounded-lg bg-secondary/10 text-secondary hover:bg-secondary/20 transition-all"
-            title="Jump to Collection"
-          >
-            <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+            <span class="material-symbols-outlined text-[18px]"
+              >content_copy</span
+            >
           </button>
         }
+        <button
+          class="w-8 h-8 flex items-center justify-center rounded-lg bg-surface-container-highest/50 text-on-surface-variant hover:bg-primary/20 hover:text-primary transition-all"
+          title="View Details"
+        >
+          <span class="material-symbols-outlined text-[18px]">visibility</span>
+        </button>
       </div>
-
+    }
+    @if (isInCollectionSection() && authStore.isAuthenticated()) {
+      <button
+        class="w-8 h-8 flex items-center justify-center rounded-lg bg-secondary/10 text-secondary hover:bg-secondary/20 transition-all"
+        title="Jump to Collection"
+      >
+        <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+      </button>
+    }
+  </div>
 </div>

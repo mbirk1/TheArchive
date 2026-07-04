@@ -1,4 +1,4 @@
-import { Entity, PrimaryColumn, Column, ManyToMany, JoinTable } from 'typeorm';
+import { Entity, PrimaryColumn, Column, ManyToMany } from 'typeorm';
 import {
   ICard,
   IImageUris,
@@ -211,13 +211,13 @@ export class Card implements ICard {
   @Column({ type: 'jsonb', nullable: true })
   raw: ICard;
 
-  @ManyToMany((type) => Deck, (x) => x.cards, {
+  @ManyToMany(() => Deck, (x) => x.cards, {
     cascade: true,
     nullable: true,
   })
   decks: Deck[];
 
-  @ManyToMany((type) => Collection, (x) => x.cards, {
+  @ManyToMany(() => Collection, (x) => x.cards, {
     nullable: true,
   })
   collections: Collection[];

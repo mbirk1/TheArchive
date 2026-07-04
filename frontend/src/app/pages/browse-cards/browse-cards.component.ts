@@ -55,13 +55,9 @@ export class BrowseCardsComponent implements OnInit {
   });
 
   ngOnInit() {
-    this.searchInput
-      .pipe(
-        debounceTime(300),
-      )
-      .subscribe((searchTerm: string) => {
-        this.cardService.setTextFilter(searchTerm);
-      });
+    this.searchInput.pipe(debounceTime(300)).subscribe((searchTerm: string) => {
+      this.cardService.setTextFilter(searchTerm);
+    });
   }
 
   goToPage(page: number): void {

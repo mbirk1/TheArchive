@@ -17,6 +17,6 @@ export class CardTileComponent {
   authStore: AuthStore = inject(AuthStore);
 
   addCardToCollection() {
-    this.collectionService.addCardToCollection(this.card())
+    this.collectionService.addCardToCollection(this.card());
   }
 }

@@ -31,9 +31,9 @@
             "options": {
               "cwd": "frontend-e2e",
               "env": {
-                "PLAYWRIGHT_HTML_OUTPUT_DIR": "..\\dist\\.playwright\\frontend-e2e\\playwright-report\\src-example-spec-ts",
-                "PLAYWRIGHT_HTML_REPORT": "..\\dist\\.playwright\\frontend-e2e\\playwright-report\\src-example-spec-ts",
-                "PLAYWRIGHT_BLOB_OUTPUT_FILE": "..\\dist\\.playwright\\frontend-e2e\\blob-report\\src-example-spec-ts.zip"
+                "PLAYWRIGHT_HTML_OUTPUT_DIR": "..\\..\\dist\\playwright\\html\\src-example-spec-ts",
+                "PLAYWRIGHT_HTML_REPORT": "..\\..\\dist\\playwright\\html\\src-example-spec-ts",
+                "PLAYWRIGHT_JUNIT_OUTPUT_FILE": "..\\..\\dist\\playwright\\src-example-spec-ts\\junit.xml"
               },
               "command": "playwright test src/example.spec.ts --output=..\\dist\\.playwright\\frontend-e2e\\test-output\\src-example-spec-ts"
             },
@@ -54,7 +54,7 @@
             "dependsOn": [
               {
                 "projects": [
-                  "frontend"
+                  "frontend-e2e"
                 ],
                 "target": "serve"
               }
@@ -71,8 +71,8 @@
             ],
             "outputs": [
               "{workspaceRoot}/dist/.playwright/frontend-e2e/test-output/src-example-spec-ts",
-              "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report/src-example-spec-ts",
-              "{workspaceRoot}/dist/.playwright/frontend-e2e/blob-report/src-example-spec-ts.zip"
+              "dist/playwright/html/src-example-spec-ts",
+              "dist/playwright/src-example-spec-ts/junit.xml"
             ],
             "executor": "nx:run-commands",
             "configurations": {},
@@ -92,8 +92,8 @@
             ],
             "outputs": [
               "{workspaceRoot}/dist/.playwright/frontend-e2e/test-output",
-              "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report",
-              "{workspaceRoot}/dist/.playwright/frontend-e2e/blob-report"
+              "dist/playwright/html",
+              "dist/playwright/junit.xml"
             ],
             "dependsOn": [
               {
@@ -135,7 +135,8 @@
               }
             ],
             "outputs": [
-              "{workspaceRoot}/dist/.playwright/frontend-e2e/playwright-report"
+              "dist/playwright/html",
+              "dist/playwright/junit.xml"
             ],
             "options": {
               "config": "playwright.config.ts",
@@ -289,6 +290,46 @@
               "{workspaceRoot}/.eslintignore",
               "{workspaceRoot}/eslint.config.mjs"
             ]
+          },
+          "test": {
+            "options": {
+              "cwd": "frontend",
+              "env": {
+                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\",\"module\":\"commonjs\",\"customConditions\":null}"
+              },
+              "command": "jest"
+            },
+            "metadata": {
+              "technologies": [
+                "jest"
+              ],
+              "description": "Run Jest Tests",
+              "help": {
+                "command": "npx jest --help",
+                "example": {
+                  "options": {
+                    "coverage": true
+                  }
+                }
+              }
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^default",
+              "jest.preset.js",
+              {
+                "externalDependencies": [
+                  "jest"
+                ]
+              }
+            ],
+            "outputs": [
+              "coverage\\frontend"
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
           },
           "build": {
             "executor": "@angular-devkit/build-angular:browser",
@@ -528,6 +569,46 @@
             "configurations": {},
             "parallelism": true
           },
+          "test": {
+            "options": {
+              "cwd": "backend",
+              "env": {
+                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\",\"module\":\"commonjs\",\"customConditions\":null}"
+              },
+              "command": "jest"
+            },
+            "metadata": {
+              "technologies": [
+                "jest"
+              ],
+              "description": "Run Jest Tests",
+              "help": {
+                "command": "npx jest --help",
+                "example": {
+                  "options": {
+                    "coverage": true
+                  }
+                }
+              }
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^default",
+              "jest.preset.js",
+              {
+                "externalDependencies": [
+                  "jest"
+                ]
+              }
+            ],
+            "outputs": [
+              "coverage\\backend"
+            ],
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
           "migration:generate": {
             "executor": "nx:run-commands",
             "options": {
@@ -655,6 +736,46 @@
                 }
               }
             },
+            "executor": "nx:run-commands",
+            "configurations": {},
+            "parallelism": true
+          },
+          "test": {
+            "options": {
+              "cwd": "lib",
+              "env": {
+                "TS_NODE_COMPILER_OPTIONS": "{\"moduleResolution\":\"node10\",\"module\":\"commonjs\",\"customConditions\":null}"
+              },
+              "command": "jest"
+            },
+            "metadata": {
+              "technologies": [
+                "jest"
+              ],
+              "description": "Run Jest Tests",
+              "help": {
+                "command": "npx jest --help",
+                "example": {
+                  "options": {
+                    "coverage": true
+                  }
+                }
+              }
+            },
+            "cache": true,
+            "inputs": [
+              "default",
+              "^default",
+              "{workspaceRoot}\\jest.preset.js",
+              {
+                "externalDependencies": [
+                  "jest"
+                ]
+              }
+            ],
+            "outputs": [
+              "{workspaceRoot}\\coverage\\shared"
+            ],
             "executor": "nx:run-commands",
             "configurations": {},
             "parallelism": true
@@ -56079,27 +56200,6 @@
     ]
   },
   "version": "6.0",
-  "errors": [
-    {
-      "stack": " - Error: ENOENT: no such file or directory, open 'C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend\\jest.config.cts'\n    at readFileSync (node:fs:435:20)\n    at checkIfConfigFileShouldBeProject (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\@nx\\jest\\src\\plugins\\plugin.js:96:58)\n    at configFiles.reduce.roots (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\@nx\\jest\\src\\plugins\\plugin.js:41:17)\n    at Array.reduce (<anonymous>)\n    at Array.exports.createNodes (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\@nx\\jest\\src\\plugins\\plugin.js:39:84)\n    at LoadedNxPlugin.createNodes (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:25:62)\n    at Array.LoadedNxPlugin.createNodes.<computed> (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:39:34)\n    at createNodes (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\nx\\src\\project-graph\\plugins\\isolation\\plugin-worker.js:76:63)\n    at consumeMessage (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\nx\\src\\project-graph\\plugins\\isolation\\messaging.js:43:32)\n    at C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\nx\\src\\project-graph\\plugins\\isolation\\plugin-worker.js:34:47",
-      "message": "An error occurred while processing files for the @nx/jest/plugin plugin (Defined at nx.json#plugins[3])\n.\n  - ENOENT: no such file or directory, open 'C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend\\jest.config.cts'",
-      "errors": [
-        [
-          null,
-          {
-            "stack": "Error: ENOENT: no such file or directory, open 'C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend\\jest.config.cts'\n    at readFileSync (node:fs:435:20)\n    at checkIfConfigFileShouldBeProject (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\@nx\\jest\\src\\plugins\\plugin.js:96:58)\n    at configFiles.reduce.roots (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\@nx\\jest\\src\\plugins\\plugin.js:41:17)\n    at Array.reduce (<anonymous>)\n    at Array.exports.createNodes (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\@nx\\jest\\src\\plugins\\plugin.js:39:84)\n    at LoadedNxPlugin.createNodes (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:25:62)\n    at Array.LoadedNxPlugin.createNodes.<computed> (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\nx\\src\\project-graph\\plugins\\loaded-nx-plugin.js:39:34)\n    at createNodes (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\nx\\src\\project-graph\\plugins\\isolation\\plugin-worker.js:76:63)\n    at consumeMessage (C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\nx\\src\\project-graph\\plugins\\isolation\\messaging.js:43:32)\n    at C:\\Users\\mariu\\WebstormProjects\\TheArchive\\node_modules\\nx\\src\\project-graph\\plugins\\isolation\\plugin-worker.js:34:47",
-            "message": "ENOENT: no such file or directory, open 'C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend\\jest.config.cts'",
-            "errno": -4058,
-            "code": "ENOENT",
-            "syscall": "open",
-            "path": "C:\\Users\\mariu\\WebstormProjects\\TheArchive\\backend\\jest.config.cts"
-          }
-        ]
-      ],
-      "partialResults": [],
-      "name": "AggregateCreateNodesError",
-      "pluginIndex": 3
-    }
-  ],
-  "computedAt": 1783164262134
+  "errors": [],
+  "computedAt": 1783165453411
 }

@@ -1,5 +1,4 @@
 import {
-  Inject,
   Injectable,
   InternalServerErrorException,
   Logger,
@@ -17,7 +16,7 @@ export interface JwtPayload {
 
 @Injectable()
 export class TokenService {
-  private readonly logger = new Logger(TokenService.name);
+  private readonly logger: Logger = new Logger(TokenService.name);
 
   constructor(
     private configService: ConfigService,

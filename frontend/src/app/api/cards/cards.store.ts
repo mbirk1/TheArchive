@@ -26,7 +26,7 @@ export class CardsStore {
         limit: this.limit(),
         offset: this.offset(),
         textFilter: this.textFilter(),
-        sortOrder: this.sortOrder()
+        sortOrder: this.sortOrder(),
       }),
       loader: ({ params }): Promise<PaginationResponse<ICard>> => {
         return firstValueFrom(
@@ -34,8 +34,8 @@ export class CardsStore {
             params.limit,
             params.offset,
             params.textFilter,
-            params.sortOrder
-          )
+            params.sortOrder,
+          ),
         );
       },
     },
@@ -86,8 +86,8 @@ export class CardsStore {
   }
 
   setSortOrder(sortOrder: string): void {
-    if(sortOrder !== 'ASC' && sortOrder !== 'DESC') {
-      throw new Error('SortOrder does not meet expectations')
+    if (sortOrder !== 'ASC' && sortOrder !== 'DESC') {
+      throw new Error('SortOrder does not meet expectations');
     }
     this.sortOrder.set(sortOrder);
   }

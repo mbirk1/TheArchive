@@ -29,8 +29,8 @@ export class CardsGateway {
     return this.http.get<PaginationResponse<ICard>>(
       `${this.configService.apiUrl}/cards?limit=${limit}&offset=${offset}&textFilter=${textFilter}&sortOrder=${sortOrder}`,
       {
-        context: new HttpContext().set(SKIP_AUTH, true)
-      }
+        context: new HttpContext().set(SKIP_AUTH, true),
+      },
     );
   }
 }

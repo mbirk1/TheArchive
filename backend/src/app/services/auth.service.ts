@@ -3,7 +3,6 @@ import {
   UnauthorizedException,
   InternalServerErrorException,
   Logger,
-  Inject,
 } from '@nestjs/common';
 import * as bcrypt from 'bcrypt';
 import { UserService } from './user.service';
@@ -46,7 +45,7 @@ export class AuthService {
         throw new InvalidCredentialsException();
       }
 
-      const { password: _, ...result } = user;
+      const { password, ...result } = user;
       return result;
     } catch (error) {
       if (error instanceof InvalidCredentialsException) throw error;
@@ -58,7 +57,8 @@ export class AuthService {
     }
   }
 
-  async login(user: any) {
+  //TODO any
+  async login(user) {
     this.logger.log(`User logged in: ${user.email}`);
 
     try {

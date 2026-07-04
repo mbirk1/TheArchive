@@ -16,6 +16,9 @@ export class CollectionGateway {
   }
 
   addCardToCollection(card: ICard): Observable<ICollection> {
-    return this.http.post<ICollection>(`${this.configService.apiUrl}/collection/card`, card);
+    return this.http.post<ICollection>(
+      `${this.configService.apiUrl}/collection/card`,
+      card,
+    );
   }
 }

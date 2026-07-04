@@ -44,10 +44,10 @@ export class AuthService {
     this.authStore.setLoading(true);
 
     return this.authStore.login(request).pipe(
-      tap(tokens => {
-        this.handleAuthSuccess(tokens)
+      tap((tokens) => {
+        this.handleAuthSuccess(tokens);
       }),
-      catchError(error => this.handleAuthError(error)),
+      catchError((error) => this.handleAuthError(error)),
     );
   }
 
@@ -79,10 +79,9 @@ export class AuthService {
     const accessToken = this.tokenService.getAccessToken();
 
     if (accessToken) {
-      this.authStore.logout()
-        .pipe(
-          catchError(() => EMPTY),
-        )
+      this.authStore
+        .logout()
+        .pipe(catchError(() => EMPTY))
         .subscribe();
     }
 

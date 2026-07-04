@@ -22,7 +22,9 @@ export class UserStore {
       if (!this.authStore.isAuthenticated()) {
         return Promise.resolve(undefined);
       }
-      return firstValueFrom(this.userGateway.getMyUser(), { defaultValue: undefined });
+      return firstValueFrom(this.userGateway.getMyUser(), {
+        defaultValue: undefined,
+      });
     },
   });
 
@@ -30,7 +32,7 @@ export class UserStore {
     if (this.userResource.isLoading()) {
       throw new Error('User still loading');
     }
-    if(this.userResource.hasValue()) {
+    if (this.userResource.hasValue()) {
       return this.userResource.value();
     }
     return {} as IUser;

@@ -12,7 +12,7 @@ export class CollectionService {
 
     return cards.reduce((sum, card) => {
       const value: string | null = card.prices?.eur;
-      if(!value) return sum;
+      if (!value) return sum;
 
       return sum + +value;
     }, 0);
