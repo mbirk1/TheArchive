@@ -1,0 +1,79 @@
+variables:
+  DOCKERHUB_USERNAME: $DOCKERHUB_USERNAME
+
+stages:
+  - build
+
+# ---------------------------------------------------------------
+# 1) Angular bauen & pushen
+# ---------------------------------------------------------------
+build-frontend:
+  stage: build
+  image: node:22.12.0
+  services:
+    - docker:dind
+  variables:
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+  rules:
+    - if: $CI_COMMIT_TAG
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - node_modules/
+  before_script:
+    - apt-get update -qq && apt-get install -y docker.io
+    - echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+  script:
+    - npm ci
+    - npx nx build frontend --configuration=production
+    - docker build
+        --cache-from "$DOCKERHUB_USERNAME/archive-frontend:latest"
+        -f ./frontend/Dockerfile
+        -t "$DOCKERHUB_USERNAME/archive-frontend:latest"
+        -t "$DOCKERHUB_USERNAME/archive-frontend:$CI_COMMIT_TAG"
+        .
+    - |
+      if [ "$CI_COMMIT_BRANCH" == "master" ]; then
+        docker push "$DOCKERHUB_USERNAME/archive-frontend:latest"
+        docker push "$DOCKERHUB_USERNAME/archive-frontend:sha-$(echo $CI_COMMIT_SHA | cut -c1-8)"
+      fi
+
+# ---------------------------------------------------------------
+# 2) NestJS bauen & pushen
+# ---------------------------------------------------------------
+build-backend:
+  stage: build
+  image: node:22.12.0
+  services:
+    - docker:dind
+  variables:
+    DOCKER_HOST: tcp://docker:2376
+    DOCKER_TLS_CERTDIR: "/certs"
+  rules:
+    - if: $CI_COMMIT_TAG
+  cache:
+    key:
+      files:
+        - package-lock.json
+    paths:
+      - node_modules/
+  before_script:
+    - apt-get update -qq && apt-get install -y docker.io
+    - echo "$DOCKERHUB_TOKEN" | docker login -u "$DOCKERHUB_USERNAME" --password-stdin
+  script:
+    - npm ci
+    - npx nx build backend --configuration=production
+    - docker build
+        --cache-from "$DOCKERHUB_USERNAME/archive-backend:latest"
+        -f ./backend/Dockerfile
+        -t "$DOCKERHUB_USERNAME/archive-backend:latest"
+        -t "$DOCKERHUB_USERNAME/archive-backend:$CI_COMMIT_TAG"
+        .
+    - |
+      if [ "$CI_COMMIT_BRANCH" == "master" ]; then
+        docker push "$DOCKERHUB_USERNAME/archive-backend:latest"
+        docker push "$DOCKERHUB_USERNAME/archive-backend:sha-$(echo $CI_COMMIT_SHA | cut -c1-8)"
+      fi
